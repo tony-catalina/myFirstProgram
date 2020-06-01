@@ -1,0 +1,94 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>发药信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">人员编号：</td>
+                                                    <td><input class="easyui-textbox" name="rybh" value="{{rybh}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td class="formtd">监&nbsp;&nbsp;室&nbsp;&nbsp;号：</td>
+                                                    <td><input class="easyui-textbox" name="jsh" value="{{jsh}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">医&emsp;&emsp;嘱：</td>
+                                                    <td><input class="easyui-textbox" name="yz" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">药品名称：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" name="ypbhList" value="{{ypbh}}" text="{{ypbjString}}" code="YPMC" style="min-width:280px;"> </td>
+                                                    <td class="formtd">发药单位：</td>
+                                                    <td><input class="awdCombox" name="fydwList" value="{{fydw}}" text="{{fydwString}}" code="DW" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">数&emsp;&emsp;量：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-numberspinner" data-options="min:0,validType:'number'" name="slList" style="min-width:280px;"> </td>
+                                                    <td class="formtd">操&emsp;&emsp;作：</td>
+                                                    <td>
+                                                        <span class="tjyp">添加</span>
+                                                        <span class="scyp">删除</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">发&nbsp;&nbsp;药&nbsp;&nbsp;人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="fyr" style="min-width:280px;"> </td>
+                                                    <td class="formtd">发药时间：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="fyrq" value="{{fyrq}}" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&emsp;&emsp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="bz" style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>药品详情</h2>
+                                            <table id="ypxq">
+                                                <tbody>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>药品名称</td>
+                                                        <td>发药单位</td>
+                                                        <td>数量</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody id="ypnr">
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

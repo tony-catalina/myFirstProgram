@@ -1,0 +1,87 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="jshjldspfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>个人信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">对&ensp;&thinsp;象&ensp;&thinsp;编&ensp;&thinsp;号：</td>
+                                                    <td><input class="easyui-textbox" name="dxbh" value="{{dxbh}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">违规时间：</td>
+                                                    <td><input class="easyui-datetimebox"" name="wgsj" value="{{wgsj}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">违&ensp;&thinsp;规&ensp;&thinsp;情&ensp;&thinsp;况：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="wgqk" value="{{wgqk}}" readonly style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">违规详细情况：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="wgqkcon" value="{{wgqkcon}}" readonly style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd"></td>
+                                                    <td colspan="3" style="text-align: center;" id="xgwgqkfm"><input name="xgwgqk" id="xgwgqkbox" value="0"
+                                                            type="checkbox">&nbsp;&nbsp;修改违规情况</td>
+                                                </tr>
+                                                <tr id="wgqkfm">
+                                                    <td class="formtd">违&ensp;&thinsp;规&ensp;&thinsp;情&ensp;&thinsp;况：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="wgqk" style="width:100%;" required>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-anjian"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">处&ensp;理&ensp;人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="clr" name="clr" style="min-width:280px;" required> </td>
+                                                    <td class="formtd">处理时间：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="clsj" value="{{clsj}}" style="min-width:280px;" required>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="formtd">处理情况：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="awdCombox" code="WGCLQK" name="clqk"  style="width: 100%;" required>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&emsp;&emsp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="bz" style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <input type="hidden" name="id" value="{{id}}">
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

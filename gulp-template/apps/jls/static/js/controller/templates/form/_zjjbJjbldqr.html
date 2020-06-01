@@ -1,0 +1,207 @@
+
+<body class="easyui-layout" data-option="fit:true">
+        <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+        <div class="section-content">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                 <div class="htmleaf-container">
+                 <div class="container">
+                    <div id="timeline">
+    
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <span class="iconfont icon-jibenxinxi"></span>
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>在所人员</h2>
+                                <table class="container-formtable">
+                                    
+                                    <tr>
+                                        <td class="formtd">&emsp;&emsp;&emsp;男：</td>
+                                        <td ><input class="easyui-textbox" name="nannum" value="{{ldpsxx.jjb_nannum}}" readonly style="min-width:180px;"> </td>
+                                        <td class="formtd">&emsp;&emsp;&emsp;女：</td>
+                                        <td ><input class="easyui-textbox" name="nvnum" value="{{ldpsxx.jjb_nvnum}}" readonly style="min-width:180px;"> </td>
+                                        <td class="formtd">外&ensp;国&ensp;籍：</td>
+                                        <td ><input class="easyui-textbox" name="wgjnum" value="{{ldpsxx.jjb_wgjnum}}" readonly style="min-width:180px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">行政拘留：</td>
+                                        <td ><input class="easyui-textbox" name="xzjlnum" value="{{ldpsxx.jjb_xzjlnum}}" readonly style="min-width:180px;"> </td>
+                                        <td class="formtd">司法拘留：</td>
+                                        <td ><input class="easyui-textbox" name="sfjlnum" value="{{ldpsxx.jjb_sfjlnum}}" readonly style="min-width:180px;"> </td>
+                                        <td class="formtd">拘留审查：</td>
+                                        <td ><input class="easyui-textbox" name="jlscnum" value="{{ldpsxx.jjb_jlscnum}}" readonly style="min-width:180px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">其&emsp;&emsp;他:</td>
+                                        <td colspan="6"><input class="easyui-textbox" value="{{ldpsxx.jjb_qtnum}}" readonly name="qtnum" style="width:100%;"> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <span class="iconfont icon-jibenxinxi"></span>
+                                </div>
+                                <div class="timeline-content right">
+                                    <h2></h2>
+                                    <table class="container-formtable">
+                                        <tr>
+                                            <td class="formtd">入&emsp;&emsp;所：</td>
+                                            <td ><input class="easyui-textbox" name="dbrsnum" value="{{ldpsxx.jjb_dbrsnum}}" readonly style="min-width:180px;"> </td>
+                                            <td class="formtd">不宜拘留：</td>
+                                            <td ><input class="easyui-textbox" name="byjlnum" value="{{ldpsxx.jjb_byjlnum}}" readonly style="min-width:180px;"> </td>
+                                            <td class="formtd">出&emsp;&emsp;所：</td>
+                                            <td ><input class="easyui-textbox" name="dbcsnum" value="{{ldpsxx.jjb_dbcsnum}}" readonly style="min-width:180px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">期&emsp;&emsp;满：</td>
+                                            <td ><input class="easyui-textbox" name="qmnum" value="{{ldpsxx.jjb_qmnum}}" readonly style="min-width:180px;"> </td>
+                                            <td class="formtd">请&emsp;&emsp;假：</td>
+                                            <td ><input class="easyui-textbox" name="qjnum" value="{{ldpsxx.jjb_qjnum}}" readonly style="min-width:180px;"> </td>
+                                            <td class="formtd">变更措施：</td>
+                                            <td ><input class="easyui-textbox" name="bgcsnum" value="{{ldpsxx.jjb_bgcsnum}}" readonly style="min-width:180px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">临时出所：</td>
+                                            <td ><input class="easyui-textbox" name="lslsnum" value="{{ldpsxx.jjb_lslsnum}}" readonly style="min-width:180px;"> </td>
+                                            <td class="formtd">未&ensp;回&ensp;所：</td>
+                                            <td ><input class="easyui-textbox" name="whsnum" value="{{ldpsxx.jjb_whsnum}}" readonly style="min-width:180px;"> </td>
+                                            <td class="formtd">已&ensp;回&ensp;所：</td>
+                                            <td ><input class="easyui-textbox" name="yhsnum" value="{{ldpsxx.jjb_yhsnum}}" readonly style="min-width:180px;"> </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="iconfont icon-jibenxinxi"></span>
+                                    </div>
+                                    <div class="timeline-content right">
+                                        <h2>拘留区出入</h2>
+                                        <table class="container-formtable">
+                                            <tr>
+                                                <td class="formtd">拘留区内：</td>
+                                                <td ><input class="easyui-textbox" name="jlqnnum" value="{{ldpsxx.jjb_jlqnnum}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">拘留区外：</td>
+                                                <td ><input class="easyui-textbox" name="jlqwnum" value="{{ldpsxx.jjb_jlqwnum}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="iconfont icon-jibenxinxi"></span>
+                                    </div>
+                                    <div class="timeline-content right">
+                                        <h2>医疗管理</h2>
+                                        <table class="container-formtable">
+                                            <tr>
+                                                <td class="formtd">重病号：</td>
+                                                <td ><input class="easyui-textbox" name="zdbhnum" value="{{ldpsxx.jjb_zdbhnum}}" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">所外就医：</td>
+                                                <td ><input class="easyui-textbox" name="swjynum" value="{{ldpsxx.jjb_swjynum}}" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">所内就医：</td>
+                                                <td ><input class="easyui-textbox" name="snjynum" value="{{ldpsxx.jjb_snjynum}}" readonly style="min-width:180px;"> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="iconfont icon-jibenxinxi"></span>
+                                    </div>
+                                    <div class="timeline-content right">
+                                        <h2>安全管理</h2>
+                                        <table class="container-formtable">
+                                            <tr>
+                                                <td class="formtd">严管对象：</td>
+                                                <td ><input class="easyui-textbox" name="ygnum" value="{{ldpsxx.jjb_ygnum}}" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">安全信息员：</td>
+                                                <td ><input class="easyui-textbox" name="aqxxynum" value="{{ldpsxx.jjb_aqxxynum}}" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">违&emsp;&emsp;规：</td>
+                                                <td ><input class="easyui-textbox" name="wgnum" value="{{ldpsxx.jjb_wgnum}}" readonly style="min-width:180px;"> </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">使用械具：</td>
+                                                <td ><input class="easyui-textbox" name="syjjnum" value="{{ldpsxx.jjb_syjjnum}}" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">提&emsp;&emsp;&emsp;讯：</td>
+                                                <td ><input class="easyui-textbox" name="tsnum" value="{{ldpsxx.jjb_tsnum}}" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">亲属会见：</td>
+                                                <td ><input class="easyui-textbox" name="jshjnum" value="{{ldpsxx.jjb_jshjnum}}" readonly style="min-width:180px;"> </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">律师会见：</td>
+                                                <td ><input class="easyui-textbox" name="lshjnum" value="{{ldpsxx.jjb_lshjnum}}" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">今天&emsp;到期：</td>
+                                                <td ><input class="easyui-textbox" name="jtdqnum" value="{{ldpsxx.jjb_jtdqnum}}" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">明天到期：</td>
+                                                <td ><input class="easyui-textbox" name="mtdqnum" value="{{ldpsxx.jjb_mtdqnum}}" readonly style="min-width:180px;"> </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">后天到期：</td>
+                                                <td ><input class="easyui-textbox" name="htdqnum" value="{{ldpsxx.jjb_htdqnum}}" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">超&emsp;&emsp;&emsp;期：</td>
+                                                <td ><input class="easyui-textbox" name="cqnum" alue="{{ldpsxx.jjb_cqnum}}" readonly style="min-width:180px;"> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+    
+    
+    
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <span class="iconfont icon-jibenxinxi"></span>
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>业务信息</h2>
+                                <table class="container-formtable">
+                                    <tr>
+                                        <td class="formtd">交&emsp;班&ensp;人&ensp;员：</td>
+                                        <td colspan="3"><input class="easyui-textbox" readonly value="{{ldpsxx.jjb_jbr}}"  name="jbr" style="width:100%;"></td>
+                                    </tr>
+                                     <tr>
+                                        <td class="formtd">交&emsp;班&ensp;组&ensp;长：</td>
+                                        <td ><input class="easyui-textbox" name="jiaobzz" value="{{ldpsxx.jjb_jiaobzz}}"  readonly style="min-width:280px;"> </td>
+                                        <td class="formtd">交&emsp;班&ensp;时&ensp;间：</td>
+                                        <td ><input class="easyui-textbox" name="jiaobsj" value="{{ldpsxx.jjb_jiaobsj}}" readonly style="min-width:280px;"> </td>
+                                    </tr>
+                                    <tr>    
+                                        <td class="formtd">交班组长意见：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="jiaobzzyj" value="{{ldpsxx.jjb_jiaobzzyj}}" readonly data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                    </tr>
+                                    <tr>    
+                                        <td class="formtd">交班注意事项：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="jiaobzysx" value="{{ldpsxx.jjb_jiaobzysx}}" readonly data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="formtd">领导意见内容：<font class="redicon">*</font></td>
+                                        <td colspan="3"><input class="easyui-textbox" name="jiaobldyj" value="{{jiaobldyj}}" required style="width:100%;"></td>
+                                    </tr>
+                                     <tr>
+                                        <td class="formtd">领&emsp;导&ensp;签&ensp;名：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-textbox" name="jiaobld" value="{{tbr}}" required style="min-width:280px;"> </td>
+                                        <td class="formtd">领导签名日期：<font class="redicon">*</font></td>
+                                        <td ><input name="ldqmsj" id="ldqmsj" class="easyui-datetimebox" value="{{dateTime}}" required style="min-width:280px;"> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+    
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+       </div>
+    </form>
+    </body>

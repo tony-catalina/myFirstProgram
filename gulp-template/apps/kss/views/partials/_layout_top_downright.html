@@ -1,0 +1,228 @@
+<!-- 布局模板：上下（左右）-->
+<div class="section-container">
+    <div class="section-item">
+            <div class="section-item item-first">
+                <button class="btn">90监区</button>
+                <button class="btn">91监区</button>
+                <button class="btn">92监区</button>
+                <div class="group_one">
+                    <button class="btn1">单独关押监室一<b>0</b></button>
+                    <button class="btn1">单独关押监室二<b>0</b></button>
+                    <button class="btn1">单独关押监室三<b>0</b></button>
+                    <button class="btn1">单独关押监室四<b>0</b></button>
+                    <button class="btn1">单独关押监室五<b>0</b></button>
+                    <button class="btn1">单独关押监室六<b>0</b></button>
+                </div>
+                <div class="group_two">
+                    <button class="btn1">单独关押监室七<b>0</b></button>
+                    <button class="btn1">单独关押监室八<b>0</b></button>
+                    <button class="btn1">单独关押监室九<b>0</b></button>
+                    <button class="btn1">单独关押监室十<b>0</b></button>
+                </div>
+                <div class="group_three">
+                    <button class="btn1">住院<b>2</b></button>
+                </div>
+                <div class="group_four">
+                    <button class="btn1">住院<b>2</b></button>
+                </div>
+            </div>
+            <div class="section-item section-item-padding" >
+                <div class="section-container section-container-row">
+                    <div class="section-item section-item-padding">
+                        <div class="section-item-content section-item-content-padding">
+                            <div class="photo_jianshi">监室人员</div>
+                            <div class="people-item">
+                                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2798827141,1874139545&fm=11&gp=0.jpg" alt="">
+                                <div><span>姓名：</span><span>小明</span></div>
+                                <div><span>人员编号：</span><span>123456</span></div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="section-item section-item-padding border-left">
+                        <div class="photo_jianshi">人员详情</div>
+                        <table class="people_info">
+                            <tr>
+                                <td>姓名:</td>
+                                <td><input name="name" class="easyui-textbox"></input></td>
+                                <td>性别:</td>
+                                <td><input name="gender" class="easyui-textbox"></input></td>
+                            </tr>
+                            <tr>
+                                <td>别名:</td>
+                                <td><input name="name" class="easyui-textbox"></input></td>
+                                <td>出生年月:</td>
+                                <td><input name="gender" class="easyui-textbox"></input></td>
+                            </tr>
+                            <tr>
+                                <td>身份证类型:</td>
+                                <td><input name="name" class="easyui-textbox"></input></td>
+                                <td>民族:</td>
+                                <td><input name="gender" class="easyui-textbox"></input></td>
+                            </tr>
+                            <tr>
+                                <td>政治面貌:</td>
+                                <td><input name="name" class="easyui-textbox"></input></td>
+                                <td>职业:</td>
+                                <td><input name="gender" class="easyui-textbox"></input></td>
+                            </tr>
+                            <tr>
+                                <td>婚否:</td>
+                                <td><input name="name" class="easyui-textbox"></input></td>
+                                <td>文化程度:</td>
+                                <td><input name="gender" class="easyui-textbox"></input></td>
+                            </tr>
+                            <tr>
+                                <td>户籍地:</td>
+                                <td><input name="name" class="easyui-textbox"></input></td>
+        
+                            </tr>
+                        </table>
+                        <div class="people-item photo-right">
+                            <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2798827141,1874139545&fm=11&gp=0.jpg" alt="">
+                            <div><span>姓名：</span><span>小明</span></div>
+                            <div><span>人员编号：</span><span>123456</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<style>
+    .item-first {
+        position: relative;
+        overflow: scroll;
+        height: 217px !important;
+        }
+
+    ::-webkit-scrollbar {display:none}
+
+    .btn {
+        background: #005ee9;
+        border: 1px solid #4f95ad;
+        padding: 8px 20px;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 4px;
+        width: 92px;
+    }
+    .btn:nth-child(1) {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+    }
+
+    .btn:nth-child(2) {
+        position: absolute;
+        top: 55px;
+        left: 25px;
+    }
+
+    .btn:nth-child(3) {
+        position: absolute;
+        top: 135px;
+        left: 25px;
+    }
+    .group_one {
+        position: absolute;
+        top: 37px;
+        left: 135px;
+        width: 1000px;
+        height: 70px;
+    }
+    .group_one .btn1 {
+        background: rgb(51, 153, 255);
+        border: 1px solid #339edc;
+        padding: 8px 20px;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 4px;
+    }
+    .btn1 b {
+            font-weight: normal;
+            color: red;
+            margin-left: 10px;
+        }
+
+  .group_two {
+        position: absolute;
+        top: 76px;
+        left: 135px;
+        width: 1000px;
+        height: 70px;
+    }
+    .group_two .btn1 {
+        background: rgb(51, 153, 255);
+        border: 1px solid #339edc;
+        padding: 8px 20px;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 4px;
+    }
+
+  .group_three {
+        position: absolute;
+        top: 159px;
+        left: 135px;
+        width: 1000px;
+        height: 70px;
+    }
+    .group_three .btn1 {
+        background: rgb(51, 153, 255);
+        border: 1px solid #339edc;
+        padding: 8px 20px;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 4px;
+    }
+
+  .group_four {
+        position: absolute;
+        top: 219px;
+        left: 135px;
+        width: 1000px;
+        height: 70px;
+    }
+    .group_four .btn1 {
+        /* background: #2bb7ea; */
+        background: rgb(51, 153, 255);
+        border: 1px solid #339edc;
+        padding: 8px 20px;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 4px;
+    }
+    .photo_jianshi {
+        height: 35px;
+        background: #005ee9;
+        color: #fff;
+        line-height: 35px;
+        padding-left: 7px;
+    }
+    .people-item {
+        float: left;
+        margin: 10;
+        height: 144px;
+    }
+    .people-item img {
+        width: 68px;
+        height: 68px;
+    }
+    .people_info {
+        font-size: 14px;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+    .people_info tr {
+        height: 43px;
+    }
+    .people_info td {
+      width: 50px !important;
+    }
+    .photo-right {
+        position: absolute;
+        right: 25px;
+        top: 321px;
+    }
+    
+</style>

@@ -1,0 +1,73 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">人员编号：</td>
+                                    <td ><input class="easyui-textbox" name="snbh" value="{{ldspxx.snbh}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" name="xm" value="{{ldspxx.xm}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                    <td ><input class="easyui-textbox" name="jsh" value="{{ldspxx.jsh}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">商品名称：</td>
+                                    <td ><input class="easyui-textbox" name="spmc" value="{{spmc}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">数&emsp;&emsp;量：</td>
+                                    <td ><input class="easyui-textbox" name="sl" value="{{spsl}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">申请日期：</td>
+                                    <td ><input class="easyui-datebox" name="ddcjsj" value="{{ddcjsj}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>审批信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">审批意见：</td>
+                                    <td ><input type="radio" name="psbz" value="1" class="radiocss" checked><font>同意</font><input type="radio" name="psbz" value="2" class="radiocss"><font>不同意</font> </td>
+                                    <td class="formtd">审批意见内容：</td>
+                                    <td ><input class="easyui-textbox" name="ldyj" id="spyjnrIDU" name="ldyj" value="{{ldyj}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">办&ensp;理&ensp;人：<font class="redicon">*</font></td>
+                                    <td ><input id="blr" class="easyui-textbox"  name="blr" required style="min-width:280px;"> </td>
+                                    <td class="formtd">办&ensp;理&emsp;日&ensp;期：<font class="redicon">*</font></td>
+                                    <td ><input id="blrq" class="easyui-datetimebox" name="blsj" required style="min-width:280px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                   
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

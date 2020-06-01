@@ -1,0 +1,88 @@
+<!--
+模块名称： 人员违规
+开始时间： 2020-2-25
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<body class="easyui-layout" data-option="fit:true">
+<!--页面主体布局-->
+<div class="section-container section-container-row rywg-container">
+    <div class="section-item" style="width:15%;">
+        <div id="tree">
+            <div class="tree-Headline">监区树<span class="iconfont icon-liebiaoxiangzuo"></span></div>
+            <ul class="easyui-tree" id="jqtree"></ul>
+        </div>
+    </div>
+    <div class="section-item" style="width:85%;">
+        <div class="section-header">
+            <div class="section-title">简项查询</div>
+            <div class="section-controls single-colors" id="tools">
+            </div>
+            <div class="section-corner" id="links"></div>
+
+        </div>
+        <div class="section-item-content">
+            <form id="search" class="search-form searchBar"></form>
+            <table id="table" class="section-item-padding"></table>
+        </div>
+    </div>
+    <!-- <div class="section-item section-item-padding rywgqk" style="width:35%;">
+        <div class="timeline-content right">
+            <table class="container-formtable">
+                <tr>
+                    <td class="formtd" style="min-width:175px;">违规情况：</td>
+                    <td colspan="3"><input class="easyui-textbox" style="min-width:349px !important;" required missingMessage="该输入项为必输项"> </td>
+                    
+                </tr>
+                <tr>
+                    <td class="formtd" style="min-width:175px;">违规详细情况：</td>
+                    <td ><input class="easyui-textbox" style="height:80px;min-width:349px !important;" data-options="multiline:true" missingMessage="该输入项为必输项" required> </td>
+                </tr>
+                <tr>
+                    <td class="formtd" style="min-width:175px;">违规时间：</td>
+                    <td ><input class="easyui-datebox" style="min-width:349px !important;" missingMessage="该输入项为必输项" required editable="false"> </td>
+                    
+                </tr>
+                <tr>
+                    <td class="formtd" style="min-width:175px;">处理情况：</td> 
+                    <td ><input class="easyui-textbox" style="min-width:349px !important;" missingMessage="该输入项为必输项" required></td>
+                </tr>
+                <tr>
+                    <td class="formtd" style="min-width:175px;">备注：</td>
+                    <td ><input class="easyui-textbox" style="height:80px;min-width:349px !important;" data-options="multiline:true"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align:left">
+                        <input type="checkbox" id="rywgCheckbox" style="margin-left: 20px;"/><label for="rywgCheckbox" style="margin-left: 10px;">有无异常(勾选可输入异常情况)</label>
+                    </td>
+                </tr>
+                <tr class="elements-hidden table-row-hidden">
+                    <td class="formtd">异常情况：</td>
+                    <td colspan="3">
+                        <input class="easyui-textbox" name="ycqk" required style="width: 100%;">
+                    </td>
+                </tr>
+                <tr class="elements-hidden table-row-hidden">
+                    <td class="formtd ">异常详细情况：</td>
+                    <td colspan="3 "><input class="easyui-textbox "  name="ycxxqk" required style="width: 100%; ">
+                    </td>
+                </tr>
+            </table>
+            <div class="rywgBtn">
+                <button class="keepBtn">保存</button>
+                <button class="closeBtn">关闭</button>
+            </div>
+        </div>
+    </div> -->
+</div>
+<!--页面主体布局-->
+<script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/require.config" id="current-page" current-page="pages/wgdj/rywg"></script>
+
+<script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

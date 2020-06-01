@@ -1,0 +1,130 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content fxpg-container">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">拘&emsp;室&emsp;号：</td>
+                                    <td ><input class="easyui-textbox" readonly value="{{jsh}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" readonly value="{{xm}}" style="min-width:280px;"> </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="formtd">性&emsp;&emsp;&emsp;别：</td>
+                                    <td ><input class="awdCombox" readonly value="{{xb}}" text="{{xbString}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">入所日期：</td>
+                                    <td ><input class="easyui-datetimebox" readonly value="{{rsrq}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">档&thinsp;&thinsp;案&thinsp;编&thinsp;&thinsp;号：</td>
+                                    <td ><input class="easyui-textbox" readonly value="{{dah}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">案&emsp;&emsp;别：</td>
+                                    <td ><input class="awdCombox" readonly value="{{ay}}" text="{{ayString}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">户籍所在地：</td>
+                                    <td colspan="3"><input class="awdCombox" readonly value="{{hjd}}" text="{{hjdString}}" style="width:100%;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                 
+                   
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">最终处理结果：</td>
+                                    <td colspan="3"><input class="easyui-textbox" readonly style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">原&nbsp;风&nbsp;险&nbsp;等&nbsp;级：</td>
+                                    <td ><input class="easyui-textbox"  readonly value="{{fxdj}}" text="{{fxdjString}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">评估风险等级：<font class="redicon">*</font></td>
+                                    <td ><input class="awdCombox" id="xfxdj" name="xfxdj" code="FXDJ" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">评&ensp;&thinsp;估&ensp;&thinsp;类&ensp;&thinsp;型：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox"  name="pglx" required style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">现&nbsp;风&nbsp;险&nbsp;指&nbsp;标：<font class="redicon">*</font></td>
+                                    <td colspan="5"  >
+                                        <div class="easyui-tabs" plain='true' id="MiniTabs" style="width:680px;border: 1px solid #2a7bff;border-radius: 5px;">
+                                            <div title='一级重大安全风险'>
+                                                <input type="checkbox" value="1">经法院一审判处死刑的、或二审维持原判等待符合的。<br>
+                                                <input type="checkbox" value="2">重大刑事犯罪、暴力犯罪，在社会上有一定影响，或者可能被判处无期以上或死刑的。<br>
+                                                <input type="checkbox" value="3">等待精神病司法鉴定结论且目前精神状态不稳定的。<br>
+                                                <input type="checkbox" value="4">以自伤、自残等手段公开抗拒监管，经教育不改的。<br>
+                                                <input type="checkbox" value="5">带头哄监闹监，严重影响监所安全的首要分子。<br>
+                                                <input type="checkbox" value="6">有明显迹象表明可能行凶、暴狱、脱逃、自杀的，或已发生这类行为需要防止其继续实施的。<br>
+                                                <input type="checkbox" value="7">有脱逃行为或苗头的。
+                                            </div>
+                                            <div title='二级重大安全风险'>
+                                                <input type="checkbox" value="8">有其它严重违规违纪行为，经教育不改的。<br>
+                                                <input type="checkbox" value="9">屡次违反监规，不服从管理的。<br>
+                                                <input type="checkbox" value="10">案情重大，可能判处十年以上有期徒刑、无期徒刑或死刑的。<br>
+                                                <input type="checkbox" value="11">绝食的。<br>
+                                                <input type="checkbox" value="12">有其他严重扰乱监管秩序行为的。<br>
+                                                <input type="checkbox" value="13">在国内外有重大影响的案件中的案犯。<br>
+                                                <input type="checkbox" value="14">需要上械具或禁闭的在押人员。<br>
+                                                <input type="checkbox" value="15">情绪不稳可能危及安全的。<br>
+                                                <input type="checkbox" value="16">羁押前有一定身份的。<br>
+                                            </div>
+                                            <div title='三级重大安全风险'>
+                                                <input type="checkbox" value="17">邪教组织成员。<br>
+                                                <input type="checkbox" value="18">危害国家安全的、民族分裂分子。<br>
+                                                <input type="checkbox" value="19">疑似精神病患者。<br>
+                                                <input type="checkbox" value="20">其他需要列为重点监管人员的。<br>
+                                                <input type="checkbox" value="21">有牢头狱霸苗头的。<br>
+                                                <input type="checkbox" value="22">有自伤自残行为或苗头的。<br>
+                                                <input type="checkbox" value="23">有自杀行为或苗头的。<br>
+                                                <input type="checkbox" value="24">有行凶行为或苗头的。
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">调&ensp;&thinsp;整&ensp;&thinsp;理&ensp;&thinsp;由：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="tzly"  data-options="multiline:true" style="width:100%;height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">列&ensp;&thinsp;控&ensp;&thinsp;建&ensp;&thinsp;议：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="lkcs" required data-options="multiline:true" style="width:100%;height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">评&emsp;&ensp;估&emsp;&ensp;人：<font class="redicon">*</font></td>
+                                    <td ><input id="pgrfm" class="easyui-textbox" name="pgr"  required style="min-width:280px;"> </td>
+                                    <td class="formtd">评估日期：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datebox" id="pgrq" name="pgrq" value="{{pgrq}}" required style="min-width:280px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

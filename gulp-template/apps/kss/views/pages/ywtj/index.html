@@ -1,0 +1,90 @@
+<!--
+模块名称： 业务统计
+开始时间： 2020-2-25
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+
+<body class="easyui-layout" data-option="fit:true">
+    <!--页面主体布局-->
+    <!--
+模块名称： 财务统计
+开始时间： 2020-2-25
+-->
+    <!--HTML head-->
+    <!-- partial:../../partials/_head_start.html -->
+    <!-- partial -->
+
+    <!-- partial:../../partials/_head_end.html -->
+    <!-- partial -->
+
+    <body class="easyui-layout" data-options="fit:true">
+        <!--页面主体布局-->
+        <div class="section-container ywtj-container">
+            <div class="section-item section-item-padding ywtjqk">
+                <div class="timeline-content right">
+                    <form id="fm">
+                        <table class="container-formtable">
+                            <tr>
+                                <td class="ywtj-title" colspan="4">
+                                    <span class="iconfont icon-taizhang"></span>相关统计
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="formtd" style="width:20%;">统计时间从：</td>
+                                <td style="width:30%;"><input class="easyui-datebox" style="min-width:530px;"></td>
+                                <td class="formtd" style="width:20%;">至：</td>
+                                <td style="width:30%;"><input class="easyui-datebox" style="min-width:530px;"></td>
+                            </tr>
+                            <tr>
+                                <td class="formtd" style="width:20%;">工&nbsp;作&ensp;记&nbsp;录：</td>
+                                <td colspan="3" style="text-align:left !important;width:80%;">
+                                    <input id="ywtj_zyry" type="radio" name="zyls"><label for="ywtj_zyry">在押人员</label>
+                                    <input id="ywtj_lsry" type="radio" name="zyls" checked><label for="ywtj_lsry">历史人员</label>
+                                </td>
+                            </tr>
+                            <tr id="xbtj">
+                                <td class="formtd" style="width:20%">性&emsp;&emsp;&emsp;别：</td>
+                                <td colspan="3" style="text-align:left !important;width:80%">
+                                    <input id="ywtj_man" type="radio" name="sex"><label for="ywtj_man">男</label>
+                                    <input id="ywtj_woman" type="radio" name="sex" checked><label for="ywtj_woman">女</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="formtd" style="width:20%;">统&nbsp;计&ensp;类&nbsp;型：</td>
+                                <td style="text-align:left !important;width:80%;" colspan="3">
+                                    <input type="radio" name="tjlx" id="rhcdtj" checked text="文化程度"><label for="rhcdtj">文化程度</label>
+                                    <input type="radio" name="tjlx" id="aytj" text="案由"><label for="aytj">案由</label>
+                                    <input type="radio" name="tjlx" id="sftj" checked text="身份"><label for="sftj">身份</label>
+                                    <input type="radio" name="tjlx" id="sshjtj" text="诉讼环节"><label for="sshjtj">诉讼环节</label><br>
+                                    <input type="radio" name="tjlx" id="rsxztj" text="入所性质"><label for="rsxztj">入所性质</label>
+                                    <input type="radio" name="tjlx" id="zytj" text="职业"><label for="zytj">职业</label>
+                                    <input type="radio" name="tjlx" id="nltj" text="年龄"><label for="nltj">年龄</label>
+                                    <input type="radio" name="tjlx" id="badwlxtj" checked text="办案单位类型"><label for="badwlxtj">办案单位类型</label><br>
+                                    <input type="radio" name="tjlx" id="hyzktj" text="婚姻状况"><label for="hyzktj">婚姻状况</label>
+                                    <input type="radio" name="tjlx" id="hjdtj" text="户籍地"><label for="hjdtj">户籍</label>
+                                    <input type="radio" name="tjlx" id="gjtj" text="国籍"><label for="gjtj">国籍</label>
+                                    <input type="radio" name="tjlx" id="tssftj" checked text="特殊身份"><label for="tssftj">特殊身份</label><br>
+                                    <input type="radio" name="tjlx" id="zzmmtj" text="政治面貌"><label for="zzmmtj">政治面貌</label>
+                                    <input type="radio" name="tjlx" id="syrtj" text="收押人"><label for="syrtj">收押人</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div class="ywtjBtn">
+                        <button class="censusBtn">统计</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--页面主体布局-->
+        <script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/require.config" id="current-page" current-page="pages/ywtj/index"></script>
+
+        <script src="/apps/kss/static/lib/loading.js"></script>
+    </body>
+    <!-- partial:../../partials/_foot.html -->
+    <!-- partial -->

@@ -1,0 +1,76 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>检查情况-落实情况</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">视&emsp;察&emsp;&ensp;时&emsp;&ensp;间：</td>
+                                                    <td><input class="easyui-datetimebox" value="{{rq}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">陪同领导：</td>
+                                                    <td><input class="easyui-textbox" value="{{ldxm}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">职&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;务：</td>
+                                                    <td colspan="3"><input class="awdCombox" value="{{ldzw}}" text="{{ldzwString}}"
+                                                            readonly style="width:100%;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">陪&emsp;同&emsp;&ensp;领&emsp;&ensp;导:</td>
+                                                    <td colspan="3">
+                                                        <table class="jcscptld">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>姓名</td>
+                                                                    <td>职务</td>
+                                                                    <td>所在单位</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tbody id="ptldxx">
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">视&emsp;察&emsp;&ensp;情&emsp;&ensp;况：</td>
+                                                    <td colspan="3"><input class="easyui-textbox"
+                                                            style="width:100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">提出的意见和建议：</td>
+                                                    <td colspan="3"><input class="easyui-textbox"
+                                                            style="width:100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">落&emsp;实&emsp;&ensp;情&emsp;&ensp;况：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" required
+                                                            style="width:100%;height: 80px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

@@ -1,0 +1,217 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">监&nbsp;&nbsp;室&nbsp;&nbsp;号：</td>
+                                                    <td><input class="easyui-textbox" value="{{jsh}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                    <td class="formtd">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
+                                                    <td><input class="easyui-textbox" value="{{xm}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                    <td class="formtd">出&nbsp;&nbsp;&nbsp;生&nbsp;&nbsp;日&nbsp;&nbsp;期：</td>
+                                                    <td><input class="easyui-textbox" value="{{csrq}}" readonly
+                                                            style="min-width:180px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;籍：</td>
+                                                    <td><input class="awdCombox" value="{{gj}}" text="{{gjString}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                    <td class="formtd">特殊身份：</td>
+                                                    <td><input class="awdCombox" value="{{tssf}}"  text="{{tssfString}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                    <td class="formtd">涉&nbsp;&nbsp;&nbsp;嫌&nbsp;&nbsp;罪&nbsp;&nbsp;名：</td>
+                                                    <td><input class="awdCombox" value="{{ay}}" text="{{ayString}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">管理类别：</td>
+                                                    <td><input class="awdCombox" readonly style="min-width:180px;">
+                                                    </td>
+                                                    <td class="formtd">办案环节：</td>
+                                                    <td><input class="awdCombox" value="{{bahj}}"  text="{{bahjString}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                    <td class="formtd">最终处理结果：</td>
+                                                    <td><input class="awdCombox" value="{{cljg}}" text="{{cljgString}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable table-border">
+                                                <tr>
+                                                    <td style="min-width: 165px;" align="center">是否涉维评估：<font
+                                                            class="redicon">*</font></td>
+                                                    <td colspan="3" align="center">
+                                                        <input type="radio" name="sfswpg"  id="sfswyesfm"
+                                                            value="1">
+                                                        <font>是</font>
+                                                        <input type="radio" name="sfswpg" checked id="sfswnofm" value="0">
+                                                        <font>否</font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="12" align="center">涉维评估指标：<font class="redicon">*</font>
+                                                        </td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">1</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="每日礼拜">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">每日礼拜</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">2</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="有仇视、扬言报复社会">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">
+                                                        有仇视、扬言报复社会</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">3</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="日常言行趋于极端">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">日常言行趋于极端
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">4</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="拒不配合政府人员工作">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">
+                                                        拒不配合政府人员工作</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">5</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz" value="野阿訇">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">野阿訇</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">6</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="向其他人灌输圣战、伊吉拉特思想">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">
+                                                        向其他人灌输圣战、伊吉拉特思想</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">7</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="发布极端言论、民族情绪浓厚">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">
+                                                        发布极端言论、民族情绪浓厚</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">8</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="向其他人讲经、学经">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">向其他人讲经、学经
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">9</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="煽动他人参加圣战、伊吉拉特">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">
+                                                        煽动他人参加圣战、伊吉拉特</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">10</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="强迫他人信教、礼拜">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">强迫他人信教、礼拜
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">11</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="利用各种机会习拳练武">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">
+                                                        利用各种机会习拳练武</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">12</td>
+                                                    <td class="formtd" style="min-width: 120px;" align="center">
+                                                        <input class="input_zb" type="checkbox" name="kytz"
+                                                            value="不看电视、不看广播、抵制现代文明">
+                                                    </td>
+                                                    <td class="formtd" style="min-width:450px;" align="center">
+                                                        不看电视、不看广播、抵制现代文明</td>
+                                                </tr>
+
+                                            </table>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">评估人：
+                                                        <font class="redicon">*</font></td>
+                                                    <td><input id="pqr" class="easyui-textbox" style="min-width:332px;" required
+                                                            name="pgr" > </td>
+                                                    <td class="formtd">评估日期：
+                                                        <font class="redicon">*</font></td>
+                                                    <td><input id="pgrq" class="easyui-datetimebox" style="min-width:320px;"
+                                                            required name="pgrq" > </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="rybh" value="{{rybh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="jsbh" value="{{jsbh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

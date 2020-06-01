@@ -1,0 +1,215 @@
+<!--
+模块名称： 首頁
+开始时间： 2020-2-25
+-->
+
+<!-- partial:./partials/_head_start.html -->
+<!-- partial -->
+<link rel="stylesheet" type="text/css" href="../static/css/homePage.css">
+<!-- partial:./partials/_head_end.html -->
+<!-- partial -->
+
+<body class="easyui-layout" data-options="fit:true" style="overflow: hidden;">
+    <div class="layui-fluid">
+        <div class="layui-row h40 layui-col-space10 ">
+            <div class="layui-col-md4">
+                <div class="wrap-item">
+                    <div class="item-title">监区设施
+                        <div id="More_Title" style="float:right;font-size:1.2rem;font-family: cursive;color:cornflowerblue;cursor: pointer;">
+                            更多动态>>></div>
+                    </div>
+                    <div class="item-content jqssMessage_box" style=" padding: 15px 0 0 0;">
+
+                        <div style="display: flex; flex-direction: column;">
+                            <div class="LineS_box" style="display: flex; margin-left: 20px;">
+                                <div class="Lines_font" style="width:18%;">
+                                    <icon class="iconfont icon-gerenxinxi"></icon>
+                                    <font>在押人数</font>
+                                </div>
+                                <div class="Lines_content" style="width:60%;margin-top:4px">
+                                    <div class="container">
+                                        <div class="skills skill_color" style="border-radius: 40px; height: 10px;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Linse_num" style="width:13%;text-align: center;">
+                                    <font class="num_text" id="zyrs">174</font>
+                                    <font>人</font>
+                                </div>
+                            </div>
+
+                            <div style="display: flex;">
+                                <div style="width:100%;margin-left:6px;display: flex; line-height: 30px;">
+                                    <div class="LineS_box" style="margin-top:10px;width: 45%; display: flex;">
+                                        <div class="Lines_font" style="width:28%;margin-left: 13px; ">
+                                            <icon class="iconfont icon-gerenxinxi"></icon>
+                                            <font style="margin-left:5px;">男性</font>
+                                        </div>
+                                        <div class="Lines_content" style="width:30%;">
+                                            <div class="container" style="height:10px;margin-top:15%;">
+                                                <div class="skills skill_color" style=" height: 10px; border-radius: 10px; background: linear-gradient(to right,#3ea1fe #7acdfd);">
+                                                    <font>90%</font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Linse_num" style="width:30%;text-align: center;">
+                                            <font class="num_text" id="nanx">174</font>
+                                            <font>人</font>
+                                        </div>
+                                    </div>
+                                    <div style="width:50%; ">
+                                        <div class="LineS_box" style="margin-top:10px; display: flex;">
+                                            <div class="Lines_font" style="width:24%; margin-left: 32px;">
+                                                <icon class="iconfont icon-gerenxinxi"></icon>
+                                                <font style="margin-left:5px;">女性</font>
+                                            </div>
+                                            <div class="Lines_content" style="width:30%;">
+                                                <div class="container" style="height:10px;margin-top:15%;">
+                                                    <div class="skills skill_color" style="width: 20%; height: 10px; border-radius: 10px; background: linear-gradient(to right,#f00 ,rgb(221, 91, 31));">
+                                                        <font>10%</font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Linse_num" style="width:30%;text-align: center;">
+                                                <font class="num_text" id="nvx">17</font>
+                                                <font>人</font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top:10px; display: flex;">
+                                <div style="width:50%">
+                                    <div class="LineS_box" style=" display: flex;">
+                                        <div class="Lines_font" style="width:40%; margin-left: 9px;">
+                                            <icon class="iconfont icon-gerenxinxi" style="margin-left:10px;"></icon>
+                                            <font style="margin-left:5px;">今日出所：</font>
+                                        </div>
+                                        <div class="Linse_num" style="width:20%; text-align: center; margin-left: 50px;">
+                                            <font class="num_text" id="jrcs">17</font>
+                                            <font>人</font>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width:50%">
+                                    <div class="LineS_box" style="margin-top:10px;  display: flex; line-height: 0px;">
+                                        <div class="Lines_font" style="width:60%;">
+                                            <icon class="iconfont icon-gerenxinxi" style="margin-left:10px;"></icon>
+                                            <font style="margin-left:5px;">今日入所：</font>
+                                        </div>
+                                        <div class="Linse_num" style="width:20%;  text-align: center; margin-left: 10px;">
+                                            <font class="num_text" id="jrrs">8</font>
+                                            <font>人</font>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="width: 100%;  height: 106px;">
+                                <div style="height: 40%; display:flex">
+                                    <div style="width: 33.3%; border-right: solid 1px #fff; background-color: rgb(86 175 254); text-align: center; line-height: 40px; color: #000;font-size: 15px;">一级风险</div>
+                                    <div style="width: 33.3%;  border-right: solid 1px #fff; background-color: rgba(253, 196, 117, 1); text-align: center; line-height: 40px; color: #000;font-size: 15px;">二级风险</div>
+                                    <div style="width: 33.3%; background-color: rgba(248, 208, 216, 1); text-align: center; line-height: 40px; color: #000;font-size: 15px;">三级风险</div>
+                                </div>
+                                <div style="height:60%; display: flex;">
+                                    <div style="width: 33.3%; background-color:#3d93f6; text-align: center; line-height: 90px; font-size: 20px; color: #fff;" id="yjfx" class="LineS_box">1</div>
+                                    <div style="width: 33.3%; background-color: #fda400; text-align: center; line-height: 90px; font-size: 20px; color: #fff;" id="ejfx" class="LineS_box">2</div>
+                                    <div style="width: 33.3%; background-color:#fe7784; text-align: center; line-height: 90px; font-size: 20px; color: #fff;" id="sjfx" class="LineS_box">3</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="wrap-item">
+                    <div class="item-title">民警当日绩效考核数</div>
+                    <div class="item-content">
+                        <div class='drjx'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="wrap-item">
+                    <div class="item-title">各类所里报警及处置情况</div>
+                    <div class="item-content ">
+                        <div class='czqk'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row h40 layui-col-space10">
+            <div class="layui-col-md4">
+                <div class="section-item wrap-item">
+                    <div class="section-title xk-title">通知公告
+                        <div class="scorll-bar marquee">集合点名时间更改为晚上6点30分</div>
+                    </div>
+                    <div class="item-content Message_box">
+
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="wrap-item">
+                    <div class="item-title">代办事项</div>
+                    <div class="item-content">
+                        <div class='ldsp'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="wrap-item">
+                    <div class="item-title">所长查询区</div>
+                    <div class="item-content  progress-bar-box szcxq">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row h20 layui-col-space10">
+            <div class="layui-col-md12" style="padding-bottom:0">
+                <div class="wrap-item">
+                    <div class="item-title">其他应用</div>
+                    <div class="item-content">
+                        <div class="icon_box" role="11">
+                            <div class="icon_content"><span class="iconfont icon-xingshizhifa"></span></div>
+                            <font>收押岗位</font>
+                        </div>
+                        <div class="icon_box" role="13">
+                            <div class="icon_content"><span class="iconfont icon-guanjiaogangwei"></span></div>
+                            <font>管教管理</font>
+                        </div>
+                        <div class="icon_box" role="17">
+                            <div class="icon_content"><span class="iconfont icon-caiwuguanli"></span></div>
+                            <font>财务岗位</font>
+                        </div>
+                        <div class="icon_box" role="14">
+                            <div class="icon_content"><span class="iconfont icon-yiwurenyuan"></span></div>
+                            <font>医务岗位</font>
+                        </div>
+                        <div class="icon_box" role="16">
+                            <div class="icon_content"><span class="iconfont icon-xunkong"></span></div>
+                            <font>巡控</font>
+                        </div>
+                        <div class="icon_box" role="18">
+                            <div class="icon_content"><span class="iconfont icon-suolingdao"></span></div>
+                            <font>所领导</font>
+                        </div>
+                        <div class="icon_box" role="12">
+                            <div class="icon_content"><span class="iconfont icon-qitafuwu"></span></div>
+                            <font>综合岗位</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/apps/kss/static/lib/require.js" data-main="homePage.js"></script>
+    <script src="/apps/kss/static/js/require.config.js"></script>
+    <script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:./partials/_foot.html -->
+<!-- partial -->

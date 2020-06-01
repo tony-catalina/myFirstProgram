@@ -1,0 +1,50 @@
+{{if value == "SY0005"}}
+<div class="item-title">本月入所人员办案环节统计
+
+</div>
+<div class="item-content ">
+    <div class='bahj'></div>
+</div>
+{{else if value == "SY0006"}}
+
+<div class="item-title">本周出入所
+    <font class="DeletePage" style="float:right;color:red;cursor: pointer;">X</font>
+</div>
+<div class="item-content">
+    <div class='bzcrs'></div>
+</div>
+
+{{else if value == "SY0007"}}
+<div class="item-title">提解提讯
+    <font class="DeletePage" style="float:right;color:red;cursor: pointer;">X</font>
+</div>
+<div class="item-content flex tx"></div>
+{{else if value == "SY0002"}}
+<div class="item-title">今日出入所
+    <font class="DeletePage" style="float:right;color:red;cursor: pointer;">X</font>
+</div>
+<div class="item-content progress-bar-box jrcs"></div>
+{{else if value =="SY0003"}}
+<div class="item-title">今日会见情况
+    <font class="DeletePage" style="float:right;color:red;cursor: pointer;">X</font>
+</div>
+<div class="item-content progress-bar-box jrhjqk"></div>
+{{else if value == "SY0001"}}
+<div class="item-content jjb flex">
+    {{each data}}
+    <div class="item-list flex-item">
+        <div class="list-palte flex-item-auto text-center">
+            <div class="palte-icon"><span class="iconfont icon-{{$value.icon}}"></span></div>
+            <div class="palte-title">{{$value.title}}：</div>
+        </div>
+        <div class="list-title text-center">
+            <a href="#" title="查看详情">{{$value.info}}</a>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{else if value == ""}}
+<div class="item-content PageMask">
+    <p class="Query_Add">一个椭圆的加号</p>
+</div>
+{{/if}}

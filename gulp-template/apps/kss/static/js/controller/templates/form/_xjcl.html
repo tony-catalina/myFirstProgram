@@ -1,0 +1,65 @@
+<form id="lxclJbxxForm" style="">
+    <div class="basic-head" style="width: auto;">
+        <h1>信件管理--信件处理</h1>
+    </div>
+    <div class="basic-title" style="background-color:white;width: auto;">
+        <h1><i class="fa fa-address-book"></i>基本信息</h1>
+    </div>
+    <div style=" width: 100%; height: 95%; margin: 0 auto; overflow-x:hidden">
+        <table style="border-collapse: collapse; width: 100%; height: 100%; align="center">
+        <tbody>
+        <tr>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>来信地址</span></td>
+            <td style="width: 23%;border: solid 1px #cfcfcf" align="center" class="hxsj"><input id="lxdzfm"  value="{{data.xjdz}}" class="easyui-textbox"  readonly style="width:100%;height:100%" disabled/></td>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>来信日期</span></td>
+            <td style="width: 23%;border: solid 1px #cfcfcf" align="center" class="hxsj"><input id="lxrqfm"  value="{{data.xjrq}}" readonly class="easyui-datebox" style="width:100%;height:100%"disabled/></td>
+        </tr>
+        <tr>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>登记人</span></td>
+            <td style="width: 23%;border: solid 1px #cfcfcf" align="center" class="hxsj"><input id="djrfm" class="easyui-textbox"   readonly value="{{data.djr}}" style="width:100%;height:100%" disabled/></td>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>登记日期</span></td>
+            <td style="width: 23%;border: solid 1px #cfcfcf" align="center" class="hxsj"><input id="rsrqfm" class="easyui-datebox"  readonly value="{{data.djrq}}" style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf"align="center">信件内容</td>
+            <td colspan="3" style="border: solid 1px #cfcfcf"align="center" class="xjclqkArea"><input id="xjnrfm" style="text-align: left;width:100%;height:70px" readonly value="{{data.xjnr}}" class="easyui-textbox" disabled></td>
+        </tr>
+        <tr style="height: 30px">
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf"align="center"><span>所领导意见</span></td>
+            <td style="width: width:100%;height:100%;text-align:leftborder: solid 1px #cfcfcf"align="center" colspan="3" disabled>
+                <label><input type="radio" name="sldyj"  value="1" id="sldyj1" disabled/>转交被监管人</label>
+                <label><input type="radio" name="sldyj" value="2" id="sldyj2" disabled/>信件存档，不予转交</label>
+                <label><input type="radio" name="sldyj" value="3" id="sldyj3" disabled/>销毁信件</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf"align="center">领导指示</td>
+            <td colspan="3" style="border: solid 1px #cfcfcf"align="center" class="xjclqkArea"><input id="ldzsfm" style="text-align: left;width:100%;height:70px" value="{{data.ldzs}}" class="easyui-textbox" readonly disabled></td>
+        </tr>
+        <tr>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf"align="center"><span>领导签名</span></td>
+            <td style="width: 23%;border: solid 1px #cfcfcf"align="center" class="hxsj"><input class="easyui-textbox" id = "ldqm"  readonly value="{{data.ldqm}}" style="width:100%;height:100%" disabled/></td>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf"align="center"><span>签名日期</span></td>
+            <td style="width: 23%;border: solid 1px #cfcfcf"align="center" class="hxsj"><input class="easyui-datebox" id="ldqmrq"  value="{{data.ldqmrq}}" readonly style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td colspan="6">
+                <div class="basic-title" style="text-align:left;border:0px;">
+                    <h1><i class="fa fa-address-card-o"></i>处理信息</h1>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf"align="center">信件处理情况<span style="color: #fe8181;float: right;">*</span></td>
+            <td colspan="3" class="xjclqkArea" style="border: solid 1px #cfcfcf"align="center"><input style="text-align: left;width:100%;height:70px" name="xjclqk"  class="easyui-textbox" required data-options="multiline:true"></td>
+        </tr>
+        <tr>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf"align="center"><span>经办人<span style="color: #fe8181; float: right;">*</span></span></td>
+            <td style="width: 23%;border: solid 1px #cfcfcf"align="center"><input class="easyui-textbox" id = "jbr" name="jbr" required value="{{users}}" style="width:100%;height:100%"/></td>
+            <td class="form-title" style="width: 20%;border: solid 1px #cfcfcf"align="center"><span>经办人日期<span style="color: #fe8181; float: right;">*</span></span></td>
+            <td style="width: 23%;border: solid 1px #cfcfcf"align="center"><input class="easyui-datebox" id="jbrrqfm" name="jbrq" required style="width:100%;height:100%"/></td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+</form>

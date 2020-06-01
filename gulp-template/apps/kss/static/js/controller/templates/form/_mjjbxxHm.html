@@ -1,0 +1,69 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">警&emsp;&emsp;号：</td>
+                                                    <td><input class="easyui-textbox" value="{{jh}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" value="{{xm}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">出生日期：</td>
+                                                    <td><input class="easyui-textbox" value="{{csny}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">警&emsp;&emsp;衔：</td>
+                                                    <td><input class="easyui-textbox" value="{{jx}}" text="{{jxString}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">部&emsp;&emsp;门：</td>
+                                                    <td><input class="easyui-textbox" value="{{bm}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">部门职务：</td>
+                                                    <td><input class="easyui-textbox" value="{{bmzw}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>虹膜采集</h2>
+                                            <table class="container-formtable" style="width:100%;">
+                                                <tr>
+                                                    <td><img class="eximg" src="../../../static/images/hm.png" alt="" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:right;">
+                                                        <button type="button" class="collectBtn">虹膜采集</button>
+                                                        <button type="button" class="obtain">获取虹膜</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

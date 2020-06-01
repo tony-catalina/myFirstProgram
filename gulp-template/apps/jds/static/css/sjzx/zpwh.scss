@@ -1,0 +1,165 @@
+@import "../../lib/dper/dperSass/_dper.utils.common";
+
+.qa-container {
+  .section-item {
+    .section-content {
+      padding: 18px 18px 18px 18px;
+    }
+  }
+}
+
+.section-table {
+  border:1px solid #b8d3ff;
+  .uk-text-right {
+    width:40px;
+  }
+  td {
+    width:90px;
+    padding:5px;
+    border:1px solid #b8d3ff;
+    border-style: dotted;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    font-size:16px;
+    color:black;
+    input {
+      width:100%;
+      height:30px;
+      border:0px;
+      border-bottom:1px solid #0787c569;
+    }
+    textarea {
+      width:100%;
+      height:100px;
+      border:0px;
+      border-bottom:1px solid #0787c569;
+    }
+    button {
+      width:10%;
+      height:30px;
+      font-size:10px;
+      background-color: cornflowerblue;
+      color: white;
+      border-radius: 4px 4px 0 0;
+      cursor: pointer;
+      border: 1px solid;
+    }
+  }
+}
+
+// 彩色按钮组
+.group-colors {
+  button {
+    border: none;
+    color: #fff;
+    &:first-child {
+      background-image: linear-gradient(to right, #59aaff, #50c8ff);
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          rgb(113, 182, 255),
+          rgb(123, 213, 255)
+        );
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: linear-gradient(to right, #fe6e83, #ff8985);
+
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          rgb(255, 133, 152),
+          rgb(255, 172, 169)
+        );
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: linear-gradient(to right, #ffa032, #ffbe3f);
+
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          rgb(255, 172, 77),
+          rgb(255, 203, 100)
+        );
+      }
+    }
+  }
+}
+
+// 对话框
+
+#dialog-box {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+      td {
+        padding: 5px 5%;
+        width: 50%;
+
+        div {
+          line-height: 200%;
+        }
+      }
+    }
+  }
+}
+.datagrid-cell-group{
+  width:70px !important;
+}
+.search-form .search-group .button-group button {
+  padding: 5px 4px !important;
+}
+.section-container .section-item .section-header{
+  margin-left: -20px;
+}
+.search-group{
+  display:flex;
+  margin-top: 30px !important;
+  margin-left: 10px !important;
+}
+.search-form .search-group .button-group{
+  width: 130px;
+  display: flex;
+}
+.search-form .search-group .search-item{
+  margin-right: 20px !important;
+}
+.search-form .search-group .search-item label{
+  text-align:center !important;
+  min-width:20px !important;
+}
+.panel-body.datagrid-wrap{
+  width:100% !important;
+}
+.tmpl-table {
+  width:100% !important;
+}
+.panel-body.datagrid-wrap .datagrid-view{
+  width:100% !important;
+  height: 120px;
+}
+.textbox{
+  width: 100px !important;
+}
+table{
+  width:100%;
+  border:1px solid #ebf2ff;
+}
+thead{
+  border:1px solid #ebf2ff;
+}
+th{
+  border:1px solid #ebf2ff;
+}
+tr{
+  height:25px;
+  border:1px solid #ebf2ff;
+}
+td{
+  text-align:center;
+  border:1px solid #ebf2ff;
+}

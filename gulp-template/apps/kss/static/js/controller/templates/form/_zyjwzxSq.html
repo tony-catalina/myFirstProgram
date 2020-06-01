@@ -1,0 +1,70 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable form-jbxx">
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">申&emsp;&ensp;请&emsp;类&emsp;&ensp;型：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" style="min-width:280px;" code='SQRLX'
+                                                            required name="sqrlx"> </td>
+                                                    <td class="formtd">申请原因：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" style="min-width:280px;" name="sqyy"
+                                                            code='ZYJYYY' required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">暂予监外执行理由：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="zyjwzxly"
+                                                            data-options="multiline:true" required
+                                                            style="width:100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">改&ensp;造&ensp;期&ensp;间&ensp;表现：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="gzqjbx"
+                                                            data-options="multiline:true" required
+                                                            style="width:100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">填&emsp;&emsp;&ensp;表&emsp;&emsp;&ensp;人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="tbrfm" name="tfr"
+                                                            style="min-width:280px;" required> </td>
+                                                    <td class="formtd">填表日期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" id="tbrqfm" name="tfrq"
+                                                        value="{{tfrq}}"    style="min-width:280px;" required> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

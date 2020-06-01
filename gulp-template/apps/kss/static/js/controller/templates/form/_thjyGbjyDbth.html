@@ -1,0 +1,401 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container gbjy-container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">人员编号：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" value="{{rybh}}" readonly style="width:280px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;名：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" value="{{xm}}" readonly style="min-width:280px;"></td>
+                                                    <td rowspan='3' style='width: 128px;'><img style="margin-left: 85px" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4132984704,2110908246&fm=11&gp=0.jpg" alt=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">监&ensp;室&ensp;号：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" value="{{jsh}}" readonly style="min-width:280px;">
+                                                    </td>
+                                                    <td class="formtd">办案环节：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" value="{{bahj}}" text="{{bahjString}}" readonly style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                               
+                                                <tr>
+                                                    <td class="formtd">罪&emsp;&emsp;名：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="awdCombox" value="{{ay}}" text="{{ayString}}" readonly style="width:100%;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-anjian"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <div id="tt" class="easyui-tabs" plain='true' style="width:100%;min-height: 295px;">
+                                                <div title="谈话内容" style="padding:10px;">
+                                                        <div class="thnrLeft" >
+                                                            <input type="hidden" name="taskid" value="{{taskid}}"/>
+                                                            <div style="width:60%">
+                                                                <table class="container-formtable">
+                                                                    <tr class="time">
+                                                                        <td class="formtd">开始时间</td>
+                                                                        <td><input class="easyui-datetimebox" id="thnr_kssj" name="kssj" style="min-width:200px;"> </td>
+                                                                        <td class="formtd">结束时间</td>
+                                                                        <td><input class="easyui-datetimebox" id="thnr_jssj" name="jssj" style="min-width:200px;"> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="formtd">谈话原因</td>
+                                                                        <td colspan="3"><input class="awdCombox" id="thnr_thyy" code="THYY" name="thyy" style="width: 100%;"> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="formtd">谈话内容</td>
+                                                                        <td colspan="3"><input class="easyui-textbox" id="thnr_thnr" multiline='true' name="thnr" style="width: 100%;height:80px;"> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="formtd">是否有情绪异常：</td>
+                                                                        <td><input type="radio" name="ywqxyc" value="0" checked>否<input name="ywqxyc" type="radio" value="1">是</td>
+                                                                    </tr>
+                                                                    <tr id="ycqkxx">
+                                                                        <td>
+                                                                            <span>情绪异常情况：</span>
+                                                                          </td>
+                                                                          <td colspan="3">
+                                                                            <input class="easyui-textbox" id="thnr_qxycqk" name="qxycqk" multiline='true' style="width:100%;">
+                                                                          </td>
+                                                                    </tr>
+                                                                    <tr style="display:none;">
+                                                                        <input id="fzmjfm" type="hidden" class="easyui-textbox" name="fzmj" value="{{blr}}"/>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <div style="width:40%;border-left: 1px solid #ebf2ff;height:200px;overflow-y: scroll;" >
+                                                                <div style="background: #2a7bff;color: white;height: 30px;line-height: 30px;width: 93%;margin-left: 18px;">违规记录</div>
+                                                                <table id="thnrTable"></table>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div style="text-align: center;">
+                                                            <button class="keepBtn" id="thjySave">保存</button>
+                                                            <button class="offBtn" id="thjyClear">清空</button>
+                                                        </div>
+                                                </div>
+                                                <div title="情况反映" class='qkfy'>
+                                                    <div style="width:41%">
+                                                        <table class="container-formtable">
+                                                            <tr>
+                                                                <td class="formtd">是否是罪犯</td>
+                                                                <td><input type="radio" name="swfzy" value="1">是<input type="radio" name="swfzy" value="0" checked>否</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="formtd">被反映对象:<font class="redicon">*</font></td>
+                                                                <td><input class="easyui-textbox" name="bfydx" required id="qkfy_bfydx" code="ZJLX" style="min-width:280px;"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="formtd">提供日期</td>
+                                                                <td colspan="3"><input class="easyui-datetimebox" id="qkfy_tgrq" name="tgrq" style="width: 100%;"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="formtd">线索类型</td>
+                                                                <td><input class="awdCombox"  id="qkfy_xslx" code="XSLX"  name="xslx" style="min-width:280px;"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="formtd">违规时间</td>
+                                                                <td><input id="qkfy_wgsj" class="easyui-datetimebox" name="wgsj "style="min-width:280px;"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="formtd">线索内容摘要</td>
+                                                                <td><input class="easyui-textbox" id="qkfy_xsnrzy" name="xsnrzy" style="min-width:280px;"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="formtd">反映情况</td>
+                                                                <td><input class="easyui-datebox" id="qkfy_wgqk" name="wgqk" style="min-width:280px;"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="formtd">详细违规情况</td>
+                                                                <td><input class="easyui-textbox" id="qkfy_xxwgqk" name="xxwgqk" style="min-width:280px;"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="formtd">是否有异常情况</td>
+                                                                <td><input type="radio" name="sfyycqk" value="1" checked >有<input type="radio" name="sfyycqk" value="0">无</td>
+                                                            </tr>
+                                                            <tr id="ycqk">
+                                                                <td class="formtd">异常情况:<font class="redicon">*</font></td>
+                                                                <td><input class="easyui-textbox" name="qkfyycqk" id="qkfy_ycqk"   required style="min-width:280px;"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="formtd">异常详细情况</td>
+                                                                <td><input class="easyui-textbox" id="qkfy_xxycqk" name="xxycqk" style="min-width:280px;"> </td>
+                                                            </tr>
+                                                        </table>
+                                                        <div style="text-align:center;">
+                                                            <button class="qkfyAdd" type="button" id="qkfySave">保存</button>
+                                                            <button class="qkfyOff" type="button" id="qkfyClear">清空</button>
+                                                        </div>
+                                                    </div>
+                                                    <div style="width:60%;">
+                                                        <div class="qkfxTitle">情况反映</div>
+                                                        <table id="qkfyTale"></table>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div title="情况证实" style="display:none;">
+                                                    <div>
+                                                        <div class="thjyTitle"><span class="iconfont icon-taizhang"></span>情况证实</div>
+                                                        <table id="qkzsTable"></table>
+                                                    </div>
+                                                    <div style="text-align:center;">
+                                                        <button class="qkzsBtn" name="qkzs_zs" id="qkzs_zs">证实</button>
+                                                        <button class="qkzsBtn" name="qkzs_fd" id="qkzs_fd">否定</button>
+                                                        <button class="qkzsBtn" name="qkzs_cx" id="qkzs_cx">撤销</button>
+                                                        <button class="qkzsBtn" name="qkzs_cz" id="qkzs_cz">重置</button>
+                                                        <div style="margin-top: 8px;font-size: 14px;">证实满2次即认为事实存在,否定满2次即认为事实不存在</div>
+                                                    </div>
+                                                </div>
+                                                <div title="工作情况" style="display:none;">
+                                                    <div class="easyui-tabs" plain='true' style="width:100%;min-height: 200px;">
+                                                        <div title="工作布置" class="gzqkGzbz">
+                                                            <div style="width:50%;padding: 10px;">
+                                                                <!-- <div class='thjyTitle'>工作布置</div> -->
+                                                                <table class="container-formtable">
+                                                                    <tr>
+                                                                        <td>所&ensp;布&ensp;置&ensp;任&ensp;务：</td>
+                                                                        <td><input class="awdCombox"  id="sbzrwfm" name="sbzrw"  code="JSGZRW" style="min-width:280px;"> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>被布置工作目标：</td>
+                                                                        <td><input class="easyui-textbox" id="bbzmbxmfm" name="bbzmbxm" value="{{xm}}" style="min-width:280px;"> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>具&emsp;体&emsp;说&emsp;明：</td>
+                                                                        <td><input class="easyui-textbox" id="jtsmfm" name="jtsm" style="min-width:280px;"> </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <div style="text-align:center;margin-top: 15px;">
+                                                                    <button class="gzbzAdd" id="gzbzSave">保存</button>
+                                                                    <button class="gzbzDel" id="gzbzClear">清除</button>
+                                                                </div>
+                                                            </div>
+                                                            <div style="width:50%;height:200px;overflow-y:scroll;">
+                                                                <!-- <div class='thjyTitle'>工作布置</div> -->
+                                                                <table id="gzbzTable"></table>
+                                                            </div>
+                                                        </div>
+                                                        <div title="工作完成情况" style="padding:10px;">
+                                                            <div>
+                                                                <!-- <div class="thjyTitle"><span class="iconfont icon-taizhang"></span>情况证实</div> -->
+                                                                <table id="gzwcqkTable"></table>
+                                                            </div>
+                                                            <div style="text-align:center;">
+                                                                <button class="qkzsBtn" id="gzbz_wc">完成</button>
+                                                                <button class="qkzsBtn" id="gzbz_dywwc">当月未完成</button>
+                                                                <button class="qkzsBtn" id="gzbz_cx">撤销</button>
+                                                                <button class="qkzsBtn" id="gzbz_cz">重置</button>
+                                                                <div style="margin-top: 8px;font-size: 14px;">证实满2次即认为事实存在,否定满2次即认为事实不存在</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div title="历史羁押" style="display:none;font-size:16px;">
+                                                    <div style="text-align: right;">
+                                                        被关押所：<input type="text" readonly style="border:0px;background:#f5f5f5;height: 25px;">
+                                                    </div>
+                                                    <div style="display:flex;">
+                                                        <div style="width: 50%;">
+                                                            <div class="thjyTitle">历史羁押</div>
+                                                            <table id="lsjyTable"></table>
+                                                        </div>
+                                                        <div style="width: 48%;">
+                                                            <div class="thjyTitle">历史具体情况</div>
+                                                            <table id="lsjtqkTable"></table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div title="风险评估" style="display:none;">
+                                                    <div>
+                                                        <table class='fxpgTable'>
+                                                            <tr>
+                                                                <td class="fxpgLeft"></td>
+                                                                <td>
+                                                                    <input type="checkbox">如单独修改"风险评估"内容请勾选此项
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fxpgLeft">曾经经历</td>
+                                                                <td>
+                                                                    <input type="checkbox"  name="cb_dxcjdjl" id="cjjl_a" value="0060010001">a.有格斗技能（当兵、练武等)
+                                                                    <input type="checkbox" name="cb_dxcjdjl" id="cjjl_b" value="0060010002">b.有过前科劣迹
+                                                                    <input type="checkbox"  name="cb_dxcjdjl" id="cjjl_c" value="0060010003">c.有解剖技能（屠宰、医生等)
+                                                                    <input type="checkbox" name="cb_dxcjdjl" id="cjjl_d" value="0060010004" >d.参加过带有黑社会性质的组织
+                                                                    <input type="checkbox"  name="cb_dxcjdjl" id="cjjl_e" value="0060010005">e.有开、修锁技能
+                                                                    <input type="checkbox"  name="cb_dxcjdjl" id="cjjl_f" value="0060010006">f.有高空作业经历
+                                                                    <input type="checkbox"  name="cb_dxcjdjl" id="cjjl_g" value="0060010007">g.正常
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fxpgLeft">当前婚姻状况</td>
+                                                                <td>
+                                                                    <input type="checkbox"  name="cb_dqdhyzk" id="hyzk_a" value="0060020001">a.入所前一个月刚结婚
+                                                                    <input type="checkbox" name="cb_dqdhyzk" id="hyzk_b" value="0060020002">b.入所前一个月刚离异
+                                                                    <input type="checkbox" name="cb_dqdhyzk" id="hyzk_c" value="0060020003">c.准备原定当前时间一个月内结婚
+                                                                    <input type="checkbox" name="cb_dqdhyzk" id="hyzk_d" value="0060020004" >d.准备原定当前时间一个月内离婚
+                                                                    <input type="checkbox"  name="cb_dqdhyzk" id="hyzk_e" value="0060020005">e.入所前一个月刚丧偶
+                                                                    <input type="checkbox" name="cb_dqdhyzk" id="hyzk_f" value="0060020006">f.正常
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fxpgLeft">当前家庭状况</td>
+                                                                <td>
+                                                                    <input type="checkbox" name="cb_dqjtqk" id="jtqk_a" value="0060030001">a.单亲家庭（适用于20周岁以下)
+                                                                    <input type="checkbox"  name="cb_dqjtqk" id="jtqk_b" value="0060030002">b.父母双亡（适用于20周岁以下)
+                                                                    <input type="checkbox" name="cb_dqjtqk" id="jtqk_c" value="0060030003">c.没有子女（60周岁以上,觉得老无所养的)
+                                                                    <input type="checkbox" name="cb_dqjtqk" id="jtqk_d" value="0060030004">d.子女多（两个以上)
+                                                                    <input type="checkbox" name="cb_dqjtqk" id="jtqk_e" value="0060030005">e.未成年子女无人抚养(未成年指未满十八周岁)
+                                                                    <input type="checkbox" name="cb_dqjtqk" id="jtqk_f" value="0060030006">f.长辈无人赡养（长辈是指对该在押人员而言在感情上十分重要或有恩想报答的长辈
+                                                                    <input type="checkbox" name="cb_dqjtqk" id="jtqk_g" value="0060030007">g.家庭成员重病
+                                                                    <input type="checkbox" name="cb_dqjtqk" id="jtqk_h" value="0060030008">h.正常
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fxpgLeft">当前感情世界情况<span style="color:red">(以自入所前一个月内最近的情况为准)</span></td>
+                                                                <td>
+                                                                    <input type="checkbox" name="cb_dqgqsjqk" id="gqsjqk_a" value="0060040001">a.恋爱(处于恋爱但尚未谈婚论嫁阶段的)
+                                                                    <input type="checkbox"  name="cb_dqgqsjqk" id="gqsjqk_b" value="0060040002">b.失恋
+                                                                    <input type="checkbox" name="cb_dqgqsjqk" id="gqsjqk_c" value="0060040003">c.恋爱危机
+                                                                    <input type="checkbox" name="cb_dqgqsjqk" id="gqsjqk_d" value="0060040004">d.家庭不睦
+                                                                    <input type="checkbox"  name="cb_dqgqsjqk" id="gqsjqk_e" value="0060040005">e.正常
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fxpgLeft">当前社会生存状况</td>
+                                                                <td>
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_a" value="0060050001">a.入所前一个月刚失业
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_b" value="0060050002">b.入所前一个月刚就业
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_c" value="0060050003">c.入所前一个月刚创业
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_d" value="0060050004">d.入所前一个月刚破产
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_e" value="0060050005">e.入所前一个月刚升职
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_f" value="0060050006">f.正要升职
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_g" value="0060050007">g.家庭支柱（家庭主要收入来源，丧失后会引起家庭及大经济困难的）
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_h" value="0060050008">h.正要毕业或出国（原定当前时间一个月内进行或发生）
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_i" value="0060050009">i.准备(原定当前时间一个月内进行或发生)考试
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_j" value="0060050010">j.欠债
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_k" value="0060050011">k.有吸毒史（有过吸毒经历就应当勾选）
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_l" value="0060050012">l.身份特殊（指非党政干部但身份特殊或在社会上有一定威望的人士，如企业高管、知名学者等)
+                                                                    <input type="checkbox" name="cb_dqshsczk" id="shsczk_m" value="0060050013">m.正常
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fxpgLeft">自述在监室学习生活的异常情况</td>
+                                                                <td>
+                                                                        <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_a" value="0060080001">a.没有大帐和接济且觉得自卑无助的
+                                                                        <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_b" value="0060080002">b.自认为身体不适且要病死在羁押场所了
+                                                                        <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_c" value="0060080003">c.需要就医未得到安排且想自暴自弃了
+                                                                        <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_d" value="0060080004">d.思想压力大且经常彻夜难眠的
+                                                                        <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_e" value="0060080005">e.对伙食没有食欲且经常不吃饭
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_f" value="0060080006"/>f.无法或根本不想与他人交流
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_g" value="006008007"/>g.总觉得他人在欺负排挤针对自己
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_h" value="0060080008"/>h.遇到事情没有克制力和忍耐能力
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_i" value="0060080009"/>i.想用报复手段处理矛盾
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_j" value="0060080010"/>j.已经忍无可忍了
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_k" value="0060080011"/>k.没希望出去了
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_l" value="0060080012"/>l.家人朋友不关心自己或没消息了
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_m" value="0060080013"/>m.不想活了
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_n" value="0060080014"/>n.家里最近发生重大变故且情绪不稳的
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_o" value="0060080015"/>o.语言不通
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_p" value="0060080017"/>p.以上自述情况严重异常的(同时存在5个(不含)以上异常状态的直接勾选本选项)
+                                                                    <input type="checkbox" name="cb_dxzszjsxxshdycqk" id="zsjsycqk_q" value="0060080016"/>q.正常
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fxpgLeft">是否确实对案子有以下消极看法</td>
+                                                                <td>
+                                                                    <input type="checkbox" name="cb_dazdxjkf" id="dazdkf_a" value="0060090001"/>a.觉得是被牵连的且感到无助绝望
+                                                                    <input type="checkbox" name="cb_dazdxjkf" id="dazdkf_b" value="0060090002"/>b.觉得被冤枉的且宁为玉碎不为瓦全的
+                                                                    <input type="checkbox" name="cb_dazdxjkf" id="dazdkf_c" value="0060090003"/>c.认为自己死路一条且什么都无所谓的
+                                                                    <input type="checkbox" name="cb_dazdxjkf" id="dazdkf_d" value="0060090004"/>d.没有前途希望了且案子怎样判都无所谓了
+                                                                    <input type="checkbox" name="cb_dazdxjkf" id="dazdkf_e" value="0060090005"/>e.审理过程中精神压力很大且想一了百了
+                                                                    <input type="checkbox" name="cb_dazdxjkf" id="dazdkf_f" value="0060090006"/>f.觉得对不起家人且无颜活在世上
+                                                                    <input type="checkbox" name="cb_dazdxjkf" id="dazdkf_g" value="0060090007"/>g.判决结果出乎意料的重且感到绝望
+                                                                    <input type="checkbox" name="cb_dazdxjkf" id="dazdkf_h" value="0060090008"/>h.对逮捕起诉涉及的案情、罪名抵触情绪很大且情绪起伏剧烈的
+                                                                    <input type="checkbox" name="cb_dazdxjkf" id="dazdkf_i" value="0060090009"/>i.正常
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fxpgLeft">当前主要心态情况<span style="color:red">（在无法确定存在某种或多种异常情况的应当选择‘正常’选项）</span></td>
+                                                                <td>
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_a" value="0060060001"/>a.自责
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_b" value="0060060002"/>b.担心
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_c" value="0060060003"/>c.消极无望
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_d" value="0060060004"/>d.愤慨
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_e" value="0060060005"/>e.失落
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_f" value="0060060006"/>f.固执
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_g" value="0060060007"/>g.疑虑
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_h" value="0060060008"/>h.亢奋
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_i" value="0060060009"/>i.焦急
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_j" value="0060060010"/>j.痛苦
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_k" value="0060060012"/>k.负面心态非常严重(同时存在5个(不含)以上异常状态的直接勾选本选项)
+                                                                    <input type="checkbox" name="cb_dxdqxlqk" id="xtzk_l" value="0060060011"/>l.正常
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fxpgLeft">当前主要神态状况<span class="color:red">（在无法确定存在某种或多种异常情况的应当选择‘正常’选项）</span></td>
+                                                                <td>
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_a" value="0060070001"/>a.哭泣
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_b" value="0060070002"/>b.喜怒无常
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_c" value="0060070003"/>c.少言寡语
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_d" value="0060070004"/>d.坐立不安
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_e" value="0060070005"/>e.嚣张狂妄
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_f" value="0060070006"/>f.自言自语
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_g" value="0060070007"/>g.神情呆滞
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_h" value="0060070008"/>h.激动狂躁
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_i" value="0060070009"/>i.恐惧
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_j" value="0060070010"/>j.紧张
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_k" value="0060070012"/>k.神态表现非常极端(同时存在5个(不含)以上异常状态的直接勾选本选项)
+                                                                    <input type="checkbox" name="cb_dxdqstzk" id="stzk_l" value="0060070011"/>l.正常
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fxpgLeft">身居要职<span class="color:red">（原任副局级以上职务）</span></td>
+                                                                <td>
+                                                                    <input type="checkbox" name="cb_sjyz" value="0060100001"/>是
+                                                                    <input type="checkbox" name="cb_sjyz" value="0060100002"/>否
+                                                                    
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                        </table>
+                                                        <div style="text-align:center;margin-top: 13px;">
+                                                            <button class="fxpgAdd" id="fxpgSave">保存</button>
+                                                            <button class="fxpgOff" id="fxpgClear">清空</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body> 

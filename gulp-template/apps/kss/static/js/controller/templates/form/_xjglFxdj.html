@@ -1,0 +1,65 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>信件信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">收&ensp;信&ensp;人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox"  name="jsr"
+                                                             required style="min-width:280px;"> </td>
+                                                    <td class="formtd">发信时间：<font class="redicon">*</font></td>
+                                                    <td><input id="xjrq" class="easyui-datebox" name="xjrq" value="{{xjrq}}"
+                                                            required style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">寄往地址：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="xjdz"
+                                                            value="{{xjdz}}" required style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">登&ensp;记&ensp;人：<font class="redicon">*</font></td>
+                                                    <td><input id="djr" class="easyui-textbox" name="djr" 
+                                                            required style="min-width:280px;"> </td>
+                                                    <td class="formtd">登记时间：<font class="redicon">*</font></td>
+                                                    <td><input id="djrq" class="easyui-datebox" name="djrq" value="{{djrq}}"
+                                                            required style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">信件内容：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="xjnr"
+                                                            value="{{xjnr}}" data-options="multiline:true" required
+                                                            style="width: 100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="rybh" value="{{rybh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

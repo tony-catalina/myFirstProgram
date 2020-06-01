@@ -1,0 +1,94 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform" enctype="multipart/form-data">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">拘&emsp;&ensp;室&emsp;&ensp;号：<font class="redicon">*</font></td>
+                                    <td ><input class="jsh" name="jsh" required style="min-width:180px;"> </td>
+                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" name="xm" style="min-width:180px;"> </td>
+                                    <td class="formtd">发生时间：</td>
+                                    <td ><input id="fssj" class="easyui-datetimebox" name="fssj" value="{{fssj}}" style="min-width:180px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">衣&emsp;&ensp;服&emsp;&ensp;号：</td>
+                                    <td ><input class="easyui-textbox" name="yfh" style="min-width:180px;"> </td>
+                                    <td class="formtd">违规人数：</td>
+                                    <td ><input class="easyui-numberbox" name="wgrs" style="min-width:180px;"> </td>
+                                    <td class="formtd">违规地点：</td>
+                                    <td ><input class="easyui-textbox" name="wgdd" style="min-width:180px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">违&ensp;&nbsp;规&ensp;类&ensp;&nbsp;型：</td>
+                                    <td colspan="6"><input class="awdCombox" name="wglx" code='WGLX' required style="width:100%;"> </td>
+                                </tr>
+                                <tr>    
+                                    <td class="formtd">简&ensp;&nbsp;要&ensp;情&ensp;&nbsp;况：<font class="redicon">*</font></td>
+                                    <td colspan="6"><input class="easyui-textbox"  name="jyqk" required data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">紧&ensp;&nbsp;急&ensp;程&ensp;&nbsp;度：<font class="redicon">*</font></td>
+                                    <td >
+                                        <input type="radio" name="jjcd" value="5" checked class="radiocss"><font>一般</font>
+                                        <input type="radio" name="jjcd" value="4"  class="radiocss"><font>急</font>
+                                        <input type="radio" name="jjcd" value="2"  class="radiocss"><font>特急</font>
+                                    </td>
+                                    <td class="formtd">发布岗位：<font class="redicon">*</font></td>
+                                    <td ><input class="awdCombox" name="fbgw"  code='JLSROLE' required style="min-width:180px;"> </td>
+                                    <td class="formtd">值&ensp;班&ensp;人：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="zbr" value="{{tbr}}" required style="min-width:180px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">详&ensp;&nbsp;细&ensp;情&ensp;&nbsp;况：</td>
+                                    <td colspan="6"><input class="easyui-textbox" name="wgqkcon" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>    
+                                    <td class="formtd">现场处理情况：</td>
+                                    <td colspan="6"><input class="easyui-textbox" name="clqkcon" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">信息发布范围：</td>
+                                    <td colspan="6"><input class="awdCombox" name="xxfbfw" code='JLSROLE' style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">处理完成情况：<font class="redicon">*</font></td>
+                                    <td colspan="6">
+                                        <input type="radio" name="clwcqk" value="0" checked class="radiocss"><font>待处理</font>
+                                        <input type="radio" name="clwcqk" value="1"  class="radiocss"><font>处理中</font>
+                                        <input type="radio" name="clwcqk" value="2"  class="radiocss"><font>已办结</font>  
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">现&ensp;&nbsp;场&ensp;截&ensp;&nbsp;图：</td>
+                                    <td colspan="6"><input  id="picfm1" name="photourl" type="file" style="width:100%;"> </td>
+                                </tr>
+                                <input type="hidden" name="tbr" value="{{tbr}}">
+                                <input type="hidden" name="tbrq" value="{{tbrq}}">
+								<input type="hidden" name="clzt" value="0">
+                            </table>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

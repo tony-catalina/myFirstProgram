@@ -1,0 +1,6 @@
+{{each files}}
+<div class="item-file">
+    <img src="/apps/kss/static/images/file.png" alt="">
+    <div class="file-name" data-url="{{$value.url}}" data-label="{{$value.label}}" title="{{$value.name}}" >{{$value.name}}</div>
+</div>
+{{/each}}

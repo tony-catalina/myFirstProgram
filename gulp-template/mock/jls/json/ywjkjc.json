@@ -1,0 +1,9 @@
+{
+    "code": 0,
+    "msg": "查询成功",
+    "result": {
+        "wtjry|1-1000": 0, 
+        "ytjry|1-1000": 0
+    },
+    "success": true
+}

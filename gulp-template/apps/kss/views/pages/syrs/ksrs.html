@@ -1,0 +1,115 @@
+<!--
+模块名称： 收押入所 快速入所
+开始时间： 2020-2-25
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+
+<body class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <!--页面主体布局-->
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform ywdt-form">
+        <div class="section-content ksrs-container" style="height: 100%;">
+            <div class="section-item section-item-one section-item-padding" style="height: 100%;">
+                <div class="standard-content font-20" style="height: 100%;">
+                    <div class="htmleaf-container"  style="height: 100%;">
+                        <div class="container"  style="height: 100% !important;">
+                            <div class="ksrs-item jbxx">
+                                <div class="timeline-content right">
+                                    <div class="ksrs-title"><span class="iconfont icon-taizhang"></span>基本信息</div>
+                                    <table class="container-formtable">
+                                        <tr>
+                                            <td class="formtd" style="min-width:325px;border-left: 0px solid #fff">姓&ensp;&ensp;&ensp;&ensp;名：<font class="redicon">*</font>
+                                            </td>
+                                            <td><input name="xm" class="easyui-textbox " required="true" style="min-width:351px;">
+                                            </td>
+                                            <td class="formtd" style="min-width:325px;">性&ensp;&ensp;&ensp;&ensp;别：<font class="redicon">*</font></td>
+                                            <td><input name="xb" id="xb" code="XB"  class="awdCombox" required="true" style="min-width:352px;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd" style="min-width:325px;border-left: 0px solid #fff">监&ensp;室&ensp;号：<font class="redicon">*</font>
+                                            </td>
+                                            <td><input name="jsh" class=" jsh" required="true" style="min-width:351px;">
+                                            </td>
+                                            <td class="formtd" style="min-width:325px;">入所日期：<font class="redicon">*</font></td>
+                                            <td><input name="rsrq" id="rsrq" class="easyui-datetimebox" required="true" style="min-width:352px;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd" style="min-width:325px;border-left: 0px solid #fff">入所原因：<font class="redicon">*</font>
+                                            </td>
+                                            <td><input name="rsxz" class="awdCombox" code="RSXZ" required="true" style="min-width:351px;">
+                                            </td>
+                                            <td class="formtd" style="min-width:325px;">档案编号：<font class="redicon">*</font></td>
+                                            <td><input name="dah" id="dah" class="easyui-textbox" required="true" style="min-width:352px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+    </form>
+    <div class="ksrs-item zplr">
+        <div class="timeline-content right">
+            <form id="fmzp">
+                <div class="ksrs-title ksrs-zplr"><span class="iconfont icon-zhaopian"></span>照片录入
+                </div>
+                <table class="container-formtable zpbl">
+                    <td colspan="3">
+                        <img src="/apps/kss/static/images/cm1.png" alt="" class="showPic" id="img4">
+                    </td>
+                    <td colspan="3">
+                        <dl>
+                            <dt>采集标准</dt>
+                            <dt>1.三张照片均按照"人脸左侧单标尺线"进行采集。</dt>
+                            <dt>2.正面照。</dt>
+                            <dd>(a).头顶与相框上沿对齐，眼睛居于人眼对齐线中间（红线为上沿，绿线为下沿);</dd>
+                            <dd>(b).人像居中，两边耳根下沿与各绿块对齐;</dd>
+                            <dd>(c).蓝色块与红色刻度标尺线对齐;</dd>
+                            <dt>3.左侧照、右侧照</dt>
+                            <dd>(a).头顶与相框上沿对齐，眼睛居于人眼对齐线中间（红线为上沿，绿线为下沿);</dd>
+                            <dd>(b).人像居中，鼻尖、后脑勺分别与各绿快对齐;</dd>
+                            <dd>(c).蓝色块与红色刻度标尺对齐;</dd>
+                        </dl>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img src="/apps/kss/static/images/zm.png" alt="" class="pic preview-image" id="img1" />
+                            <p><input type="file" id="imgFile1" class="imgFile file1" >
+                            </p>
+                        </td>
+                        <td colspan="2">
+                            <img src="/apps/kss/static/images/cm1.png" alt="" class="pic preview-image" id="img2" />
+                            <p><input type="file" id="imgFile2" class="imgFile file2" >
+                            </p>
+                        </td>
+                        <td colspan="2">
+                            <img src="/apps/kss/static/images/cm2.png" alt="" class="pic preview-image" id="img3" />
+                            <p><input type="file" id="imgFile3" class="imgFile file3" >
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="ksrsBtn">
+        <input type="button" class="keepBtn" value="保存" />
+        <input type="button" class="closeBtn" value="关闭" />
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!--页面主体布局-->
+    <script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/require.config" id="current-page" current-page="pages/syrs/ksrs"></script>
+
+    <script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

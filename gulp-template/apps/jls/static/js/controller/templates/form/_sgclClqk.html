@@ -1,0 +1,86 @@
+
+<body class="easyui-layout" data-option="fit:true">
+        <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+        <div class="section-content">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                 <div class="htmleaf-container">
+                 <div class="container">
+                    <div id="timeline">
+                        
+                       
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                               <span class="iconfont icon-jibenxinxi"></span>
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>业务信息</h2>
+                                <table class="container-formtable">
+                                    <tr style="display: none;">
+                                        <td colspan="3">
+                                            <input name="tbr" value="{{tbr}}" class="">
+                                        </td>
+                                    </tr>
+                                    <tr style="display: none;">
+                                        <td colspan="3">
+                                            <input name="id" value="{{id}}" class="">
+                                        </td>
+                                    </tr>
+                                    <tr style="display: none;">
+                                        <td colspan="3">
+                                            <input name="sfcl" value="1" class="">
+                                        </td>
+                                    </tr>
+                                    <tr style="display: none;">
+                                        <td colspan="3">
+                                            <input name="tbrq" value="{{tbrq}}" class="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">事故&ensp;发生&ensp;时间：</td>
+                                        <td ><input class="easyui-textbox" name="sgsjString" value="{{sgsj}}" readonly style="min-width:280px;"> </td>
+                                        <td class="formtd">事&ensp;故&emsp;类&ensp;别：</td>
+                                        <td ><input class="awdCombox" name="sglxString" value="{{sglx}}" text="{{sglxString}}" readonly style="min-width:280px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">事故&ensp;发生&ensp;单位：</td>
+                                        <td ><input class="easyui-textbox" name="sgdw" value="{{sgdw}}"  readonly style="min-width:280px;"> </td>
+                                        <td class="formtd">事故发生地点：</td>
+                                        <td ><input class="easyui-textbox" name="sgdd" value="{{sgdd}}" readonly style="min-width:280px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">经&emsp;&emsp;办&emsp;&emsp;人：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="jbr" value="{{jbr}}" readonly style="width:100%;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">主要经过及理由：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="jyqk" value="{{jyqk}}" readonly data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">处&emsp;理&emsp;情&emsp;况：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="clqk" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">处&emsp;理&emsp;结&emsp;果：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="cljg" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">审&emsp;&emsp;核&emsp;&emsp;人：</td>
+                                        <td ><input id="shr" class="easyui-textbox" name="shr" style="min-width:280px;"> </td>
+                                        <td class="formtd">审&emsp;核&emsp;时&emsp;间：</td>
+                                        <td ><input class="easyui-datetimebox" value="{{dateTime}}" name="shsj" style="min-width:280px;"> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+       </div>
+    </form>
+    </body>

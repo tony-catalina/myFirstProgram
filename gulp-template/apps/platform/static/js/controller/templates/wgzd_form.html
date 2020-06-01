@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<form class="layui-form" action="" id="fm">
+    <h2>新建字典</h2>
+    <div class="layui-form-item">
+        <label class="layui-form-label">监所类型：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <select name="jslx" lay-filter='jslx' value="{{jslx}}" class="awdcombox" field="DM" lay-verify="required">
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">字典类型：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" id="classid" name="classid"  value="{{classidString}}" lay-verify="required|readonly" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">字典代码：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" name="code" value="{{code}}" lay-verify="required" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">字典内容：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" name="content" value="{{content}}" lay-verify="required" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">分&emsp;&emsp;值：&ensp;</label>
+        <div class="layui-input-block">
+            <input name="kffz" id="numberfm" value="{{kffz}}" class="layui-input"></input>
+        </div>
+    </div>
+
+</form>

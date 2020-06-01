@@ -1,0 +1,183 @@
+<!-- 照片维护 -->
+<div class="section-item section-item-padding qa-list">
+
+    <div class="section-content">
+        <div class="htmleaf-container">
+            <div class="container">
+                <div id="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="assets/images/book.svg" alt="">
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td>姓名<font class="redicon">*</font>：</td>
+                                    <td><input class="easyui-textbox" name="" style="width:100%;"></td>
+                                    <td>性别<font class="redicon">*</font>：</td>
+                                    <td colspan="2"><input class="easyui-textbox" style="width:100%;"> </td>
+                                    <td>
+                                        <select id="cc" class="easyui-combobox" name="dept" style="width:200px;">
+                                            <option value="aa">未核实</option>
+                                            <option>已核实</option>
+                                            <option>待核实</option>
+                                            <option>拒绝核实</option>
+                                            <option>暂缓核实</option>
+                                        </select>
+                                    </td>
+                                    <td> <button type="button" class="buttonstyle">人口库对比</button></td>
+                                </tr>
+                                <tr>
+                                    <td>证件号<font class="redicon">*</font>：</td>
+                                    <td colspan="4"><input class="easyui-textbox" style="width:100%;"></td>
+                                    <td> 
+                                        <button type="button" class="buttonstyle">限制会见案件</button>
+                                        <input type="radio" name="Select" class="radiocss"><font>是</font> <input type="radio" name="Select" class="radiocss"><font>否</font>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="assets/images/book.svg" alt="">
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>案件类别</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td>案件类别<font class="redicon">*</font>：</td>
+                                    <td>
+                                        <input type="checkbox"><font>危害国家安全罪</font>
+                                        <input type="checkbox"><font>恐怖活动罪</font>
+                                    </td>
+                                    <td >审批单位<font class="redicon">*</font>：</td>
+                                    <td colspan="2"><input class="easyui-textbox" style="width:100%;"> </td>
+                                    <td>审批人<font class="redicon">*</font>：</td>
+                                    <td ><input class="easyui-textbox" style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td >转入单位<font class="redicon">*</font>：</td>
+                                    <td colspan="2"><input class="easyui-textbox" style="width:100%;"> </td>
+                                    <td >办案人<font class="redicon">*</font>：</td>
+                                    <td ><input class="easyui-textbox" style="width:100%;"> </td>
+                                    <td >联系电话<font class="redicon">*</font>：</td>
+                                    <td ><input class="easyui-textbox" style="width:100%;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="assets/images/book.svg" alt="">
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>个人信息</h2>
+                            <table class="container-formtable">
+                            <tr>
+                                <td class="formtd">别名或绰号<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                                <td class="formtd">国籍<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                                <td class="formtd">文化程度<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                            </tr>
+                            <tr>
+                                <td class="formtd">民族<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                                <td class="formtd">档案编号<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                                <td class="formtd">证件类型<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                            </tr>
+                            <tr>
+                                <td class="formtd">出生日期<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                                <td class="formtd">婚姻状况<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                                <td class="formtd">户籍所在地<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                            </tr>
+                            <tr>
+                                <td class="formtd">户籍所在地详址<font class="redicon">*</font>:</td>
+                                <td colspan="3"><input class="easyui-textbox" style="width:100%;"> </td>
+                                <td class="formtd">现住址<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                            </tr>
+                            <tr>
+                                <td class="formtd">户籍所在地详址<font class="redicon">*</font>：</td>
+                                <td colspan="3"><input class="easyui-textbox" style="width:100%;"> </td>
+                                <td class="formtd">现住址<font class="redicon">*</font>：</td>
+                                <td ><input class="easyui-textbox" style="min-width:180px;"> </td>
+                            </tr>
+                            <tr>
+                                <td class="formtd">政治面貌<font class="redicon">*</font>：</td>
+                                <td colspan="2">
+                                    <select id="ccc" class="easyui-combobox" name="depst" style="width:100%;">
+                                        <option value="aa">群众</option>
+                                        <option>团员</option>
+                                        <option>党员</option>
+                                        <option>部门领导</option>
+                                        <option>省级干部</option>
+                                    </select>
+                                </td>
+                                <td class="formtd" style="text-align: center;">现住地详址<font class="redicon">*</font>：</td>
+                                <td colspan="2"><input class="easyui-textbox" style="width:100%;"> </td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="assets/images/book.svg" alt="">
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">别名或绰号：</td>
+                                    <td style="min-width: 350px;"><input class="easyui-textbox" style="width:100%;"> </td>
+                                    <td class="formtd" style="text-align: right;">国籍：</td>
+                                    <td style="min-width: 350px;"><input class="easyui-textbox" style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">档案编号：</td>
+                                    <td ><input class="easyui-textbox" style="width:100%;"> </td>
+                                    <td class="formtd" style="text-align: right;">证件类型：</td>
+                                    <td><input class="easyui-textbox" style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">政治面貌<font class="redicon">*</font>：</td>
+                                    <td >
+                                        <select id="ccc" class="easyui-combobox" name="depst" style="width:100%;">
+                                            <option value="aa">群众</option>
+                                            <option>团员</option>
+                                            <option>党员</option>
+                                            <option>部门领导</option>
+                                            <option>省级干部</option>
+                                        </select>
+                                    </td>
+                                    <td class="formtd" style="text-align: right;">证件类型：</td>
+                                    <td>
+                                        <select id="ccc" class="easyui-combobox" name="depst" style="width:100%;">
+                                            <option value="aa">身份证</option>
+                                            <option>二代身份证</option>
+                                            <option>护照</option>
+                                            <option>港澳通行证</option>
+                                            <option>临时身份证</option>
+                                        </select>    
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

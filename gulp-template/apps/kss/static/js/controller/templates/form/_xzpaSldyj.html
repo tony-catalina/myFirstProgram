@@ -1,0 +1,93 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>案件信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">涉&nbsp;&nbsp;&nbsp;案&nbsp;&nbsp;&nbsp;&nbsp;人：</td>
+                                    <td ><input class="easyui-textbox" name="sar" value="{{ldpsxx.xzpa_sar}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">涉&nbsp;案&nbsp;人&nbsp;数：</td>
+                                    <td ><input class="easyui-textbox" name="sars" value="{{ldpsxx.xzpa_sars}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">案&nbsp;发&nbsp;时&nbsp;间：</td>
+                                    <td ><input class="easyui-textbox" name="afsj" value="{{ldpsxx.xzpa_afsj}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">案&nbsp;发&nbsp;地&nbsp;点：</td>
+                                    <td ><input class="easyui-textbox" name="afdd" value="{{ldpsxx.xzpa_afdd}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">涉&nbsp;案&nbsp;金&nbsp;额：</td>
+                                    <td ><input class="easyui-textbox" name="saje" value="{{ldpsxx.xzpa_saje}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">检&nbsp;举&nbsp;日&nbsp;期：</td>
+                                    <td ><input class="easyui-textbox" name="tbjurq" value="{{ldpsxx.xzpa_tbjurq}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">检举案性质：</td>
+                                    <td ><input class="easyui-textbox" name="jjqxz" value="{{ldpsxx.xzpa_jjqxz}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">登&nbsp;&nbsp;&nbsp;记&nbsp;&nbsp;&nbsp;人：</td>
+                                    <td ><input class="easyui-textbox" name="djr" value="{{ldpsxx.xzpa_djr}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">登&nbsp;记&nbsp;日&nbsp;期：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="djrq" value="{{ldpsxx.xzpa_djrq}}" readonly style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">简&nbsp;述&nbsp;经&nbsp;过：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="jyjg" value="{{ldpsxx.xzpa_jyjg}}" readonly style="width:100%;height: 80px;" data-options="multiline:true"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <span class="iconfont icon-yewubaobiao"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">所&nbsp;&nbsp;领&nbsp;导&nbsp;&nbsp;意&nbsp;&nbsp;见：<font class="redicon">*</font></td>
+                                    <td colspan="3">
+                                        <input type="radio" name="sldyj" value="1" checked>&nbsp;同意
+                                        <input type="radio" name="sldyj" value="2" >&nbsp;不同意
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">所领导意见内容：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input required id="sldyjfm" value="{{ldyj}}" name="sldyjnr" style="width:100%;height:50px;" class="easyui-textbox" data-options="multiline:true"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">所&nbsp;&nbsp;领&nbsp;导&nbsp;&nbsp;签&nbsp;&nbsp;字：</td>
+                                    <td ><input id="sldqm" class="easyui-textbox" name="sldqm" style="min-width:280px;"> </td>
+                                    <td class="formtd">签&nbsp;字&nbsp;时&nbsp;间：</td>
+                                    <td ><input id="sldqmrq" class="easyui-datetimebox" name="sldqmrq" style="min-width:280px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

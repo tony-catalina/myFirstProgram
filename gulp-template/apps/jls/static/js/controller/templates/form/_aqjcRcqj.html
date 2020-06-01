@@ -1,0 +1,83 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    
+                   
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr style="display: none;">
+                                    <td colspan="3">
+                                        <input name="id" value="{{id}}" class="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">参&emsp;&emsp;加&emsp;&emsp;人&emsp;&emsp;数：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="cjrs"  style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">记&emsp;&emsp;&emsp;&ensp;录&ensp;&emsp;&emsp;&emsp;员：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="jlr" required style="min-width:280px;"> </td>
+                                    <td class="formtd">组织领导：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="fzr" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">安&ensp;&nbsp;全&ensp;&nbsp;检&ensp;&ensp;查&ensp;&nbsp;日&ensp;&nbsp;期：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datetimebox" name="jckssj" id="aqjcrqfm" required style="min-width:280px;"> </td>
+                                    <td class="formtd">&emsp;&emsp;&emsp;至：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datetimebox" name="jcjssj" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">参&emsp;&emsp;加&emsp;&emsp;人&emsp;&emsp;员：</td>
+                                    <td ><input class="easyui-textbox" name="cjry" style="min-width:280px;"> </td>
+                                    <td class="formtd">检查范围：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="fw" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">查出的违禁物品及部位：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="wjp" required data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">现&ensp;&nbsp;场&ensp;&nbsp;截&emsp;图&ensp;&nbsp;导&ensp;&nbsp;入：</td>
+                                    <td colspan="3">
+                                            <p><input type="file" id="wjpfilefm" name="wjpfile"></p>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">安&ensp;全&ensp;隐&ensp;患&ensp;及&ensp;漏&ensp;洞：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="aqyh" required data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">现&ensp;&nbsp;场&ensp;&nbsp;截&emsp;图&ensp;&nbsp;导&ensp;&nbsp;入：</td>
+                                    <td colspan="3">
+                                            <p><input type="file" id="aqyhfilefm" name="aqyhfile"></p>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">备&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;注：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="bz" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

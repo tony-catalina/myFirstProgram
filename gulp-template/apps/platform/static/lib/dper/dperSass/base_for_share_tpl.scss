@@ -1,0 +1,244 @@
+/**
+ *  模板基础样式  勿改动
+ */
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Microsoft YaHei UI", "Helvetica Neue", sans-serif;
+  background-color: #f8fffe;
+}
+body {
+  //max-width:10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+::selection {
+  background: none;
+}
+
+::-moz-selection {
+  background: none;
+}
+
+/* 样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* a标签设置 */
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: 0;
+}
+
+/* 无序列表 */
+ul, li, ol {
+  list-style: none;
+}
+
+/* 浮动 */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* 清除浮动 */
+.dper-clear{
+  clear: both;
+  *zoom: 1;
+}
+.dper-clear:after {
+  content: ' ';
+  clear: both;
+  *zoom: 1;
+  display: block;
+  height: 0;
+}
+
+
+/*  文明本位置 */
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+/* 百分比垂直居中 */
+.malign-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.malign-center-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+/* 背景图片通用配置 */
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.bg-img-full {
+  @extend .bg-img;
+  background-size: 100% 100%;
+}
+.bg-img-cover {
+  @extend .bg-img;
+  background-size: cover;
+}
+.bg-img-auto {
+  @extend .bg-img;
+  background-size: auto;
+}
+
+/* 文字超出显示深省略号 */
+.text-overflow-e {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*  图片自适应 */
+.response-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 盒子 */
+.dper-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 动画 */
+.dper-amt {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.dper-amt-slow {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+/* 隐藏 */
+[data-hidden]{
+  display: none;
+}
+
+/* 显示 */
+[data-show] {
+  display: block;
+}
+
+/* 超出隐藏 */
+.dper-overh{
+  overflow: hidden;
+}
+
+/* 字体加粗 bold */
+.dper-fw{
+  font-weight: bold;
+}
+
+/* 字体加粗 bolder */
+.dper-fwr{
+  font-weight: bolder;
+}
+
+/* 字体样式 斜体 */
+.dper-fit{
+  font-style: italic;
+}
+
+/* 高度100% */
+.dper-full-h {
+  height: 100%;
+}
+/* 宽度100% */
+.dper-full-w {
+  width: 100%;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-flow: nowrap;
+  -ms-flex-flow: nowrap;
+  flex-flow: nowrap
+}
+
+.flex-center {
+  @extend .flex;
+  justify-content: center;
+}
+
+.flex-between {
+  @extend .flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.flex-left {
+  @extend .flex;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+.flex-right {
+  @extend .flex;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+.dper-content {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+}
+.dper-basement {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.dper-overstory {
+  @extend .dper-basement;
+  z-index: 20;
+}

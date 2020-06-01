@@ -1,0 +1,191 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">人员编号：</td>
+                                                    <td><input class="easyui-textbox" name="snbh" value="{{snbh}}"
+                                                            readonly style="min-width:180px;"> </td>
+                                                    <td class="formtd">姓名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                    <td class="formtd">监室号：</td>
+                                                    <td><input class="easyui-textbox" name="jsh" value="{{jsh}}"
+                                                            readonly style="min-width:180px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">登&ensp;&ensp;&ensp;记&ensp;&ensp;&ensp;日&ensp;&ensp;期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datebox" name="djrq" value="{{djrq}}"
+                                                            required style="min-width:280px;"> </td>
+                                                    <td class="formtd">登&ensp;&ensp;&ensp;&ensp;&ensp;记&ensp;&ensp;&ensp;&ensp;&ensp;人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="djr" value="{{djr}}"
+                                                            required style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">岀监后可能居住地：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="cjhknjzd"
+                                                            value="{{cjhknjzd}}" required style="min-width:720px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">认&ensp;罪&ensp;认错&ensp;情&ensp;况：<font class="redicon">*</font></td>
+                                                    <td><input type="radio" class="radiocss" id="rzrcqkhao" value="2"
+                                                            name="rzrcqk" checked="checked">
+                                                        <font>好</font> <input type="radio" id="rzrcqkyiban" value="1"
+                                                            name="rzrcqk" class="radiocss">
+                                                        <font>一般</font><input type="radio" id="rzrcqkcha" value="3"
+                                                            name="rzrcqk" class="radiocss">
+                                                        <font>差</font>
+                                                    </td>
+                                                    <td class="formtd">监&ensp;所&ensp;&ensp;内&ensp;&ensp;表&ensp;现：<font class="redicon">*</font></td>
+                                                    <td><input type="radio" id="jsnbxhao" value="2" name="jsnbx"
+                                                            checked="checked" class="radiocss">
+                                                        <font>好</font> <input type="radio" id="jsnbxyiban" value="1"
+                                                            name="jsnbx" class="radiocss">
+                                                        <font>一般</font><input type="radio" id="jsnbxcha" value="3"
+                                                            name="jsnbx" class="radiocss">
+                                                        <font>差</font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">岀监后&ensp;有无&ensp;住所：<font class="redicon">*</font></td>
+                                                    <td><input type="radio" id="cjhywzsyes" value="1" name="cjhywzs"
+                                                            checked="checked" class="radiocss">
+                                                        <font>有住所</font> <input type="radio" id="cjhywzsno" value="2"
+                                                            name="cjhywzs" class="radiocss">
+                                                        <font>无住所</font>
+                                                    </td>
+                                                    <td class="formtd">明&ensp;显&ensp;犯罪&ensp;倾&ensp;向：</td>
+                                                    <td><input type="radio" id="mxfzqxyes" value="1" name="mxfzqx"
+                                                            checked="checked" class="radiocss">
+                                                        <font>有</font> <input type="radio" id="mxfzqxno" value="2"
+                                                            name="mxfzqx" class="radiocss">
+                                                        <font>无</font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">“三&ensp;&ensp;假”&ensp;&ensp;&nbsp;人&ensp;&ensp;员：</td>
+                                                    <td><input type="radio" id="sjryyes" value="1" name="sjry"
+                                                            class="radiocss">
+                                                        <font>是</font> <input type="radio" id="sjryno" value="0"
+                                                            name="sjry" checked="checked" class="radiocss">
+                                                        <font>否</font>
+                                                    </td>
+                                                    <td class="formtd">“三&ensp;&ensp;无”&ensp;&ensp;&nbsp;人&ensp;&ensp;员：</td>
+                                                    <td><input type="radio" id="swryyes" value="1" name="swry"
+                                                            class="radiocss">
+                                                        <font>是</font> <input type="radio" id="swryno" value="0"
+                                                            name="swry" checked="checked" class="radiocss">
+                                                        <font>否</font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">一&ensp;般&ensp;帮教&ensp;对&ensp;像：</td>
+                                                    <td><input type="radio" id="ybbjdxyes" value="1" name="ybbjdx"
+                                                            class="radiocss">
+                                                        <font>是</font> <input type="radio" id="ybbjdxno" value="0"
+                                                            name="ybbjdx" checked="checked" class="radiocss">
+                                                        <font>否</font>
+                                                    </td>
+                                                    <td class="formtd">是否已录入互联网：</td>
+                                                    <td><input type="radio" id="sfylrhlwyes" value="1" name="sfylrhlw"
+                                                            class="radiocss">
+                                                        <font>是</font> <input type="radio" id="sfylrhlwno" value="2"
+                                                            name="sfylrhlw" checked="checked" class="radiocss">
+                                                        <font>否</font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">违&ensp;法&ensp;&ensp;犯&ensp;罪&ensp;&ensp;史：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="wffzs"
+                                                            value="{{wffzs}}" data-options="multiline:true" required
+                                                            style="width: 100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">技&ensp;&ensp;&ensp;术&ensp;&ensp;&ensp;特&ensp;&ensp;长：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="jstc"
+                                                            value="{{jstc}}" data-options="multiline:true" required
+                                                            style="width: 100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">择&ensp;&ensp;&ensp;业&ensp;&ensp;&ensp;意&ensp;&ensp;向：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="zyyx"
+                                                            value="{{zyyx}}" data-options="multiline:true" required
+                                                            style="width: 100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">存&ensp;&ensp;&ensp;在&ensp;&ensp;&ensp;问&ensp;&ensp;题：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="czwt"
+                                                            value="{{czwt}}" data-options="multiline:true" required
+                                                            style="width: 100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">特&ensp;&ensp;&ensp;殊&ensp;&ensp;&ensp;困&ensp;&ensp;难：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="tskn"
+                                                            value="{{tskn}}" data-options="multiline:true" required
+                                                            style="width: 100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">安置帮教工作建议：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="azbjgzjy"
+                                                            value="{{azbjgzjy}}" data-options="multiline:true" required
+                                                            style="width: 100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="bz"
+                                                            value="{{bz}}" data-options="multiline:true"
+                                                            style="width: 100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="id" value="{{id}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="jsbh" value="{{jsbh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="rybh" value="{{rybh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

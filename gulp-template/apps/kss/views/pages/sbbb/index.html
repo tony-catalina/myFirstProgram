@@ -1,0 +1,84 @@
+<!--
+模块名称： 上报报表
+开始时间： 2020-2-25
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<body class="easyui-layout" data-option="fit:true">
+<!--页面主体布局-->
+<div class="section-container sbbb-container">
+    <div class="section-item section-item-one section-item-padding">
+        <div class="section-header">
+            <div class="section-title">简项查询</div>
+        </div>
+        <div class="section-item-content border-top">
+            <!-- <form id="search" class="search-form"></form> -->
+            <form id="fm" name="aqjcfm" method="post" style="padding: 0 18px 0 18px;;display:flex;" class="awdform">
+                <table class="container-formtable sbbb-search">
+                    <tr>
+                        <td>起始年月<font style="color:red;">*</font>：</td>
+                        <td style="margin-right:50px;"><input class="easyui-datebox" id="qsny" missingMessage="该输入项为必填项" style="min-width:168px" required> </td>
+                        <td>终止年月<font style="color:red;">*</font>：</td>
+                        <td ><input class="easyui-datebox" id="zzny" missingMessage="该输入项为必填项" style="min-width:168px" required> </td>
+                        <td>
+                            <button type="button" id="print"><span class="iconfont icon-jiahao"></span>打印</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <form id="sbbb_form">
+                <div class="fitem">
+                  <input type="radio" id=ksszyrytjybb name="sbbb" value="kss_ybb">
+                  <label for="ksszyrytjybb" name="title">看守所在押人员统计月报表</label>
+                </div>
+                <div class="fitem">
+                  <input type="radio" id="ksszyryglqkjbb" name="sbbb" value="kss_jbb">
+                  <label for="ksszyryglqkjbb" name="title">看守所在押人员管理情况季报表</label>
+                </div>
+                <div class="fitem">
+                  <input type="radio" id="ksszyryglqknbb" name="sbbb" value="kss_nbb">
+                  <label for="ksszyryglqknbb" name="title">看守所在押人员管理情况年报表</label>
+                </div>
+                <div class="fitem">
+                  <input type="radio" id="ksszyryqkb" name="sbbb" value="kss_ksszyrqkb">
+                  <label for="ksszyryqkb" name="title">看守所在押人员情况表</label>
+                </div>
+                <div class="fitem">
+                  <input type="radio" id="xsxsjlrytjybb" name="sbbb" value="kss_xsxsjlrytjybb">
+                  <label for="xsxsjlrytjybb" name="title">新收刑事拘留人员统计月报表</label>
+                </div>
+                <div class="fitem">
+                  <input type="radio" id="zyflgrytjyb" name="sbbb" value="kss_zyflgrytjyb">
+                  <label for="zyflgrytjyb" name="title">在押"法轮功"人员统计月报</label>
+                </div>
+                <div class="fitem">
+                  <input type="radio" id="kssswpajqwtqktjb" name="sbbb" value="kss_kssswpajqtqktjb">
+                  <label for="kssswpajqwtqktjb" name="title">看守所深挖破案及其他情况统计表</label>
+                </div>
+                <div class="fitem">
+                  <input type="radio" id="zyrysnjydjb" name="sbbb" value="kss_zyrysnjydj">
+                  <label for="zyrysnjydjb" name="title">在押人员所内就医登记表</label>
+                </div>
+                <div class="fitem">
+                  <input type="radio" id="zyryswjydjb" name="sbbb" value="kss_zyrycsjydj">
+                  <label for="zyryswjydjb" name="title">在押人员所外就医登记表</label>
+                </div>
+                <div class="fitem">
+                  <input type="radio" id="xjszjlb" name="sbbb" value="kss_xjjsd">
+                  <label for="xjszjlb" name="title">现金收支记录表</label>
+                </div>
+             </form>
+        </div>
+    </div>
+</div> 
+<!--页面主体布局-->
+<script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/require.config" id="current-page" current-page="pages/sbbb/index"></script>
+
+<script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

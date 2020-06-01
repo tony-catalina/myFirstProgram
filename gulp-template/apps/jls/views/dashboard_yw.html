@@ -1,0 +1,210 @@
+<!--
+模块名称： 首頁
+开始时间： 2020-2-25
+-->
+
+<!-- partial:./partials/_head_start.html -->
+<!-- partial -->
+<link rel="stylesheet" type="text/css" href="../static/css/homePage.css">
+<!-- partial:./partials/_head_end.html -->
+<!-- partial -->
+
+<body class="easyui-layout" data-options="fit:true" style="overflow:hidden;">
+    <div style="width:100%;height:80%;overflow-y:auto">
+        <div class='layui-fluid'>
+            <div class="layui-row h40 layui-col-space10 ">
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">交接班</div>
+                        <div class="item-content jjb flex" id='jjb'> </div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">巡诊记录</div>
+                        <div class="item-content">
+                            <table class="layui-hide" id="xzjl"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">健康检查</div>
+                        <div class="item-content ">
+                            <div style="width:45%;height:100%;float:left;">
+                                <aside class="yw_player-card">
+                                    <div class="jkjc">
+                                    <section>
+                                        <h2>未体检人员</h2>
+                                        <ul class="yw_list yw_horizontal">
+                                            <li class="Ryxx_Search" style="background: linear-gradient(to top right, #dc4141, #f73b4f, #f7715d);">12</li>
+                                        </ul>
+                                    </section>
+                                    </div>
+                                </aside>
+                            </div>
+<!--                            <div class="layui-col-md4">-->
+                            <div style="width:45%;height:100%;margin-left:5%;float:left;">
+                                <aside class="yw_player-card">
+                                    <div class="jkjc">
+                                    <section>
+                                        <h2>已体检人员</h2>
+                                        <ul class="yw_list yw_horizontal">
+                                            <li class="Ryxx_Search" style="background: linear-gradient(to top right, #2dec44, #52bf36, #43e438);">29</li>
+                                        </ul>
+                                    </section>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row h40 layui-col-space10">
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">就医信息</div>
+                        <div class="item-content ">
+                            <div class='jyxx'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">卫生防疫</div>
+                        <div class="item-content">
+                            <div class="item-content jjb flex" id='wsfy'> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">疾病情况</div>
+                        <div class="item-content">
+                            <div class='jbqk'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row h40 layui-col-space10">
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">重病号</div>
+                        <div class="item-content">
+                            <div style="width:30%;height:100%;float:left;">
+                                <aside class="yw_player-card">
+                                    <div class="zbh">
+                                    <section>
+                                        <h2>在押人员</h2>
+                                        <ul class="yw_list yw_horizontal">
+                                            <li style="background: linear-gradient(to top right, #41b8dc, #3bb2f7, #5df7d3)">85</li>
+                                        </ul>
+                                    </section>
+                                    </div>
+                                </aside>
+                            </div>
+                            <div style="width:30%;height:100%;float:left;margin-left:3%;">
+                                <aside class="yw_player-card">
+                                    <div class="zbh">
+                                    <section>
+                                        <h2>普通病号</h2>
+                                        <ul class="yw_list yw_horizontal">
+                                            <li style="background: linear-gradient(to top right, #dc9e41, #f79e30, #eaa359)">37</li>
+                                        </ul>
+                                    </section>
+                                    </div>
+                                </aside>
+                            </div>
+                            <div style="width:30%;height:100%;float:left;margin-left:3%;">
+                                <aside class="yw_player-card">
+                                    <div class="zbh">
+                                    <section>
+                                        <h2>重病号</h2>
+                                        <ul class="yw_list yw_horizontal">
+                                            <li style="background: linear-gradient(to top right, #dc4141, #f73b4f, #f7715d);">68</li>
+                                        </ul>
+                                    </section>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">药品库存</div>
+                        <div class="item-content">
+                            <table class="layui-hide" id="ypkc"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">药品进货记录</div>
+                        <div class="item-content ">
+                            <div class="item-content">
+                                <table class="layui-hide" id="jhjl"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-fluid">
+        <div class="layui-row h20 layui-col-space10">
+            <div class="layui-col-md12" style="padding-bottom:0">
+                <div class="wrap-item">
+                    <div class="item-title">其他应用</div>
+                    <div class="item-content">
+                        <div class="icon_box" role="21">
+                            <div class="icon_content"><span class="iconfont icon-xingshizhifa"></span></div>
+                            <font>收押岗位</font>
+                        </div>
+                        <div class="icon_box" role="23">
+                            <div class="icon_content"><span class="iconfont icon-guanjiaogangwei"></span></div>
+                            <font>管教管理</font>
+                        </div>
+                        <div class="icon_box" role="27">
+                            <div class="icon_content"><span class="iconfont icon-caiwuguanli"></span></div>
+                            <font>财务岗位</font>
+                        </div>
+                        <div class="icon_box" role="24">
+                            <div class="icon_content"><span class="iconfont icon-yiwurenyuan"></span></div>
+                            <font>医务岗位</font>
+                        </div>
+                        <div class="icon_box" role="26">
+                            <div class="icon_content"><span class="iconfont icon-xunkong"></span></div>
+                            <font>巡控</font>
+                        </div>
+                        <div class="icon_box" role="28">
+                            <div class="icon_content"><span class="iconfont icon-suolingdao"></span></div>
+                            <font>所领导</font>
+                        </div>
+                        <div class="icon_box" role="22">
+                            <div class="icon_content"><span class="iconfont icon-qitafuwu"></span></div>
+                            <font>综合岗位</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .jjb .item-list .list-palte {
+            padding-top: 35%;
+        }
+        
+        .jjb .item-list .list-title {
+            padding: 6px 0;
+        }
+    </style>
+
+    <script src="/apps/jls/static/lib/require.js" data-main="dashboard_yw.js"></script>
+    <script src="/apps/jls/static/js/require.config.js"></script>
+    <script src="/apps/jls/static/lib/loading.js"></script>
+</body>
+<!-- partial:./partials/_foot.html -->
+<!-- partial -->

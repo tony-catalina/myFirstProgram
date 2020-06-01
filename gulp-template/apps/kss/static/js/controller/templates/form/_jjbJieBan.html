@@ -1,0 +1,66 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>交班信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">交班岗位：</td>
+                                    <td colspan="3"><input class="easyui-textbox" style="min-width:660px;" readonly name="jbgw" value="{{jbgw}}"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">交班人员：</td>
+                                    <td ><input class="easyui-textbox" name="jbry" readonly value="{{jbry}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">交班时间：</td>
+                                    <td ><input class="easyui-textbox" name="jbsj" readonly value="{{jbsj}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">工作记录：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="gzjl" readonly value="{{gzjl}}"  style="min-width:660px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">注意事项：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="zysx" readonly value="{{zysx}}" style="min-width:660px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                            <div class="timeline-icon">
+                               <span class="iconfont icon-jibenxinxi"></span>
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>接班确认</h2>
+                                <table class="container-formtable">
+                                    <tr>
+                                        <td class="formtd">接班人员：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-textbox" required name="jjbry" style="min-width:280px;"> </td>
+                                        <td class="formtd">接班时间：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-datetimebox" required name="jjbsj" style="min-width:280px;"> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                 </div>
+                 
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

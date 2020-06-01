@@ -1,0 +1,375 @@
+{
+  "menugroups": [{
+      "title": "收检中心",
+      "img": "",
+      "list": [{
+          "title": "入所信息维护",
+          "url": "/apps/jds/views/pages/sjzx/rsxxwh/index.html"
+        },
+        {
+          "title": "代拘转强制",
+          "url": "/apps/jds/views/pages/sjzx/djzqz/index.html"
+        },
+        {
+          "title": "电子腕带",
+          "url": "/apps/jds/views/pages/sjzx/dzwd/index.html"
+        },
+        {
+          "title": "照片维护",
+          "url": "/apps/jds/views/pages/sjzx/zpwh/index.html"
+        },
+        {
+          "title": "误出所服务",
+          "url": "/apps/jds/views/pages/sjzx/wcsfw/index.html"
+        },
+        {
+          "title": "误出所恢复",
+          "url": "/apps/jds/views/pages/sjzx/wcshf/index.html"
+        },
+        {
+          "title": "回收",
+          "url": "/apps/jds/views/pages/sjzx/hs/index.html"
+        }
+      ]
+    },
+    {
+      "title": "日常管理",
+      "img": "",
+      "list": [{
+          "title": "代拘首谈",
+          "url": "/apps/jds/views/pages/rcgl/djst/index.html"
+        },
+        {
+          "title": "首次谈话",
+          "url": "/apps/jds/views/pages/rcgl/scth/index.html"
+        },
+        {
+          "title": "谈话教育",
+          "url": "/apps/jds/views/pages/rcgl/thjy/index.html"
+        },
+        {
+          "title": "信件收发",
+          "url": "/apps/jds/views/pages/rcgl/xjsf/index.html"
+        },
+        {
+          "title": "通讯记录",
+          "url": "/apps/jds/views/pages/rcgl/txjl/index.html"
+        },
+        {
+          "title": "戒室调整",
+          "url": "/apps/jds/views/pages/rcgl/jstz/index.html"
+        },
+        {
+          "title": "家属会见",
+          "url": "/apps/jds/views/pages/rcgl/jshj/index.html"
+        },
+        {
+          "title": "同案人员",
+          "url": "/apps/jds/views/pages/rcgl/tary/index.html"
+        },
+        {
+          "title": "临时出所",
+          "url": "/apps/jds/views/pages/rcgl/lscs/index.html"
+        },
+        {
+          "title": "教育训练记录",
+          "url": "/apps/jds/views/pages/rcgl/jyxljl/index.html"
+        },
+        {
+          "title": "社会关系",
+          "url": "/apps/jds/views/pages/rcgl/shgx/index.html"
+        },
+        {
+          "title": "安全检查",
+          "url": "/apps/jds/views/pages/rcgl/aqjc/index.html"
+        },
+        {
+          "title": "交接班报告",
+          "url": "/apps/jds/views/pages/rcgl/jjbbg/index.html"
+        },
+        {
+          "title": "警械具交接",
+          "url": "/apps/jds/views/pages/rcgl/jxjjj/index.html"
+        },
+        {
+          "title": "虚假人员",
+          "url": "/apps/jds/views/pages/rcgl/xjry/index.html"
+        },
+        {
+          "title": "个人简历维护",
+          "url": "/apps/jds/views/pages/rcgl/grjlwh/index.html"
+        },
+        {
+          "title": "优秀戒室评比",
+          "url": "/apps/jds/views/pages/rcgl/yxjspb/index.html"
+        },
+        {
+          "title": "责任民警分配",
+          "url": "/apps/jds/views/pages/rcgl/zrmjfp/index.html"
+        },
+        {
+          "title": "狱帧线索管理",
+          "url": "/apps/jds/views/pages/rcgl/yzxsgl/index.html"
+        }
+      ]
+    },
+    {
+      "title": "医疗管理",
+      "img": "",
+      "list": [{
+          "title": "性病传染检查",
+          "url": "/apps/jds/views/pages/ylgl/xbcrjc/index.html"
+        },
+        {
+          "title": "病犯管理",
+          "url": "/apps/jds/views/pages/ylgl/bfgl/index.html"
+        },
+        {
+          "title": "入所体检台账",
+          "url": "/apps/jds/views/pages/ylgl/rctjtz/index.html"
+        }
+      ]
+    },
+    {
+      "title": "财务管理",
+      "img": "",
+      "list": [{
+          "title": "物品管理",
+          "url": "/apps/jds/views/pages/cwgl/wpgl/index.html"
+        },
+        {
+          "title": "现金存入",
+          "url": "/apps/jds/views/pages/cwgl/xjcr/index.html"
+        }
+      ]
+    },
+    {
+      "title": "学员评估",
+      "img": "",
+      "list": [{
+          "title": "评估项目设置",
+          "url": "/apps/jds/views/pages/xypg/pgxmsz/index.html"
+        },
+        {
+          "title": "日常评估登记",
+          "url": "/apps/jds/views/pages/xypg/rcpgdj/index.html"
+        },
+        {
+          "title": "评估记录查询",
+          "url": "/apps/jds/views/pages/xypg/pgjlcx/index.html"
+        },
+        {
+          "title": "评估复议申请",
+          "url": "/apps/jds/views/pages/xypg/pgfysq/index.html"
+        },
+        {
+          "title": "评估管教处理",
+          "url": "/apps/jds/views/pages/xypg/pggjcl/index.html"
+        },
+        {
+          "title": "评估记录复议审批",
+          "url": "/apps/jds/views/pages/xypg/pgjlfysp/index.html"
+        },
+        {
+          "title": "学员评估月结",
+          "url": "/apps/jds/views/pages/xypg/xypgyj/index.html"
+        }
+      ]
+    },
+    {
+      "title": "值班台账",
+      "img": "",
+      "list": [{
+          "title": "重点人员台账",
+          "url": "/apps/jds/views/pages/zbtz/zdrytz/index.html"
+        },
+        {
+          "title": "约束（隔离）台账",
+          "url": "/apps/jds/views/pages/zbtz/ysgltz/index.html"
+        },
+        {
+          "title": "出所台账",
+          "url": "/apps/jds/views/pages/zbtz/cstz/index.html"
+        },
+        {
+          "title": "预出所台账",
+          "url": "/apps/jds/views/pages/zbtz/ycstz/index.html"
+        },
+        {
+          "title": "临时出所台账",
+          "url": "/apps/jds/views/pages/zbtz/lscstz/index.html"
+        },
+        {
+          "title": "延期台账",
+          "url": "/apps/jds/views/pages/zbtz/yqtz/index.html"
+        },
+        {
+          "title": "耳目使用台账",
+          "url": "/apps/jds/views/pages/zbtz/emsytz/index.html"
+        },
+        {
+          "title": "接见记录台账",
+          "url": "/apps/jds/views/pages/zbtz/jjjltz/index.html"
+        },
+        {
+          "title": "谈话教育台账",
+          "url": "/apps/jds/views/pages/zbtz/thjytz/index.html"
+        },
+        {
+          "title": "入所台账",
+          "url": "/apps/jds/views/pages/zbtz/rstz/index.html"
+        },
+        {
+          "title": "投劳计划台账",
+          "url": "/apps/jds/views/pages/zbtz/tljhtz/index.html"
+        },
+        {
+          "title": "投劳计划处理查询",
+          "url": "/apps/jds/views/pages/zbtz/tljhclcx/index.html"
+        },
+        {
+          "title": "病室调整台账",
+          "url": "/apps/jds/views/pages/zbtz/bstztz/index.html"
+        },
+        {
+          "title": "虚假人员台账",
+          "url": "/apps/jds/views/pages/zbtz/xjrytz/index.html"
+        },
+        {
+          "title": "提讯台账",
+          "url": "/apps/jds/views/pages/zbtz/txtz/index.html"
+        },
+        {
+          "title": "拒收人员台账",
+          "url": "/apps/jds/views/pages/zbtz/jsrytz/index.html"
+        },
+        {
+          "title": "视频会见台账",
+          "url": "/apps/jds/views/pages/zbtz/sphjtz/index.html"
+        }
+      ]
+    },
+    {
+      "title": "工作人员",
+      "img": "",
+      "list": [{
+          "title": "基本信息",
+          "url": "/apps/jds/views/pages/gzry/jbxx/index.html"
+        },
+        {
+          "title": "社会关系",
+          "url": "/apps/jds/views/pages/gzry/shgx/index.html"
+        },
+        {
+          "title": "统计",
+          "url": "/apps/jds/views/pages/gzry/tj/index.html"
+        },
+        {
+          "title": "查询",
+          "url": "/apps/jds/views/pages/gzry/cx/index.html"
+        },
+        {
+          "title": "奖惩记录",
+          "url": "/apps/jds/views/pages/gzry/jcjl/index.html"
+        },
+        {
+          "title": "工作经历",
+          "url": "/apps/jds/views/pages/gzry/gzjl/index.html"
+        },
+        {
+          "title": "教育经历",
+          "url": "/apps/jds/views/pages/gzry/jyjl/index.html"
+        },
+        {
+          "title": "民警绩效考核",
+          "url": "/apps/jds/views/pages/gzry/mjjxkh/index.html"
+        },
+        {
+          "title": "民警绩效考核查询",
+          "url": "/apps/jds/views/pages/gzry/mjjxkhcx/index.html"
+        },
+        {
+          "title": "民警谈话",
+          "url": "/apps/jds/views/pages/gzry/mjth/index.html"
+        },
+        {
+          "title": "查询统计",
+          "url": "/apps/jds/views/pages/gzry/cxtj/index.html"
+        }
+      ]
+    },
+    {
+      "title": "流程控制",
+      "img": "",
+      "list": [{
+          "title": "调科流程",
+          "url": "/apps/jds/views/pages/lckz/dklc/index.html"
+        },
+        {
+          "title": "所外就医",
+          "url": "/apps/jds/views/pages/lckz/swjy/index.html"
+        },
+        {
+          "title": "临时出所",
+          "url": "/apps/jds/views/pages/lckz/lscs/index.html"
+        },
+        {
+          "title": "变更措施",
+          "url": "/apps/jds/views/pages/lckz/bgcs/index.html"
+        },
+        {
+          "title": "请假出所",
+          "url": "/apps/jds/views/pages/lckz/qjcs/index.html"
+        },
+        {
+          "title": "延长（提前）戒毒期限",
+          "url": "/apps/jds/views/pages/lckz/yctqjdqx/index.html"
+        },
+        {
+          "title": "律师会见",
+          "url": "/apps/jds/views/pages/lckz/lshj/index.html"
+        },
+        {
+          "title": "信息员管理",
+          "url": "/apps/jds/views/pages/lckz/xxygl/index.html"
+        },
+        {
+          "title": "关注对象呈请",
+          "url": "/apps/jds/views/pages/lckz/gzdxcq/index.html"
+        },
+        {
+          "title": "警械具使用",
+          "url": "/apps/jds/views/pages/lckz/jxjsy/index.html"
+        },
+        {
+          "title": "入所",
+          "url": "/apps/jds/views/pages/lckz/rslc/index.html"
+        },
+        {
+          "title": "提讯",
+          "url": "/apps/jds/views/pages/lckz/txlc/index.html"
+        },
+        {
+          "title": "视频会见",
+          "url": "/apps/jds/views/pages/lckz/sphj/index.html"
+        },
+        {
+          "title": "出所",
+          "url": "/apps/jds/views/pages/lckz/cslc/index.html"
+        },
+        {
+          "title": "所重点人员呈请",
+          "url": "/apps/jds/views/pages/lckz/szdrycq/index.html"
+        },
+        {
+          "title": "约束性措施",
+          "url": "/apps/jds/views/pages/lckz/ysxcs/index.html"
+        },
+        {
+          "title": "单独关押",
+          "url": "/apps/jds/views/pages/lckz/ddgy/index.html"
+        }
+      ]
+    }
+  ]
+}

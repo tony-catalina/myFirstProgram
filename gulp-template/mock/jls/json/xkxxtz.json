@@ -1,0 +1,21 @@
+{
+    "code": 0,
+    "msg": "查询成功",
+    "result": {
+        "rows|10":[{
+            "content": "@word",
+            "createtime": "@datetime",
+            "creator": "管理员",
+            "id|1-99999999999999999999": 1,
+            "jslx": "1",
+            "jslxString" :"看守所",
+            "state": "R2",
+            "stateString": "有效",
+            "title":"ok",
+            "updatetime": "@datetime",
+            "updator": "管理员"
+        }],
+        "total":10
+    },
+    "success": true
+}

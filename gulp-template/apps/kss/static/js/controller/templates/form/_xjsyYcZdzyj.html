@@ -1,0 +1,110 @@
+
+<body class="easyui-layout" data-option="fit:true">
+<div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+        <div class="section-content">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                    <div class="htmleaf-container">
+                        <div class="container">
+                            <div id="timeline">
+
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="iconfont icon-jibenxinxi"></span>
+                                    </div>
+                                    <div class="timeline-content right">
+                                        <h2>基本信息</h2>
+                                        <table class="container-formtable">
+                                            <tr>
+                                                <td class="formtd">监&emsp;&emsp;&emsp;室&emsp;&emsp;号：</td>
+                                                <td ><input class="easyui-textbox" value="{{jsh}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">姓&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;名：</td>
+                                                <td ><input class="easyui-textbox" value="{{xm}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">别&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;名：</td>
+                                                <td ><input class="easyui-textbox" value="{{bm}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">性&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;别：</td>
+                                                <td style="min-width:280px;">
+                                                    <input class="awdCombox" value="{{xb}}" text="{{xbString}}" readonly style="min-width:280px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">出&emsp;生&emsp;&emsp;日&emsp;期：</td>
+                                                <td ><input class="easyui-datetimebox" value="{{csrq}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">入&emsp;所&emsp;&emsp;日&emsp;期：</td>
+                                                <td ><input class="easyui-datetimebox" value="{{rsrq}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">办&emsp;案&emsp;&emsp;环&emsp;节：</td>
+                                                <td colspan="1">
+                                                    <input class="awdCombox" value="{{bahj}}" text="{{bahjString}}" readonly style="min-width:280px;">
+                                                </td>
+                                                <td class="formtd">涉&emsp;嫌&emsp;&emsp;罪&emsp;名：</td>
+                                                <td colspan="1">
+                                                    <input class="awdCombox" value="{{ay}}" text="{{ayString}}" readonly style="min-width:280px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">户&emsp;籍&emsp;地&emsp;详址：</td>
+                                                <td ><input class="easyui-textbox" value="{{hjdxz}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">简&emsp;要&emsp;&emsp;案&emsp;情：</td>
+                                                <td ><input class="easyui-textbox" value="{{jyaq}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">使用&emsp;械具&emsp;种类：</td>
+                                                <td >
+                                                    <input class="awdCombox" value="{{ldpsxx.xj_xjmc}}" text="{{ldpsxx.xj_xjmcString}}" readonly style="min-width:280px;">
+                                                </td>
+                                                <td class="formtd">变动械具使用期限：</td>
+                                                <td ><input class="easyui-datebox"  style="min-width:280px;" readonly value="{{ldpsxx.xj_jssj}}"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">变动械具使用理由：</td>
+                                                <td ><input class="easyui-textbox" value="{{ldpsxx.xj_xjycly}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="iconfont icon-yewubaobiao"></span>
+                                    </div>
+                                    <div class="timeline-content right">
+                                        <h2>延长中队长意见</h2>
+                                        <table class="container-formtable">
+                                            <tr>
+                                                <td class="formtd">延长&emsp;中队长&emsp;意见：<font class="redicon">*</font></td>
+                                                <td colspan="3">
+                                                   <label id="psbzty"><input id="psbzty" type="radio" name="yczdpsbz" value="1" checked>同意</label> 
+                                                   <label id="psbzbty"> <input id="psbzbty" type="radio" name="yczdpsbz" value="2" >不同意</label> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">延长中队长意见内容：<font class="redicon">*</font></td>
+                                                <td colspan="3"><input class="easyui-textbox" value="同意延长该人员械具使用时间" name="yczdspyj" required data-options="multiline:true" style="width: 100%;min-height: 80px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">中队&emsp;领&emsp;导&emsp;签字：<font class="redicon">*</font></td>
+                                                <td ><input class="easyui-textbox" id="yczdsprfm" name="yczdspr" required style="min-width:280px;"> </td>
+                                                <td class="formtd">签字时间：<font class="redicon">*</font></td>
+                                                <td ><input class="easyui-datetimebox" id="yczdspsjfm" name="yczdspsj" required style="min-width:280px;"> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</form>
+</body>

@@ -1,0 +1,51 @@
+{{each app as ap i }}
+{{if i>23}}
+    {{i=i-23}}
+{{/if}}
+<li class="card-item">
+    <img class="awdDesktop" alt="{{ap.url}}" src="../static/images/{{i+1}}_img.png" />
+    <div>
+        <p>{{ap.name}}</p>
+    </div>
+</li>
+{{/each}}
+<li class="card-item">
+    <img class="awdDesktop" src="../static/images/12_img.png" alt="AWD-MIS-APPSTORE-WEB"/>
+    <div>
+        <p>应用商城</p>
+    </div>
+</li>
+{{if user.glybz==1 }}
+{{if user.jsbh=="110000000"}}
+<li class="card-item">
+    <img class="awdDesktop" alt="AWD-MIS-TZGG"  src="../static/images/17_img.png" />
+    <div>
+        <p>通知公告</p>
+    </div>
+</li>
+<li class="card-item">
+    <img  class="awdDesktop" alt="AWD-MIS-XWYW" src="../static/images/16_img.png" />
+    <div>
+        <p>新闻要闻</p>
+    </div>
+</li>
+<li class="card-item">
+    <img class="awdDesktop" alt="AWD-MIS-WHGG"  src="../static/images/20_img.png" />
+    <div>
+        <p>维护公告</p>
+    </div>
+</li>
+<li class="card-item">
+    <img class="awdDesktop" alt="AWD-MIS-YWZD" src="../static/images/19_img.png" />
+    <div>
+        <p>业务指导</p>
+    </div>
+</li>
+{{/if}}
+{{/if}}
+<li class="card-item" id="xtsz">
+    <img class="awdDesktop" src="../static/images/9_img.png"  alt="AWD-MIS-SETTING" />
+    <div>
+        <p>系统设置</p>
+    </div>
+</li>

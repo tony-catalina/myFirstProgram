@@ -1,0 +1,96 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="ldspfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">人&emsp;&emsp;员&emsp;&emsp;&emsp;编&emsp;&emsp;号：</td>
+                                    <td ><input class="easyui-textbox" name="rybh" value="{{rybh}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">姓&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" name="xm" value="{{xm}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">监&emsp;&emsp;&emsp;&emsp;室&emsp;&emsp;&emsp;&emsp;号：</td>
+                                    <td ><input class="easyui-textbox" name="jsh" value="{{jsh}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">投&emsp;&emsp;诉&emsp;&emsp;&emsp;类&emsp;&emsp;型：</td>
+                                    <td ><input class="easyui-textbox"  name="tslx" value="{{ldpsxx.tslx}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">与&emsp;投&emsp;诉&emsp;人&emsp;关&emsp;系：</td>
+                                    <td ><input class="easyui-textbox" name="gx"  value="{{ldpsxx.gx}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">投&emsp;&ensp;诉&emsp;&ensp;人&emsp;&ensp;姓&emsp;&ensp;名：</td>
+                                    <td ><input class="easyui-textbox" name="tsrxm"  value="{{ldpsxx.tsrxm}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">投诉机关或人(向谁&nbsp;投诉)：</td>
+                                    <td ><input class="easyui-textbox" name="tsdx" value="{{ldpsxx.tsdx}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">被投诉机关或人(投诉&nbsp;谁)：</td>
+                                    <td ><input class="easyui-textbox" name="btsdx" value="{{ldpsxx.btsdx}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">投&emsp;&emsp;诉&emsp;&emsp;&emsp;内&emsp;&emsp;容：</td>
+                                    <td ><input class="easyui-textbox" name="tsnr" value="{{ldpsxx.tsnr}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">投&emsp;&emsp;诉&emsp;&emsp;&emsp;时&emsp;&emsp;间：</td>
+                                    <td ><input class="easyui-textbox" name="tssj" value="{{ldpsxx.tssj}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">受&emsp;&emsp;&emsp;&emsp;理&emsp;&emsp;&emsp;&emsp;人：</td>
+                                    <td ><input class="easyui-textbox"  name="slr" value="{{ldpsxx.slr}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">受&emsp;&emsp;理&emsp;&emsp;&emsp;时&emsp;&emsp;间：</td>
+                                    <td ><input class="easyui-textbox" name="slsj" value="{{ldpsxx.slsj}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">审&ensp;批&ensp;&ensp;意&ensp;见：</td>
+                                    <td>
+                                        <input type="radio" name="psbz" value="1" checked class="radiocss"><font>同意</font> <input type="radio" name="psbz" value="2" class="radiocss"><font>不同意</font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">审批意见内容：</td>
+                                    <td colspan="3"><input id="spyjfm" class="easyui-textbox" name="ldyj" data-options="multiline:true" style="width: 100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">办&emsp;&ensp;理&emsp;&ensp;人：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="blr" value="{{blr}}" required style="min-width:280px;"> </td>
+                                    <td class="formtd">办理时间：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datetimebox" name="blsj" value="{{blsj}}" required style="min-width:280px;"> </td>
+                                </tr>
+                                <input type="hidden" name="sqyy" value="{{sqyy}}"/>
+                                
+                            </table>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

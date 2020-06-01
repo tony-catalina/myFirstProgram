@@ -1,0 +1,80 @@
+<div class="section-container section-container-row">
+    <div class="section-item item-columns sidebar">
+        <div class="sidebar-title">监区树<span class="iconfont icon-liebiaoxiangzuo"></span></div>
+        <ul id="tt" class="easyui-tree">
+            <li>
+                <span>第一监区</span>
+                <ul>
+                    <li><span>第一监室</span></li>
+                    <li><span>第一监室</span></li>
+                    <li><span>第一监室</span></li>
+                    <li><span>第一监室</span></li>
+                    <li><span>第一监室</span></li>
+                    <li><span>第一监室</span></li>
+                </ul>
+            </li>
+            <li>
+                <span>第二监区</span>
+                <ul>
+                    <li><span>第二监室</span></li>
+                    <li><span>第二监室</span></li>
+                    <li><span>第二监室</span></li>
+                    <li><span>第二监室</span></li>
+                    <li><span>第二监室</span></li>
+                    <li><span>第二监室</span></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="section-item item-columns  adaptive">
+        <div class="section-header">
+            <div class="section-title">简项查询</div>
+            <div class="section-controls single-colors">
+                <button type="button"><span class="iconfont icon-jiahao"></span>&nbsp;&nbsp;新建</button>
+                <button type="button"><span class="iconfont icon-daochu"></span>&nbsp;&nbsp;导出</button>
+                <button type="button"><span class="iconfont icon-iconSVG-"></span>&nbsp;&nbsp;打印</button>
+            </div>
+            <div class="section-corner">
+                <button><span class="iconfont icon-gengduo7"></span></button>
+                <button><span class="iconfont icon-gengduo1"></span></button>
+                <button><span class="iconfont icon-gengduo6"></span></button>
+            </div>
+        </div>
+        <div class="section-content">
+            <form action="" class="search-form" >
+                <div class="search-group" >
+                    <div class="search-item">
+                        <input class="easyui-{{$value.type}} input" label="{{$value.title}}"  data-options='{{$value.optionsString}}' />
+                    </div>
+
+                    <div class="search-item button-group font-18">
+                        <button type="button" class="search-btn"><span class="iconfont icon-icon-chaxun"></span>查询</button>
+                        <button type="reset" class="reset-btn"><span class="iconfont icon-zhongzhi"></span>重置</button>
+                        <button type="button" class="more-btn"><span class="iconfont icon-more-arrow"></span>更多</button>
+                    </div>
+                </div>
+                <div class="search-more">
+                    <div class="search-group">
+                        <div class="search-item">
+                            <input class="easyui-{{$value.type}} input" data-options='{{$value.optionsString}}' label="{{$value.title}}" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <table class="easyui-datagrid " data-options="url:'/mock/jds/datagrid/list',method:'GET',
+            pagination:true, rownumbers:true,fitColumns:true,">
+                <thead>
+                <tr>
+                    <th data-options="field:'ck',checkbox:true,width:'100'"></th>
+                    <th data-options="field:'name',width: '100'">姓名</th>
+                    <th data-options="field:'age', width: '100'">年龄</th>
+                    <th data-options="field:'firstTalkingTime', width: '200'">首次谈话时间</th>
+                    <th data-options="field:'personInCharge', width: '100'">负责人</th>
+                    <th data-options="field:'title', width: '200'">谈话主题</th>
+                    <th data-options="field:'content', width: '250'">谈话内容</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>

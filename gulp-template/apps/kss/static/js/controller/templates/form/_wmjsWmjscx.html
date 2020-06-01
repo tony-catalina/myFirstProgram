@@ -1,0 +1,54 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">监&ensp;&ensp;&nbsp;&ensp;室&ensp;&ensp;&ensp;号：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="jsh" readonly value="{{jsh}}" style="width:100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">主要事实/理由：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" data-options="multiline:true" style="min-height: 80px;width: 100%;" name="ly" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">警&ensp;组&ensp;&nbsp;&ensp;意&ensp;见：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" data-options="multiline:true" style="min-height: 80px;width: 100%;" name="jzyj" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办&ensp;&ensp;&nbsp;&ensp;理&ensp;&ensp;&ensp;人：<font class="redicon">*</font></td>
+                                                    <td><input id="blr" class="easyui-textbox" name="blr"  required style="min-width:280px;">
+                                                    </td>
+                                                    <td class="formtd">登记日期：<font class="redicon">*</font></td>
+                                                    <td><input id="blrq" class="easyui-datetimebox" name="blrq" required style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&ensp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;注：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" data-options="multiline:true" style="min-height: 80px;width: 100%;" name="bz" required> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

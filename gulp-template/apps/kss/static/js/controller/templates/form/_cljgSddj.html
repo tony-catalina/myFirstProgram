@@ -1,0 +1,88 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-gerenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>个人信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">监&emsp;室&emsp;号：</td>
+                                    <td ><input class="easyui-textbox" readonly value="{{jsh}}" style="min-width:180px;"> </td>
+                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" readonly value="{{xm}}" style="min-width:180px;"> </td>
+                                    <td class="formtd">别&emsp;&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" readonly value="{{bm}}" style="min-width:180px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">性&emsp;&emsp;&ensp;&ensp;别：</td>
+                                    <td ><input id="xb" class="awdCombox" readonly value="{{xb}}" text="{{xbString}}" style="min-width:180px;"> </td>
+                                    <td class="formtd">入所日期：</td>
+                                    <td ><input class="easyui-datebox" readonly value="{{rsrq}}" style="width:100%;"> </td>
+                                    <td class="formtd">办案环节：</td>
+                                    <td ><input class="awdCombox" readonly value="{{bahj}}"  text="{{bahjString}}" style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">涉&thinsp;嫌&ensp;犯&thinsp;罪：</td>
+                                    <td ><input class="awdCombox" readonly value="{{ay}}"  text="{{ayString}}" style="min-width:180px;"> </td>
+                                    <td class="formtd">档案编号：</td>
+                                    <td ><input class="easyui-textbox" readonly value="{{dah}}" style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">户籍地详址：</td>
+                                    <td colspan="5"><input class="easyui-textbox" readonly value="{{hjdxz}}" style="width:100%;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-yewubaobiao"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">最&ensp;终&ensp;处&emsp;理&ensp;结&ensp;果：</td>
+                                    <td ><input class="awdCombox" readonly value="{{cljg}}"  text="{{cljgString}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">最终处理期限：</td>
+                                    <td ><input class="easyui-textbox" readonly value="{{gyqx}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">执行通知书送达日期：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datebox" name="sdrq" value="{{sdrq}}" required style="min-width:280px;"> </td>
+                                    <td class="formtd">经&ensp;&emsp;办&ensp;&emsp;人：</td>
+                                    <td ><input id="updator" class="easyui-textbox" required name="updator"  style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">经&ensp;&emsp;&thinsp;办&thinsp;&emsp;&ensp;时&thinsp;&emsp;&ensp;间：<font class="redicon">*</font></td>
+                                    <td ><input id="updatetime" class="easyui-datetimebox" required  name="updatetime"  style="min-width:280px;"> </td>
+                                </tr>
+								 <input id="rybh" name="rybh" value="{{rybh}}" type="hidden"/>
+								 <input id="taskid" name="taskid" value="{{taskid}}" type="hidden"/>
+								 <input id="ywlcid" name="ywlcid" value="{{ywlcid}}" type="hidden"/>
+								 <input name="id" value="{{id}}" type="hidden"/>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

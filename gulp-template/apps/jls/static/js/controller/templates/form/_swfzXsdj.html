@@ -1,0 +1,116 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                        <div class="timeline-item">
+                                <div class="timeline-icon">
+                                   <span class="iconfont icon-jibenxinxi"></span>
+                                </div>
+                                <div class="timeline-content right">
+                                    <h2>基本信息</h2>
+                                    <table class="container-formtable">
+                                        <tr>
+                                            <td class="formtd">拘&ensp;室&ensp;号：</td>
+                                            <td ><input class="easyui-textbox" value="{{jsh}}" readonly style="min-width:280px;"> </td>
+                                            <td class="formtd">姓&emsp;&emsp;名：</td>
+                                            <td ><input class="easyui-textbox" value="{{xm}}" readonly style="min-width:280px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">性&emsp;&emsp;别：</td>
+                                            <td ><input class="awdCombox" value="{{xb}}" text="{{xbString}}" readonly style="min-width:280px;"> </td>
+                                            <td class="formtd">入所时间：</td>
+                                            <td ><input class="easyui-textbox" value="{{rsrq}}" readonly style="min-width:280px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">档案编号：</td>
+                                            <td ><input class="easyui-textbox" value="{{dah}}" readonly style="min-width:280px;"> </td>
+                                            <td class="formtd">案&emsp;&emsp;别：</td>
+                                            <td ><input class="awdCombox" value="{{ay}}" text="{{ayString}}" readonly style="min-width:280px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">户&ensp;籍&ensp;地：</td>
+                                            <td colspan="3"><input class="awdCombox" value="{{hjd}}" text="{{hjdString}}" readonly style="width:100%"> </td>
+                                        </tr>
+
+
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                   <span class="iconfont icon-jibenxinxi"></span>
+                                </div>
+                                <div class="timeline-content right">
+                                    <h2>业务信息</h2>
+                                    <table class="container-formtable">
+                                        <tr>
+                                            <td class="formtd">类&emsp;&emsp;&emsp;型：<font class="redicon">*</font></td>
+                                            <td >
+                                               <input type="radio" name="xslx" value="3" class="radiocss"><font>检举</font>
+                                               <input type="radio" name="xslx" value="1" checked class="radiocss"><font>坦白</font> 
+                                            </td>
+                                            <td class="formtd">是否重&nbsp;大案件：<font class="redicon">*</font></td>
+                                            <td >
+                                                <input type="radio" name="sfzdaj" value="0" checked class="radiocss"><font>一般</font>
+                                                <input type="radio" name="sfzdaj" value="1" class="radiocss"><font>重大</font> 
+                                            </td>
+                                       </tr>
+                                        <tr>
+                                            <td class="formtd">涉&ensp;&ensp;案&ensp;&ensp;人：<font class="redicon">*</font></td>
+                                            <td ><input class="easyui-textbox" name="sar" value="{{sar}}" required style="min-width:280px;"> </td>
+                                            <td class="formtd">涉&ensp;&ensp;案&nbsp;人&ensp;&ensp;数：</td>
+                                            <td ><input class="easyui-textbox" name="sars" value="{{sars}}" data-options="validType:'number'" style="min-width:280px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">案&ensp;发时&ensp;间：<font class="redicon">*</font></td>
+                                            <td ><input name="afsj" class="easyui-datetimebox" value="{{afsj}}" required style="min-width:280px;"> </td>
+                                            <td class="formtd">案&ensp;&ensp;发&nbsp;地&ensp;&ensp;点：<font class="redicon">*</font></td>
+                                            <td ><input class="easyui-textbox" name="afdd" value="{{afdd}}" required style="min-width:280px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">涉&ensp;案金&ensp;额：</td>
+                                            <td ><input class="easyui-textbox" name="saje" data-options="validType:'number'" value="{{saje}}" style="min-width:280px;"> </td>
+                                            <td class="formtd">坦白/检举日期：<font class="redicon">*</font></td>
+                                            <td ><input  id="jjrq" name="jjrq" class="easyui-datebox"  required value="{{tbrq}}" style="min-width:280px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">检举案性质：<font class="redicon">*</font></td>
+                                            <td ><input class="easyui-textbox" name="jjaxz" value="{{jjaxz}}" required style="min-width:280px;"> </td>
+                                            <td class="formtd">涉&ensp;&ensp;案&nbsp;区&ensp;&ensp;域：<font class="redicon">*</font></td>
+                                            <td colspan="3">
+                                                <input type="radio" name="saqy" value="0" checked class="radiocss"><font>本省（市）</font>
+                                                <input type="radio" name="saqy" value="1" class="radiocss"><font> 外省（市）</font> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">登&ensp;&ensp;记&ensp;&ensp;人：</td>
+                                            <td ><input class="easyui-textbox" name="djr" value="{{tbr}}" style="min-width:280px;"> </td>
+                                            <td class="formtd">登&ensp;&ensp;记&nbsp;日&ensp;&ensp;期：</td>
+                                            <td ><input id="djrq" name="djrq" class="easyui-datebox" value="{{tbrq}}" style="min-width:280px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">简&ensp;要经&ensp;过：<font class="redicon">*</font></td>
+                                            <td colspan="3"><input class="easyui-textbox" data-options="multiline:true"  name="jyjg" required value="{{jyjg}}" style="width:100%;min-height:80px;"> </td>
+                                        </tr>
+                                        <input type="hidden" name="tbr" value="{{tbr}}">
+                                        <input type="hidden" name="tbrq" value="{{tbrq}}">
+                                    </table>
+                                </div>
+                            </div>
+        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

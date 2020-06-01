@@ -1,0 +1,192 @@
+
+<body class="easyui-layout" data-option="fit:true">
+        <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+        <div class="section-content">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                 <div class="htmleaf-container">
+                 <div class="container">
+                    <div id="timeline">
+                            <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                       <span class="iconfont icon-jibenxinxi"></span>
+                                    </div>
+                                    <div class="timeline-content right">
+                                        <h2>基本信息</h2>
+                                        <table class="container-formtable">
+                                            <tr style="display: none;">
+                                                <td colspan="3">
+                                                    <input name="id" value="{{id}}" class="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">拘&ensp;室&ensp;号：</td>
+                                                <td ><input class="easyui-textbox" value="{{jsh}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">姓&emsp;&emsp;名：</td>
+                                                <td ><input class="easyui-textbox" value="{{xm}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">性&emsp;&emsp;别：</td>
+                                                <td ><input class="awdCombox" value="{{xb}}" text="{{xbString}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">入所时间：</td>
+                                                <td ><input class="easyui-datebox" value="{{rsrq}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">档案编号：</td>
+                                                <td ><input class="awdCombox" value="{{dah}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">案&emsp;&emsp;别：</td>
+                                                <td ><input class="easyui-textbox" value="{{ay}}"  text="{{ayString}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">户&ensp;籍&ensp;地：</td>
+                                                <td colspan="3"><input class="awdCombox" value="{{hjd}}" text="{{hjdString}}" readonly style="width:100%"> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                       <span class="iconfont icon-jibenxinxi"></span>
+                                    </div>
+                                    <div class="timeline-content right">
+                                        <h2>基本信息</h2>
+                                        <table class="container-formtable">
+    
+                                            <tr>
+                                                <td class="formtd">类&emsp;&emsp;&emsp;&emsp;型：</td>
+                                                <td colspan="3"><input class="awdCombox" value="{{ldpsxx.swfz_xslx}}" text="{{ldpsxx.swfz_xslxString}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">是否&nbsp;重大案件：</td>
+                                                <td colspan="3"><input class="awdCombox" value="{{ldpsxx.swfz_sfzdaj}}" text="{{ldpsxx.swfz_sfzdajString}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">涉&emsp;&ensp;案&ensp;&emsp;人：</td>
+                                                <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.swfz_sar}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">涉&ensp;案&emsp;&nbsp;人&ensp;数：</td>
+                                                <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.swfz_sars}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">案&ensp;发&emsp;时&ensp;间：</td>
+                                                <td colspan="3"><input class="easyui-datebox" value="{{ldpsxx.swfz_afsj}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">案&ensp;发&emsp;&nbsp;地&ensp;点：</td>
+                                                <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.swfz_afdd}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">涉&ensp;案&emsp;金&ensp;额：</td>
+                                                <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.swfz_saje}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">坦白/检举日期：</td>
+                                                <td colspan="3"><input class="easyui-datebox" value="{{ldpsxx.swfz_jjrq}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">检举案&emsp;性质：</td>
+                                                <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.swfz_jjaxz}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">涉&ensp;案&emsp;&nbsp;区&ensp;域：</td>
+                                                <td colspan="3"><input class="awdCombox" value="{{ldpsxx.swfz_saqy}}" text="{{ldpsxx.swfz_saqyString}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">登&emsp;&ensp;记&emsp;&ensp;人：</td>
+                                                <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.swfz_djr}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">登&ensp;记&emsp;&nbsp;日&ensp;期：</td>
+                                                <td colspan="3"><input class="easyui-datebox" value="{{ldpsxx.swfz_djrq}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">简&ensp;要&emsp;经&ensp;过：</td>
+                                                <td colspan="6"><input class="easyui-textbox" value="{{ldpsxx.swfz_jyjg}}" readonly data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                            </tr>
+                                            
+                                            
+                                            <tr>
+                                                <td class="formtd">传&emsp;&ensp;递&emsp;&ensp;人：</td>
+                                                <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.swfz_cdr}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">传递人&emsp;&nbsp;电话：</td>
+                                                <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.swfz_cdrdh}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">传&ensp;递&emsp;时&ensp;间：</td>
+                                                <td colspan="3"><input class="easyui-datetimebox" value="{{ldpsxx.swfz_cdsj}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">传&ensp;递&emsp;&nbsp;单&ensp;位：</td>
+                                                <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.swfz_cddw}}" readonly style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">接&emsp;&ensp;收&emsp;&ensp;人：</td>
+                                                <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.swfz_jsr}}" readonly style="min-width:280px;"> </td>
+                                                <td class="formtd">接收人&emsp;&nbsp;电话：</td>
+                                                <td colspan="3"><input class="easyui-textbox"  value="{{ldpsxx.swfz_jsrdh}}"  readonly style="min-width:280px;"> </td>
+                                            </tr>
+
+
+
+                                            <tr>
+                                                <td class="formtd">查&ensp;证&emsp;结&ensp;果：<font class="redicon">*</font></td>
+                                                <td colspan="3">
+                                                        <input type="radio" name="czqk" value="1" checked class="radiocss"><font>已查实</font>
+                                                        <input type="radio" name="czqk" value="2"  class="radiocss"><font>无法查实</font>    
+                                                </td>
+                                                <td class="formtd">反&ensp;馈&emsp;&nbsp;日&ensp;期：<font class="redicon">*</font></td>
+                                                <td colspan="3"><input class="easyui-datebox" id="fkrq" name="fkrq" value="{{tbr}}" required style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">破获刑事案件：</td>
+                                                <td colspan="3"><input class="easyui-textbox" name="phxsajs" value="{{phxsaj}}" style="min-width:280px;"> </td>
+                                                <td class="formtd">破获&nbsp;治安案件：</td>
+                                                <td colspan="3"><input class="easyui-textbox" name="phzaajs" value="{{phzaaj}}" style="min-width:280px;"> </td>
+                                            </tr>
+                                           
+                                            
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                       <span class="iconfont icon-jibenxinxi"></span>
+                                    </div>
+                                    <div class="timeline-content right">
+                                        <h2>基本信息</h2>
+                                        <table class="container-formtable">
+                                            <tr>
+                                                <td class="formtd">查&ensp;获&emsp;人&ensp;员</td>
+                                                <td class="formtd">刑事拘留人数：</td>
+                                                <td ><input class="easyui-textbox" name="xsjlrs" data-options="validType:'number'" value="{{xsjlrs}}"  style="min-width:180px;"> </td>
+                                                <td class="formtd">逮&ensp;捕&emsp;人&ensp;数：</td>
+                                                <td ><input class="easyui-textbox" name="dbrs" data-options="validType:'number'" value="{{dbrs}}" style="min-width:180px;"> </td>
+                                                <td class="formtd">劳教人数：</td>
+                                                <td ><input class="easyui-textbox" name="ljrs" data-options="validType:'number'" value="{{ljrs}}" style="min-width:180px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd"></td>
+                                                <td class="formtd">移送起诉人数：</td>
+                                                <td ><input class="easyui-textbox" name="ysqsrs" data-options="validType:'number'" value="{{ysqsrs}}" style="min-width:180px;"> </td>
+                                                <td class="formtd">其&ensp;它&emsp;人&ensp;数：</td>
+                                                <td ><input class="easyui-textbox" name="qtrs" data-options="validType:'number'" value="{{qtrs}}" style="min-width:180px;"> </td>
+
+                                                <td class="formtd"></td>
+                                                <td  style="min-width:180px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">抓&ensp;逃&emsp;人&ensp;员</td>
+                                                <td class="formtd">部督捕、通缉：</td>
+                                                <td ><input class="easyui-textbox" name="bdbtjrs" data-options="validType:'number'" value="{{bdptj}}" style="min-width:180px;"> </td>
+                                                <td class="formtd">省督捕、通缉：</td>
+                                                <td ><input class="easyui-textbox" name="sdbtjrs" data-options="validType:'number'" value="{{sdptj}}" style="min-width:180px;"> </td>
+                                                <td class="formtd">网上追逃：</td>
+                                                <td ><input class="easyui-textbox" name="wsztrs" data-options="validType:'number'" value="{{wszt}}" style="min-width:180px;"> </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="formtd">追赃金额合计：</td>
+                                                <td colspan="6"><input class="easyui-textbox" name="zzje" data-options="validType:'number'" value="{{zzjehj}}" style="width:100%"> </td>
+                                            </tr>
+                                            
+                                        </table>
+                                    </div>
+                                </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+       </div>
+    </form>
+    </body>

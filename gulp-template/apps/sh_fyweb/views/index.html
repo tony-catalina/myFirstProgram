@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+  <title>上海市公安监所肺炎疫情期间收押信息实时动态</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../static/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+  </link>
+  <link href="../static/css/swiper.min.css" rel="stylesheet" type="text/css">
+  <link href="../static/css/style.css" rel="stylesheet" type="text/css">
+  </link>
+  <link href="../static/css/office_efficiency_index.css" rel="stylesheet" type="text/css">
+  <link href="../static/lib/layui/dist/css/layui.css" rel="stylesheet" type="text/css">
+  </link>
+</head>
+
+<body>
+  <div class="container-fluid container-bg office-efficiency-index">
+    <div class="row  office-header">
+      <div class="col-sm-12 col-md-12 pd  title-info">上海市公安监所肺炎疫情期间实时动态</div>
+      <div class="col-sm-5  col-md-5 pd analysis-info"></div>
+    </div>
+    <div class="row  office-header-content">
+      <div class="col-sm-4 col-md-4 pd">
+        <div class="col-info">
+          <div class="title">业务动态</div>
+          <div class="content base-info" id="base-info">
+            <table>
+              <tr>
+                <td >
+                  <div id="integral_echart" class="integral-echart"></div>
+                </td>
+                <td>
+                  <div class="ding-dan-bg"></div>
+                  <div class="ke-liu-bg" ></div>
+                </td>
+              </tr>
+              <tr>
+                <td class="label-name">新收：</td>
+                <td class="label-value  device-score">
+                  <div class="score-val" id="ywdt_xs">1月23号以来，共新收{{}}人，昨天新收{{}}人，今天新收{{}}人</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="label-name">提审：</td>
+                <td class="label-value  device-score">
+                  <div class="score-val" id="ywdt_ts">1月23号以来，共提审{{}}人，昨天提审{{}}人，今天提审{{}}人</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="label-name">律师会见：</td>
+                <td class="label-value  device-score">
+                  <div class="score-val" id="ywdt_lshj">1月23号以来，共律师会见{{}}人，昨天律师会见{{}}人，今天律师会见{{}}人</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="label-name">开庭：</td>
+                <td class="label-value  device-score">
+                  <div class="score-val" id="ywdt_ctsl">1月23号以来，共开庭{{}}人，昨天开庭{{}}人，今天开庭{{}}人</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4 pd">
+        <div class="col-info">
+          <div class="title">籍贯分布 </div>
+          <div class="content" id="jg_detail"></div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4 pd">
+        <div class="col-info">
+          <div class="title">案由分布 </div>
+          <div class="content" id="ay_detail"></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 pd " style="padding-left:0px;padding-right:0px;">
+        <div class="col-info">
+          <div class="title">隔离房间/关押人数</div>
+          <div class="content deviceInfo" id="js-info"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--特效动画效果-->
+  <div id="query-page-data" style="display:none" onclick="loadPageData()" sa-gatherClick="true" elementCode="dataanalysis-m001-p0007-e00001" elementName="查询数据"></div>
+  <script src="../../../apps/sh_fyweb/static/lib/require.js" data-main="../../../apps/sh_fyweb/static/js/controller/index.js"></script>
+  <script src="../../../apps/sh_fyweb/static/js/require.config.js"></script>
+  <script type="text/html" id="rank">
+  {{d.LAY_TABLE_INDEX+1}}
+  </script>
+</body>
+
+</html>

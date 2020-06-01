@@ -1,0 +1,10 @@
+{{each data}}
+<li class="LineS_box" id="{{$value.id}}">
+    <icon class="iconfont icon-xiaolaba"></icon>
+    <a href="#" class="content">{{$value.title}}</a>
+    <span class="" style="width: 300px;"  >{{$value.date}}</span>
+    <!-- {{if $value.state}} 
+        <span class="{{$value.state == 'R2' ? 'unread':'read'}}">{{$value.state == 'R2'?'未读':'已读'}}</span>
+    {{/if}} -->
+</li>
+{{/each}}

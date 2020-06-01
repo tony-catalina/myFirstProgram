@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie6"><![endif]-->
+<!--[if IE 7]><html class="ie7"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if IE 9]><html class="ie9"><![endif]-->
+<!--[if gt IE 9]><html><![endif]-->
+<!--[if !IE]>-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8" />
+  <title>北京公安监察综合业务平台</title>
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <link rel="stylesheet" href="../static/css/iconfont/iconfont.css">
+</head>
+
+<body>
+<div class="header">
+  <div class="header-left">
+    <img src="../static/images/logo_img.png" class="hader-logo" />
+    <span class="logo-txt">北京监管综合业务平台</span>
+  </div>
+  <div class="header-right clearfix" id="userinfo">
+  </div>
+</div>
+<!-- 搜索框-2 -->
+<div class="search clearfix">
+  <div class="home-input">
+    <div class="select-left"><span class="default">维护公告</span><i class="arrow-down"></i></div>
+    <ul class="list" style="display: none;">
+      <li>业务指导</li>
+      <li>新闻要问</li>
+      <li>通知公告</li>
+    </ul>
+    <div class="input-suggest">
+      <input id="search-keyword" placeholder="搜索你想要的内容..." type="text" maxlength="100" autocomplete="off" value=""
+             class="content">
+    </div>
+    <a href="#" class="searchBtn">搜 索</a>
+  </div>
+</div>
+
+
+<div class="main">
+  <div class="tab-wrap my-app">
+    <!-- <div class="t-block"> -->
+    <!-- <span class="fl title">我的应用</span> -->
+    <!-- </div> -->
+    <ul class="tab-title">
+      <li class="title-item active">我的应用</li>
+
+    </ul>
+    <div class="tab-content tab tab-main">
+      <img class="BGimg" src="../static/images/bg_t.png" style="position:absolute;left:0;width:100%;height:100%"/>
+      <div class="content-item active" style="overflow: hidden;">
+        <ul class="card-list clearfix" id="applist">
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col mr">
+      <div class="tab-wrap tab-resp">
+        <ul class="tab-title">
+          <li class="title-item active">业务指导</li>
+          <li class="title-item">新闻要闻</li>
+        </ul>
+        <div class="tab-content tab" >
+          <img class="BGimg" src="../static/images/bg_t2.png" style="position:absolute;left:0;width:100%;height:100%"/>
+          <div class="content-item active " style="overflow: hidden;">
+            <ul class="b-list" id="ywzdlist">
+            </ul>
+          </div>
+          <div class="content-item" style="overflow: hidden;">
+            <ul class="b-list" id="xwywlist">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="tab-wrap tab-resp">
+        <ul class="tab-title">
+          <li class="title-item active">维护公告</li>
+          <li class="title-item">通知公告</li>
+        </ul>
+        <div class="tab-content tab">
+          <img class="BGimg" src="../static/images/bg_t2.png" style="position:absolute;left:0;width:100%;height:100%"/>
+          <div class="content-item active">
+            <ul class="b-list" id="whgglist">
+            </ul>
+          </div>
+          <div class="content-item">
+            <ul class="b-list" id="tzgglist">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  <script src="/apps/platform/static/lib/require.js" data-main="/apps/platform/static/controller/js/index.js"></script>
+  <script src="/apps/platform/static/js/require.config.js"></script>
+</body>
+
+</html>

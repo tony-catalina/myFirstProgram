@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<form class="layui-form" action="" id="fm">
+        <h2>数据字典</h2>
+         <input type="text"  name="id"  value="{{id}}" hidden="hidden">
+        <div class="layui-form-item">
+            <label class="layui-form-label">监所类型：<font color="red">*</font></label>
+            <div class="layui-input-block">
+                <select name="jslx" value={{jslx}} lay-verify="required" class="awdcombox" field="DM">
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+                <label class="layui-form-label">字典类型：<font color="red">*</font></label>
+                <div class="layui-input-block">
+                    <input type="text" name="fieldname" value="{{fieldname}}" lay-verify="required" class="layui-input">
+                </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">字典代码：<font color="red">*</font></label>
+            <div class="layui-input-block">
+                <input type="text" name="code" value="{{code}}" lay-verify="required"  class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+                <label class="layui-form-label">字典内容：<font color="red">*</font></label>
+                <div class="layui-input-block">
+                    <input type="text" name="content" value="{{content}}" lay-verify="required"  class="layui-input">
+                </div>
+            </div>          
+</form>

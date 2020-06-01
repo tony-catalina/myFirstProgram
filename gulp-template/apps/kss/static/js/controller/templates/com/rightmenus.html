@@ -1,0 +1,5 @@
+<div id="contextMenu" class="easyui-menu" style="width: 80px; display: none;">
+    {{each menus}}
+    <div id="{{$value.id}}" data-options="iconCls:'{{$value.icon}}'">{{$value.name}}</div>
+    {{/each}}
+</div>

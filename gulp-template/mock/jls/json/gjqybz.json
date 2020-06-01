@@ -1,0 +1,16 @@
+{
+    "code": 0,
+    "msg": "查询成功",
+    "result": {
+        "wxpt|1-100": 6,
+        "ptxz|1-100": 4,
+        "fafan|1-100": 10,
+        "dllsyfbr|1-100": 5,
+        "jjwpff|1-100": 5,
+        "fangshui|1-100": 5,
+        "fangfeng|1-100": 7,
+        "lifa|1-100": 7,
+        "xizao|1-100": 8
+    },
+    "success": true
+}

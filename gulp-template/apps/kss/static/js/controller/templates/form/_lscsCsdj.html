@@ -1,0 +1,64 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable Form_Table" border=1 id="Table_ryxx"
+                                                style="width:100%;"></table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">出所司机：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="csdriver" required
+                                                            style="min-width:180px;"> </td>
+                                                    <td class="formtd">出所时间：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="cssj" value="{{cssj}}"
+                                                            required style="min-width:180px;"> </td>
+                                                    <td class="formtd">押解干警：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="yjmj" required
+                                                            style="min-width:180px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">出所原因：<font class="redicon">*</font></td>
+                                                    <td colspan="5"><input class="awdCombox" name="csyy" required
+                                                            code="LSCS" style="width:100%;" data-options="editable:false"> </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">出所去向：<font class="redicon">*</font></td>
+                                                    <td colspan="5"><input class="easyui-textbox" name="csqx" required
+                                                            data-options="multiline:true"
+                                                            style="width:100%;height:80px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

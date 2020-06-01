@@ -1,0 +1,68 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>外来人员-离开登记</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">来所事由：</td>
+                                                    <td><input class="awdCombox" value="{{lssy}}" text="{{lssyString}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">具&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;体&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;事&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由：</td>
+                                                    <td><input class="easyui-textbox" readonly value="{{jtsy}}" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">来访人数：</td>
+                                                    <td><input class="easyui-textbox" value="{{sxrs}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">随&nbsp;&nbsp;&thinsp;行&nbsp;&nbsp;车&nbsp;&nbsp;&nbsp;辆&nbsp;&nbsp;&nbsp;数：</td>
+                                                    <td><input class="easyui-textbox" value="{{sxcls}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">带入民警：</td>
+                                                    <td><input class="easyui-textbox" value="{{drmj}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">带&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;入&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：</td>
+                                                    <td><input class="easyui-datetimebox" value="{{drsj}}" id="drsj" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">带出民警：
+                                                        <font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="dcmj" required value="{{tbr}}" style="min-width:280px;"> </td>
+                                                    <td class="formtd">带&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;出&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：
+                                                        <font class="redicon">*</font></td>
+                                                    <td><input name="dcsj" class="easyui-datetimebox" id="dcsj" required value="{{dateTime}}" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">离开时间：
+                                                        <font class="redicon">*</font></td>
+                                                    <td><input name="lksj" class="easyui-datetimebox" required id="lksj" value="{{dateTime}}" style="min-width:280px;"> </td>
+                                                    <td class="formtd">离开期间有无异常：
+                                                        <font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="lkqjywyc" required style="min-width:280px;"> </td>
+                                                </tr>
+                                                <input type="hidden" name="tbr" value="{{tbr}}">
+                                                <input type="hidden" name="tbrq" value="{{tbrq}}">
+                                                <input type="hidden" name="jsbh" value="{{jsbh}}">
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

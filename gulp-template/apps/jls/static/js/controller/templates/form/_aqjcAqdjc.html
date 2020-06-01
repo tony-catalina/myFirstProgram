@@ -1,0 +1,93 @@
+
+<body class="easyui-layout" data-option="fit:true">
+        <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+        <div class="section-content">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                 <div class="htmleaf-container">
+                 <div class="container">
+                    <div id="timeline">
+                        
+                       
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                               <span class="iconfont icon-jibenxinxi"></span>
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>业务信息</h2>
+                                <table class="container-formtable">
+                                    <tr style="display: none;">
+                                        <td colspan="3">
+                                            <input name="id" value="{{id}}" class="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">参&emsp;&emsp;加&emsp;&emsp;人&emsp;&emsp;数：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="cjrs"  style="width:100%"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">记&emsp;&emsp;&emsp;录&emsp;&emsp;&emsp;&emsp;员：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-textbox" name="jlr" required style="min-width:390px;"> </td>
+                                        <td class="formtd">组织领导：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-textbox" name="fzr" required style="min-width:390px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">安&emsp;全&emsp;检&ensp;查&ensp;日&ensp;&ensp;期：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-datetimebox" name="jckssj" value="{{dateTime}}" required style="min-width:390px;"> </td>
+                                        <td class="formtd">&emsp;&emsp;&emsp;至：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-datetimebox" name="jcjssj" required style="min-width:390px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">参&emsp;&emsp;加&emsp;&emsp;人&emsp;&emsp;员：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="cjry"  style="width:100%"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">检&emsp;&emsp;查&emsp;&emsp;范&emsp;&emsp;围：<font class="redicon">*</font></td>
+                                        <td colspan="3">
+                                            <!--<input class="easyui-textbox" style="width:100%"> -->
+                                            <div><span><input type="checkbox" class="fw" value="壁、铺板、卫生间、放风场顶部钢筋网等处是否牢固和完好无损">壁、铺板、卫生间、放风场顶部钢筋网等处是否牢固和完好无损</span></div>
+                                            <div><span><input type="checkbox" class="fw" value="劳动生产场所是否无安全隐患">劳动生产场所是否无安全隐患</span></div>
+                                            <div><span><input type="checkbox" class="fw" value="拘室在押人员报告装置是否有效">拘室在押人员报告装置是否有效</span></div>
+                                            <div><span><input type="checkbox" class="fw" value="在押人员加戴的手铐、脚镣是否牢固">在押人员加戴的手铐、脚镣是否牢固</span></div>
+                                            <div><span><input type="checkbox" class="fw" value="拘室内和在押人员人身是否藏有可供行凶、暴狱、脱逃、破坏、自杀的危险物品和违禁物品">拘室内和在押人员人身是否藏有可供行凶、暴狱、脱逃、破坏、自杀的危险物品和违禁物品</span></div>
+                                            <div><span><input type="checkbox" class="fw" value="通讯、交通、照明、电源、监控、报警装置、消防器材、武器、周界控制系统（高压电王）等安全装备和设置是否完好有效">通讯、交通、照明、电源、监控、报警装置、消防器材、武器、周界控制系统（高压电王）等安全装备和设置是否完好有效</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">查出的违禁物品及部位：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="wjp" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">现&emsp;场&emsp;截&emsp;图&ensp;导&ensp;入：</td>
+                                        <td colspan="3">
+                                                <p><input type="file" id="wjpfilefm" name="wjpfile"></p>    
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">安&ensp;全&ensp;隐&ensp;患&ensp;及&ensp;漏&ensp;洞：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="aqyh" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">现&emsp;场&emsp;截&emsp;图&ensp;导&ensp;入：</td>
+                                        <td colspan="3">
+                                                <p><input type="file" id="aqyhfilefm" name="aqyhfile"></p>    
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">备&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;注：</td>
+                                        <td colspan="3"><input class="easyui-textbox" name="bz" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+       </div>
+    </form>
+    </body>

@@ -1,0 +1,78 @@
+<form id="ksrsJbxxForm" style="padding: 0 0 0 0;" class="awdform">
+    <input type="hidden" id="idfm" name="id" value="{{jbxx.ldpsxx.xzpa_id}}"/>
+    <input type="hidden" name="ywlcid" value="{{jbxx.ywlcid}}"/>
+    <input type="hidden" id="rybhfm" name="rybh" value="{{jbxx.rybh}}"/>
+    <input type="hidden" name="taskid" value="{{jbxx.taskid}}"/>
+    <div class="basic-head" style="width: auto">
+        <h1>协助破案--所领导意见</h1>
+    </div>
+    <div id="display" style="display:none">
+                    <span style="margin-left: 5%">
+							<label>填表人：</label><input class="easyui-textbox" name="creator" value="{{users}}" style="width:100%;height:100%;"/></span>
+        <span style="float: right; margin-right: 3%">
+							<label>填表日期：</label><input class="easyui-datetimebox" id="tbsj" name="createtime" sstyle="width:100%;height:100%;"/>
+						</span>
+    </div>
+    <table style="border-collapse: collapse;background-color: #ffffff;width: 100%;height: 100%;margin:0 auto;">
+        <tbody>
+        <td colspan="6">
+            <div class="basic-title" style="height:100%;text-align:left;border:0px;">
+                <h1><i class="fa fa-address-book"></i>案件信息</h1>
+            </div>
+        </td>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>涉案人</span></td>
+            <td style="width: 30%;"><input id="sarfm" name="sar" class="easyui-textbox" readonly  style="width:100%;height:100%" disabled value="{{jbxx.ldpsxx.xzpa_sar}}"/></td>
+            <td style="width: 20%;" class="form-title"><span>涉案人数</span></td>
+            <td style="width: 30%;"><input id="sarsfm" name="sars" class="easyui-textbox" readonly style="width:100%;height:100%" disabled   value="{{jbxx.ldpsxx.xzpa_sars}}"/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>案发时间</span></td>
+            <td style="width: 30%;"><input class="easyui-datebox" id="afsjfm" name="afsj" readonly  style="width:100%;height:100%" disabled  value="{{jbxx.ldpsxx.xzpa_afsj}}"/></td>
+            <td style="width: 20%;" class="form-title"><span>案发地点</span></td>
+            <td style="width: 30%;"><input class="easyui-textbox" id="afddfm" name="afdd" readonly  style="width:100%;height:100%" disabled   value="{{jbxx.ldpsxx.xzpa_afdd}}"/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>涉案金额</span></td>
+            <td style="width: 30%;"><input class="easyui-textbox" id = "sajefm" name="saje" readonly style="width:100%;height:100%" disabled  value="{{jbxx.ldpsxx.xzpa_saje}}"/></td>
+            <td style="width: 20%;" class="form-title"><span>检举日期</span></td>
+            <td style="width: 30%;"><input class="easyui-datetimebox" id="jjrqfm" name="tbjurq" readonly  style="width:100%;height:100%"  value="{{jbxx.ldpsxx.xzpa_tbjurq}}"/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>检举案性质</span></td>
+            <td style="width: 30%;"><input class="easyui-textbox" id = "jjqxzfm" name="jjqxz" readonly  style="width:100%;height:100%" disabled    value="{{jbxx.ldpsxx.xzpa_jjqxz}}"/></td>
+            <td style="width: 20%;" class="form-title"><span>登记人</span></td>
+            <td style="width: 30%;"><input class="easyui-textbox" id="djrfm" name="djr" readonly value="{{jbxx.ldpsxx.xzpa_djr}}" style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>登记日期</span></td>
+            <td style="width: 80%;" colspan="3"><input class="easyui-datetimebox" id = "djrqfm" name="djrq" value="{{jbxx.ldpsxx.xzpa_djrq}}" readonly  style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title">简述经过<span style="color: #fe8181;float: right;">*</span></td>
+            <td colspan="3"><input id="jsjgfm" readonly name="jyjg" value="{{jbxx.ldpsxx.xzpa_jyjg}}" style="width:100%;height:110%" class="easyui-textbox" data-options="multiline:true" disabled></td>
+        </tr>
+        <td colspan="6">
+            <div class="basic-title" style="height:100%;text-align:left;border:0px;">
+                <h1><i class="fa fa-list-alt"></i>业务信息</h1>
+            </div>
+        </td>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>所领导意见<span style="color: #fe8181; float: right;">*</span></span></td>
+            <td style="width: 80%" colspan="3">
+                <label for="xzyes"><input required type="radio" checked name="sldyj" id="xzyes" value="1"/>同意</label>
+                <label for="xzno"><input required type="radio"  name="sldyj" id="xzno" value="2"/>不同意</label></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title">所领导意见内容<span style="color: #fe8181;float: right;">*</span></td>
+            <td style="width: 80%" colspan="3"><input required style="width:100%;height:110%" id="sldyjfm" name="sldyjnr" class="easyui-textbox" data-options="multiline:true"></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>所领导签字</span></td>
+            <td style="width: 30%;"><input class="easyui-textbox" style="width:100%;height:100%" id="czrfm" name="sldqm" value="{{users}}"/></td>
+            <td style="width: 20%;" class="form-title"><span>签字时间</span></td>
+            <td style="width: 30%;"><input class="easyui-datetimebox" style="width:100%;height:100%" id="czsjfm" name="sldqmrq"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>

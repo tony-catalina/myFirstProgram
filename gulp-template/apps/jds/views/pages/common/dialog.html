@@ -1,0 +1,15 @@
+<div id="win" class="easyui-window" title="{{title}}" style="{{styles}}" data-options="{{dialogOptions}}">
+    <div class="easyui-layout" data-options="fit:true">
+        <div class="easyui-north form" >
+            {{each content}}
+             <div class="form-item"><input class="easyui-{{$value.type}}" label="{{$value.title}}" data-options="width: '90%'"/></div>
+            {{/each}}
+        </div>
+        <div class="easyui-south button-group" style="text-align: right;">
+            <a class="easyui-linkbutton" data-options="iconCls:'icon-ok'" href="javascript:void(0)"
+                onclick="javascript:alert('ok')" style="width:80px">提交</a>
+            <a class="easyui-linkbutton" data-options="iconCls:'icon-cancel'" href="javascript:void(0)"
+                onclick="javascript:alert('cancel')" style="width:80px">取消</a>
+        </div>
+    </div>
+</div>

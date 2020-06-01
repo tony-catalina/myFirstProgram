@@ -1,0 +1,123 @@
+
+<body class="easyui-layout" data-option="fit:true">
+<div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+        <div class="section-content">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                    <div class="htmleaf-container">
+                        <div class="container">
+                            <div id="timeline">
+
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="iconfont icon-jibenxinxi"></span>
+                                    </div>
+                                    <div class="timeline-content right">
+                                        <h2>基本信息</h2>
+                                        <table class="container-formtable">
+                                            <tr>
+                                                <td class="formtd">监室号：</td>
+                                                <td ><input class="easyui-textbox" style="min-width:280px;"> </td>
+                                                <td class="formtd">姓名：</td>
+                                                <td ><input class="easyui-textbox" style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">别名：</td>
+                                                <td ><input class="easyui-textbox" style="min-width:280px;"> </td>
+                                                <td class="formtd">性别：</td>
+                                                <td style="min-width:280px;">
+                                                    <select id="ccc" class="easyui-combobox" name="depst" style="width:100%;">
+                                                        <option value="aa">男</option>
+                                                        <option>女</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">出生日期：</td>
+                                                <td ><input class="easyui-datetimebox" style="min-width:280px;"> </td>
+                                                <td class="formtd">入所日期：</td>
+                                                <td ><input class="easyui-datetimebox" style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">办案环节：</td>
+                                                <td colspan="1">
+                                                    <select id="ccc" class="easyui-combobox" name="depst" style="width:100%;">
+                                                        <option value="aa">刑事拘留</option>
+                                                        <option>打架斗殴</option>
+                                                    </select>
+                                                </td>
+                                                <td class="formtd">涉嫌罪名：</td>
+                                                <td colspan="1">
+                                                    <select id="ccc" class="easyui-combobox" name="depst" style="width:100%;">
+                                                        <option value="aa">危害国家安全案,背叛国家案</option>
+                                                        <option>打架斗殴</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">户籍地详址:</td>
+                                                <td ><input class="easyui-textbox" style="min-width:280px;"> </td>
+                                                <td class="formtd">简要案情:</td>
+                                                <td ><input class="easyui-textbox" style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">变动械具使用期限:</td>
+                                                <td ><input class="easyui-textbox" style="min-width:280px;"> </td>
+                                                <td class="formtd">使用械具种类:</td>
+                                                <td ><input class="easyui-textbox" style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">变动使用械具理由：</td>
+                                                <td ><input class="easyui-textbox" style="min-width:280px;" value="1"> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="iconfont icon-yewubaobiao"></span>
+                                    </div>
+                                    <div class="timeline-content right">
+                                        <h2>延长中队长意见</h2>
+                                        <table class="container-formtable">
+                                            <tr>
+                                                <td class="formtd">执行人:</td>
+                                                <td ><input class="easyui-textbox" style="min-width:280px;"> </td>
+                                                <td class="formtd">执行情况:</td>
+                                                <td ><input class="easyui-textbox" style="min-width:280px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 20%; border: 1px solid #cfcfcf;" class="form-title"><span>解除械具使用日期<span style="color: #fe8181;float: right;">*</span></span></td>
+                                                <td style="width: 30%; border: 1px solid #cfcfcf;" ><input id="jcxjrqfm" name="xjjcsj" class="easyui-datetimebox" required style="width:100%;height:100%"/></td>
+                                                <td style="width: 20%; border: 1px solid #cfcfcf;" class="form-title"><span>解除械具<span style="color: #fe8181;float: right;">*</span></span></td>
+                                                <td style="width: 30%; border: 1px solid #cfcfcf;">
+                                                    <input id="mc1" required  disabled type="checkbox" value="1"  />手铐
+                                                    <input id="mc2" required  disabled type="checkbox" value="2" />脚镣
+                                                    <input id="mc3" required  disabled type="checkbox" value="3" />警用制式约束
+                                                    <input id="mc4" required  disabled type="checkbox" value="4" />警绳
+                                                    <input id="mc5" required  disabled type="checkbox" value="5" />临时固定
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd">备注<font class="redicon">*</font>:</td>
+                                                <td ><input class="easyui-textbox" style="min-width:200px;"> </td>
+
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</form>
+</body>
+

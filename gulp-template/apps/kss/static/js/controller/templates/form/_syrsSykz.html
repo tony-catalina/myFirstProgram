@@ -1,0 +1,347 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">姓&ensp;&ensp;&ensp;&ensp;名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">性&ensp;&ensp;&ensp;&ensp;别：</td>
+                                                    <td><input id="xb" class="awdCombox" name="xb" value="{{xb}}" text="{{xbString}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">民&ensp;&ensp;&ensp;&ensp;族：</td>
+                                                    <td><input id="mz" class="awdCombox" name="mz" value="{{mz}}" text="{{mzString}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">出生日期：</td>
+                                                    <td><input class="easyui-datetimebox" name="csrq" value="{{csrq}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">婚姻状况：</td>
+                                                    <td><input class="awdCombox" name="hyzk" value="{{hyzk}}" id="hyzk" text="{{hyzkString}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">文化程度：</td>
+                                                    <td><input class="awdCombox" name="whcd" value="{{whcd}}" id="whcd" text="{{whcdString}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">职&ensp;&ensp;&ensp;&ensp;业：</td>
+                                                    <td><input class="awdCombox" name="zy" value="{{zy}}" id="zy" text="{{zyString}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">身&ensp;&ensp;&ensp;&ensp;份：</td>
+                                                    <td><input class="awdCombox" name="sf" value="{{sf}}" id="sf" text="{{sfString}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">入所日期：</td>
+                                                    <td><input class="easyui-datetimebox" name="rsrq" value="{{rsrq}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewuxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">送&ensp;押单&ensp;位：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" id="sydw" name="sydw" value="{{sydw}}" required
+                                                            code="BADW" style="min-width:280px;"> </td>
+                                                    <td class="formtd">送&ensp;押&ensp;人：<font class="redicon">*</font></td>
+                                                    <td>
+                                                        <input id="syr" class="easyui-textbox" name="syr" value="{{syr}}" required
+                                                            style="min-width:280px;"> 
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办&ensp;案单&ensp;位：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" name="badw" id="badw" value="{{badw}}" required
+                                                            code="BADW" style="min-width:280px;"> </td>
+                                                    <td class="formtd">办&ensp;案&ensp;人：</td>
+                                                    <td><input id="bar" class="easyui-textbox" name="bar" value="{{bar}}"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">经&emsp;办&emsp;人：</td>
+                                                    <td><input id="jbr" class="easyui-textbox" name="jbr" value="{{jbr}}"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">经办时间：</td>
+                                                    <td><input class="easyui-datetimebox" name="jbrq" value="{{jbrq}}"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">回执填发人：<font class="redicon">*</font></td>
+                                                    <td><input id="hztfr" class="easyui-textbox" name="hztfr" value="{{hztfr}}" required
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">回执时间：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="hzsj" value="{{hzsj}}" required
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="id" value="{{id}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="gcbh" value="{{gcbh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="wbrybh" value="{{wbrybh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="dah" value="{{dah}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="jsbh" value="{{jsbh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="xmpy" value="{{xmpy}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="bm" value="{{bm}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="bmty" value="{{bmty}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="gj" value="{{gj}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="zjlx" value="{{zjlx}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="zzmm" value="{{zzmm}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="zjh" value="{{zjh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="zuc" value="{{zuc}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="sg" value="{{sg}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="jg" value="{{jg}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="hjd" value="{{hjd}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="hjdxz" value="{{hjdxz}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="xzd" value="{{xzd}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="xzdxz" value="{{xzdxz}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="zc" value="{{zc}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="tssf" value="{{tssf}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="gzdw" value="{{gzdw}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="jkzk" value="{{jkzk}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="azb" value="{{azb}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="bhlx" value="{{bhlx}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="rsxz" value="{{rsxz}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="byzd" value="{{byzd}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="zrdw" value="{{zrdw}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="sy" value="{{sy}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="sypzwsh" value="{{sypzwsh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="sypz" value="{{sypz}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="jyrq" value="{{jyrq}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="gyqx" value="{{gyqx}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="ay" value="{{ay}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="xhay" value="{{xhay}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="fzjl" value="{{fzjl}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="jyaq" value="{{jyaq}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="caaj" value="{{caaj}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="cylx" value="{{cylx}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="barjh" value="{{barjh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="bahj" value="{{bahj}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="bardh" value="{{bardh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="zzqsrq" value="{{zzqsrq}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="jlrq" value="{{jlrq}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="dbrq" value="{{dbrq}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="dwlx" value="{{dwlx}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="syrkid" value="{{syrkid}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="czzt" value="{{czzt}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="jsly" value="{{jsly}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="aqdj" value="{{aqdj}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="sfyxjslx" value="{{sfyxjslx}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="state" value="R8"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="zwbh" value="{{zwbh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="bz" value="{{bz}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="taskid" value="{{taskid}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="ywlcid" value="{{ywlcid}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="hzflwsh" value="{{hzflwsh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr><tr style="display: none;">
+                                                    <td colspan="3"><input name="jsh" value="{{jsh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

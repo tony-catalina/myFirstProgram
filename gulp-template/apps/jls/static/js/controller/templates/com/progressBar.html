@@ -1,0 +1,9 @@
+{{each datas}}
+<div class="progress-bar-item">
+    <div class="progress-title">{{$value.name}}</div>
+    <div class="layui-progress layui-progress-big progress-bar" data-params="{{$value.paramsValue}}" lay-filter="{{$value.filter}}" lay-showPercent="yes">
+        <div class="layui-progress-bar {{$value.color}}" lay-percent="{{$value.percentage}}"></div>
+    </div>
+    <div class="progress-num">{{$value.number}}</div>
+</div>
+{{/each}}

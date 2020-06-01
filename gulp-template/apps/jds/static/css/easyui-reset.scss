@@ -1,0 +1,152 @@
+@import "../lib/dper/dperSass/_dper.utils.common";
+@import "iconfont.scss";
+
+// easyui reset
+.combo-arrow {
+  background-color: rgb(226, 237, 255);
+}
+
+.textbox {
+  border: 1px solid #297aff;
+  // width: 198px;
+}
+
+.textbox-focused {
+  border-color: #96bfff;
+  box-shadow: 0 0 3px 0 #c9deff;
+}
+
+.calendar-selected {
+  background-color: #75aaff;
+}
+
+// datagrid
+
+.panel-body.datagrid-wrap {
+
+  border: none;
+  .datagrid-view {
+    border: 1px solid #b8d3ff;
+
+    .datagrid-header {
+      background-color: #e6efff;
+      background-image: none;
+      border-color: #b8d3ff;
+
+      .datagrid-htable {
+        font-weight: bold;
+        color: #297aff;
+        letter-spacing: 4px;
+
+        td {
+           
+          &:hover {
+            background-color: rgb(197, 219, 255);
+          }
+        }
+
+        .datagrid-cell {
+          span {
+            @extend .font-18;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    background: #fff;
+    padding: 10px;
+    border: none;
+    table {
+      // background-color: yellow;
+
+      .pagination-page-list {
+        @extend .font-16;
+        background-color: #297aff;
+        border-radius: 3px;
+        color: #fff;
+        padding: 3px;
+      }
+      .pagination-num {
+        border: 1px solid #71b7e6;
+        border-radius: 3px;
+        padding: 3px;
+        color: #71b7e6;
+        margin: 0 5px;
+      }
+      span {
+        color: #71b7e6;
+      }
+    }
+
+    .pagination-info {
+      color: #297aff;
+    }
+  }
+
+  td {
+    border-color: #b8d3ff;
+  }
+
+  .datagrid-cell {
+    @extend .font-18;
+  }
+
+  .datagrid-row-over {
+    background-color: rgb(197, 219, 255);
+  }
+
+  .datagrid-row-selected {
+    background-image: linear-gradient(
+      to right top,
+      #5c9aff,
+      rgb(144, 186, 255)
+    );
+  }
+}
+// tree icon change
+.tree-icon {
+  background: none;
+  @extend.iconfont;
+  @extend .font-18;
+
+  &.tree-folder::before {
+    @extend.icon-public__easyi:before;
+  }
+
+  &.tree-file::before {
+    @extend.icon-menjin:before;
+  }
+}
+
+.tree-title {
+  @extend .font-18;
+  letter-spacing: 1px;
+  padding-left: 5px;
+}
+
+// 监区树样式
+.tree-menu {
+  min-width: 160px;
+  
+  .tree-menu-title {
+    position: relative;
+    @extend .font-20;
+    padding: 5px 0 5px 3px;
+    overflow: hidden;
+    color: #fff;
+    background-color: #0069f6;
+    
+    span {
+      position: absolute;
+      right: 3px;
+      
+    }
+
+  }
+}
+
+
+
+

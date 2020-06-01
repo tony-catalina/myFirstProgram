@@ -1,0 +1,75 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>个人信息</h2>
+                            <table class="container-formtable Form_Table" border=1 id="Table_ryxx"
+                                            style="width:100%;"></table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-anjian"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">检查人员<font class="redicon">*</font>：</td>
+                                    <td ><input class="easyui-textbox" required value="{{users}}" style="min-width:280px;" name="jcr"> </td>
+                                    <td class="formtd">检查时间：</td>
+                                    <td ><input class="easyui-datetimebox" style="min-width:280px;" name="jcsj"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">提讯结束时间<font class="redicon">*</font>：</td>
+                                    <td ><input class="easyui-datetimebox" required style="min-width:280px;" name="jssj"> </td>
+                                    <td class="formtd">检查结果<font class="redicon">*</font>：</td>
+                                    <td>
+                                        <input type="radio" name="jcjg" value="1" checked required><font>正常</font> 
+                                        <input type="radio" name="jcjg" value="2" required><font>异常</font>
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td class="formtd">违禁物品登记：</td>
+                                    <td  colspan="3"><input class="easyui-textbox" style="min-width:670px;" name="wjwpdj"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">可疑伤情登记:</td>
+                                    <td  colspan="3"><input class="easyui-textbox" style="min-width:670px;" name="kysqdj"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">备注:</td>
+                                    <td  colspan="3"><input class="easyui-textbox" data-options="multiline:true"  style="min-width:670px;height:80px;" name="bz"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">值班民警<font class="redicon">*</font>：</td>
+                                    <td ><input id="zbmj" class="easyui-textbox" required style="min-width:280px;" name="zbmj" value="{{users}}"> </td>
+                                    <td class="formtd">登记时间<font class="redicon">*</font>：</td>
+                                    <td ><input class="easyui-datetimebox" required style="min-width:280px;" name="djsj"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

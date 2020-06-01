@@ -1,0 +1,1085 @@
+@import "base.scss";
+html, body {
+  width: 100%;
+  height: 100%;
+}
+$width: 1920;
+$height: 1080;
+$w:1870;
+$h:980;
+@font-face {
+  font-family: "Acens";
+  src: url("../fonts/Acens.ttf");
+}
+@font-face {
+  font-family: "Akzidenz";
+  src: url("../fonts/Akzidenz.otf");
+}
+
+.bottom-kuang{
+  background-image: url('../images/bottom-kuang.png');
+}
+.ztai1{
+  background-image: url('../images/ztai1.png');
+}
+.wan-1{
+  background-image: url('../images/wan-1.png');
+}
+.wan-2{
+  background-image: url('../images/wan-2.png');
+}
+.wan-3{
+  background-image: url('../images/wan-3.png');
+}
+.wan-4{
+  background-image: url('../images/wan-4.png');
+}
+.wan-5{
+  background-image: url('../images/wan-5.png');
+}
+.wan-6{
+  background-image: url('../images/wan-6.png');
+}
+.wan-7{
+  background-image: url('../images/wan-7.png');
+}
+.wan-8{
+  background-image: url('../images/wan-8.png');
+}
+.wan-9{
+  background-image: url('../images/wan-9.png');
+}
+
+
+.content1{
+  width: cptSize(1470, 1627);
+  //height: cptSize(758, 903);
+  padding-top: cptSize(650,1627);
+  top: cptSize(60, 903);
+  left: cptSize(85, 1627);
+  .inside-bottom {
+    width: 97%;
+    height: 90%;
+  }
+  .bottom-box-top{
+    height: cptSize(164, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      transition:all 1s;
+      .today{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/快速入所.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box1{
+      width: cptSize(140, 1470);
+      left:54%;
+      transition:all 1s;
+      .top2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+          background-image: url('../images/生物特征.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box2{
+      width: cptSize(140, 1470);
+      left:90%;
+      transition:all 1s;
+      .top2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/收押开证.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .bottom-box-cent{
+    height: cptSize(164, 758);
+    top: cptSize(296, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      transition:all 1s;
+      .cent4{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/收回登记.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box1{
+      width: cptSize(140, 1470);
+      left: 18%;
+      transition:all 1s;
+      .bot2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/健康检查.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box2{
+      width: cptSize(140, 1470);
+      left: 36%;
+      transition:all 1s;
+      .cent3{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/健康检查.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box3{
+      width: cptSize(140, 1470);
+      left:54%;
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/附物登记.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box4{
+      width: cptSize(140, 1470);
+      left:72%;
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/告知.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box5{
+      width: cptSize(140, 1470);
+      left:90%;
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/入所登记.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(140, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .bottom-box-bottom{
+    height: cptSize(164, 758);
+    bottom: cptSize(10, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      transition:all 1s;
+      .bot2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/收回登记.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box1{
+      width: cptSize(140, 1470);
+      left: 18%;
+      transition:all 1s;
+      .bot2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/所领导意见.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box2{
+      width: cptSize(140, 1470);
+      left: 36%;
+      transition:all 1s;
+      .cent3{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/暂不收押.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box3{
+      width: cptSize(140, 1470);
+      left:54%;
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/附物登记.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .liu1{
+    width: cptSize(159, 1627);
+    height: cptSize(365, 903);
+    left: 8.848679%;
+    top: 65.289037%;
+    z-index: 5;
+  }
+  .liu2{
+    width: cptSize(159, 1627);
+    height: cptSize(365, 903);
+    left: 31.848679%;
+    top: 65.289037%;
+    z-index: 5;
+  }
+  .liu3{
+    width: cptSize(161, 1627);
+    height: cptSize(380, 903);
+    left: 49.648679%;
+    top: 26.789037%;
+    z-index: 5;
+  }
+  .liu4{
+    width: cptSize(22, 1627);
+    height: cptSize(130, 903);
+    left: 22.448679%;
+    top: 68.289037%;
+    z-index: 5;
+  }
+  .liu5{
+    width: cptSize(161, 1627);
+    height: cptSize(380, 903);
+    left: 67.948679%;
+    top: 26.789037%;
+    z-index: 5;
+  }
+  .liu6{
+    width: cptSize(155, 1627);
+    height: cptSize(23, 903);
+    left: 85.848679%;
+    top: 46.289037%;
+    z-index: 5;
+  }
+}
+.content2{
+  width: cptSize(1470, 1627);
+  //height: cptSize(758, 903);
+  padding-top: cptSize(650,1627);
+  top: cptSize(60, 903);
+  left: cptSize(85, 1627);
+  .inside-bottom {
+    width: 97%;
+    height: 90%;
+  }
+  .bottom-box-top{
+    height: cptSize(164, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      left:10%;
+      transition:all 1s;
+      .today{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/今日出所.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box1{
+      width: cptSize(140, 1470);
+      right:12%;
+      transition:all 1s;
+      .top2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/附物或财物退还.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(260, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .bottom-box-cent{
+    height: cptSize(164, 758);
+    top: cptSize(296, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      left:10%;
+      transition:all 1s;
+      .cent4{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/入所登记.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box1{
+      width: cptSize(140, 1470);
+      left: 33%;
+      transition:all 1s;
+      .bot2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/所领导意见.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(180, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box2{
+      width: cptSize(140, 1470);
+      left: 55%;
+      transition:all 1s;
+      .cent3{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/文书补打.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(180, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box3{
+      width: cptSize(140, 1470);
+      right:12%;
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/今日出所.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(140, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .bottom-box-bottom{
+    height: cptSize(164, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      right:12%;
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/告知.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .liu1{
+    width: cptSize(186, 1627);
+    height: cptSize(23, 903);
+    left: 26.448679%;
+    top: 46.289037%;
+    z-index: 5;
+  }
+  .liu2{
+    width: cptSize(186, 1627);
+    height: cptSize(23, 903);
+    left: 48.448679%;
+    top: 46.289037%;
+    z-index: 5;
+  }
+  .liu3{
+    width: cptSize(186, 1627);
+    height: cptSize(23, 903);
+    left: 71.448679%;
+    top: 46.289037%;
+    z-index: 5;
+  }
+}
+.content3{
+  width: cptSize(1470, 1627);
+  //height: cptSize(758, 903);
+  padding-top: cptSize(650,1627);
+  top: cptSize(60, 903);
+  left: cptSize(85, 1627);
+  .inside-bottom {
+    width: 97%;
+    height: 90%;
+  }
+  .bottom-box-cent{
+    height: cptSize(164, 758);
+    top: cptSize(296, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      transition:all 1s;
+      .cent4{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/证件核对.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box1{
+      width: cptSize(140, 1470);
+      left: 22%;
+      transition:all 1s;
+      .bot2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/入所登记.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(180, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box2{
+      width: cptSize(140, 1470);
+      left: 45%;
+      transition:all 1s;
+      .cent3{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/入所登记.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(180, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box3{
+      width: cptSize(140, 1470);
+      right:23%;
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/健康检查.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(140, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box4{
+      width: cptSize(140, 1470);
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/退讯.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(140, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .liu1{
+    width: cptSize(186, 1627);
+    height: cptSize(23, 903);
+    left: 15.448679%;
+    top: 46.289037%;
+    z-index: 5;
+  }
+  .liu2{
+    width: cptSize(186, 1627);
+    height: cptSize(23, 903);
+    left: 38.448679%;
+    top: 46.289037%;
+    z-index: 5;
+  }
+  .liu3{
+    width: cptSize(186, 1627);
+    height: cptSize(23, 903);
+    left: 61.448679%;
+    top: 46.289037%;
+    z-index: 5;
+  }
+  .liu4{
+    width: cptSize(186, 1627);
+    height: cptSize(23, 903);
+    left: 83.448679%;
+    top: 46.289037%;
+    z-index: 5;
+  }
+}
+.content4{
+  width: cptSize(1470, 1627);
+  //height: cptSize(758, 903);
+  padding-top: cptSize(650,1627);
+  top: cptSize(60, 903);
+  left: cptSize(85, 1627);
+  .inside-bottom {
+    width: 97%;
+    height: 90%;
+  }
+  .bottom-box-top{
+    height: cptSize(164, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      left: 49.6%;
+      top: 85%;
+      transition:all 1s;
+      .today{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/所领导意见.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box1{
+      width: cptSize(140, 1470);
+      right:19.5%;
+      transition:all 1s;
+      .top2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/文书补打.png');
+      }
+      .bottom-kuang{
+        width: cptSize(160, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .bottom-box-cent{
+    height: cptSize(164, 758);
+    top: cptSize(340, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      left:5%;
+      transition:all 1s;
+      .cent4{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/入所登记.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box1{
+      width: cptSize(140, 1470);
+      left: 28%;
+      transition:all 1s;
+      .bot2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/所领导意见.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(180, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box2{
+      width: cptSize(140, 1470);
+      right:19.5%;
+      transition:all 1s;
+      .cent3{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/所领导意见.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(180, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .bottom-box-bottom{
+    height: cptSize(164, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/入所登记.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .liu1{
+    width: cptSize(220, 1627);
+    height: cptSize(23, 903);
+    left: 21.448679%;
+    top: 51.289037%;
+    z-index: 5;
+  }
+  .liu2{
+    width: cptSize(548, 1627);
+    height: cptSize(250, 903);
+    left: 54.448679%;
+    top: 38.289037%;
+    z-index: 5;
+  }
+  .liu3{
+    width: cptSize(201, 1627);
+    height: cptSize(390, 903);
+    left: 64.948679%;
+    top: 29.289037%;
+    z-index: 5;
+  }
+}
+.content5{
+  width: cptSize(1470, 1627);
+  //height: cptSize(758, 903);
+  padding-top: cptSize(650,1627);
+  top: cptSize(60, 903);
+  left: cptSize(85, 1627);
+  .inside-bottom {
+    width: 97%;
+    height: 90%;
+  }
+  .bottom-box-top{
+    height: cptSize(164, 758);
+    .img-box1{
+      width: cptSize(140, 1470);
+      left:20.5%;
+      top: 69%;
+      transition:all 1s;
+      .top2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/所领导意见.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(160, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .bottom-box-cent{
+    height: cptSize(164, 758);
+    top: cptSize(296, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      transition:all 1s;
+      .cent4{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/入所登记.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box1{
+      width: cptSize(140, 1470);
+      left: 41%;
+      transition:all 1s;
+      .bot2{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/入所登记.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(180, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box2{
+      width: cptSize(140, 1470);
+      left: 62%;
+      transition:all 1s;
+      .cent3{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/健康检查.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(200, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+    .img-box3{
+      width: cptSize(140, 1470);
+      right:7%;
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/回所确认.png');
+        .qipao{
+          width: 30%;
+          height: 30%;
+          border-radius: 50%;
+          background: red;
+          right: -10%;
+        }
+      }
+      .bottom-kuang{
+        width: cptSize(140, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .bottom-box-bottom{
+    height: cptSize(164, 758);
+    .img-box{
+      width: cptSize(140, 1470);
+      right:12%;
+      transition:all 1s;
+      .cent5{
+        width: cptSize(106, 140);
+        height: cptSize(106, 164);
+        background-image: url('../images/告知.png');
+      }
+      .bottom-kuang{
+        width: cptSize(138, 140);
+        height: cptSize(50, 164);
+        span{
+          color: #0069f6;
+        }
+      }
+    }
+  }
+  .liu1{
+    width: cptSize(514, 1627);
+    height: cptSize(229, 903);
+    left: 25.448679%;
+    top: 34.289037%;
+    z-index: 5;
+  }
+  .liu2{
+    width: cptSize(186, 1627);
+    height: cptSize(23, 903);
+    left: 56.448679%;
+    top: 46.289037%;
+    z-index: 5;
+  }
+  .liu3{
+    width: cptSize(186, 1627);
+    height: cptSize(23, 903);
+    left: 77.448679%;
+    top: 46.289037%;
+    z-index: 5;
+  }
+}

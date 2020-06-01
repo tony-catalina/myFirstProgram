@@ -1,0 +1,51 @@
+<form id="fm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="basic-head">
+        <h1>现金退还</h1>
+    </div>
+    <div id="dhsplay" style="display:none">
+        <input class="easyui-textbox" id="rybh" name="rybh" style="width: 60%" value="{{jbxx.rybh}}">
+        <input class="easyui-textbox" id="xfhyefm" name="xfhye" style="width: 60%" value="0.00">
+    </div>
+    <table style="border-collapse: collapse;background-color: #ffffff;width: 100%;height: 100%;margin:0 auto;">
+        <tbody>
+        <td colspan="6">
+            <div class="basic-title" style="height:100%;text-align:left;border:0px;">
+                <h1><i class="fa fa-address-book"></i>基本信息</h1>
+            </div>
+        </td>
+        <tr>
+            <td style="width:20%;" class="form-title">人员编号</td>
+            <td style="width:30%;"><input id="snbhfm" name="snbh" class="easyui-textbox" style="width:100%;height:100%;background-color: #f5f5f5" value="{{jbxx.snbh}}" readonly></td>
+            <td style="width:20%;" class="form-title">姓名</td>
+            <td style="width:30%;"><input id="xmfm" name="xm" class="easyui-textbox" style="width:100%;height:100%;" value="{{jbxx.xm}}" readonly></td>
+        </tr>
+        <tr>
+            <td style="width:20%;" class="form-title">监室号</td>
+            <td style="width:30%;"><input id="jshfm" class="easyui-textbox" name="jsh" value="{{jbxx.jsh}}" style="width:100%;height:100%;" readonly></td>
+            <td style="width:20%;" class="form-title">币种</td>
+            <td style="width:30%;"><input id="currencyfm" class="easyui-textbox" name="currency" style="width:100%;height:100%;" readonly></td>
+        </tr>
+        <tr>
+            <td style="width:20%;" class="form-title">账户余额</td>
+            <td style="width:30%;"><input id="yefm" name="xfqje" class="easyui-textbox" style="width:100%;height:100%;" readonly></td>
+            <td style="width:20%;" class="form-title">退还金额</td>
+            <td style="width:30%;"><input id="jefm"  name="xfje" class="easyui-textbox" style="width:100%;height:100%;" readonly></td>
+        </tr>
+        <td colspan="6">
+            <div class="basic-title" style="height:100%;text-align:left;border:0px;">
+                <h1><i class="fa fa-list-alt"></i>业务信息</h1>
+            </div>
+        </td>
+        <tr>
+            <td style="width:20%;" class="form-title">退还日期</td>
+            <td style="width:30%;"><input id="blsjfm" name="blsj" class="easyui-datetimebox" style="width:100%;height:100%;"></td>
+            <td style="width:20%;" class="form-title">办理人<span style="color: red">*</办理人span></td>
+            <td style="width:30%;"><input id="blrfm" name="blr" class="easyui-textbox" style="width:100%;height:100%;" required></td>
+        </tr>
+        <tr>
+            <td style="width:20%;" class="form-title">摘要</td>
+            <td style="width:80%;" colspan="3"><input id="zyfm" name="zy" class="easyui-textbox" data-options="multiline:true" style="width:100%;height:120px;" ></td>
+        </tr>
+        </tbody>
+    </table>
+</form>

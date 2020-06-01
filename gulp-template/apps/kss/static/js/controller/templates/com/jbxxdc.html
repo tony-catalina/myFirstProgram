@@ -1,0 +1,403 @@
+<div id="dcexcel" class="easyui-dialog" title="导出为Excel文件"
+     style="width: 650px; height: 500px; padding: 10px 10px; padding-top: 10px"
+     modal="true" closed="true" buttons="#dlg-buttons">
+    <div class="easyui-panel" style="height:400px">
+        请选择字段：
+        <a class="easyui-linkbutton" plain="true" id="qbxz">
+            <i class="fa fa-search" aria-hidden="true"></i>全部选中</a>
+        <a class="easyui-linkbutton" plain="true" id="qbbx">
+            <i class="fa fa-search" aria-hidden="true"></i>全部不选</a>
+        <a class="easyui-linkbutton" plain="true" id="fxxz">
+            <i class="fa fa-search" aria-hidden="true"></i>反向选中</a>
+        <form id="excel" method="post">
+            <table style="margin-left: 75px;width: 500px;padding:0px">
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="jsmc" value="监所名称">监所名称</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="gcbh" value="过程编号">过程编号</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="rybh" value="人员编号">人员编号</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="jsh" value="监室号">监室号</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="xm" value="姓名">姓名</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="bm" value="别名">别名</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="xb" value="性别">性别</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="csrq" value="出生日期">出生日期</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="zjlx" value="证件类型">证件类型</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="zjh" value="证件号">证件号</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="rsrq" value="证件号">证件号</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="sykzrq" value="收押开证日期">收押开证日期</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="jyrq" value="羁押日期">羁押日期</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="rsxz" value="入所性质">入所性质</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="sypz" value="收押凭证">收押凭证</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="hyzk" value="婚姻状况">婚姻状况</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="mz" value="民族">民族</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="gj" value="国籍">国籍</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="jg" value="籍贯">籍贯</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="hjd" value="户籍地">户籍地</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="hjdxz" value="户籍地详址">户籍地详址</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="xzd" value="现住地">现住地</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="xzdxz" value="现住地详址">现住地详址</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="whcd" value="文化程度">文化程度</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="zy" value="职业">职业</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="zc" value="专长">专长</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="gzdw" value="工作单位">工作单位</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="zzmm" value="政治面貌">政治面貌</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="sf" value="sf">身份</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="tssf" value="tssf">特殊身份</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="dh" value="dh">电话</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="zrdw" value="转入单位">转入单位</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="sydw" value="送押单位">送押单位</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="syr" value="送押人">送押人</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="gyqx" value="关押期限">关押期限</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="ay" value="案由">案由</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="calx" value="从案类型">从案类型</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="caay" value="从案案由">从案案由</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="bahj" value="办案环节">办案环节</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="xq" value="刑期">刑期</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="hxqx" value="缓刑期限">缓刑期限</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="hx" value="缓刑">缓刑</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="fjx" value="附加刑">附加刑</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="dwlx" value="单位类型">单位类型</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="badw" value="办案单位">办案单位</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="bar" value="办案人">办案人</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="cljg" value="处理结果">处理结果</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="cssj" value="出所时间">出所时间</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="csyy" value="出所原因">出所原因</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="csqx" value="出所去向">出所去向</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="fzjl" value="犯罪经历">犯罪经历</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="jyaq" value="简要案情">简要案情</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="sy" value="收押">收押</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="jlrq" value="拘留日期">拘留日期</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="dbrq" value="逮捕日期">逮捕日期</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="sypz" value="收押凭证文书号">收押凭证文书号</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="zwbh" value="指纹编号">指纹编号</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="dah" value="档案号">档案号</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="jkzk" value="健康状况">健康状况</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="jsly" value="拒收理由">拒收理由</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="bz" value="备注">备注</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="xhay" value="细化案由">细化案由</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="cykhzf" value="处遇考核总分">处遇考核总分</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="cykhpjf" value="处遇考核平均分">处遇考核平均分</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="cykhzjf" value="处遇考核总加分">处遇考核总加分</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="cykhzkf" value="处遇考核总扣分">处遇考核总扣分</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="cykhdyjf" value="处遇考核当月加分">处遇考核当月加分</input>
+			                 </span>
+                    </td>
+                    <td>
+                        <span>
+			                 	<input class="dcex" type="checkbox" name="cykhdykf" value="处遇考核当月扣分">处遇考核当月扣分</input>
+			                 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>
+			                 <input class="dcex" type="checkbox" name="cykhzts" value="处遇考核总天数">处遇考核总天数</input>
+			                 </span>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<div id="dlg-buttons">
+    <a href="#" class="easyui-linkbutton" iconCls="icon-ok"
+       id="dcexcel_save">导出</a> <a href="#" class="easyui-linkbutton"
+                                   iconCls="icon-cancel" id="dcexcel_cancel">取消</a>
+</div>

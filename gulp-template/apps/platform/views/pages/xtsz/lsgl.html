@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie6"><![endif]-->
+<!--[if IE 7]><html class="ie7"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if IE 9]><html class="ie9"><![endif]-->
+<!--[if gt IE 9]><html><![endif]-->
+<!--[if !IE]>-->
+<html>
+<!--<![endif]-->
+<style>
+    .list {
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>北京公安监察综合业务平台</title>
+    <link rel="stylesheet" href="/apps/platform/static/lib/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" href="/apps/platform/static/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/apps/platform/static/css/iconfont/iconfont.css">
+</head>
+
+<body class="easyui-layout">
+<div class="h2" style="font-size : 30px">
+    <i class="font-icon icon-picture">
+    </i>
+    律师管理
+</div>
+<div class="section">
+    <table class="layui-hide" id="table"></table>
+</div>
+<script src="/apps/platform/static/lib/require.js" data-main="/apps/platform/static/js/require.config.js"></script>
+<script>
+    require(["controller/pages/xtsz/lsgl"],function(){
+    });
+</script>
+<script src="/apps/platform/static/lib/loading.js"></script>
+</body>
+
+</html>

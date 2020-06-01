@@ -1,0 +1,122 @@
+<body class="easyui-layout" data-option="fit:true">
+	<div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+		<form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+			<div class="section-content">
+				<div class="section-item section-item-one section-item-padding">
+					<div class="standard-content font-20">
+						<div class="htmleaf-container">
+							<div class="container">
+								<div id="timeline">
+
+									<div class="timeline-item">
+										<div class="timeline-icon">
+											<span class="iconfont icon-jibenxinxi"></span>
+										</div>
+										<div class="timeline-content right">
+
+											<table class="container-formtable">
+												<tr style="display: none;">
+													<td colspan="3">
+														<input name="id" value="{{id}}" class="">
+													</td>
+												</tr>
+												<tr>
+													<td class="formtd">开&emsp;&thinsp;&thinsp;放&emsp;&thinsp;时&emsp;&thinsp;&thinsp;间：</td>
+													<td><input class="easyui-textbox" name="kfsj" value="{{ldpsxx.dwkf_kfsj}}" readonly style="min-width:280px;">
+													</td>
+													<td class="formtd">开&emsp;&thinsp;&thinsp;放&emsp;&thinsp;类&emsp;&thinsp;&thinsp;型：</td>
+													<td><input class="awdCombox" name="kflxString" value="{{ldpsxx.dwkf_kflx}}" text="{{ldpsxx.dwkf_kflxString}}" readonly style="min-width:280px;">
+													</td>
+												</tr>
+												<tr>
+													<td class="formtd">参&emsp;&thinsp;&thinsp;观&emsp;&thinsp;对&emsp;&thinsp;&thinsp;象：</td>
+													<td><input class="easyui-textbox" name="cgdx" value="{{ldpsxx.dwkf_cgdx}}" readonly style="min-width:280px;">
+													</td>
+													<td class="formtd">参&emsp;&thinsp;&thinsp;观&emsp;&thinsp;人&emsp;&thinsp;&thinsp;数：</td>
+													<td><input class="easyui-textbox" name="cgrs" value="{{ldpsxx.dwkf_cgrs}}" readonly style="min-width:280px;">
+													</td>
+												</tr>
+
+												<tr>
+													<td class="formtd">单&emsp;&thinsp;&thinsp;位&emsp;&thinsp;名&emsp;&thinsp;&thinsp;称：</td>
+													<td><input class="easyui-textbox" name="dwmc" value="{{ldpsxx.dwkf_dwmc}}" readonly style="min-width:280px;">
+													</td>
+													<td class="formtd">申&emsp;&thinsp;&thinsp;请&emsp;&thinsp;理&emsp;&thinsp;&thinsp;由：</td>
+													<td><input class="easyui-textbox" name="sqly" readonly value="{{ldpsxx.dwkf_sqly}}" style="min-width:280px;">
+													</td>
+												</tr>
+												<tr>
+													<td class="formtd">备&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;注：</td>
+													<td colspan="3"><input class="easyui-textbox" name="bz" readonly value="{{ldpsxx.dwkf_bz}}" style="width:100%;">
+													</td>
+												</tr>
+
+												<tr>
+													<td class="formtd">参加人员信息登记：</td>
+													<td colspan="3">
+														<table class="jcscptld">
+															<tbody>
+																<tr>
+																	<td>姓名</td>
+																	<td>性别</td>
+																	<td>出生日期</td>
+																	<td>证件类型</td>
+																	<td>证件号码</td>
+																	<td>联系电话</td>
+																</tr>
+															</tbody>
+															<tbody id="ptldxx">
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td class="formtd">所&nbsp;&thinsp;长&nbsp;&thinsp;意&nbsp;&thinsp;见&nbsp;&thinsp;内&thinsp;容：</td>
+													<td colspan="3"><input class="easyui-textbox" name="szyjnr" readonly value="{{ldpsxx.dwkf_szyjnr}}"
+														 data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+												</tr>
+												<tr>
+													<td class="formtd">所&emsp;&thinsp;&thinsp;长&emsp;&thinsp;签&emsp;&thinsp;&thinsp;名：</td>
+													<td><input class="easyui-textbox" name="szxm" value="{{ldpsxx.dwkf_szqm}}" readonly style="min-width:280px;">
+													</td>
+													<td class="formtd">所&nbsp;&thinsp;长&nbsp;&thinsp;签&nbsp;&thinsp;名&nbsp;&thinsp;日&thinsp;期：</td>
+													<td><input name="szqmrqString" value="{{ldpsxx.dwkf_szqmsj}}" readonly class="easyui-textbox" style="min-width:280px;">
+													</td>
+												</tr>
+
+
+												<tr>
+													<td class="formtd">上&nbsp;&thinsp;级&nbsp;&thinsp;领&nbsp;&thinsp;导&nbsp;&thinsp;意&thinsp;见：<font class="redicon">*</font></td>
+													<td colspan="3"><input type="radio" name="sjldyj" value="1" checked class="radiocss">
+														<font>同意</font><input type="radio" name="sjldyj" value="2" class="radiocss">
+														<font>不同意</font>
+													</td>
+												</tr>
+												<tr>
+													<td class="formtd">上级领导意见内容：<font class="redicon">*</font></td>
+													<td colspan="3"><input class="easyui-textbox" name="sjldyjnr" value="{{sjldyjnr}}" required data-options="multiline:true" style="width:100%;min-height: 80px;">
+													</td>
+												</tr>
+												<tr>
+													<td class="formtd">上&nbsp;&thinsp;级&nbsp;&thinsp;领&nbsp;&thinsp;导&nbsp;&thinsp;签&thinsp;名：<font class="redicon">*</font></td>
+													<td><input id="sjldqm" class="easyui-textbox" name="sjldqm" required value="{{sjldqm}}" style="min-width:280px;"> </td>
+													<td class="formtd">上级领导签名日期：<font class="redicon">*</font></td>
+													<td><input id="sjldqmsj" name="sjldqmsj" value="{{sjldqmsj}}" class="easyui-datetimebox"  required style="min-width:280px;">
+													</td>
+												</tr>
+											</table>
+
+										</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</form>
+</body>

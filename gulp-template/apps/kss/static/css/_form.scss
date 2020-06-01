@@ -1,0 +1,1117 @@
+@font-face {
+    font-family: "iconfont";
+    src: url("../fonts/iconfont.eot?t=1581563835374");
+    /* IE9 */
+    src: url("../fonts/iconfont.eot?t=1581563835374#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff?t=1581563835374") format("woff"), url("../fonts/iconfont.ttf?t=1581563835374") format("truetype"),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+        url("../fonts/iconfont.svg?t=1581563835374#iconfont") format("svg");
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container-formtable tr .formtd {
+    padding: 5px;
+    text-align: justify;
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    .textbox-readonly {
+        .validatebox-text {
+            background: #e9ebef;
+        }
+    }
+}
+
+.container-formtable tr td {
+    padding: 5px;
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    .textbox-readonly {
+        .validatebox-text {
+            background: #e9ebef;
+        }
+    }
+}
+
+.container-formtable {
+    &.zpbl {
+        img {
+            display: block;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+        }
+    }
+
+    dl {
+        dt {
+            @extend .font-20;
+        }
+
+        dd {
+            @extend .font-18;
+        }
+    }
+}
+
+.container-formtable>.textbox {
+    border-radius: 0px;
+}
+
+.container-formtable .redicon {
+    color: red;
+}
+
+.buttonstyle {
+    height: 30px;
+    min-width: 120px;
+    cursor: pointer;
+    border: 1px solid #1475da;
+    background-color: white;
+    color: #166390;
+    border-radius: 4px;
+}
+
+.buttonstyle:hover {
+    background-color: #1475da;
+    color: white;
+}
+
+.radiocss {
+    margin-left: 20px;
+}
+
+.formtd {
+    min-width: 85px;
+}
+
+.table-border {
+    border-collapse: collapse;
+    border: 1px solid #1475da;
+}
+
+.table-border td {
+    border-collapse: collapse;
+    border: 1px solid #1475da;
+}
+
+#timeline .timeline-item:after,
+#timeline .timeline-item:before {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%
+}
+
+body {
+    background: #f9f9f9;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial, tahoma, verdana;
+    line-height: 20px;
+    font-size: 14px;
+    color: #726f77;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Dosis", arial, tahoma, verdana;
+    font-weight: 600;
+}
+
+#timeline {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#timeline:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #a8c5ea;
+    top: 0;
+    position: absolute;
+}
+
+#timeline:after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%
+}
+
+#timeline .timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#timeline .timeline-item .timeline-icon {
+    background: #1386d8;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    margin-left: -23px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%
+}
+
+#timeline .timeline-item .timeline-icon span.iconfont {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+#timeline .timeline-item .timeline-icon span.iconfont {
+    color: #fff;
+}
+
+#timeline .timeline-item .timeline-icon img {
+    position: relative;
+    top: 14px;
+    left: 14px;
+}
+
+#timeline .timeline-item .timeline-content {
+    width: 95%;
+    background: #fff;
+    padding: 20px;
+    // -moz-box-shadow: 0px -1px 6px #333333;
+    // -webkit-box-shadow: 0px -1px 6px #333333;
+    // box-shadow: 1px 2px 8px #333333;
+    // -webkit-border-radius: 4px;
+    // -moz-border-radius: 4px;
+    // -ms-border-radius: 4px;
+    // border-radius: 4px;
+    // -webkit-transition: all 0.3s ease;
+    // -moz-transition: all 0.3s ease;
+    // -ms-transition: all 0.3s ease;
+    // transition: all 0.3s ease;
+}
+
+#timeline .timeline-item .timeline-content h2 {
+    font-size: 25px;
+    color: #1260b1;
+    margin: -13px -20px 15px 6px;
+    font-weight: 500;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+#timeline .timeline-item .timeline-content:before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #ee4d4d;
+}
+
+#timeline .timeline-item .timeline-content.right {
+    margin-left: 50px;
+}
+
+#timeline .timeline-item .timeline-content.right:before {
+    content: '';
+    right: 96%;
+    left: inherit;
+    border-left: 0;
+    border-right: 7px solid #1a89e8;
+}
+
+.btn {
+    padding: 5px 15px;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #f27c7c;
+    color: #f27c7c;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 12px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    -webkit-box-shadow: 2px 2px 0 #f27c7c;
+    -moz-box-shadow: 2px 2px 0 #f27c7c;
+    -ms-box-shadow: 2px 2px 0 #f27c7c;
+    box-shadow: 2px 2px 0 #f27c7c;
+}
+
+.btn:hover {
+    box-shadow: none;
+    top: 2px;
+    left: 2px;
+    -webkit-box-shadow: 2px 2px 0 transparent;
+    -moz-box-shadow: 2px 2px 0 transparent;
+    -ms-box-shadow: 2px 2px 0 transparent;
+    box-shadow: 2px 2px 0 transparent;
+}
+
+@media screen and (max-width: 768px) {
+    #timeline {
+        margin: 30px;
+        padding: 0;
+    }
+
+    #timeline:before {
+        left: 0;
+    }
+
+    #timeline .timeline-item .timeline-content {
+        width: 90%;
+        float: right;
+    }
+
+    #timeline .timeline-item .timeline-content:before,
+    #timeline .timeline-item .timeline-content.right:before {
+        left: 10%;
+        margin-left: -6px;
+        border-left: 0;
+        border-right: 7px solid #ee4d4d;
+    }
+
+    #timeline .timeline-item .timeline-icon {
+        left: 0;
+    }
+}
+
+//谈话教育-个人教育form开始
+//谈话教育-个人教育form结束
+//救济物品申领 开始
+.jjwpsl-container {
+    #wpid {
+        display: flex;
+        width: 700px;
+        flex-wrap: wrap;
+
+        .combo {
+            width: 200px !important;
+        }
+
+        .numberbox {
+            width: 70px !important;
+        }
+    }
+}
+
+//接济物品申领 结束
+//收押入所-入所登记form开始
+.rsdj-container {
+    .rsdj-record {
+        width: 100%;
+
+        #rsdjTbody {
+            span {
+                margin-bottom: 10px;
+            }
+
+            .shgxCss {
+                width: 142px;
+                padding: 5px;
+                border-right: 1px solid #ccc;
+            }
+        }
+
+        .rsdj-content {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-top: 0px solid #ccc;
+
+            .rsdjAdd {
+                width: 75%;
+                text-align: right;
+                margin-top: 10px;
+            }
+
+            .rsdjTable {
+                width: 75.5%;
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+
+        .tab {
+            height: 35px;
+
+            .tab-item {
+                list-style: none;
+                display: inline-block;
+                width: 120px;
+                text-align: center;
+                font-size: 16px;
+                border: 0.5px solid #fff;
+                background: #5191f0;
+                color: #fff;
+                padding: 0 20px;
+                cursor: pointer;
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .gap {
+                margin-left: -4px;
+                border-left: 0px solid #fff;
+            }
+
+            .freedom {
+                margin-left: -4px;
+            }
+        }
+    }
+
+    .products .mainCont {
+        display: none;
+        overflow: scroll;
+        min-height: 300px;
+        min-width: 1500px;
+    }
+
+    .products .mainCont.selected {
+        display: block;
+    }
+}
+
+//收押入所-入所登记form结束
+.wllk-container {
+    .wllk-record {
+        width: 100%;
+
+        .wllk-content {
+            width: 100%;
+
+            #jbxxTbody span {
+                border: 1px solid #fff !important;
+
+                input {
+                    text-align: center;
+                }
+            }
+
+            #clxxTbody span {
+                border: 1px solid #fff !important;
+
+                input {
+                    text-align: center;
+                }
+            }
+        }
+
+        .tab {
+            height: 35px;
+
+            .tab-item {
+                list-style: none;
+                display: inline-block;
+                width: 120px;
+                text-align: center;
+                font-size: 16px;
+                border: 0.5px solid #fff;
+                background: #5191f0;
+                color: #fff;
+                padding: 0 20px;
+                cursor: pointer;
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .tab-item.active {
+                background: rgb(0, 105, 246) !important;
+            }
+
+            .gap {
+                margin-left: -6px;
+                border-left: 0px solid #fff;
+            }
+        }
+    }
+
+    .products .mainCont {
+        display: none;
+        overflow: scroll;
+        width: 100%;
+    }
+
+    .products .mainCont.selected {
+        display: block;
+    }
+}
+
+//外来人员登记离开form 结束
+//Form表单 表格组件样式
+.Form_Table {
+    border-color: cornflowerblue;
+
+    tr td {
+        text-align: center;
+    }
+
+    tbody td {
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+//Form表单 表格组件样式 End
+//谈话教育-个别教育form start
+.gbjy-container {
+    .time span {
+        width: 185px !important;
+
+        span {
+            text-align: right;
+        }
+    }
+
+    .thnrLeft {
+        display: flex;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .qkfy,
+    .gzqkGzbz {
+        overflow: auto;
+        padding: 10px;
+        display: none;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .keepBtn,
+    .qkfyAdd,
+    .gzbzAdd,
+    .fxpgAdd {
+        width: 70px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        background: #297aff;
+        border: 0;
+        color: white;
+    }
+
+    .fxpgAdd:hover {
+        background: rgb(30, 103, 222);
+    }
+
+    .qkfyAdd:hover {
+        background: rgb(30, 103, 222);
+    }
+
+    .gzbzAdd:hover {
+        background: rgb(30, 103, 222);
+    }
+
+    .qkfyAdd,
+    .qkfyOff {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .qkfxTitle {
+        width: 95%;
+        margin-left: 17px;
+        background: #2a7bff;
+        height: 30px;
+        color: white;
+        line-height: 30px;
+    }
+
+    .offBtn,
+    .qkfyOff,
+    .gzbzDel,
+    .fxpgOff {
+        width: 70px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 10px;
+        border-radius: 5px;
+        background: #ccc;
+        border: 0;
+        color: white;
+    }
+
+    .fxpgOff:hover {
+        background: #b5b2b2;
+    }
+
+    .qkfyOff:hover {
+        background: #b5b2b2;
+    }
+
+    .gzbzDel:hover {
+        background: #b5b2b2;
+    }
+
+    .thjyTitle {
+        height: 30px;
+        background: #0069f6;
+        line-height: 30px;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .qkzsBtn {
+        letter-spacing: 5px;
+        background: #fff;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-left: 10px;
+        color: #08c;
+        border: 1px solid #297aff;
+        padding: 7px 18px;
+    }
+
+    .qkzsBtn:hover {
+        background: #1475da;
+        color: white;
+    }
+
+    .tabs-wrap {
+        background: #016af6;
+
+        .tabs-selected .tabs-title {
+            color: #333;
+        }
+
+        .tabs-title {
+            font-size: 16px !important;
+            color: white;
+        }
+    }
+
+    .fxpgTable tr td {
+        border: solid 1px #cfcfcf;
+        text-align: left;
+        margin: 0;
+        background-color: #ffffff;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .fxpgTable .fxpgLeft {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+//谈话教育-个别教育form end
+//   伤情补录照片
+.sqbl {
+    width: 57%;
+    margin-left: 9.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sqbl div {
+    width: 30%;
+}
+
+.sqbl div img {
+    width: 100%;
+    height: 150px;
+}
+
+//分级处遇管理  开始
+.fjcygl-container {
+    .table-border td span {
+        border: 0 !important;
+        outline: none !important;
+    }
+}
+
+//分级处遇管理  结束
+// 同案犯
+#xzjaj {
+    border: 1px solid #297aff;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+
+    h2 {
+        display: inline-block;
+        font-size: 100%;
+    }
+}
+
+#xzjaj:hover {
+    background: #297aff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tjtar {
+    border: 1px solid #297aff;
+    padding: 5px 10px;
+    float: right;
+}
+
+.tjtar:hover {
+    background: #297aff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#addtj {
+    border: 1px solid #297aff;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin-left: 3%;
+}
+
+#addtj:hover {
+    background: #297aff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#searchBtn {
+    background: #297aff;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    margin-top: 2px;
+    line-height: 28px;
+    margin-left: 25%;
+}
+
+//救济品管理 开始
+.jjwpgl-container {
+    .drxxBtn {
+        border-radius: 5px;
+        background: #f7f5f5;
+        border: 0;
+        padding: 5px;
+    }
+
+    .drxxBtn:hover {
+        background: #e4dfdf;
+    }
+
+    .sspwTd span {
+        width: 140px !important;
+    }
+
+    #sswpDel {
+        padding: 5px;
+        border: 1px solid #1475da;
+        background: #fff;
+        border-radius: 5px;
+        color: #166390;
+        cursor: pointer;
+    }
+
+    #sswpDel:hover {
+        color: white;
+        background: rgb(20, 134, 216);
+    }
+
+    #sswpAdd {
+        min-width: 77px !important;
+        margin-right: 1.5%;
+        padding: 5px;
+    }
+}
+
+//救济品管理 结束
+//值班登记 form开始
+.zbdj-container {
+    .standard-content {
+        padding: 0px 15px 15px 15px;
+    }
+
+    .zbdj-title {
+        height: 35px;
+        color: white;
+        line-height: 35px;
+        background: #0069f6;
+    }
+
+    .zbdjTable {
+        border: 1px solid #3d88f9;
+
+        .formtd {
+            border: 1px solid #3d88f9;
+            border-right: 0px solid #ccc !important;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .zbdjTd {
+            .textbox {
+                width: 100px !important;
+                border-radius: 0px !important;
+                border-right: 0px !important;
+                border-bottom: 0px !important;
+            }
+        }
+    }
+}
+
+//值班登记 form结束
+//值班安排 form开始
+.zbap-container {
+    .standard-content {
+        padding: 20px;
+    }
+
+    .zbapTable {
+        tbody tr td {
+            text-align: center;
+            border: 1px solid #3d88f9 !important;
+
+            .textbox {
+                border: 0;
+                height: 36px;
+
+                span .textbox-text {
+                    height: 37px !important;
+                }
+
+                a {
+                    height: 37px !important;
+                }
+            }
+        }
+
+        .title {
+            height: 37px;
+            border-right: 0px solid #ccc !important;
+        }
+
+        // #zbap_form{
+        //     border:1px solid red;
+        // }
+    }
+}
+
+//值班安排 form结束
+//送钱送物 form开始
+.sqsw-container {
+    .zjhBtn {
+        background: #efefef;
+        border: 0;
+        width: 98px;
+        padding: 6px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .zjhBtn:hover {
+        background: #dadada;
+    }
+
+    .lsjlBtn {
+        background: #fff;
+        cursor: pointer;
+        border: 0;
+    }
+
+    #xxdiv .datagrid-view {
+        height: 200px;
+        overflow-y: scroll;
+    }
+
+    .zklb {
+        display: none;
+    }
+}
+
+//送钱送物 form结束
+//购物管理 在押人员申请form 开始
+.gwgl-container {
+    .gwc {
+        margin-bottom: 10px;
+        margin-left: 17px;
+
+        button {
+            background: #f1f1f1;
+            width: 110px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ded9d9;
+        }
+    }
+}
+
+//购物管理 在押人员申请form 结束
+//药品进货记录 开始
+.ypjhjl-container {
+    .bzqTd {
+        .spinner {
+            height: 28px !important;
+
+            a {
+                height: 28px !important;
+            }
+
+            input {
+                height: 28px !important;
+            }
+        }
+    }
+}
+
+//药品进货记录 结束
+// 在押人员发药
+.tjyp {
+    cursor: pointer;
+    border: 1px solid #297aff;
+    padding: 4px 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.tjyp:hover {
+    background: #297aff;
+    color: #fff;
+}
+
+.scyp {
+    cursor: pointer;
+    border: 1px solid #297aff;
+    padding: 4px 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.scyp:hover {
+    background: #297aff;
+    color: #fff;
+}
+
+#ypxq {
+    width: 66%;
+}
+
+#ypxq tr {
+    text-align: center;
+}
+
+#ypxq tr td:first-child {
+    padding: 5px 0;
+    border: 1px solid #297aff;
+    width: 5%;
+}
+
+#ypxq tr td {
+    padding: 5px 0;
+    border: 1px solid #297aff;
+}
+
+//人员社会关系form 开始
+.ryshgx-container {
+    #jtcyTable tr td .textbox {
+        width: 120px !important;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .sm {
+        margin: 4px;
+        padding: 2px 4px;
+        border: 0;
+        background: #0069f6;
+        color: white;
+        border-radius: 5px;
+    }
+
+    #shgxTable tr td input {
+        width: 100px !important;
+        border-radius: 0;
+        border: 0;
+    }
+}
+
+//人员社会关系form 结束
+// 财务管理-送钱送物
+.drxxBtnjs {
+    margin-left: 3%;
+    border: 1px solid #297aff;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+.drxxBtnjs:hover {
+    background: #297aff;
+    color: #fff;
+    cursor: pointer;
+}
+
+// 家属会见 开始
+.swgxtz1,
+.swgxtz2,
+.swgxtz3 {
+    display: none;
+}
+
+// 家属会见  结束
+// 就医管理 带入监室
+.tbsbqk,
+.ywwjp,
+.ywyc {
+    display: none;
+}
+
+// 就医管理 带出监室
+.zsssqk,
+.tbsbqkqk,
+.wjpqk,
+.ycqk {
+    display: none;
+}
+
+//layui-layer-dialog layui table reset 
+.layui-layer-dialog {
+    .layui-layer-title {
+        color: #297aff;
+        font-family: 'iconfont', 'Microsoft Yahei';
+    }
+
+    .layui-layer-content {
+
+        // padding:0 !important;
+        .layui-table {
+            thead {
+                tr {
+                    th {
+                        background: #297aff;
+                        color: #fff;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        div {
+                            color: #297aff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .layui-table-page {
+            .layui-laypage-em {
+                background: #297aff;
+            }
+        }
+    }
+
+    .layui-layer-btn {
+        text-align: center;
+
+        a {
+            height: 35px;
+            line-height: 35px;
+            margin: 8px 8px 0;
+        }
+
+        .layui-layer-btn0 {
+            background: rgb(237, 154, 2);
+            border-color: rgb(237, 154, 2);
+        }
+    }
+}
+
+
+#jjbfm {
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+
+    .layui-form-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .layui-inline {
+            display: block;
+            width: 30%;
+
+            .layui-form-label {
+                width: 30%;
+            }
+
+            .layui-input-inline {
+                width: 65%;
+            }
+        }
+    }
+}

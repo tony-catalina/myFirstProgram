@@ -1,0 +1,61 @@
+<!--
+模块名称： 
+开始时间： 2020-3-7
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<body class="easyui-layout" data-options="fit:true">
+<!--页面主体布局-->
+<form class="ywdt-form">
+    <div class="section-container ywdt">
+
+    <div class="section-item section-item-title  section-item-row"><span class="iconfont icon-taizhang "></span>总队报表</div>
+    <div class="section-item align-center section-item-row">
+        <h1>总队报表</h1>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">选择报表: </div>
+        <div class="section-item-content align-center section-item-content-title">上报类报表: </div>
+        <div class="section-item-content align-center section-item-content-title">统计类报表: </div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center "></div>
+        <div class="section-item-content align-center "><label><input type="radio" name="Fruit" />行政监管场所情况统计月报表</label></div>
+        <div class="section-item-content align-center "><label><input type="radio" name="Fruit" />行政监管场所新收统计表</label></div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center "> </div>
+        <div class="section-item-content align-center "><label><input type="radio" name="Fruit" />行政监管场所深挖犯罪情况统计月报表</label></div>
+        <div class="section-item-content align-center "><label><input type="radio" name="Fruit" />行政监管场所日月均押量收统计表</label></div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center "> </div>
+        <div class="section-item-content align-center "><label><input type="radio" name="Fruit" />公安监管部门深挖犯罪战果季报表</label></div>
+        <div class="section-item-content align-center "><label><input type="radio" name="Fruit" />行政监管场所日月均新收统计表</label></div>
+    </div>
+    <div class="section-item section-item-row">
+            <div class="section-item-content align-right section-item-content-title">请选择时间段: </div>
+            <div class="section-item-content flex-grow-2">
+                <input class="easyui-datebox starttime" value="new Date()" /><span class="wz">至</span><input class="easyui-datebox endtime" value="new Date()" />
+            </div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content"><input type="button" id="searchBtn" value="点击查询" /></div>
+    </div>
+
+
+
+    </div>
+</div>
+</form>
+<!--页面主体布局-->
+<script src="/apps/jls/static/lib/require.js" data-main="/apps/jls/static/js/require.config" id="current-page" current-page="pages\bb\index"></script>
+
+<script src="/apps/jls/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

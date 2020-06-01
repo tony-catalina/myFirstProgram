@@ -1,0 +1,190 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+        <div class="section-content gjcx-container">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                    <div class="htmleaf-container">
+                        <div class="container" style="display:flex;">
+                            <div style="width:17%;display: inherit;">
+                               <div class="btn" style=" border: 0px solid #ccc !important;background:#f5f5f5;color: #2e8ded !important;
+                               box-shadow: 1px 1px 0 #ccc !important;border-radius: 0px !important;"><span style="font-size:25px !important;" class="iconfont icon-jibenxinxi"></span></div>
+                               <div class="hideDiv" style="display:none;padding: 0px 10px 10px 10px;">
+                                    <ul id="gjtt" class="easyui-tree">
+                                        <li>
+                                            <span id="zyry">在押人员</span>
+                                            <ul>
+                                                <li id="zsztWj">未决</li>
+                                                <li id="zsztYj">已决</li>
+                                                <li id="zsztYjds">已决待送</li>
+                                                <li id="crjbj">临时离所</li>
+                                                <li id="zsztLsfx">留所服刑</li>
+                                                <li id="wcnbj">未成年人</li>
+                                                <li id="yjfx">一级风险</li>
+                                                <li id="ejfx">二级风险</li>
+                                                <li id="sjfx">三级风险</li>
+                                                <li id="ygry">严管人员</li>
+                                                <li id="jb">禁闭人员</li>
+                                                <li id="jj">械具人员</li>
+                                                <li>
+                                                    <span>耳目信息</span>
+                                                    <ul>
+                                                        <li id="emlxAqem">安全耳目</li>
+                                                        <li id="emlxYzem">狱侦耳目</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <li id="stateJsry">拒收人员</li>
+                                            <li id="stateLsry">历史人员</li>
+                                            <li id="stateQbry">全部人员</li>
+                                        </li>
+                                    </ul>
+                               </div>
+                            </div>
+                            <div colspan="3" style="width:100%;">
+                                <table>
+                                    <tr>
+                                        <td class="formtd">人&ensp;员&ensp;编&ensp;号：</td>
+                                        <td><input class="easyui-textbox"style="min-width:216px;"> </td>
+                                        <td class="formtd">国&emsp;&emsp;&emsp;&emsp;籍：</td>
+                                        <td><input class="awdCombogrid" biaoti="国籍" id="gj" name="gj"  code="GJ" style="min-width:216px;"> </td>
+                                        <td class="formtd">从&emsp;案&emsp;类&emsp;型：</td>
+                                        <td><input class="awdCombox" code="JLSAJLB" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">姓&emsp;&emsp;&emsp;&ensp;名：</td>
+                                        <td><input class="easyui-textbox"style="min-width:216px;"> </td>
+                                        <td class="formtd">籍&emsp;&emsp;&emsp;&emsp;贯：</td>
+                                        <td><input class="awdCombogrid" biaoti="籍贯" code="XZQH" style="min-width:216px;"> </td>
+                                        <td class="formtd">主&emsp;案&emsp;类&emsp;别：</td>
+                                        <td><input class="awdCombox" code="JLSAJLB" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">姓&ensp;名&ensp;拼&ensp;音：</td>
+                                        <td><input class="easyui-textbox"style="min-width:216px;"> </td>
+                                        <td class="formtd">户&emsp;&ensp;籍&emsp;&ensp;地：</td>
+                                        <td><input class="awdCombox" code="XZQH" style="min-width:216px;"> </td>
+                                        <td class="formtd">成&emsp;员&emsp;类&emsp;型：</td>
+                                        <td><input class="awdCombox" code="CYLX" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">别&emsp;&emsp;&emsp;&ensp;名：</td>
+                                        <td><input class="easyui-textbox"style="min-width:216px;"> </td>
+                                        <td class="formtd">户&nbsp;籍&nbsp;地&nbsp;详&nbsp;址：</td>
+                                        <td><input class="easyui-textbox" style="min-width:216px;"> </td>
+                                        <td class="formtd">办&emsp;&emsp;案&emsp;&emsp;人：</td>
+                                        <td><input class="easyui-textbox" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">性&emsp;&emsp;&emsp;&ensp;别：</td>
+                                        <td><input class="awdCombox" code="XB" style="min-width:216px;"> </td>
+                                        <td class="formtd">现&emsp;&ensp;住&emsp;&ensp;地：</td>
+                                        <td><input class="awdCombox" code="XZQH" style="min-width:216px;"> </td>
+                                        <td class="formtd">办&emsp;案&emsp;环&emsp;节：</td>
+                                        <td><input class="awdCombox" code="BAJD" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">出&ensp;生&ensp;日&ensp;期：</td>
+                                        <td class="time"><input class="easyui-datebox"style="min-width:90px;">至<input class="easyui-datebox"style="min-width:90px;"></td>
+                                        <td class="formtd">现&nbsp;住&nbsp;地&nbsp;详&nbsp;址：</td>
+                                        <td><input class="easyui-textbox" style="min-width:216px;"> </td>
+                                        <td class="formtd">办&emsp;案&emsp;单&emsp;位：</td>
+                                        <td><input class="awdCombox" code="BADW" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">证&emsp;件&emsp;&ensp;号：</td>
+                                        <td><input class="easyui-textbox"style="min-width:216px;"> </td>
+                                        <td class="formtd">文&ensp;化&emsp;程&ensp;度：</td>
+                                        <td><input class="awdCombox" code="WHCD" style="min-width:216px;"> </td>
+                                        <td class="formtd">办&nbsp;案&nbsp;单&nbsp;位&nbsp;类型：</td>
+                                        <td><input class="awdCombox" code="DWLX" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">民&emsp;&emsp;&emsp;&ensp;族：</td>
+                                        <td><input class="awdCombox" code="MZ" style="min-width:216px;"> </td>
+                                        <td class="formtd">政&ensp;治&emsp;面&ensp;貌：</td>
+                                        <td><input class="awdCombox" code="ZZMM" style="min-width:216px;"> </td>
+                                        <td class="formtd">档&emsp;案&emsp;编&emsp;号：</td>
+                                        <td><input class="easyui-textbox" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">监区/监室号：</td>
+                                        <td><input class="easyui-textbox"style="min-width:216px;"> </td>
+                                        <td class="formtd">特&ensp;殊&emsp;身&ensp;份：</td>
+                                        <td><input class="awdCombox" code="TSSF" style="min-width:216px;"> </td>
+                                        <td class="formtd">指&emsp;纹&emsp;编&emsp;号：</td>
+                                        <td><input class="easyui-textbox" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">婚&ensp;姻&ensp;状&ensp;况：</td>
+                                        <td><input class="awdCombox" code="HYZK" style="min-width:216px;"> </td>
+                                        <td class="formtd">送&ensp;押&emsp;单&ensp;位：</td>
+                                        <td><input class="easyui-textbox" style="min-width:216px;"> </td>
+                                        <td class="formtd">健&emsp;康&emsp;情&emsp;况：</td>
+                                        <td><input class="awdCombox" code="JKZK" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">职&emsp;&emsp;&emsp;&ensp;业：</td>
+                                        <td><input class="awdCombogrid" biaoti="职业" code="ZY" style="min-width:216px;"> </td>
+                                        <td class="formtd">收&ensp;据&emsp;凭&ensp;证：</td>
+                                        <td><input class="awdCombox" code="SYPZ" style="min-width:216px;"> </td>
+                                        <td class="formtd">细&emsp;化&emsp;案&emsp;由：</td>
+                                        <td><input class="awdCombox" code="AJLB" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">专&emsp;&emsp;&emsp;&ensp;长：</td>
+                                        <td><input class="awdCombox" code="ZC" style="min-width:216px;"> </td>
+                                        <td class="formtd">收押开证日期：</td>
+                                        <td class="time"><input class="easyui-datebox" style="min-width:90px;">至<input class="easyui-datebox" style="min-width:90px;"> </td>
+                                        <td class="formtd">处&emsp;理&emsp;结&emsp;果：</td>
+                                        <td><input class="awdCombox" code="CLJG" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">身&emsp;&emsp;&emsp;&ensp;份：</td>
+                                        <td><input class="awdCombox" code="SF" style="min-width:216px;"> </td>
+                                        <td class="formtd">关&ensp;押&emsp;期&ensp;限：</td>
+                                        <td class="time"><input class="easyui-datebox" style="min-width:90px;">至<input class="easyui-datebox" style="min-width:90px;"> </td>
+                                        <td class="formtd">出&emsp;所&emsp;去&emsp;向：</td>
+                                        <td><input class="easyui-textbox" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">入&ensp;所&ensp;日&ensp;期：</td>
+                                        <td class="time"><input class="easyui-datebox"style="min-width:90px;">至<input class="easyui-datebox"style="min-width:90px;"> </td>
+                                        <td class="formtd">转&ensp;入&emsp;单&ensp;位：</td>
+                                        <td><input class="awdCombox" code="BADW" style="min-width:216px;"> </td>
+                                        <td class="formtd">拒&emsp;收&emsp;理&emsp;由：</td>
+                                        <td><input id="gjcx_jsly" class="easyui-combobox"  style="min-width:216px;" > </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">入&ensp;所&ensp;性&ensp;质：</td>
+                                        <td><input class="awdCombox" code="RSXZ" style="min-width:216px;"> </td>
+                                        <td class="formtd">收&emsp;&ensp;押&emsp;&ensp;人：</td>
+                                        <td><input class="easyui-textbox" style="min-width:216px;"> </td>
+                                        <td class="formtd">在&emsp;所&emsp;状&emsp;态：</td>
+                                        <td><input class="awdCombox" code="ZSZT" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">出&ensp;所&ensp;日&ensp;期：</td>
+                                        <td class="time"><input class="easyui-datebox"style="min-width:90px;">至<input class="easyui-datebox"style="min-width:90px;"> </td>
+                                        <td class="formtd">送&emsp;&ensp;押&emsp;&ensp;人：</td>
+                                        <td><input class="easyui-textbox" style="min-width:216px;"> </td>
+                                        <td class="formtd">质量改造待评估：</td>
+                                        <td><input class="awdCombox" code="SHFO" style="min-width:216px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">出&ensp;所&ensp;原&ensp;因：</td>
+                                        <td><input class="awdCombox" code="CSYY" style="min-width:216px;"> </td>
+                                        <td class="formtd">羁&ensp;押&emsp;日&ensp;期：</td>
+                                        <td class="time"><input class="easyui-datebox" style="min-width:90px;">至<input class="easyui-datebox" style="min-width:90px;"></td>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+   </div>
+
+</body>

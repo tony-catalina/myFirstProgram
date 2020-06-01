@@ -1,0 +1,10 @@
+{
+    "code":0,
+    "msg":"保存成功",
+    "result":{
+        "tjdj_jrdts|1-100":1,
+        "tjdj_jryts|1-100":1,
+        "tsdj_jryts|1-100":1
+    },
+    "success":true
+}

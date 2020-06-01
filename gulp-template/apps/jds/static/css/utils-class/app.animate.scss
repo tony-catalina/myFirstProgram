@@ -1,0 +1,150 @@
+.lg-fade-out {
+  animation: fadeOutL 2s;
+}
+.lg-fade-out-r {
+  animation: fadeOutR 2s;
+}
+.lg-fade-t {
+  animation: fadeOutT 2s;
+}
+.lg-fade-b {
+  animation: fadeOutB 2s;
+}
+.lg-fade-in {
+  animation: fadeInL 2s;
+}
+.lg-fade-in-r {
+  animation: fadeInR 2s;
+}
+.lg-fade-in-t {
+  animation: fadeInT 2s;
+}
+.lg-fade-in-b {
+  animation: fadeInB 2s;
+}
+.lg-fade-pop {
+  animation: fadeInPop 2s;
+}
+.lg-fade-pop-t {
+  animation: fadeInPopT 2s;
+}
+@keyframes diffuis {
+  0%{
+    transform: translate(-50%,-50%) scale(0,0);
+    opacity: 0;
+  }
+  50%{
+    transform: translate(-50%,-50%) scale(.4,.4);
+    opacity: .8;
+  }
+  100%{
+    transform: translate(-50%,-50%) scale(.8,.8);
+    opacity: .1;
+  }
+}
+@keyframes rotateCircle {
+  from{
+    transform: translateX(0) rotate(0);
+    transform-origin: 0 100%;
+  }to{
+     transform: translateX(0) rotate(360deg);
+     transform-origin: 0 100%;
+   }
+}
+@keyframes equipRotate {
+  from{
+    transform: translate(-50%,-50%) rotate(0);
+  }to{
+     transform: translate(-50%,-50%) rotate(360deg);
+   }
+}
+@keyframes fadeOutL {
+  from{
+    opacity: 1;
+    transform: translateX(50%) ;
+  }to{
+     opacity: 0;
+     transform: translateX(-200%) ;
+   }
+}
+@keyframes fadeOutR {
+  from{
+    opacity: 1;
+    transform: translateX(-50%) ;
+  }to{
+     opacity: 0;
+     transform: translateX(200%) ;
+   }
+}
+@keyframes fadeOutT {
+  from{
+    opacity: 1;
+    transform: translate(-50%,0) ;
+  }to{
+     opacity: 0;
+     transform: translate(-50%,-200%) ;
+   }
+}
+@keyframes fadeOutB {
+  from{
+    opacity: 1;
+    transform: translate(-50%, -50%) ;
+  }to{
+     opacity: 0;
+     transform: translate(-50%, 200%) ;
+   }
+}
+@keyframes fadeInL {
+  from{
+    opacity: 0;
+    transform: translateX(-200%);
+  }to{
+     opacity: 1;
+     transform: translateX(0);
+   }
+}
+@keyframes fadeInR {
+  from{
+    opacity: 0;
+    transform: translateX(200%);
+  }to{
+     opacity: 1;
+     transform: translateX(0);
+   }
+}
+@keyframes fadeInT {
+  from{
+    opacity: 0;
+    transform: translate(-50%,-200%);
+  }to{
+     opacity: 1;
+     transform: translate(-50%,0);
+   }
+}
+@keyframes fadeInB {
+  from{
+    opacity: 0;
+    transform: translate(-50%, 200%);
+  }to{
+     opacity: 1;
+     transform: translate(-50%, 0);
+   }
+}
+@keyframes fadeInPop {
+  from{
+    opacity: 0;
+    transform: translate(-50%, -200%);
+  }to{
+     opacity: 1;
+     transform: translate(-50%, -50%);
+   }
+}
+@keyframes fadeInPopT {
+  from{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }to{
+     opacity: 0;
+     transform: translate(-50%, -200%);
+   }
+}

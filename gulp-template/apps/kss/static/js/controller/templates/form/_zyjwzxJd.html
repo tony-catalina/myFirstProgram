@@ -1,0 +1,116 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">姓&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" value="{{xm}}" style="min-width:180px;" readonly> </td>
+                                    <td class="formtd">性&emsp;&emsp;&nbsp;别：</td>
+                                    <td ><input class="awdCombox" value="{{xb}}" text="{{xbString}}" style="min-width:180px;" readonly> </td>
+                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                    <td ><input class="easyui-textbox" value="{{jsh}}" style="min-width:180px;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">入&emsp;&ensp;所&emsp;日&emsp;&ensp;期：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{rsrq}}" style="min-width:180px;" readonly> </td>
+                                    <td class="formtd">罪&emsp;&emsp;&nbsp;名：</td>
+                                    <td ><input class="awdCombox" value="{{ay}}" text="{{ayString}}" style="width:100%;" readonly> </td>
+                                    <td class="formtd">关押期限：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{gyqx}}" style="width:100%;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">申&emsp;&ensp;请&emsp;类&emsp;&ensp;型：</td>
+                                    <td ><input class="awdCombox" value="{{ldpsxx.jwzxsqlx}}" text="{{ldpsxx.jwzxsqlxString}}" style="min-width:180px;" readonly> </td>
+                                    <td class="formtd">申请原因	：</td>
+                                    <td ><input class="easyui-textbox" value="{{ldpsxx.jwzxsqyy}}" text="{{ldpsxx.jwzxsqyyString}}" style="width:100%;" readonly> </td>
+                                    <td class="formtd">填&ensp;表&ensp;人：</td>
+                                    <td ><input class="easyui-textbox" value="{{ldpsxx.jwzxtfr}}" style="width:100%;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">填&emsp;&ensp;表&emsp;日&emsp;&ensp;期：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{ldpsxx.jwzxtfrq}}" style="width:100%;" readonly> </td>
+                                    <td class="formtd">审&ensp;&nbsp;核&ensp;人：</td>
+                                    <td ><input class="easyui-textbox" value="{{ldpsxx.jwzxshr}}" style="min-width:180px;" readonly> </td>
+                                    <td class="formtd">审核日期：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{ldpsxx.jwzxshsj}}" style="width:100%;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td>审&emsp;&ensp;核&emsp;意&emsp;&ensp;见：<font class="redicon">*</font></td>
+                                    <td>
+                                        <input type="radio" id="shyj1"  value="1" disabled><font>同意</font>
+                                        <input type="radio" id="shyj2"  value="2" disabled><font>不同意</font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">暂予监外执行理由：</td>
+                                    <td colspan="5"><input class="easyui-textbox" value="{{ldpsxx.jwzxly}}" style="width:100%;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">改&ensp;造&ensp;期间&ensp;表&ensp;现：</td>
+                                    <td colspan="5"><input class="easyui-textbox" value="{{ldpsxx.jwzxgzqjbx}}" style="width:100%;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">看&ensp;守&ensp;所&emsp;&ensp;意&ensp;见：</td>
+                                    <td colspan="5"><input class="easyui-textbox" value="{{ldpsxx.jwzxkssyj}}" style="width:100%;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">驻所检察人员名单：</td>
+                                    <td colspan="5"><input class="easyui-textbox" value="{{ldpsxx.jwzxzsjcmd}}" style="width:100%;" readonly> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-yewubaobiao"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">鉴定机关：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox"  name="jdjg" style="min-width:280px;" required> </td>
+                                    <td class="formtd">鉴定时间：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datetimebox" id="jdsjfm" name="jdsj" style="min-width:280px;" required> </td>
+                                </tr>
+                                <tr>
+                                    <td>鉴定结果：<font class="redicon">*</font></td>
+                                    <td>
+                                        <input type="radio" name="jdresult" value="1" checked required><font>符合</font>
+                                        <input type="radio" name="jdresult" value="2"  required><font>不符合</font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <tr>
+                                        <td class="formtd">内&emsp;&emsp;容：<font class="redicon">*</font></td>
+                                        <td colspan="5"><input class="easyui-textbox" name="nr" data-options="multiline:true" style="width:100%;" required> </td>
+                                    </tr>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

@@ -1,0 +1,190 @@
+<!--
+模块名称： 首頁
+开始时间： 2020-2-25
+-->
+
+<!-- partial:./partials/_head_start.html -->
+<!-- partial -->
+<link rel="stylesheet" type="text/css" href="../static/css/homePage.css">
+<!-- partial:./partials/_head_end.html -->
+<!-- partial -->
+
+<body class="easyui-layout" data-options="fit:true" style="overflow:hidden">
+    <div style="width:100%;height:80%;overflow-y:auto">
+        <div class="layui-fluid">
+            <div class="layui-row h40 layui-col-space10 ">
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">交接班</div>
+                        <div class="item-content jjb flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">本周财务情况</div>
+                        <div class="item-content">
+                            <div class='dbsx'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">本周现金接济
+                            <div style="float:right;font-size:15px;" id="bzxjjjtj">现金接济金额：0元;现金接济人数：0人</div>
+                        </div>
+                        <div class="item-content ">
+                            <table class="layui-hide" id="xjjj"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row h40 layui-col-space10">
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">所长接待</div>
+                        <div class="item-content ">
+                            <table class="layui-hide" id="dbxx"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">食堂采购</div>
+                        <div class="item-content">
+                            <div class='ywbl'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">本周物品接济
+                            <div style="float:right;font-size:15px;" id="bzwpjjtj">物品接济数量：0件;物品接济人数：0人</div>
+                        </div>
+                        <div class="item-content">
+                            <table class="layui-hide" id="wpjj"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md6">
+                    <div class="wrap-item">
+                        <div class="item-title">违规人员</div>
+                        <div class="item-content">
+                            <table class="layui-hide" id="jfjd"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md6">
+                    <div class="wrap-item">
+                        <div class="item-title">收钱收物</div>
+                        <div class="item-content">
+                            <table class="layui-hide" id="sqsw"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md12">
+                    <div class="wrap-item">
+                        <div class="item-title">固定资产管理</div>
+                        <div class="item-content list_ul Special_ul">
+                            <ul>
+                                <li>
+                                    <div class="gdzcgl" name="监区设施">
+                                        <icon class="iconfont icon-taizhang"></icon><span>监区设施：<font id="jqss">0</font></span></div>
+                                    <div class="gdzcgl" name="监区大门">
+                                        <icon class="iconfont icon-taizhang"></icon><span>监区大门：<font id="jqdm">0</font></span></div>
+                                    <div class="gdzcgl" name="监区警报器">
+                                        <icon class="iconfont icon-taizhang"></icon><span>监区警报器：<font id="jqjbq">0</font></span></div>
+                                    <div class="gdzcgl" name="监区防火设备">
+                                        <icon class="iconfont icon-taizhang"></icon><span>监区防火设备：<font id="jqfhsz">0</font></span></div>
+                                </li>
+                                <li>
+                                    <div class="gdzcgl" name="警备枪械">
+                                        <icon class="iconfont icon-taizhang"></icon><span>警备枪械：<font id="jbqx">0</font></span></div>
+                                    <div class="gdzcgl" name="警备电击器">
+                                        <icon class="iconfont icon-taizhang"></icon><span>警备电击器：<font id = "jbdjq">0</font></span></div>
+                                    <div class="gdzcgl" name="警备钥匙">
+                                        <icon class="iconfont icon-taizhang"></icon><span>警备钥匙：<font id="jbys">0</font></span></div>
+                                    <div class="gdzcgl" name="警备警棍">
+                                        <icon class="iconfont icon-taizhang"></icon><span>警备警棍：<font id="jbjg">0</font></span></div>
+                                </li>
+                                <li>
+                                    <div class="gdzcgl" name="文员电脑">
+                                        <icon class="iconfont icon-taizhang"></icon><span>文员电脑：<font id="wydn">0</font></span></div>
+                                    <div class="gdzcgl" name="文员钥匙">
+                                        <icon class="iconfont icon-taizhang"></icon><span>文员钥匙：<font id="wyys">0</font></span></div>
+                                    <div class="gdzcgl" name="文员工牌">
+                                        <icon class="iconfont icon-taizhang"></icon><span>文员工牌：<font id="wygp">0</font></span></div>
+                                    <div class="gdzcgl" name="文员工桌">
+                                        <icon class="iconfont icon-taizhang"></icon><span>文员工桌：<font id="wygz">0</font></span></div>
+                                </li>
+                                <li>
+                                    <div class="gdzcgl" name="食堂设施">
+                                        <icon class="iconfont icon-taizhang"></icon><span>食堂设施：<font id="stss">0</font></span></div>
+                                    <div class="gdzcgl" name="澡堂设施">
+                                        <icon class="iconfont icon-taizhang"></icon><span>澡堂设施：<font id="ztss">0</font></span></div>
+                                    <div class="gdzcgl" name="户外设施">
+                                        <icon class="iconfont icon-taizhang"></icon><span>户外设施：<font id="hwss">0</font></span></div>
+                                    <div class="gdzcgl" name="休息室设施">
+                                        <icon class="iconfont icon-taizhang"></icon><span>休息室设施：<font id="xxsss">0</font></span></div>
+                                </li>
+                                <li>
+                                    <div class="gdzcgl" name="犯人衣服">
+                                        <icon class="iconfont icon-taizhang"></icon><span>犯人衣服：<font id="fryf">0</font></span></div>
+                                    <div class="gdzcgl" name="犯人工牌：" ">
+                                        <icon class="iconfont icon-taizhang "></icon><span>犯人工牌：<font id="frgp ">0</font></span></div>
+                                    <div class="gdzcgl " name="员工衣服 ">
+                                        <icon class="iconfont icon-taizhang "></icon><span>员工衣服：<font id="ygyf ">0</font></span></div>
+                                    <div class="gdzcgl " name="员工钥匙 ">
+                                        <icon class="iconfont icon-taizhang "></icon><span>员工钥匙：<font id="ygys "> 0</font></span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-fluid ">
+        <div class="layui-row h20 layui-col-space10 ">
+            <div class="layui-col-md12 " style="padding-bottom:0 ">
+                <div class="wrap-item ">
+                    <div class="item-title ">其他应用</div>
+                    <div class="item-content ">
+                        <div class="icon_box " role="11 ">
+                            <div class="icon_content "><span class="iconfont icon-xingshizhifa "></span></div>
+                            <font>收押岗位</font>
+                        </div>
+                        <div class="icon_box " role="13 ">
+                            <div class="icon_content "><span class="iconfont icon-guanjiaogangwei "></span></div>
+                            <font>管教管理</font>
+                        </div>
+                        <div class="icon_box " role="17 ">
+                            <div class="icon_content "><span class="iconfont icon-caiwuguanli "></span></div>
+                            <font>财务岗位</font>
+                        </div>
+                        <div class="icon_box " role="14 ">
+                            <div class="icon_content "><span class="iconfont icon-yiwurenyuan "></span></div>
+                            <font>医务岗位</font>
+                        </div>
+                        <div class="icon_box " role="16 ">
+                            <div class="icon_content "><span class="iconfont icon-xunkong "></span></div>
+                            <font>巡控</font>
+                        </div>
+                        <div class="icon_box " role="18 ">
+                            <div class="icon_content "><span class="iconfont icon-suolingdao "></span></div>
+                            <font>所领导</font>
+                        </div>
+                        <div class="icon_box " role="12 ">
+                            <div class="icon_content "><span class="iconfont icon-qitafuwu "></span></div>
+                            <font>综合岗位</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/apps/kss/static/lib/require.js " data-main="dashboard_cw.js "></script>
+        <script src="/apps/kss/static/js/require.config.js "></script>
+        <script src="/apps/kss/static/lib/loading.js "></script>
+</body>
+<!-- partial:./partials/_foot.html -->
+<!-- partial -->

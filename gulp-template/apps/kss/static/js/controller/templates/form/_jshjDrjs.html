@@ -1,0 +1,99 @@
+
+<body class="easyui-layout" data-option="fit:true">
+        <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+        <div class="section-content">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                 <div class="htmleaf-container">
+                 <div class="container">
+                    <div id="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                               <span class="iconfont icon-jibenxinxi"></span>
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>个人信息</h2>
+                                <table class="container-formtable">
+                                    <tr>
+                                        <td class="formtd">监&ensp;室&ensp;号：</td>
+                                        <td ><input class="easyui-textbox" style="min-width:180px;" readonly value="{{jsh}}"> </td>
+                                        <td class="formtd">姓&ensp;&ensp;&ensp;&ensp;名：</td>
+                                        <td ><input class="easyui-textbox" style="min-width:180px;" readonly value="{{xm}}"> </td>
+                                        <td class="formtd">别&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;名：</td>
+                                        <td ><input class="easyui-textbox" style="min-width:180px;" readonly value="{{bm}}"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">性&ensp;&ensp;&ensp;&ensp;别	：</td>
+                                        <td ><input class="awdCombox" style="min-width:180px;" readonly value="{{xb}}" text="{{xbString}}"> </td>
+                                        <td class="formtd">出生日期	：</td>
+                                        <td ><input class="easyui-datebox" style="min-width:180px;" readonly value="{{csrq}}"> </td>
+                                        <td class="formtd">入&ensp;所日&ensp;期	：</td>
+                                        <td ><input class="easyui-datebox" style="min-width:180px;" readonly value="{{rsrq}}"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">办案环节：</td>
+                                        <td ><input class="awdCombox" style="min-width:180px;" readonly value="{{bahj}}" text="{{bahjString}}"> </td>
+                                        <td class="formtd">涉嫌罪名	：</td>
+                                        <td ><input class="awdCombox" style="min-width:180px;" readonly value="{{ay}}" text="{{ayString}}"> </td>
+                                        <td class="formtd">户籍地详址：</td>
+                                        <td ><input class="easyui-textbox" style="min-width:180px;" readonly value="{{hjdxz}}"> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+    
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                 <span class="iconfont icon-anjian"></span>
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>业务信息</h2>
+                                <table class="container-formtable">
+                                    <tr>
+                                        <td class="formtd">办理时间：<font class="redicon">*</font></td>
+                                        <td ><input id="blsj" class="easyui-datetimebox" required name="blsj" style="min-width:280px;"> </td>
+                                        <td class="formtd">带领民警：<font class="redicon">*</font></td>
+                                        <td ><input id="dlmj" class="easyui-textbox" required name="dlmj" value="{{sqmj}}" style="min-width:280px;"> </td>
+                                    </tr>
+                                    <tr>
+                                            <td colspan="3"><input type="checkbox" name="ywtbs" id="ywtbs1" value="2"><font>体表有无伤（不选则为无伤）</font></td>
+                                    </tr>
+                                    <tr id="fitem1" >
+                                        <td style="width: 20%;">体表伤病情况：<font class="redicon">*</font></td>
+                                        <td colspan="3" style="height:80px;">
+                                            <input id="sbqkfm" class="easyui-textbox" name="sbqk" value=""  style="width: 100%;height: 100%;"data-options="multiline:true" />
+                                        </td>
+                                    </tr>
+                                    <tr> 
+                                            <td colspan="3"><input type="checkbox" name="ywwjp" id="ywwjp1" value="2"><font>有无违禁品（不选则为无违禁品）</font></td>
+                                    </tr>
+                                    <tr id="fitem2" >
+                                        <td style="width: 20%;">违禁品情况：<font class="redicon">*</font></td>
+                                        <td colspan="3" style="height: 80px;">
+                                            <input id="wjpqkfm" class="easyui-textbox" name="wjpqk" value="" style="width: 100%;height: 100%;"data-options="multiline:true" />
+                                        </td>
+                                    </tr>
+                                    <tr> 
+                                            <td colspan="3"><input type="checkbox" name="ywqxyc" id="ywqxyc1" value="2"><font>有无异常（不选则为无异常）</font></td>
+                                    </tr>
+                                    <tr id="fitem3" >
+                                        <td style="width: 20%;">异常情况：<font class="redicon">*</font></td>
+                                        <td colspan="3" style="height:80px">
+                                            <input id="qxycqkfm" class="easyui-textbox" name="ycqksm" value=""  style="width: 100%;height: 100%;"data-options="multiline:true" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+       </div>
+    </form>
+    </body>

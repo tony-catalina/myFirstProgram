@@ -1,0 +1,411 @@
+<div
+  class="easyui-layout"
+  data-option="fit:true"
+  style="width: 100%; height: 100%;"
+>
+  <form
+    id="fm"
+    name="aqjcfm"
+    method="post"
+    style="padding: 0 0 0 0;"
+    class="awdform"
+  >
+    <div class="section-content">
+      <div class="section-item section-item-one section-item-padding">
+        <div class="standard-content font-20">
+          <div class="htmleaf-container">
+            <div class="container">
+              <div id="">
+                <div class="">
+                  <div
+                    id="tt"
+                    class=""
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      flex-wrap: nowrap;
+                      width: 80%;
+                    "
+                  >
+                    <h3>基本信息</h3>
+                    <div colspan="2" id="one">
+                      <div
+                        class="fitem"
+                        style="
+                          margin-left: 100px;
+                          margin-top: 10px;
+                          margin-bottom: 10px;
+                        "
+                      >
+                        <img
+                          id="zmz"
+                          src="/apps/jls/static/images/moren.jpg"
+                          alt=""
+                          class="pic preview-image"
+                          id="img1"
+                          style="width: 160px; height: 160px;"
+                        />
+                      </div>
+                      <div
+                        class="fitem"
+                        style="
+                          margin-left: 150px;
+                          margin-top: 2px;
+                          margin-bottom: 2px;
+                        "
+                      ></div>
+                    </div>
+                    <div colspan="2" id="two">
+                      <div
+                        class="fitem"
+                        style="
+                          margin-left: 100px;
+                          margin-top: 10px;
+                          margin-bottom: 10px;
+                        "
+                      >
+                        <img
+                          id="zcmz"
+                          src="/apps/jls/static/images/moren.jpg"
+                          alt=""
+                          class="pic preview-image"
+                          id="img1"
+                          style="width: 160px; height: 160px;"
+                        />
+                      </div>
+                      <div
+                        class="fitem"
+                        style="
+                          margin-left: 150px;
+                          margin-top: 2px;
+                          margin-bottom: 2px;
+                        "
+                      ></div>
+                    </div>
+                    <div colspan="2" id="three">
+                      <div
+                        class="fitem"
+                        style="
+                          margin-left: 100px;
+                          margin-top: 10px;
+                          margin-bottom: 10px;
+                        "
+                      >
+                        <img
+                          id="ycmz"
+                          src="/apps/jls/static/images/moren.jpg"
+                          alt=""
+                          class="pic preview-image"
+                          id="img1"
+                          style="width: 160px; height: 160px;"
+                        />
+                      </div>
+                      <div
+                        class="fitem"
+                        style="
+                          margin-left: 150px;
+                          margin-top: 2px;
+                          margin-bottom: 2px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <table class="container-formtable">
+                    <tr>
+                      <td class="formtd">人员编号：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="snbh"
+                          value="{{snbh}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">政&ensp;治&emsp;面&ensp;貌：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="zzmm"
+                          value="{{zzmmString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">国&emsp;&emsp;&emsp;籍：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="gj"
+                          value="{{gjString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="formtd">姓&emsp;&emsp;名：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="xm"
+                          value="{{xm}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">身&emsp;&emsp;&emsp;&emsp;份：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="sf"
+                          value="{{sfString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">
+                        婚&nbsp;姻&nbsp;&thinsp;状&nbsp;况：
+                      </td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="hyzk"
+                          value="{{hyzkString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="formtd">曾&ensp;用&ensp;名：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="bm"
+                          value="{{bm}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">特&ensp;殊&emsp;身&ensp;份：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="tssf"
+                          value="{{tssfString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd" style="width: 180px;">
+                        健&nbsp;康&nbsp;&thinsp;状&nbsp;态：
+                      </td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="jkzt"
+                          value="{{jkztString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="formtd">性&emsp;&emsp;别：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="xb"
+                          value="{{xbString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">职&emsp;&emsp;&emsp;&emsp;业：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="zy"
+                          value="{{zyString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">
+                        文&nbsp;化&nbsp;&thinsp;程&nbsp;度：
+                      </td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="whcd"
+                          value="{{whcdString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="formtd">出生日期：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="csrq"
+                          value="{{csrq}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">
+                        原&nbsp;工&nbsp;作&thinsp;单&nbsp;位：
+                      </td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="gzdw"
+                          value="{{gzdw}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">户&emsp;籍&emsp;地：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="hjd"
+                          value="{{hjdString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="formtd">证件类型：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="zjlx"
+                          value="{{zjlxString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">籍&emsp;&emsp;&emsp;&emsp;贯：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="jg"
+                          value="{{jgString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">户籍地详址：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="hjdxz"
+                          value="{{hjdxz}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="formtd">证&ensp;件&ensp;号：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="zjh"
+                          value="{{zjh}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">暂住起始日期：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="zzqsrq"
+                          value="{{zzqsrq}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">现&emsp;住&emsp;地：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="xzd"
+                          value="{{xzdString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="formtd">民&emsp;&emsp;族：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="mz"
+                          value="{{mzString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">提&ensp;审&emsp;状&ensp;态：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="zszt"
+                          value="{{zsztString}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                      <td class="formtd">现住地详址：</td>
+                      <td>
+                        <input
+                          class="easyui-textbox"
+                          name="xzdxz"
+                          value="{{xzdxz}}"
+                          required
+                          readonly
+                          style="width: 265px;"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

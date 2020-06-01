@@ -1,0 +1,15 @@
+{
+  "name": "uikit",
+  "homepage": "https://github.com/uikit/uikit",
+  "version": "3.2.7",
+  "_release": "3.2.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.2.7",
+    "commit": "bfaf85894c4067c52c62874855c9204ee22cde31"
+  },
+  "_source": "https://github.com/uikit/uikit.git",
+  "_target": "^3.2.7",
+  "_originalSource": "uikit",
+  "_direct": true
+}

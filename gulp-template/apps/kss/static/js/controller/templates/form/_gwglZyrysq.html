@@ -1,0 +1,87 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content gwgl-container">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">人员编号：</td>
+                                                    <td><input class="easyui-textbox" name="snbh" value="{{snbh}}"
+                                                            readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>商品信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">商品名称：<font class="redicon">*</font></td>
+
+                                                    <td><input class="easyui-combobox" name="sptm" required id="sptm"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">商品&emsp;数量：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-numberbox" name="spsl" value="1" required
+                                                            id="sl" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">零&ensp;售&ensp;价：</td>
+                                                    <td><input class="easyui-textbox" readonly  name="lsj" id="lsj"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">消费总金额：</td>
+                                                    <td><input class="easyui-textbox" readonly name="xfje" id="xfzje"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr  style="display: none;">
+                                                    <td class="formtd">商品条码：</td>
+                                                    <td><input class="easyui-textbox" id="sptxm"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>购物车</h2>
+                                            <div class="gwc">
+                                                <button type="button" id="addcart" style="width: 150px;"><span
+                                                        class="iconfont icon-jiahao" ></span>加入购物车</button>
+                                                <button type="button" id="removecart"><span class="iconfont icon-shanchu"
+                                                        style="font-weight: bold;"></span>删除</button>
+                                            </div>
+                                            <table id="gwcDetailId"></table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

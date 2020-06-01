@@ -1,0 +1,32 @@
+/**
+ 模块名称: 动态分析
+ 开始时间: 2020-3-7
+ */
+window.mxBasePath ='/apps/jls/static/lib/flowchart';
+define(function(require){
+    //公共控件、组件、工具导入
+    require('jquery');
+    var mxgraph = require('awd/flowchart/mxgraph');
+    var main={
+        init:function(){
+            main.layout();
+            main.eventBind();
+        },
+        layout:function(){
+            mxgraph.init('flowmaps', {
+                nodes:[{id: 'node1',style: {STYLE_IMAGE:'../../../static/images/lcttx.png'},label: '动态分析记录',top: 100,left: 200,width: 80,height: 80,url: '/apps/jls/views/pages/dtfx/dtfxjl.html' },
+                    {id: 'node2',style: {STYLE_IMAGE:'../../../static/images/lcttx.png'},label: '记录查询(<font color="red">2</font>)',top: 400,left: 200,width: 80,height: 80,url: '/apps/jls/views/pages/dtfx/jlcx.html' },
+                ],
+
+                lines:[{from:1,to:2,type:'edgeStyle=orthogonalEdgeStyle'},
+                ]
+            });
+        },
+        eventBind:function(){
+
+        }
+    };
+
+    $(main.init);
+
+});

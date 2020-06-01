@@ -1,0 +1,143 @@
+.paretsDiv {
+    position: relative;
+    display: inline;
+    margin-right: 10px;
+}
+
+#selectContent {
+    width: 150px;
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#selectContent ul,
+#selectContent ul {
+    padding: 3% 0;
+}
+
+#selectContent ul li {
+    text-align: center;
+    cursor: pointer;
+}
+
+#selectContent ul li:hover,
+#selectContent ul li:hover {
+    background-color: #eee;
+}
+
+#plszjsContent {
+    width: 150px;
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#plszjsContent ul li {
+    /* text-align: center; */
+    cursor: pointer;
+}
+
+#twoFlex {
+    display: flex;
+    justify-content: start;
+    height: 100%;
+}
+
+.leftTree {
+    width: 20%;
+    height: 100%;
+    border: 1px solid #eee;
+    border-right: none;
+    margin: 10px 0;
+    padding: 1% 2%;
+}
+
+#tree {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#tree::-webkit-scrollbar,
+#treeCheck::-webkit-scrollbar,
+#resetRole::-webkit-scrollbar {
+    display: none
+}
+
+#bjjsMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    padding: 5% 8%;
+}
+
+.leftJs,
+.rightJs {
+    width: 45%;
+
+}
+
+.leftJs h3,
+.rightJs h3 {
+    margin-bottom: 3%;
+}
+
+.leftContent,
+.rightContent {
+    width: 100%;
+    height: 95%;
+    border: 1px solid #eee;
+}
+
+.centerJs {
+    width: 10%;
+    text-align: center;
+    margin-top: 32%;
+}
+
+#treeCheck {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.rightContent ul li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 2%;
+    color: rgb(30, 84, 148);
+}
+
+.rightContent ul li:hover {
+    cursor: pointer;
+    background-color: #eee;
+
+}
+
+.rightContent ul li i {
+    color: rgb(30, 84, 148);
+    font-size: 22px;
+    vertical-align: -2px;
+}
+
+.rightContent ul li span {
+    color: #333;
+    float: right;
+    font-weight: bolder;
+}
+
+.rightContent ul li span:hover {
+    color: red;
+}
+
+#resetRole {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}

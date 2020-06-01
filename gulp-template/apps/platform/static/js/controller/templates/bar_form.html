@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<form class="layui-form" action="" id="fm">
+    <h2>登记办案人</h2>
+    <input type="text"  name="id"  value="{{id}}" hidden="hidden">        
+    <div class="layui-form-item">
+        <label class="layui-form-label">身份证号：<font color="red">*</font></label>                
+        <div class="layui-input-block">
+            <input type="text" id="sfzhfm"  placeholder="若有X则为大写" name="sfzh"  value="{{sfzh}}" class="layui-input" lay-verify="required" >
+        </div>  
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">姓&emsp;&emsp;名：<font color="red">*</font></label>  
+        <div class="layui-input-block">
+            <input type="text"  name="xm"  value="{{xm}}" class="layui-input" lay-verify="required">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">单位类型：&nbsp;</label>
+        <div class="layui-input-block">
+            <select name="dwlx" lay-filter='dwlx' value="{{dwlx}}" class="awdcombox" field="DWLX">
+            </select>
+        </div>
+    </div>        
+    <div class="layui-form-item">
+        <label class="layui-form-label">单&emsp;&emsp;位：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text"  name="badw"  value="{{badw}}" class="layui-input" lay-verify="required"> 
+        </div>            
+    </div>
+    
+</form>

@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<form class="layui-form" action="" id="fm">
+    <h2>通知公告</h2>
+    <input type="text"  name="id"  value="{{id}}" hidden="hidden">        
+    <div class="layui-form-item">
+        <label class="layui-form-label">监所类型：<font color="red">*</font></label>                
+        <div class="layui-input-block">
+            <select name="jslx" lay-filter='jslx' value="{{jslx}}" class="awdcombox" field="DM" lay-verify="required">
+            </select>
+        </div>  
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">公告标题：<font color="red">*</font></label>  
+        <div class="layui-input-block">
+            <input type="text"  name="title"  value="{{title}}" class="layui-input" lay-verify="required">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">公告内容：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <textarea id="content" name="content" lay-verify="required"  style="display: none;">
+             {{content}}
+            </textarea>
+        </div>
+    </div>        
+    
+</form>

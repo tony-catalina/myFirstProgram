@@ -1,0 +1,11 @@
+<div class="h-r-item">
+    <img src="../static/images/zobgdui_icon.png" class="user-avatar" />
+    {{user.realname}}
+</div>
+<div class="h-r-item">{{user.jsbhString}}</div>
+<div class="h-r-item">
+    {{each roles as role i }}
+    {{role.name}}
+    {{/each}}
+</div>
+<a href="/logout" class="h-r-item mr0">退出</a>

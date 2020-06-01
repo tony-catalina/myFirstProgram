@@ -1,0 +1,68 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">演&ensp;&ensp;&ensp;练&ensp;&ensp;&ensp;时&ensp;&ensp;间：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datetimebox" name="ylsj" value="{{ylsj}}" required style="min-width:280px;"> </td>
+                                    <td class="formtd">组&ensp;织&ensp;指&ensp;挥&ensp;者：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="zzzhz" data-options="validType:'length[1,30]',invalidMessage:'该输入项的最大长度是 30'" required value="{{zzzhz}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">记&ensp;&ensp;&ensp;&ensp;&ensp;录&ensp;&ensp;&ensp;&ensp;&ensp;人：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="hyjlr" required value="{{hyjlr}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">看守所参加人员：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="ksscjry"  required value="{{ksscjry}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">武警中队参加人员：</td>
+                                    <td ><input class="easyui-textbox" name="wjzdcjry"  value="{{wjzdcjry}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">演&ensp;&ensp;练&ensp;&ensp;情&ensp;&ensp;况：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="ylqk" required value="{{ylqk}}" data-options="validType:'length[1,800]',invalidMessage:'该输入项的最大长度是 800'"  style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">其&ensp;&ensp;&ensp;他&ensp;&ensp;&ensp;人&ensp;&ensp;员：</td>
+                                    <td colspan="3"><input class="easyui-textbox" data-options="multiline:true,validType:'length[1,200]',invalidMessage:'该输入项的最大长度是 200'" name="qtry" value="{{qtry}}"  style="min-height:80px;width:100%"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">存&ensp;在&ensp;&ensp;的&ensp;问&ensp;&ensp;题：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="czwt" data-options="multiline:true,validType:'length[1,200]',invalidMessage:'该输入项的最大长度是 200'" value="{{czwt}}"  style="min-height:80px;width:100%"> </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="formtd">改&ensp;&ensp;&ensp;进&ensp;&ensp;&ensp;措&ensp;&ensp;施：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="gjcs" value="{{gjcs}}" data-options="multiline:true,validType:'length[1,200]',invalidMessage:'该输入项的最大长度是 200'" style="min-height:80px;width:100%"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">备&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;注：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="bz" value="{{bz}}" data-options="multiline:true,validType:'length[1,200]',invalidMessage:'该输入项的最大长度是 200'" style="min-height:80px;width:100%"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                   
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

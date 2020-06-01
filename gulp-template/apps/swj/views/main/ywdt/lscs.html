@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="" name="description" />
+    <meta content="webthemez" name="author" />
+    <title>临时出所业务动态</title>
+    <link href="/apps/swj/static/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/apps/swj/static/css/themes/metro/easyui.css" rel="stylesheet" type="text/css" />
+    <link href="/apps/swj/static/css/grid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/apps/swj/static/css/kanban.css">
+    <link rel="stylesheet" href="/apps/swj/static/css/layer.css" type="text/css" />
+</head>
+
+<body>
+<div id="51vui-View">
+    <div id="page-51vui-View">
+        <div id="page-inner">
+            <!-- 标题 -->
+            <div class="row ">
+                <div class="headerBar">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <h3 class="h3">临时出所业务动态</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- //标题 -->
+            <!-- 不同监所人员新收数量 -->
+            <div class="row" id="gsrs">
+            </div>
+            <!-- //不同监所人员新收数量 -->
+            <!-- 各地各所临时出所情况 -->
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <div class="panel panel-default chartJs">
+                        <div class="panel-heading">
+                            <div class="card-title">
+                                <div class="title">各地区新收人数</div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <span id="chartWork" class="chart" style="width:100%;height:350px;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="panel panel-default chartJs">
+                        <div class="panel-heading">
+                            <div class="card-title">
+                                <div class="title">各所新收人数</div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <span id="analysisChart" class="chart" style="width:100%;height:350px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 各地各所临时出所情况 -->
+            <!-- //近期临时出所情况-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default ">
+                        <div class="panel-heading">
+                            <div class="card-title">
+                                <div class="title">近10天临时出所明细</div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="easyui-tabs" style="width:100%;height:500px;">
+                                <div title="看守所" data-options="iconCls:'icon-reload'" style="padding:20px;display:none;">
+                                    <table id="kss_table" class="table table-bordered" ></table>
+                                </div>
+                                <div title="拘留所" data-options="iconCls:'icon-reload'" style="padding:20px;display:none;">
+                                    <table id="jls_table" class="table table-bordered" ></table>
+                                </div>
+                                <div title="戒毒所" data-options="iconCls:'icon-reload'" style="padding:20px;display:none;">
+                                    <table id="jds_table" class="table table-bordered" ></table>
+                                </div>
+                                <div title="监护医疗所" data-options="iconCls:'icon-reload'" style="padding:20px;display:none;">
+                                    <table id="jhyl_table" class="table table-bordered" ></table>
+                                </div>
+                                <div title="强制医疗所" data-options="iconCls:'icon-reload'" style="padding:20px;display:none;">
+                                    <table id="qzyl_table" class="table table-bordered" ></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //近期临时出所情况-->
+        </div>
+        <!-- /. PAGE INNER  -->
+    </div>
+    <!-- /. PAGE 51vui-View  -->
+</div>
+<!-- /. 51vui-View  -->
+<!-- partial:../../partials/laywin.html -->
+<!-- partial -->
+
+<script src="/apps/swj/static/lib/require.js" data-main="page\main\ywdt\main.ywdt.lscs.js"></script>
+<script src="/apps/swj/static/js/require.config.js"></script>
+</body>
+
+</html>

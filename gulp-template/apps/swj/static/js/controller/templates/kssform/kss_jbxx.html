@@ -1,0 +1,53 @@
+<div class="form1-column" title="人员信息">
+    <form id="vui_sample" class="easyui-form" method="post" data-options="novalidate:true">
+        <div class="form-column1">
+            <div class="form-column-left">
+                <input class="easyui-textbox" name="name" style="width:100%" data-options="label:'申请单号:',required:true">
+            </div>
+        </div>
+        <div class="form-column1">
+            <div class="form-column-left">
+                <select class="easyui-combobox" name="state" data-options="label:'状态:',required:true" labelPosition="top" style="width:100%;">
+                    <option value="AL">新增</option>
+                    <option value="AK">已提交</option>
+                    <option value="AZ">申请中</option>
+                    <option value="AR">已入库</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-column1">
+            <div class="form-column-left">
+                <input class="easyui-textbox" name="wznumber" style="width:100%" data-options="label:'物料编号:',required:true">
+            </div>
+        </div>
+        <div class="form-column1">
+            <div class="form-column-left">
+                <select class="easyui-combobox" name="state" data-options="label:'物料类型:',required:true" labelPosition="top" style="width:100%;">
+                    <option value="AL">原材料</option>
+                    <option value="AK">辅料</option>
+                    <option value="AZ">产品</option>
+                    <option value="AR">深加工原料</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-column1">
+            <div class="form-column-left">
+                <input class="easyui-textbox" name="sqkf" style="width:100%" data-options="label:'申请库房:',required:true">
+            </div>
+        </div>
+        <div class="form-column1">
+            <div class="form-column-left">
+                <input class="easyui-textbox" name="sqkf" style="width:100%" data-options="label:'单位:',required:true">
+            </div>
+        </div>
+        <div class="form-column1">
+            <div class="form-column-left">
+                <input class="easyui-textbox" name="message" style="width:100%;height:60px" data-options="label:'备注:',multiline:true">
+            </div>
+        </div>
+        <div class="form-btnBar pl75">
+            <input type="submit" name="" value="保存" class="easyui-linkbutton btnPrimary" onclick="submitForm()" style="width:80px" />
+            <input type="submit" name="" value="重置" class="easyui-linkbutton btnDefault" onclick="clearForm()" style="width:80px" />
+        </div>
+    </form>
+</div>

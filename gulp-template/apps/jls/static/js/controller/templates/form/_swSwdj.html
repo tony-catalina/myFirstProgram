@@ -1,0 +1,153 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content pfwp-container">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">拘&emsp;室&emsp;号：</td>
+                                                    <td><input class="easyui-textbox" value="{{jsh}}" readonly style="min-width:250px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" value="{{xm}}" readonly style="min-width:250px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">性&emsp;&emsp;&emsp;别：</td>
+                                                    <td><input class="easyui-textbox" value="{{xb}}" readonly style="min-width:250px;"> </td>
+                                                    <td class="formtd">入所时间：</td>
+                                                    <td><input class="easyui-textbox" value="{{rsrq}}" readonly style="min-width:250px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">档&nbsp;案&ensp;编&nbsp;号：</td>
+                                                    <td><input class="easyui-textbox" value="{{dah}}" readonly style="min-width:250px;"> </td>
+                                                    <td class="formtd">案&emsp;&emsp;别：</td>
+                                                    <td><input class="easyui-textbox" value="{{ay}}" readonly style="min-width:250px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">户籍所在地：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" value="{{hjd}}" readonly style="width:100%;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+									</div><div id="timeline">
+										<div class="timeline-item">
+											<div class="timeline-icon">
+												<span class="iconfont icon-yewubaobiao"></span>
+											</div>
+											<div class="timeline-content right">
+												<h2>业务信息</h2>
+												<table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">送&ensp;&nbsp;物&nbsp;&ensp;人&nbsp;&ensp;姓&nbsp;&ensp;名：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="swrxm" required style="width:260px;"> </td>
+                                                    <td class="formtd">送物人性别：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" name="swrxb" code='XB' required style="width:310px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">与被送物品人关系：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" name="gx" code='GX' required style="min-width:260px;"> </td>
+                                                    <td class="formtd">证&ensp;件类&ensp;型：<font class="redicon">*</font></td>
+                                                    <td>
+                                                        <input type="radio" name="checkRadios1" checked>身份证件
+                                                        <input type="radio" name="checkRadios1">其他证件
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">送&nbsp;物人&nbsp;证&nbsp;件号&nbsp;码：<font class="redicon">*</font></td>
+                                                    <td>
+                                                        <input class="easyui-textbox" data-options="validType:'idcard'" style="min-width:260px;" required>
+                                                    </td>
+                                                    <td class="formtd">
+                                                        <span style="color: #fff; background: #6FB4FA; padding: 4px 10px; border-radius: 5px;">扫描二代证</span>
+                                                        <span style="color: #fff; background: #6FB4FA; padding: 4px 10px; border-radius: 5px;">在逃对比</span>
+                                                    </td>
+                                                <tr>
+                                                    <td class="formtd">执&emsp;勤&emsp;&emsp;民&emsp;警：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="zqmj" id="zqmj" style="min-width:260px;"> </td>
+                                                    <td class="formtd">送&ensp;物时&ensp;间：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" id="swsj" style="min-width:310px;" name="swsj"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">送&nbsp;物人&nbsp;联&nbsp;系电&nbsp;话：<font class="redicon">*</font></td>
+                                                    <td class="formtd">
+                                                        <input class="easyui-textbox" data-options="validType:'telephone'" style="min-width:260px;" required>
+                                                    </td>
+                                                    <td class="formtd">工&ensp;作单&ensp;位：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" style="min-width:310px;" name="swrdw" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">地&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;址：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="dz" style="width:100%;" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">送&emsp;&ensp;钱&emsp;金&ensp;&emsp;额：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="sqje" style="width:100%;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">物&emsp;&ensp;品&emsp;信&ensp;&emsp;息：<font class="redicon">*</font></td>
+                                                    <td colspan="3">
+                                                        <div style="border:solid 1px #297aff; border-radius: 5px; padding: 12px;">
+                                                            <input type="checkbox" name="wpxx" value="1">毯子
+                                                            <input type="checkbox" name="wpxx" value="2">卫生衫
+                                                            <input type="checkbox" name="wpxx" value="3">卫生裤
+                                                            <input type="checkbox" name="wpxx" value="4">绒线衫
+                                                            <input type="checkbox" name="wpxx" value="5">绒线裤
+                                                            <input type="checkbox" name="wpxx" value="6">绒线背心
+                                                            <input type="checkbox" name="wpxx" value="7">棉毛衫
+                                                            <input type="checkbox" name="wpxx" value="8">棉毛裤
+                                                            <input type="checkbox" name="wpxx" value="9">晴纶衫
+                                                            <input type="checkbox" name="wpxx" value="10">晴纶裤
+                                                            <input type="checkbox" name="wpxx" value="11">线衫
+                                                            <input type="checkbox" name="wpxx" value="12">线裤 <br>
+                                                            <input type="checkbox" name="wpxx" value="13">羊毛衫
+                                                            <input type="checkbox" name="wpxx" value="14">羊毛裤
+                                                            <input type="checkbox" name="wpxx" value="15">羊毛背心
+                                                            <input type="checkbox" name="wpxx" value="16">上装
+                                                            <input type="checkbox" name="wpxx" value="17">长裤
+                                                            <input type="checkbox" name="wpxx" value="18">长袖衬衫
+                                                            <input type="checkbox" name="wpxx" value="19">短袖衬衫
+                                                            <input type="checkbox" name="wpxx" value="20">短裤
+                                                            <input type="checkbox" name="wpxx" value="21">衬裤
+                                                            <input type="checkbox" name="wpxx" value="22">汗衫
+                                                            <input type="checkbox" name="wpxx" value="23">汗背心
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="bz" style="width:100%;min-height: 80px;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div align="center">
+                                                <h2 style="font-size:18px;padding:16px 5px;margin:0 !important;">历史记录
+                                                </h2>
+                                            </div>
+                                            <table class="container-formtable" id="swdjTable" style="margin-top: 10px;width: 100%; border-collapse: collapse;margin: 0 auto;">
+                                                <input type="hidden" name="tbr" value="{{tbr}}">
+                                                <input type="hidden" name="tbrq" value="{{tbrq}}">
+                                                <input type="hidden" name="rybh" value="{{rybh}}">
+                                                <input type="hidden" name="jsbh" value="{{jsbh}}">
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</form>
+</body>

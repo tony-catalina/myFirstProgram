@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<form action="" method="" id="fm" class="layui-form">
+	<h2>创建监室</h2>
+	<input type="text"  name="id"  value="{{id}}" hidden="hidden">
+	<div class="layui-form-item">
+		<label class="layui-form-label">监&ensp;区&ensp;号：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<input type="text" name="jqh" value="{{jqh}}" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入"
+			 autocomplete="off" class="layui-input">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">监&ensp;室&ensp;号：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<input type="text" name="jsh" value="{{jsh}}" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入"
+			 autocomplete="off" class="layui-input">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">监&ensp;室&ensp;名：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<input type="text" name="jsmc" value="{{jsmc}}" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入"
+			 autocomplete="off" class="layui-input">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">额定押量：&nbsp;</label>
+		<div class="layui-input-block">
+			<input type="text" id="numfm" name="bznum" value="{{bznum}}" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入"
+			 autocomplete="off" class="layui-input">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">监室类别：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<select name="jslb" lay-filter='jslb' value="{{jslb}}" lay-verify="required" class="awdcombox" field="JSLX">
+			</select>
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">男监女监：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<select name="type" lay-filter='type' value="{{type}}" lay-verify="required" lay-search="" class="awdcombox" field="JSLB">
+			</select>
+		</div>
+	</div>
+	<div class="layui-form-item layui-form-text">
+		<label class="layui-form-label">备&emsp;&emsp;注：&nbsp;</label>
+		<div class="layui-input-block">
+			<textarea placeholder="请输入内容" name='bz' value="{{bz}}" class="layui-textarea">{{bz}}</textarea>
+		</div>
+	</div>
+</form>

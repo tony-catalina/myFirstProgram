@@ -1,0 +1,26 @@
+
+<div class="section-item qa-query">
+    <!-- 简项查询 -->
+    <div class="section-header">
+        <div class="section-title">{{title}}</div>
+        <div class="section-controls single-colors">
+            {{each controlButtonList}}
+            <button type="button" data-command="{{$value.command}}"><span class="iconfont {{$value.icon}}"></span>&nbsp;&nbsp;{{$value.name}}</button>
+            {{/each}}    
+        </div>
+        <div class="section-corner">
+           <button><span class="iconfont icon-gengduo7"></span></button>
+           <button><span class="iconfont icon-gengduo1"></span></button>
+           <button><span class="iconfont icon-gengduo6"></span></button>
+        </div>
+    </div>
+    <div class="section-content">
+      <table class="tmpl-table" style="width: 100%;"></table>
+    </div>
+    <div class="section-header">
+        <div class="section-title">{{title}}</div>
+    </div>
+    <div class="section-content">
+      <table class="buttom-table" style="width: 100%;"></table>
+    </div>
+</div>

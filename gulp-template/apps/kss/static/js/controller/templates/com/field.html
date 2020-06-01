@@ -1,0 +1,9 @@
+<div class="field-warp layui-row">
+{{each fields}}
+ {{if $value.field!="oid"}}
+ <div class="field-item">
+  <input type="checkbox" name="{{$value.field}}" id="{{$value.field}}" test="{{$value.hidden}}" {{if $value.hidden==false}} checked="checked" {{/if}}><label for="{{$value.field}}">{{$value.title}}</label>
+ </div>
+ {{/if}}
+{{/each}}
+</div>

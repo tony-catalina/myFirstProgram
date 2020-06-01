@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<form class="layui-form" action="" id="fm">
+	<h2>创建房间</h2>
+	<input type="text"  name="id"  value="{{id}}" hidden="hidden">
+	<div class="layui-form-item">
+		<label class="layui-form-label">房&ensp;间&ensp;号：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<input type="text" name="fjhm" value="{{fjhm}}" lay-verify="required" lay-reqtext="房间号是必填项，岂能为空？" placeholder="请输入"
+			 autocomplete="off" class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">房间类型：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<select name="fjlx" value="{{fjlx}}" lay-filter='fjlx' class="awdcombox" field="FJLX" lay-verify="required"
+			 lay-reqtext="房间类型是必填项，岂能为空？" placeholder="请输入" autocomplete="off">
+			</select>
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">房间名称：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<input type="text" name="fjmc" value="{{fjmc}}" lay-verify="required" lay-reqtext="房间名称是必填项，岂能为空？" placeholder="请输入"
+			 autocomplete="off" class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item layui-form-text">
+		<label class="layui-form-label">备&emsp;&emsp;注：&nbsp;</label>
+		<div class="layui-input-block">
+			<textarea placeholder="请输入内容" name="bz" value="{{bz}}" class="layui-textarea">
+				{{bz}}
+			</textarea>
+		</div>
+	</div>
+
+</form>

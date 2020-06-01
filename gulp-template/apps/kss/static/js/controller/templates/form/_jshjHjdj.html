@@ -1,0 +1,397 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>个人信息</h2>
+                                            <table class="container-formtable form-jbxx">
+                                                <tr>
+                                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                                    <td><input class="easyui-textbox" id="jshfm"
+                                                            style="min-width:180px;" value="{{jsh}}" readonly> </td>
+                                                    <td class="formtd">姓&ensp;&ensp;&ensp;&ensp;名：</td>
+                                                    <td><input class="easyui-textbox" id="xmfm" style="min-width:180px;"
+                                                            value="{{xm}}" readonly> </td>
+                                                    <td class="formtd">别&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;名：</td>
+                                                    <td><input class="easyui-textbox" id="bmfm" style="min-width:180px;"
+                                                            value="{{bm}}" readonly> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">性&ensp;&ensp;&ensp;&ensp;别：</td>
+                                                    <td><input id="xb" class="awdCombox" style="min-width:180px;"
+                                                            value="{{xb}}" text="{{xbString}}" readonly> </td>
+                                                    <td class="formtd">出生日期：</td>
+                                                    <td><input class="easyui-datebox" style="min-width:180px;"
+                                                            value="{{csrq}}" readonly> </td>
+                                                    <td class="formtd">入&ensp;所日&ensp;期：</td>
+                                                    <td><input class="easyui-datebox" style="min-width:180px;"
+                                                            value="{{rsrq}}" readonly> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办案环节：</td>
+                                                    <td><input class="awdCombox" style="min-width:180px;"
+                                                            value="{{bahj}}" text="{{bahjString}}" readonly> </td>
+                                                    <td class="formtd">涉嫌罪名：</td>
+                                                    <td><input class="awdCombox" style="min-width:180px;" value="{{ay}}"
+                                                            text="{{ayString}}" readonly> </td>
+                                                    <td class="formtd">户籍地详址：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:180px;"
+                                                            value="{{hjdxz}}" readonly> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-anjian"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">证&ensp;&ensp;&ensp;件&ensp;&ensp;&ensp;类&ensp;&ensp;型：<font class="redicon">*</font></td>
+                                                    <td><input id="zjlx" class="awdCombox" required
+                                                            style="min-width:280px;" code="ZJLX" name="zjlx"> </td>
+                                                    <td class="formtd">探&ensp;访&ensp;人&ensp;性&ensp;别：<font class="redicon">*</font></td>
+                                                    <td><input id="tfrxb" class="awdCombox" required
+                                                            style="min-width:280px;" code="XB" name="xb"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">证&ensp;&ensp;&ensp;件&ensp;&ensp;&ensp;号&ensp;&ensp;码：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required
+                                                            data-options="validType:'idcard'" style="min-width:280px;"
+                                                            name="jszjh"> </td>
+                                                    <td colspan="3">
+                                                        <button type="button" class="buttonstyle">人口库对比</button>
+                                                        <button type="button" class="buttonstyle">在逃库对比</button>
+                                                        <button type="button" class="buttonstyle">二代证扫描</button>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">探&ensp;&ensp;访&ensp;&ensp;人&ensp;&ensp;姓名：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required style="min-width:280px;"
+                                                            name="xm"> </td>
+                                                    <td class="formtd">与被探访人关系：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" required style="min-width:280px;"
+                                                            code="GX" name="bhjrgx"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">联系&ensp;&nbsp;方式&ensp;(固话)：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required
+                                                            data-options="validType:'telephone'"
+                                                            style="min-width:280px;" name="dh"> </td>
+                                                    <td class="formtd">联系方式&nbsp;(手机)：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required
+                                                            data-options="validType:'mphone'" style="min-width:280px;"
+                                                            name="sj"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">工&ensp;&ensp;&ensp;作&ensp;&ensp;&ensp;单&ensp;&ensp;位：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required style="min-width:280px;"
+                                                            name="gzdw"> </td>
+                                                    <td class="formtd">单&ensp;&ensp;位&ensp;&ensp;电&ensp;&ensp;话：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;"
+                                                            data-options="validType:'telephone'" name="dwdh"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">职&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;业：</td>
+                                                    <td><input class="awdCombox" style="min-width:280px;" code="ZY"
+                                                            name="zy"> </td>
+                                                    <td class="formtd">会&ensp;&ensp;见&ensp;&ensp;原&ensp;&ensp;因：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombogrid" required style="min-width:280px;"
+                                                            code="JSHJSY" name="ly"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">住&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;址：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombogrid" required style="min-width:280px;"
+                                                            code="XZQH" name="dz"> </td>
+                                                    <td class="formtd">暂&ensp;&ensp;住&ensp;&ensp;住&ensp;&ensp;址：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;"
+                                                            name="zzdz"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">是&ensp;否&ensp;涉维&ensp;关&ensp;系：</td>
+                                                    <td colspan="3">
+                                                        <input type="radio" id="swgxfm" name="sfswgx" value="1"
+                                                            class="radiocss">
+                                                        <font>是</font>
+                                                        <input type="radio" value="2" name="sfswgx" class="radiocss"
+                                                            checked>
+                                                        <font>否</font>
+                                                    </td>
+                                                </tr>
+                                                <tr class="swgxtz1" style="width: 20%;">
+                                                    <td rowspan="10" class="form-title">涉维关系特征</td>
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" class="cbox" name="sfswpg"
+                                                            value="男子留大胡子、女子蒙面纱" style="margin-left: 20px;"><label
+                                                            class="wp2">男子留大胡子、女子蒙面纱</label></td>
+                                                </tr>
+                                                <tr class="swgxtz1">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="戴星月戒指,穿吉里巴普浓重宗教色彩服饰"
+                                                            style="margin-left: 20px;"><label
+                                                            class="wp2">戴星月戒指,穿吉里巴普浓重宗教色彩服饰</label></td>
+                                                </tr>
+                                                <tr class="swgxtz1">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="使用化名别名" style="margin-left: 20px;"><label
+                                                            class="wp2">使用化名别名</label></td>
+                                                </tr>
+                                                <tr class="swgxtz1">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="冒用他人证件" style="margin-left: 20px;"><label
+                                                            class="wp2">冒用他人证件</label></td>
+                                                </tr>
+                                                <tr class="swgxtz1">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="言行极端、民族情绪浓厚" style="margin-left: 20px;"><label
+                                                            class="wp2">言行极端、民族情绪浓厚</label></td>
+                                                </tr>
+                                                <tr class="swgxtz1">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="向被探视人员讲经" style="margin-left: 20px;"><label
+                                                            class="wp2">向被探视人员讲经</label></td>
+                                                </tr>
+                                                <tr class="swgxtz1">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="不愿配合镇府职能部门工作、有抵触情绪" style="margin-left: 20px;"><label
+                                                            class="wp2">不愿配合镇府职能部门工作、有抵触情绪</label></td>
+                                                </tr>
+                                                <tr class="swgxtz1">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="有仇视、扬言报复社会行为" style="margin-left: 20px;"><label
+                                                            class="wp2">有仇视、扬言报复社会行为</label></td>
+                                                </tr>
+                                                <tr class="swgxtz1">
+                                                    <td style="text-align:left" colspan="3"><input type="checkbox"
+                                                            id="wp1" name="sfswpg" class="cbox"
+                                                            value="随身携带白底黑字(维文/阿拉伯文)图像/物品/书籍"
+                                                            style="margin-left: 20px;"><label
+                                                            class="wp2">随身携带白底黑字(维文/阿拉伯文)图像/物品/书籍</label></td>
+                                                </tr>
+                                                <tr class="swgxtz1">
+                                                    <td colspan="3"><textarea rows="5" cols="15" id="bzfm" name="swpgzb"
+                                                            style="width:99.8%;height:95%;border:none;outline:none;resize:none;"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">第二&ensp;探访人&ensp;姓名：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;"
+                                                            name="detfrxm"> </td>
+                                                    <td class="formtd">与被探访人关系：</td>
+                                                    <td><input class="awdCombox" style="min-width:280px;" code="GX"
+                                                            name="detfrgx"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">是&ensp;否&ensp;涉维&ensp;关&ensp;系：</td>
+                                                    <td colspan="3">
+                                                        <input type="radio" name="detfrsfsw" value="1" class="radiocss">
+                                                        <font>是</font>
+                                                        <input type="radio" checked value="2" name="detfrsfsw"
+                                                            class="radiocss">
+                                                        <font>否</font>
+                                                    </td>
+                                                </tr>
+                                                <tr class="swgxtz2" style="width: 20%;">
+                                                    <td rowspan="10" class="form-title">涉维关系特征</td>
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" class="cbox" name="sfswpg"
+                                                            value="男子留大胡子、女子蒙面纱" style="margin-left: 20px;"><label
+                                                            class="wp3">男子留大胡子、女子蒙面纱</label></td>
+                                                </tr>
+                                                <tr class="swgxtz2">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="戴星月戒指,穿吉里巴普浓重宗教色彩服饰"
+                                                            style="margin-left: 20px;"><label
+                                                            class="wp3">戴星月戒指,穿吉里巴普浓重宗教色彩服饰</label></td>
+                                                </tr>
+                                                <tr class="swgxtz2">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="使用化名别名" style="margin-left: 20px;"><label
+                                                            class="wp3">使用化名别名</label></td>
+                                                </tr>
+                                                <tr class="swgxtz2">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="冒用他人证件" style="margin-left: 20px;"><label
+                                                            class="wp3">冒用他人证件</label></td>
+                                                </tr>
+                                                <tr class="swgxtz2">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="言行极端、民族情绪浓厚" style="margin-left: 20px;"><label
+                                                            class="wp3">言行极端、民族情绪浓厚</label></td>
+                                                </tr>
+                                                <tr class="swgxtz2">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="向被探视人员讲经" style="margin-left: 20px;"><label
+                                                            class="wp3">向被探视人员讲经</label></td>
+                                                </tr>
+                                                <tr class="swgxtz2">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="不愿配合镇府职能部门工作、有抵触情绪" style="margin-left: 20px;"><label
+                                                            class="wp3">不愿配合镇府职能部门工作、有抵触情绪</label></td>
+                                                </tr>
+                                                <tr class="swgxtz2">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="有仇视、扬言报复社会行为" style="margin-left: 20px;"><label
+                                                            class="wp3">有仇视、扬言报复社会行为</label></td>
+                                                </tr>
+                                                <tr class="swgxtz2">
+                                                    <td style="text-align:left" colspan="3"><input type="checkbox"
+                                                            id="wp1" name="sfswpg" class="cbox"
+                                                            value="随身携带白底黑字(维文/阿拉伯文)图像/物品/书籍"
+                                                            style="margin-left: 20px;"><label
+                                                            class="wp3">随身携带白底黑字(维文/阿拉伯文)图像/物品/书籍</label></td>
+                                                </tr>
+                                                <tr class="swgxtz2">
+                                                    <td colspan="3"><textarea rows="5" cols="15" id="bzfm" name="swpgzb"
+                                                            style="width:99.8%;height:95%;border:none;outline:none;resize:none;"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">第三&ensp;探访人&ensp;姓名：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;"
+                                                            name="dstfrxm"> </td>
+                                                    <td class="formtd">与被探访人关系：</td>
+                                                    <td><input class="awdCombox" style="min-width:280px;" code="GX"
+                                                            name="dstfrgx"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">是&ensp;否&ensp;涉维&ensp;关&ensp;系：</td>
+                                                    <td colspan="3">
+                                                        <input type="radio" name="dstfrsfsw" value="1" class="radiocss">
+                                                        <font>是</font>
+                                                        <input type="radio" value="2" checked name="dstfrsfsw"
+                                                            class="radiocss">
+                                                        <font>否</font>
+                                                    </td>
+                                                </tr>
+                                                <tr class="swgxtz3" style="width: 20%;">
+                                                    <td rowspan="10" class="form-title">涉维关系特征</td>
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" class="cbox" name="sfswpg"
+                                                            value="男子留大胡子、女子蒙面纱" style="margin-left: 20px;"><label
+                                                            class="wp4">男子留大胡子、女子蒙面纱</label></td>
+                                                </tr>
+                                                <tr class="swgxtz3">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="戴星月戒指,穿吉里巴普浓重宗教色彩服饰"
+                                                            style="margin-left: 20px;"><label
+                                                            class="wp4">戴星月戒指,穿吉里巴普浓重宗教色彩服饰</label></td>
+                                                </tr>
+                                                <tr class="swgxtz3">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="使用化名别名" style="margin-left: 20px;"><label
+                                                            class="wp4">使用化名别名</label></td>
+                                                </tr>
+                                                <tr class="swgxtz3">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="冒用他人证件" style="margin-left: 20px;"><label
+                                                            class="wp4">冒用他人证件</label></td>
+                                                </tr>
+                                                <tr class="swgxtz3">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="言行极端、民族情绪浓厚" style="margin-left: 20px;"><label
+                                                            class="wp4">言行极端、民族情绪浓厚</label></td>
+                                                </tr>
+                                                <tr class="swgxtz3">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="向被探视人员讲经" style="margin-left: 20px;"><label
+                                                            class="wp4">向被探视人员讲经</label></td>
+                                                </tr>
+                                                <tr class="swgxtz3">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="不愿配合镇府职能部门工作、有抵触情绪" style="margin-left: 20px;"><label
+                                                            class="wp4">不愿配合镇府职能部门工作、有抵触情绪</label></td>
+                                                </tr>
+                                                <tr class="swgxtz3">
+                                                    <td style="text-align:left" colspan="3">
+                                                        <input type="checkbox" id="wp1" name="sfswpg" class="cbox"
+                                                            value="有仇视、扬言报复社会行为" style="margin-left: 20px;"><label
+                                                            class="wp4">有仇视、扬言报复社会行为</label></td>
+                                                </tr>
+                                                <tr class="swgxtz3">
+                                                    <td style="text-align:left" colspan="3"><input type="checkbox"
+                                                            id="wp1" name="sfswpg" class="cbox"
+                                                            value="随身携带白底黑字(维文/阿拉伯文)图像/物品/书籍"
+                                                            style="margin-left: 20px;"><label
+                                                            class="wp4">随身携带白底黑字(维文/阿拉伯文)图像/物品/书籍</label></td>
+                                                </tr>
+                                                <tr class="swgxtz3">
+                                                    <td colspan="3"><textarea rows="5" cols="15" id="bzfm" name="swpgzb"
+                                                            style="width:99.8%;height:95%;border:none;outline:none;resize:none;"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">探&ensp;&ensp;&ensp;访&ensp;&ensp;&ensp;日&ensp;&ensp;期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" id="tfrqfm" required
+                                                            style="min-width:280px;" name="hjsj"> </td>
+                                                    <td class="formtd">家&ensp;属&ensp;会&ensp;见&ensp;室：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombogrid" required style="min-width:280px;"
+                                                            code="HJS" id="hjs" name="hjs"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">同&ensp;行&ensp;探访&ensp;人&ensp;数：</td>
+                                                    <td><input class="easyui-numberbox" style="min-width:280px;"
+                                                            name="tfrs"> </td>
+                                                    <td class="formtd">值&ensp;&ensp;班&ensp;&ensp;民&ensp;&ensp;警：<font class="redicon">*</font></td>
+                                                    <td><input id="sjmj" class="easyui-textbox" required
+                                                            style="min-width:280px;" name="sjmj"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">当前办案单位意见：</td>
+                                                    <td colspan="3"><input class="easyui-textbox"
+                                                            data-options="multiline:true"
+                                                            style="width: 100%;height:80px;" name="badwyj"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox"
+                                                            data-options="multiline:true"
+                                                            style="width: 100%;height:80px;" name="bz"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

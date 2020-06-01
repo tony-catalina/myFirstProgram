@@ -1,0 +1,119 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>个人信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">人员编号：</td>
+                                                    <td><input id="snbh" class="easyui-textbox" readonly
+                                                            value="{{snbh}}" style="min-width:180px;"> </td>
+                                                    <td class="formtd">监&nbsp;&nbsp;室&nbsp;&nbsp;号：</td>
+                                                    <td><input id="jsh" value="{{jsh}}" readonly class="easyui-textbox"
+                                                            style="min-width:180px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                                    <td><input id="xm" value="{{xm}}" readonly class="easyui-textbox"
+                                                            style="min-width:180px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办案环节：</td>
+                                                    <td><input id="bahj" value="{{bahj}}" text="{{bahjString}}" class="awdCombox"
+                                                            readonly style="width:100%;"> </td>
+                                                    <td class="formtd">涉案罪名：</td>
+                                                    <td><input id="ay" value="{{ay}}" text="{{ayString}}" class="awdCombox"
+                                                            readonly style="min-width:180px;"> </td>
+                                                    <td class="formtd">档案编号：</td>
+                                                    <td><input id="sypzwsh" value="{{sypzwsh}}" class="easyui-textbox"
+                                                            readonly style="width:100%;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-anjian"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">提&emsp;讯&emsp;单&emsp;位：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombotree" code-test="代码"
+                                                            url="/kss_dictionary/getDictionaryPage" required
+                                                            style="min-width:280px;" name="dw" code="BADW" alike="1">
+                                                    </td>
+                                                    <td class="formtd">提&emsp;&nbsp;&nbsp;讯&emsp;&nbsp;&nbsp;日&emsp;&nbsp;&nbsp;期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datebox" required style="min-width:280px;"
+                                                          id="txrqfm"  name="txrq"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">提&emsp;讯&emsp;事&emsp;由：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required style="min-width:280px;"
+                                                            name="txsy"> </td>
+                                                            <td class="formtd">提&emsp;&nbsp;&nbsp;讯&emsp;&nbsp;&nbsp;地&emsp;&nbsp;&nbsp;点：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombotree easyui-textbox" code-test="代码"
+                                                            required url="/kss_dictionary/getDictionaryPage"
+                                                            code="TSS" style="min-width:280px;" name="tss"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">提&emsp;讯&emsp;类&emsp;型：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" required
+                                                            style="min-width:700px;" name="txlx"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办案人员姓名&nbsp;1：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required style="min-width:280px;"
+                                                            name="baryy"> </td>
+                                                            <td class="formtd">工&nbsp;作&nbsp;证&nbsp;件&nbsp;号&nbsp;码&nbsp;1&nbsp;：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;"
+                                                            name="zjh1"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办案人员姓名&nbsp;2：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required style="min-width:280px;"
+                                                            name="barye"> </td>
+                                                            <td class="formtd">工&nbsp;作&nbsp;证&nbsp;件&nbsp;号&nbsp;码&nbsp;2&nbsp;：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;"
+                                                            name="zjh2"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">其&nbsp;&nbsp;他&nbsp;&nbsp;办&nbsp;&nbsp;案&nbsp;人：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;"
+                                                            name="qtbar"> </td>
+                                                    <td class="formtd">其他人工作证件号码：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;"
+                                                            name="qtzjh"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">未成年人监护人：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;"
+                                                            name="wcnjhr"> </td>
+                                                            <td class="formtd">未&nbsp;成&nbsp;年&nbsp;人&nbsp;代&nbsp;理&nbsp;人：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;"
+                                                            name="wcndlr"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

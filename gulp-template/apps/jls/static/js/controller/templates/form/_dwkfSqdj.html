@@ -1,0 +1,68 @@
+<body class="easyui-layout" data-option="fit:true">
+	<div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+		<form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+			<div class="section-content ryxxwh-container">
+				<div class="section-item section-item-one section-item-padding">
+					<div class="standard-content font-20">
+						<div class="htmleaf-container">
+							<div class="container">
+								<div id="timeline">
+									<div class="timeline-item">
+										<div class="timeline-icon">
+											<span class="iconfont icon-gerenxinxi"></span>
+										</div>
+										<div class="timeline-content right">
+											<h2>对外开放登记表</h2>
+											<table class="container-formtable">
+												<tr>
+													<td class="formtd">开放时间：<font class="redicon">*</font></td>
+													<td><input class="easyui-datetimebox" id="kfsj" name="kfsj" required style="min-width:280px;">
+													</td>
+													<td class="formtd">开放类型：<font class="redicon">*</font></td>
+													<td><input class="awdCombox" name="kflx" id="kflx" code="DWKFLX" required style="min-width:280px;"> </td>
+												</tr>
+												<tr>
+													<td class="formtd">参观对象：<font class="redicon">*</font></td>
+													<td><input class="easyui-textbox" id="cgdx" name="cgdx" required style="min-width:280px;"> </td>
+													<td class="formtd">参观人数：<font class="redicon">*</font></td>
+													<td><input class="easyui-textbox" id="cgrs" name="cgrs" required data-options="validType:'number'" style="min-width:280px;"> </td>
+												</tr>
+												<tr>
+													<td class="formtd">单位名称：<font class="redicon">*</font></td>
+													<td colspan="3"><input class="easyui-textbox" id="dwmc" name="dwmc" required style="width:100%;">
+													</td>
+												</tr>
+												<tr>
+													<td class="formtd">申请理由：<font class="redicon">*</font></td>
+													<td colspan="3"><input class="easyui-textbox" id="sqly" name="sqly" required style="width: 100%;">
+													</td>
+												</tr>
+												<tr>
+													<td class="formtd">备&emsp;&emsp;注：</td>
+													<td colspan="3"><input class="easyui-textbox" id="bz" name="bz" style="width: 100%;">
+													</td>
+												</tr>
+												<input id="tbr" type="hidden" name="tbr" value="{{tbr}}">
+												<input id="tbrq" type="hidden" name="tbrq" value="{{tbrq}}">
+												<input id="rybh" type="hidden" name="rybh" value="{{rybh}}">
+												<input type="hidden" name="ywlcid" value="{{ywlcid}}">
+												<input type="hidden" name="taskid" value="{{taskid}}">
+												<input id="jsbh" type="hidden" name="jsbh" value="{{jsbh}}">
+											</table>
+										</div>
+										<div class="timeline-content easyui-tabs right qiehuan">
+											<div title="参加人员信息登记" class="tabCard jiajian " style="padding:20px;">
+												<div style="text-align: right; "><a href="# ">添加行</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</body>

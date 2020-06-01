@@ -1,0 +1,111 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable Form_Table" border=1 id="Table_ryxx"
+                                                style="width:100%;"></table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">现办案单位类型：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="awdCombogrid" id="dwlx" name="dwlx" code="DWLX"
+                                                            style="min-width:280px;" required> </td>
+                                                    <td class="formtd">现&nbsp;办&nbsp;&nbsp;案&nbsp;&nbsp;单&nbsp;位：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="awdCombogrid" id="badwfm" name="badw" code="BADW"
+                                                            style="min-width:280px;" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">现&nbsp;&nbsp;办&nbsp;案&nbsp;&nbsp;环&nbsp;&nbsp;节：<font
+                                                            class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="awdCombogrid" id="bahj" name="bahj" code="BAJD"
+                                                            style="min-width:280px;" required> </td>
+                                                    <td class="formtd">变&emsp;动&nbsp;&nbsp;&nbsp;日&emsp;期：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="easyui-datetimebox" id="bdrq" name="bdrq"
+                                                            style="min-width:280px;" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">现&nbsp;&nbsp;关&nbsp;押&nbsp;&nbsp;期&nbsp;&nbsp;限：<font
+                                                            class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="easyui-datetimebox" id="gyqxtime" name="gyqx"
+                                                            style="min-width:280px;" required> </td>
+                                                    <td class="formtd">现&emsp;办&nbsp;&nbsp;&nbsp;案&emsp;人：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="easyui-textbox" id="bar" name="bar"
+                                                            style="min-width:280px;" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">法&nbsp;&nbsp;&nbsp;律&nbsp;&nbsp;&nbsp;&nbsp;文&nbsp;&nbsp;&nbsp;书：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="awdCombox" code="SYPZ" id="wspzlx" name="wspzlx"
+                                                            style="min-width:280px;" required> </td>
+                                                    <td class="formtd">凭&nbsp;&emsp;&nbsp;&nbsp;&nbsp;证&nbsp;&nbsp;&emsp;&nbsp;号：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="easyui-textbox" id="wsh" name="wsh"
+                                                            style="min-width:280px;" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">文&nbsp;书送&nbsp;达时&nbsp;间：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="easyui-datebox" id="wssdrq" name="wssdrq"
+                                                            style="min-width:280px;" required> </td>
+                                                    <td class="formtd">办案人联系电话：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="easyui-textbox" id="pldh" name="bardh"
+                                                            data-options="validType: 'telephone' "
+                                                            style="min-width:280px;" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&emsp;&emsp;&emsp;&emsp;&emsp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="bz" id="bzfm"
+                                                            data-options="multiline:true"
+                                                            style="min-height: 80px;width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">操&emsp;&emsp;作&emsp;&emsp;人：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="easyui-textbox" id="czr" name="czr"
+                                                            style="min-width:280px;" required> </td>
+                                                    <td class="formtd">操&emsp;作&nbsp;&nbsp;&nbsp;时&emsp;间：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="easyui-datetimebox" id="czsj" name="czsj"
+                                                            style="min-width:280px;" required> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

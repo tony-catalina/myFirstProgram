@@ -1,0 +1,142 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-gerenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>个人信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">人员编号：</td>
+                                    <td ><input class="easyui-textbox" name="snbh" readonly  value="{{snbh}}" style="min-width:180px;"> </td>
+                                    <td class="formtd">姓&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" name="xm" readonly  value="{{xm}}" style="min-width:180px;"> </td>
+                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                    <td ><input class="easyui-textbox" name="jsh" readonly  value="{{jsh}}" style="min-width:180px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-yewubaobiao"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">判&emsp;&ensp;决&emsp;&emsp;日&emsp;&ensp;期：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datebox" name="pjrq" required style="min-width:280px;"> </td>
+                                    <td class="formtd">判&emsp;&ensp;&ensp;决&emsp;&emsp;单&emsp;&ensp;&ensp;位：<font class="redicon">*</font></td>
+                                    <td ><input class="awdCombogrid" style="min-width:280px;" name="pjdw" code="BADW" alike="1" required> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">文&emsp;&emsp;&emsp;书&emsp;&emsp;&emsp;号：</td>
+                                    <td ><input class="easyui-textbox" style="min-width:280px;" name="wsh"> </td>
+                                    <td class="formtd">处&emsp;&ensp;&ensp;理&emsp;&emsp;结&emsp;&ensp;&ensp;果：<font class="redicon">*</font></td>
+                                    <td ><input class="awdCombox" style="min-width:280px;" name="cljg" code="CLJG" required> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">起&emsp;&ensp;始&emsp;&emsp;日&emsp;&ensp;期：</td>
+                                    <td ><input class="easyui-datebox" style="min-width:280px;" name="qsrq" value="{{qsrq}}" id="qsrqfm"> </td>
+                                    <td class="formtd">刑&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;期：</td>
+                                    <td>
+										<div style="float:left;">
+											<input id="year" class="easyui-textbox"  min="0" max="99" style="width:75px !important;">年
+											<input id="month" class="easyui-textbox"  min="0" max="12" style="width:75px !important;">月
+											<input id="day"  class="easyui-textbox"  min="0" max="31" style="width:75px !important;">日
+										</div>
+										
+									</td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">刑&emsp;&ensp;满&emsp;&emsp;日&emsp;&ensp;期：</td>
+                                    <td ><input class="easyui-datebox" name="xmrq" value="{{gyqx}}" style="min-width:280px;" id="xmrqfm"> </td>
+                                    <td class="formtd">缓&emsp;刑&ensp;开&emsp;始&ensp;日&emsp;期：</td>
+                                    <td ><input class="easyui-datebox" id="hxksrq"  name="hxksrq" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">缓&emsp;&ensp;刑&emsp;&emsp;刑&emsp;&ensp;期：</td>
+                                    <td>
+										<div style="float:left;">
+										    <input id="hxyear"  type="text" class="easyui-numberbox" min="0" max="99"  style="width:75px !important;">年
+										    <input id="hxmonth" type="text" class="easyui-numberbox" min="0" max="12" style="width:75px !important;">月
+										    <input id="hxday" type="text" class="easyui-numberbox" min="0" max="31"  style="width:75px !important;">日
+										 </div>
+									</td>
+                                    <td class="formtd">缓&emsp;刑&ensp;结&emsp;束&ensp;日&emsp;期：</td>
+                                    <td ><input class="easyui-datebox" id="hxjsrq" name="hxjsrq" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">附&emsp;&emsp;&emsp;加&emsp;&emsp;&emsp;刑：</td>
+                                    <td ><input class="awdCombox" id="fjxfm" name="fjx" code="FJX" style="min-width:280px;"> </td>
+                                    <td class="formtd">备&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;注：</td>
+                                    <td ><input class="easyui-textbox" name="bz" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr id="fjx" style="display: none;">
+                                    <td class="formtd">罚&emsp;&ensp;金&emsp;&emsp;金&emsp;&ensp;额：</td>
+                                    <td ><input class="easyui-numberbox" min="0" max="999999"  name="fjje" id="fjjefm" style="min-width:280px;"> </td>
+                                    <!-- <td class="formtd">剥夺政治权利开始时间：</td>
+                                    <td ><input class="easyui-datebox" name="bdzzqlkssj" style="min-width:280px;"> </td> -->
+                                </tr>
+								<tr id="bdzz1" style="display: none;">
+								    <td class="formtd">剥夺政治权利开始时间：</td>
+								    <td ><input class="easyui-datebox" name="fjje" id="bdzzqlkssjfm" style="min-width:280px;"> </td>
+								    <td class="formtd">剥&ensp;夺政治&ensp;权利时&ensp;间：</td>
+								    <td>
+								    	<div style="float:left;">
+								    	    <input id="bdzzyear"   class="easyui-numberbox" min="0" max="99"  style="width:75px !important;">年
+								    	    <input id="bdzzmonth"  class="easyui-numberbox" min="0" max="12" style="width:75px !important;">月
+								    	    <input id="bdzzday"    class="easyui-numberbox" min="0" max="31"  style="width:75px !important;">日
+								    	 </div>
+								    </td>
+								</tr>
+								<tr id="bdzz2" style="display: none;">
+								    <td class="formtd">剥夺政治权利结束时间：</td>
+								    <td ><input class="easyui-datebox" name="fjje" id="bdzzqljssjfm" style="min-width:280px;"> </td>
+								</tr>
+                                <tr>
+                                    <td class="formtd">余&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;刑(天)：</td>
+                                    <td ><input class="easyui-textbox" name="yx" style="min-width:280px;" id="yxfm"> </td>
+                                    <td class="formtd">判&emsp;决&ensp;生&emsp;效&ensp;日&emsp;期：</td>
+                                    <td ><input class="easyui-datebox" name="pjsxrq" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">执行通知书送达日期：</td>
+                                    <td ><input class="easyui-datebox" name="sdrq" style="min-width:280px;" value="{{sdrq}}"> </td>
+                                    <td class="formtd">结案日期(空值为未决)&thinsp;&thinsp;：</td>
+                                    <td ><input class="easyui-datebox" name="jarq" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td>是否自动办理留所服刑</td>
+                                    <td>(仅限余刑三个月以下)：</td>
+                                    <td>
+                                        <input type="radio" name="zdbllsfx" value="1" id="zdbllsfx1fm"><font>是</font>
+                                        <input type="radio" name="zdbllsfx" value="0" checked id="zdbllsfx2fm"><font>否</font>
+                                    </td>
+                                </tr>
+								<input hidden name="rybh" value="{{rybh}}"/>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

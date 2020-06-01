@@ -1,0 +1,76 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>领导接待-落实情况</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">来&emsp;访&emsp;&ensp;时&emsp;&ensp;间：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{lfsj}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">接待领导姓名：</td>
+                                    <td ><input class="easyui-textbox" value="{{sldxm}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">领导&ensp;接&ensp;访&ensp;日&ensp;期：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{jdsj}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">来访人&ensp;姓&ensp;名：</td>
+                                    <td ><input class="easyui-textbox" value="{{zlfxm}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">联&emsp;系&emsp;&ensp;电&ensp;&emsp;话：</td>
+                                    <td ><input class="easyui-textbox" value="{{lxfs}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">来&ensp;访&ensp;人&ensp;&ensp;数：</td>
+                                    <td ><input class="easyui-textbox" value="{{lfrs}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">联&emsp;系&emsp;&ensp;地&emsp;&ensp;址：</td>
+                                    <td ><input class="easyui-textbox" value="{{lsdz}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">接&ensp;待&ensp;民&ensp;&ensp;警：</td>
+                                    <td ><input class="easyui-textbox" value="{{jdmj}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                
+                                
+                                <tr>
+                                    <td class="formtd">来&emsp;访&emsp;&ensp;内&emsp;&ensp;容：</td>
+                                    <td colspan="3"><input class="easyui-textbox" readonly value="{{fywt}}" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">提出的意见和建议：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="dfyj" value="{{dfyj}}" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">落&emsp;实&emsp;&ensp;情&emsp;&ensp;况：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="clqk" required value="{{clqk}}" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                </tr>
+
+                                <input type="hidden" name="tbr" value="{{tbr}}">
+                                <input type="hidden" name="tbrq" value="{{tbrq}}">
+                                <input type="hidden" name="jsbh" value="{{jsbh}}">
+                            </table>
+                        </div>
+                    </div>
+
+                   
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

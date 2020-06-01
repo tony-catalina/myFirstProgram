@@ -1,0 +1,214 @@
+<!--
+模块名称： 首頁
+开始时间： 2020-2-25
+-->
+
+<!-- partial:./partials/_head_start.html -->
+<!-- partial -->
+<link rel="stylesheet" type="text/css" href="../static/css/home.css">
+<link rel="stylesheet" type="text/css" href="../static/css/home_layout/style.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/home_layout/charts.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/home_layout/idangerous.swiper.css">
+<!-- partial:./partials/_head_end.html -->
+<!-- partial -->
+
+<body class="easyui-layout" data-options="fit:true">
+    <div class="container ">
+        <div class="main clearfix">
+            <div class="boxList">
+                <div class="item mgr item1 div1 one div8">
+                    <img src="../static/images/homePage/tab_imgg.png" alt="">
+                    <div class="item_show show1 ">
+                        <div class="title">
+                            <span>今日岗位情况</span>
+                        </div>
+                        <div class="remove remove1" index="1">
+                            <img src="../static/images/homePage/guanbi_icon_2.png">
+                        </div>
+                        <div class="echarts">
+                            <div id="charts1"></div>
+                        </div>
+                    </div>
+                    <div class="item_hide hide1" index="1">
+                        <img class='add_bg' src="../static/images/homePage/zengjia_bg.png">
+                        <img class='add_img' src="../static/images/homePage/addd_img.png">
+                    </div>
+                </div>
+                <div class="item mgr item2 one div8">
+                    <img src="../static/images/homePage/tab_imgg.png" alt="">
+                    <div class="item_show show2">
+                        <div class="title">
+                            <span>今日岗位情况</span>
+                        </div>
+                        <div class="remove remove2" index="2">
+                            <img src="../static/images/homePage/guanbi_icon_2.png">
+                        </div>
+                        <div class="echarts">
+                            <div id="charts2"></div>
+                        </div>
+                    </div>
+                    <div class="item_hide hide2" index="2">
+                        <img class='add_bg' src="../static/images/homePage/zengjia_bg.png">
+                        <img class='add_img' src="../static/images/homePage/addd_img.png">
+                    </div>
+                </div>
+                <div class="item item3 one div8">
+                    <img src="../static/images/homePage/tab_imgg.png" alt="">
+                    <div class="item_show show3">
+                        <div class="title">
+                            <span>今日岗位情况</span>
+                        </div>
+                        <div class="remove remove3" index="3">
+                            <img src="../static/images/homePage/guanbi_icon_2.png">
+                        </div>
+                        <div class="echarts">
+                            <div id="charts3"></div>
+                        </div>
+                    </div>
+                    <div class="item_hide hide3" index="3">
+                        <img class='add_bg' src="../static/images/homePage/zengjia_bg.png">
+                        <img class='add_img' src="../static/images/homePage/addd_img.png">
+                    </div>
+                </div>
+                <div class="item mgr item4 one div8">
+                    <img src="../static/images/homePage/tab_imgg.png" alt="">
+                    <div class="item_show show4">
+                        <div class="title">
+                            <span>今日岗位情况</span>
+                        </div>
+                        <div class="remove remove4" index="4">
+                            <img src="../static/images/homePage/guanbi_icon_2.png">
+                        </div>
+                        <div class="echarts">
+                            <div id="charts4"></div>
+                        </div>
+                    </div>
+                    <div class="item_hide hide4" index="4">
+                        <img class='add_bg' src="../static/images/homePage/zengjia_bg.png">
+                        <img class='add_img' src="../static/images/homePage/addd_img.png">
+                    </div>
+                </div>
+                <div class="item mgr item5 one div8">
+                    <img src="../static/images/homePage/tab_imgg.png" alt="">
+                    <div class="item_show show5">
+                        <div class="title">
+                            <span>今日岗位情况</span>
+                        </div>
+                        <div class="remove remove5" index="5">
+                            <img src="../static/images/homePage/guanbi_icon_2.png">
+                        </div>
+                        <div class="echarts">
+                            <div id="charts5"></div>
+                        </div>
+                    </div>
+                    <div class="item_hide hide5" index="5">
+                        <img class='add_bg' src="../static/images/homePage/zengjia_bg.png">
+                        <img class='add_img' src="../static/images/homePage/addd_img.png">
+                    </div>
+                </div>
+                <div class="item item6 one div8">
+                    <img src="../static/images/homePage/tab_imgg.png" alt="">
+                    <div class="item_show show6">
+                        <div class="title">
+                            <span>今日岗位情况</span>
+                        </div>
+                        <div class="remove remove6" index="6">
+                            <img src="../static/images/homePage/guanbi_icon_2.png">
+                        </div>
+                        <div class="echarts">
+                            <div id="charts6"></div>
+                        </div>
+                    </div>
+                    <div class="item_hide hide6" index="6">
+                        <img class='add_bg' src="../static/images/homePage/zengjia_bg.png">
+                        <img class='add_img' src="../static/images/homePage/addd_img.png">
+                    </div>
+                </div>
+                <div class="item mgr item7 one div8">
+                    <img src="../static/images/homePage/tab_imgg.png" alt="">
+                    <div class="item_show show7">
+                        <div class="title">
+                            <span>今日岗位情况</span>
+                        </div>
+                        <div class="remove remove7" index="7">
+                            <img src="../static/images/homePage/guanbi_icon_2.png">
+                        </div>
+                        <div class="echarts">
+                            <div id="charts7"></div>
+                        </div>
+                    </div>
+                    <div class="item_hide hide7" index="7">
+                        <img class='add_bg' src="../static/images/homePage/zengjia_bg.png">
+                        <img class='add_img' src="../static/images/homePage/addd_img.png">
+                    </div>
+                </div>
+                <div class="item mgr item8 one div8">
+                    <img src="../static/images/homePage/tab_imgg.png" alt="">
+                    <div class="item_show show8">
+                        <div class="title">
+                            <span>今日岗位情况</span>
+                        </div>
+                        <div class="remove remove8" index="8">
+                            <img src="../static/images/homePage/guanbi_icon_2.png">
+                        </div>
+                        <div class="echarts">
+                            <div id="charts8"></div>
+                        </div>
+                    </div>
+                    <div class="item_hide hide8" index="8">
+                        <img class='add_bg' src="../static/images/homePage/zengjia_bg.png">
+                        <img class='add_img' src="../static/images/homePage/addd_img.png">
+                    </div>
+                </div>
+                <div class="item item9 one div8">
+                    <img src="../static/images/homePage/tab_imgg.png" alt="">
+                    <div class="item_show show9">
+                        <div class="title">
+                            <span>今日岗位情况</span>
+                        </div>
+                        <div class="remove remove9" index="9">
+                            <img src="../static/images/homePage/guanbi_icon_2.png">
+                        </div>
+                        <div class="echarts">
+                            <div id="charts9"></div>
+                        </div>
+                    </div>
+                    <div class="item_hide hide9" index="9">
+                        <img class='add_bg' src="../static/images/homePage/zengjia_bg.png">
+                        <img class='add_img' src="../static/images/homePage/addd_img.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗 -->
+    <div class="dialogdiv">
+        <div class="head">
+            <div class="diglog_title">
+                <div class="diglog_img"></div>
+                <div class="diglog_text">请选择添加</div>
+            </div>
+            <div class="diglog_close">
+                <img src="../static/images/homePage/guanbi_icon_2.png">
+            </div>
+        </div>
+        <!-- 左右切换 -->
+        <div class="pre">
+            <img src="../static/images/homePage/zuo_icon.png">
+        </div>
+        <div class="next">
+            <img src="../static/images/homePage/you_icon.png">
+        </div>
+        <div class="swiper-container chartview">
+            <div class="swiper-wrapper" id="carditemlist">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/controller/dashboard.js"></script>
+    <script src="/apps/kss/static/js/require.config.js"></script>
+    <script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:./partials/_foot.html -->
+<!-- partial -->

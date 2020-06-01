@@ -1,0 +1,63 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>北京公安监察综合业务平台</title>
+    <link rel="stylesheet" href="/apps/platform/static/lib/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" href="/apps/platform/static/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/apps/platform/static/css/iconfont/iconfont.css">
+</head>
+
+<body class="easyui-layout">
+<div class="h2" style="font-size : 30px">
+    <i class="font-icon icon-picture">
+    </i>
+    个人中心
+</div>
+<div class="section">
+    <form class="layui-form" action="javascript:void(0);" lay-filter="example" style="width:80%" id="restPassForm">
+        <div class="layui-form-item">
+            <label class="layui-form-label">姓&nbsp&nbsp&nbsp名：&ensp;</label>
+            <div class="layui-input-block">
+                <input id="loginname" type="text" lay-verify="title" autocomplete="off" class="layui-input" readonly>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">角&nbsp&nbsp&nbsp色：&ensp;</label>
+            <div class="layui-input-block">
+                <input id="role" type="text" lay-verify="title" autocomplete="off" class="layui-input" readonly>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">管理员：&ensp;</label>
+            <div class="layui-input-block">
+                <input id="glybz" type="text" lay-verify="title" autocomplete="off" class="layui-input" readonly>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label layui-required">旧密码：<font style="color:red;">*</font></label>
+            <div class="layui-input-block">
+                <input type="password" name="password_now"  autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label layui-required">新密码：<font style="color:red;">*</font></label>
+            <div class="layui-input-block">
+                <input type="password" name="password_new"  autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" class="layui-btn layui-btn-normal" id="updatePassBtn">修改</button>
+                <button type="button" class="layui-btn layui-btn-normal" id="resetBtn">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="/apps/platform/static/lib/require.js" data-main="/apps/platform/static/js/require.config.js"></script>
+<script>
+    require(["controller/pages/xtsz/grzx"],function(){
+    });
+</script>
+<script src="/apps/platform/static/lib/loading.js"></script>
+</body>
+
+</html>

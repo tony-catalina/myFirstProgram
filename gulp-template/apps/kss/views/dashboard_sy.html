@@ -1,0 +1,135 @@
+<!--
+模块名称： 首頁
+开始时间： 2020-2-25
+-->
+
+<!-- partial:./partials/_head_start.html -->
+<!-- partial -->
+<link rel="stylesheet" type="text/css" href="../static/css/homePage.css">
+<!-- partial:./partials/_head_end.html -->
+<!-- partial -->
+
+<body class="easyui-layout" data-options="fit:true" style="overflow:hidden">
+    <div class="layui-fluid">
+        <div class="layui-row h80">
+            <div class="layui-col-md10 " style="height:100%">
+                <div class="layui-row h50 layui-col-space10 ">
+                    <div class="layui-col-md4">
+                        <div class="wrap-item" id="1"></div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="wrap-item" id="2"></div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="wrap-item" id="3"></div>
+                    </div>
+                </div>
+                <div class="layui-row h50 layui-col-space10">
+                    <div class="layui-col-md4">
+                        <div class="wrap-item" id="4"></div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="wrap-item" id="5"></div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="wrap-item" id="6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md2" style="padding:0 0 10px 10px">
+                <div class="wrap-item" style="height:100%;overflow:auto">
+                    <div class="item-title">待办事项</div>
+                    <div class="item-content dbsx">
+                        <ul>
+                            <li class="dbxx_click" id="kss_rsdj">
+                                <icon class="iconfont icon-xiaolaba"></icon><a href="#">收押入所<font class="kss_rsdj" style="padding-left:25px;color:red;">0</font></a></li>
+                            <li class="dbxx_click" id="kss_csgl">
+                                <icon class="iconfont icon-xiaolaba"></icon><a href="#">出所管理<font class="kss_csgl" style="padding-left:25px;color:red;">0</font></a></a>
+                            </li>
+                            <li class="dbxx_click" id="kss_lscs">
+                                <icon class="iconfont icon-xiaolaba"></icon><a href="#">临时出所<font class="kss_lscs" style="padding-left:25px;color:red;">0</font></a></a>
+                            </li>
+                            <li class="dbxx_click" id="kss_jwzx">
+                                <icon class="iconfont icon-xiaolaba"></icon><a href="#">暂予监外执行<font class="kss_jwzx" style="padding-left:25px;color:red;">0</font></a></a>
+                            </li>
+                            <li class="dbxx_click" id="kss_yq">
+                                <icon class="iconfont icon-xiaolaba"></icon><a href="#">延期<font class="kss_yq" style="padding-left:25px;color:red;">0</font></a></a>
+                            </li>
+                            <li class="dbxx_click" id="kss_jsbjd">
+                                <icon class="iconfont icon-xiaolaba"></icon><a href="#">精神病鉴定<font class="kss_jsbjd" style="padding-left:25px;color:red;">0</font></a></a>
+                            </li>
+                            <li class="dbxx_click" id="kss_tj">
+                                <icon class="iconfont icon-xiaolaba"></icon><a href="#">提解<font class="kss_tj" style="padding-left:25px;color:red;">0</font></a></a>
+                            </li>
+                            <li class="dbxx_click" id="kss_tsdj">
+                                <icon class="iconfont icon-xiaolaba"></icon><a href="#">提讯<font class="kss_tsdj" style="padding-left:25px;color:red;">0</font></a></a>
+                            </li>
+                            <li class="dbxx_click" id="kss_jshj">
+                                <icon class="iconfont icon-xiaolaba"></icon><a href="#">家属会见<font class="kss_jshj"  style="padding-left:25px;color:red;">0</font></a></a>
+                            </li>
+                            <li class="dbxx_click" id="kss_lshj">
+                                <icon class="iconfont icon-xiaolaba"></icon><a href="#">律师会见<font class="kss_lshj" style="padding-left:25px;color:red;">0</font></a></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row h20 layui-col-space10">
+            <div class="layui-col-md12" style="padding-bottom:0">
+                <div class="wrap-item">
+                    <div class="item-title">其他应用</div>
+                    <div class="item-content">
+                        <div class="icon_box" role="11">
+                            <div class="icon_content"><span class="iconfont icon-xingshizhifa"></span></div>
+                            <font>收押岗位</font>
+                        </div>
+                        <div class="icon_box" role="13">
+                            <div class="icon_content"><span class="iconfont icon-guanjiaogangwei"></span></div>
+                            <font>管教管理</font>
+                        </div>
+                        <div class="icon_box" role="17">
+                            <div class="icon_content"><span class="iconfont icon-caiwuguanli"></span></div>
+                            <font>财务岗位</font>
+                        </div>
+                        <div class="icon_box" role="14">
+                            <div class="icon_content"><span class="iconfont icon-yiwurenyuan"></span></div>
+                            <font>医务岗位</font>
+                        </div>
+                        <div class="icon_box" role="16">
+                            <div class="icon_content"><span class="iconfont icon-xunkong"></span></div>
+                            <font>巡控</font>
+                        </div>
+                        <div class="icon_box" role="18">
+                            <div class="icon_content"><span class="iconfont icon-suolingdao"></span></div>
+                            <font>所领导</font>
+                        </div>
+                        <div class="icon_box" role="12">
+                            <div class="icon_content"><span class="iconfont icon-qitafuwu"></span></div>
+                            <font>综合岗位</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/apps/kss/static/lib/require.js" data-main="dashboard_sy.js"></script>
+    <script src="/apps/kss/static/js/require.config.js"></script>
+    <script src="/apps/kss/static/lib/loading.js"></script>
+    <style>
+        .layui-layer-title {
+            padding-left: 32px;
+            line-height: 60px;
+            height: 61px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        
+        .layui-table-cell span {
+            font-size: 17px;
+        }
+    </style>
+</body>
+<!-- partial:./partials/_foot.html -->
+<!-- partial -->

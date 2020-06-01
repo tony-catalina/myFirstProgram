@@ -1,0 +1,87 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>巡检信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">巡&ensp;&ensp;&ensp;&ensp;检&ensp;&ensp;&ensp;&ensp;日&ensp;&ensp;&ensp;&ensp;期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="xjrq" value="{{xjrq}}"
+                                                            required style="min-width:280px;"> </td>
+                                                    <td class="formtd">巡&ensp;&ensp;&ensp;&ensp;&ensp;检&ensp;&ensp;&ensp;&ensp;&ensp;人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="xjr" value="{{xjr}}"
+                                                            required style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">打包&ensp;日志&ensp;&ensp;是否&ensp;正常：</td>
+                                                    <td>
+                                                        <!-- <input class="easyui-combobox" id="dbrzsfzc" name="dbrzsfzc" value="{{dbrzsfzc}}"
+                                                            style="min-width:280px;">  -->
+                                                        <select id="dbrzsfzc" class="easyui-combobox" name="dbrzsfzc"
+                                                            value="{{dbrzsfzc}}" style="min-width:280px;">
+                                                            <option value="正常">正常</option>
+                                                            <option value="不正常">不正常</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="formtd">发送日志是否正常：</td>
+                                                    <td>
+                                                        <!-- <input class="easyui-combobox" id="fsrzsfzc" name="fsrzsfzc"
+                                                            value="{{fsrzsfzc}}" style="min-width:280px;">  -->
+                                                        <select id="fsrzsfzc" class="easyui-combobox" name="fsrzsfzc"
+                                                            value="{{fsrzsfzc}}" style="min-width:280px;">
+                                                            <option value="正常">正常</option>
+                                                            <option value="不正常">不正常</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">驻所检查设备是否正常：</td>
+                                                    <td colspan="3">
+                                                        <!-- <input class="easyui-combobox" id="zsjcsbsfzc"
+                                                            name="zsjcsbsfzc" value="{{zsjcsbsfzc}}"
+                                                            style="min-width:720px;">  -->
+                                                        <select id="zsjcsbsfzc" class="easyui-combobox"
+                                                            name="zsjcsbsfzc" value="{{zsjcsbsfzc}}"
+                                                            style="min-width:720px;">
+                                                            <option value="正常">正常</option>
+                                                            <option value="不正常">不正常</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">异&ensp;常&ensp;&ensp;情&ensp;&ensp;况&ensp;&ensp;描&ensp;述：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="ycqk"
+                                                            value="{{ycqk}}" data-options="multiline:true"
+                                                            style="width: 100%;height:80px;"> </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="id" value="{{id}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

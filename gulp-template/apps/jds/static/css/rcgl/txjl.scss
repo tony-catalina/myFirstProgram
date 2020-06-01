@@ -1,0 +1,135 @@
+@import "../../lib/dper/dperSass/_dper.utils.common";
+
+.qa-container {
+  .section-item {
+    .section-content {
+      padding: 18px 18px 18px 18px;
+    }
+  }
+}
+
+.section-table {
+  border: 1px solid #b8d3ff;
+  .uk-text-right {
+    width: 40px;
+  }
+  td {
+    width: 90px;
+    padding: 5px;
+    border: 1px solid #b8d3ff;
+    border-style: dotted;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    font-size: 16px;
+    color: black;
+    input {
+      width: 100%;
+      height: 30px;
+      border: 0px;
+      border-bottom: 1px solid #0787c569;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      border: 0px;
+      border-bottom: 1px solid #0787c569;
+    }
+    button {
+      width: 10%;
+      height: 30px;
+      font-size: 10px;
+      background-color: cornflowerblue;
+      color: white;
+      border-radius: 4px 4px 0 0;
+      cursor: pointer;
+      border: 1px solid;
+    }
+  }
+}
+
+// 彩色按钮组
+.group-colors {
+  button {
+    border: none;
+    color: #fff;
+    &:first-child {
+      background-image: linear-gradient(to right, #59aaff, #50c8ff);
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          rgb(113, 182, 255),
+          rgb(123, 213, 255)
+        );
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: linear-gradient(to right, #fe6e83, #ff8985);
+
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          rgb(255, 133, 152),
+          rgb(255, 172, 169)
+        );
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: linear-gradient(to right, #ffa032, #ffbe3f);
+
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          rgb(255, 172, 77),
+          rgb(255, 203, 100)
+        );
+      }
+    }
+  }
+}
+
+// 照片维护 临时使用
+.zpwh {
+  .section-content {
+    & > div {
+         display: none;
+         &.show {
+            display: block;   
+         }
+    }
+
+    .zpwh-content {
+        
+      .content-item {
+        display: inline-block;
+        padding: 5px 15px 0;
+
+        p {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  
+}
+
+// 对话框
+
+#dialog-box {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+      td {
+        padding: 5px 5%;
+        width: 50%;
+
+        div {
+          line-height: 200%;
+        }
+      }
+    }
+  }
+}

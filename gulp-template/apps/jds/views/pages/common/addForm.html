@@ -1,0 +1,46 @@
+<div style="margin: 13px 7px 0 -26px">
+    <form action="">
+        <table class="addInfo_table" align="center">
+            <tbody>
+                {{each formData}}
+                <tr>
+                    <td>{{$value.title_left}}:</td>
+
+                    {{if $value.class_left==='combobox'}}
+                    <td>
+                        <select class="easyui-combobox" name="{{$value.name_left}}">
+                            {{each $value.options}}
+                            <option value="{{$value.value}}">{{$value.text}}</option>
+                            {{/each}}
+                        </select>
+                    </td>
+                    {{else}}
+                    <td><input name="{{$value.name_left}}" class="easyui-{{$value.class_left}}"></input></td>
+                    {{/if}}
+
+                    <td>{{$value.title_right}}:</td>
+
+                    {{if $value.class_right==='combobox'}}
+                    <td>
+                        <select class="easyui-combobox" name="{{$value.name_right}}">
+                            {{each $value.options}}
+                            <option value="{{$value.value}}">{{$value.text}}</option>
+                            {{/each}}
+                        </select>
+                    </td>
+                    {{else}}
+                    <td><input name="{{$value.name_right}}" class="easyui-{{$value.class_right}}"></input></td>
+                    {{/if}}
+                </tr>
+                {{/each}}
+
+                <tr class="cz_tr">
+                    <td colspan="4" class="cz_td">
+                        <span class="cancel">取消</span>
+                        <span class="save">保存</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>

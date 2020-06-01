@@ -1,0 +1,84 @@
+<form id="ksrsJbxxForm" style="padding: 0 0 30px 0;">
+    <p
+            style="text-align: center; font-weight: bold; font-size: 20px; margin-top: 10px; padding: 20px 0 0 0;color: #3498db">信件管理--中队/警组意见</p>
+    <span style="margin-left: 5%"><label>填表人：</label><input
+            class="easyui-textbox" style="width: 70%;" value="{{users}}"/></span> <span
+        style="float: right; margin-right: 3%"><label>填表日期：</label><input
+        class="easyui-datebox" id="tbsj" name="tbsj" style="width: 70%;" /></span>
+    <div style=" width: 95%; height: 95%; margin: 0 auto; margin-top: 20px;border :1px solid #3498db">
+        <table
+                style="border-collapse: collapse; background-color: #ffffff;width: 100%; height: 100%;">
+            <tbody>
+            <tr>
+                <td style="width: 20%;"><span>监室号</span></td>
+                <td style="width: 23%;"><input id="jshfm" name="jsh"
+                                               class="easyui-textbox" readonly value="{{jbxx.jsh}}" style="width:90%;text-align:center"/></td>
+                <td style="width: 20%;"><span>姓名</span></td>
+                <td style="width: 23%;"><input id="xmfm" name="xm"
+                                               class="easyui-textbox" readonly value="{{jbxx.xm}}" style="width:90%;text-align:center"/></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;"><span>别名</span></td>
+                <td style="width: 23%;"><input class="easyui-textbox"
+                                               id="bmfm" name="bm" readonly value="{{jbxx.bm}}" style="width:90%;text-align:center" /></td>
+                <td style="width: 20%;"><span>性别</span></td>
+                <td style="width: 23%;"><input class="easyui-textbox"
+                                               id="xbfm" name="xb" readonly  style="width:90%;text-align:center"/></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;"><span>出生日期</span></td>
+                <td style="width: 23%;"><input class="easyui-textbox"
+                                               id = "csrqfm" name="csrq" readonly value="{{jbxx.csrq}}" style="width:90%;text-align:center"/></td>
+                <td style="width: 20%;"><span>入所日期</span></td>
+                <td style="width: 23%;"><input class="easyui-textbox"
+                                               id="rsrqfm" name="rsrq" readonly value="{{jbxx.rsrq}}" style="width:90%;text-align:center"/></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;"><span>办案环节</span></td>
+                <td style="width: 23%;"><input class="easyui-textbox"
+                                               id = "bahjfm" name="bahj" readonly  style="width:90%;text-align:center"/></td>
+                <td style="width: 20%;"><span>涉嫌罪名</span></td>
+                <td style="width: 23%;"><input class="easyui-textbox"
+                                               id="ayfm" name="ay" readonly  style="width:90%;text-align:center"/></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;"><span>户籍地详址</span></td>
+                <td style="width: 23%;"><input class="easyui-textbox"
+                                               id = "hjdfm" name="csqx" readonly  style="width:90%;text-align:center"/></td>
+                <td style="width: 20%;"><span>档案编号</span></td>
+                <td style="width: 23%;"><input class="easyui-textbox"
+                                               id="dahfm" name="dah" readonly value="{{jbxx.dah}}" style="width:90%;text-align:center"/></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;"><span>承办人</span></td>
+                <td style="width: 23%;"><input class="easyui-textbox"
+                                               id = "cbrfm" name="cbr" readonly value="{{users}}" style="width:90%;text-align:center"/></td>
+                <td style="width: 20%;"><span>承办时间</span></td>
+                <td style="width: 23%;"><input class="easyui-datebox"
+                                               id="cbsjfm" name="cbsj" readonly style="width:90%;text-align:center"/></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;"><span>中队/警组意见<span
+                        style="color: #fe8181; float: right;">*</span></span></td>
+                <td style="width: 80%;text-align:left" colspan="3">
+                    <label for="xzyes"><input type="radio" name="xzaj" id="xzyes"/>同意</label>
+                    <label for="xzno"><input type="radio" checked  name="xzaj" id="xzno"/>不同意</label></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;">中队/警组意见内容<span style="color: #fe8181;float: right;">*</span></td>
+                <td colspan="3"><input style="text-align: left;width:100%;height:70px" class="easyui-textbox" data-options="multiline:true"></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;"><span>中队领导签字</span></td>
+                <td style="width: 20%;">
+                    <input class="easyui-textbox" style="width:90%;text-align:center" readonly id="czrfm" name="czr" value="{{users}}"/>
+                </td>
+                <td style="width: 20%;"><span>签字时间</span></td>
+                <td style="width: 20%;">
+                    <input class="easyui-datebox" style="width:90%;text-align:center" readonly  id="czsjfm" name="czsj"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</form>

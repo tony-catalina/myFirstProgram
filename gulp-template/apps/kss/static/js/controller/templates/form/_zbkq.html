@@ -1,0 +1,74 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>考勤信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">警&emsp;&emsp;号：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="jh" value="{{jh}}" required style="min-width:280px;"> </td>
+                                    <td class="formtd">值&ensp;班&ensp;人：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="xm" value="{{xm}}" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">值班人数：</td>
+                                    <td ><input class="easyui-textbox" name="zbrs" value="{{zbrs}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">值班时间：</td>
+                                    <td ><input class="easyui-datetimebox" id="zbsjfm" name="zbsj" value="{{zbsj}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">接班时间：</td>
+                                    <td ><input class="easyui-datetimebox" id="jbsjfm" name="jbsj" value="{{jbsj}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">变动情况：</td>
+                                    <td ><input class="easyui-textbox" name="bdqk" value="{{bdqk}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">处理记事：</td>
+                                    <td ><input class="easyui-textbox" name="cljs" value="{{cljs}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">巡视记录：</td>
+                                    <td ><input class="easyui-textbox" name="xsjl" value="{{xsjl}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">交接事项：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="jjsx" value="{{jjsx}}" data-options="multiline:true"
+                                                           style="width: 100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">备&emsp;&emsp;注：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="bz" value="{{bz}}" data-options="multiline:true"
+                                                           style="width: 100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">接&ensp;班&ensp;人：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="jbr" value="{{jbr}}" required style="min-width:280px;"> </td>
+                                    <td class="formtd">接班人数：</td>
+                                    <td ><input class="easyui-textbox" name="jbrs" value="{{jbrs}}" style="min-width:280px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

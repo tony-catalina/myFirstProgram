@@ -1,0 +1,53 @@
+<!--
+模块名称： 衣服号管理
+开始时间： 2020-3-11
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<body class="easyui-layout" data-options="fit:true">
+<!--页面主体布局-->
+<div class="section-container zdbb-container">
+    <div class="section-item section-item-one section-item-padding">
+        <div class="dynamic-head">总队报表</div>
+
+        <div class="grey">选择报表：</div>
+       <div class="zdbb">
+           <div>
+               <span class="sbl">上报类报表</span>
+               <span class="tjl">统计类报表</span>
+           </div>
+           <div class="radioBtn">
+               <span><input id="xzjgcsqktjybb" type="radio" name="sblbb" value="jls_xzjgcsqktjybb" title="行政监管场所情况统计月报表"><label for="xzjgcsqktjybb">行政监管场所情况统计月报表</label></span>
+               <span style="margin-left: 345px"><input id="xzjgcstjjbb" type="radio" name="sblbb" value="jls_xzjgcsxstjb" title="行政监管场所新收统计表" ><label for="xzjgcstjjbb">行政监管场所新收统计表</label></span>
+           </div>
+           <div class="radioBtn">
+               <span><input id="xzjgcsswfzqktjybb" type="radio" name="sblbb" value="jls_xzjgcsswfzqktjyb" title="行政监管场所深挖犯罪情况统计月报表" ><label for="xzjgcsswfzqktjybb">行政监管场所深挖犯罪情况统计月报表</label></span>
+               <span style="margin-left: 281px"><input id="xzjgcsryjlsytjb" type="radio" name="sblbb" value="jls_xzjgcsryjyltjb" title="行政监管场所日月均押量收统计表" ><label for="xzjgcsryjlsytjb">行政监管场所日月均押量收统计表</label></span>
+           </div>
+           <div class="radioBtn">
+               <span><input type="radio" name="sblbb" value="swfzzgjbb" id="gajgbmswfzzgjbb" title="公安监管部门深挖犯罪战果季报表"><label for="gajgbmswfzzgjbb">公安监管部门深挖犯罪战果季报表</label></span>
+               <span style="margin-left: 314px"><input type="radio" name="sblbb" value="jls_xzjgcsryjxstjb" id="xzjgcsryxstjb" title="行政监管场所日月均新收统计表"><label for="xzjgcsryxstjb">行政监管场所日月均新收统计表</label></span>
+           </div>
+       </div>
+        <div class="grey">
+            统计月份：
+           <input name="starttime" id="starttime" class="easyui-datebox" style="width: 120px;"/>&nbsp;至&nbsp;
+                <input name="endtime" id="endtime" class="easyui-datebox" value="new Date()" style="width: 120px;"/>
+        </div>
+        <hr>
+        <div class="row">
+            <a href="javascript:void(0)" class="easyui-linkbutton save-button" id="tjBtn">提交</a>
+        </div>
+    </div>
+</div>
+<!--页面主体布局-->
+<script src="/apps/jls/static/lib/require.js" data-main="/apps/jls/static/js/require.config" id="current-page" current-page="pages\zdbb\index"></script>
+
+<script src="/apps/jls/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

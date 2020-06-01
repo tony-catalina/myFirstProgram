@@ -1,0 +1,61 @@
+<form id="fm" style="padding: 0 0 0 0;" class="awdform">
+    <input  value="{{data.rybh}}"  name="rybh"   type="hidden"/>
+    <input value="{{data.id}}" name="id" type="hidden"/>
+    <table style="border-collapse: collapse;background-color: #ffffff;width: 100%;height: 100%;margin:0 auto;">
+        <tbody>
+        <tr>
+            <td colspan="6">
+                <div class="basic-head" style="width: auto">
+                    <h1>修改医生巡诊</h1>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6">
+                <div class="basic-title" style="height:100%;text-align:left;border:0px;">
+                    <h1><i class="fa fa-address-book"></i>基本信息</h1>
+                </div>
+            </td>
+        </tr>
+        <tr class="hxtr">
+            <td style="width:15%;" class="form-title">人员编号</td>
+            <td style="width:18%;" ><input  id="snbhfmupdate" class="easyui-textbox"  value="{{jbxx.snbh}}" name="snbh" readonly style="width:100%;height:100%;"></td>
+            <td style="width:15%;" class="form-title">姓名</td>
+            <td style="width:18%;"><input id="xmfmupdate" class="easyui-textbox"  value="{{jbxx.xm}}" name="xm" readonly style="width:100%;height:100%;" ></td>
+            <td style="width:15%;" class="form-title">监室号</td>
+            <td style="width:18%;"><input id="jshfmupdate" class="easyui-textbox"  value="{{jbxx.jsh}}" name="jsh"  style="width:100%;height:100%;" readonly></td>
+        </tr>
+        </tbody>
+    </table>
+    <table style="border-collapse: collapse;background-color: #ffffff;width: 100%;height: 100%;margin:0 auto;">
+        <tbody>
+        <tr>
+            <td colspan="4">
+                <div class="basic-title" style="height:100%;text-align:left;border:0px;">
+                    <h1><i class="fa fa-list-alt"></i>业务信息</h1>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:20%;" class="form-title">血压</td>
+            <td style="width:30%;" ><input id="xyfmupdate" class="easyui-textbox"  value="{{data.xy}}" name="xy" style="width:100%;height:100%;"></td>
+            <td style="width:20%;" class="form-title">心率</td>
+            <td style="width:30%;" colspan="3"><input id="xlfmupdate" class="easyui-numberspinner" data-options="prompt:'请输数字！'" validType="xl" value="{{data.xl}}" name="xl"  style="width:100%; height:100%;"></td>
+        </tr>
+        <tr>
+            <td  style="width:20%;" class="form-title">疾病名称<font color="red">*</font></td>
+            <td style="width:30%;"><input id="jbmcfmupdate" class="awdSelect" code='JBMC'  value="{{data.jbmc}}" name="jbmc" required  style="width:100%;height:100%;" required></td>
+            <td  style="width:20%;" class="form-title">巡诊日期<font color="red">*</font></td>
+            <td style="width:30%;"><input id="xzrqfmupdate" editable="false" class="easyui-datetimebox"  value="{{data.xzrq}}" name="xzrq" required  style="width:100%;height:100%;"></td>
+        </tr>
+        <tr>
+            <td style="width:20%;" class="form-title">诊治情况<font color="red">*</font></td>
+            <td style="width:80%;" colspan="3"><input id="zzfmupdate" class="easyui-textbox"  value="{{data.zz}}" name="zz" required data-options="multiline:true" style="width:100%;height:120px;"></td>
+        </tr>
+        <tr>
+            <td style="width:20%;" class="form-title">备注</td>
+            <td style="width:80%;" colspan="3"><input id="bzfmupdate" class="easyui-textbox"  value="{{data.bz}}" name="bz" data-options="multiline:true" style="width:100%;height:120px;" ></td>
+        </tr>
+        </tbody>
+    </table>
+</form>

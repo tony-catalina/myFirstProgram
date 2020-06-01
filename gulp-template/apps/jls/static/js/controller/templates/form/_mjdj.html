@@ -1,0 +1,132 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    
+                   
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">警&emsp;&emsp;&emsp;&emsp;号：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="jh" required style="min-width:280px;"> </td>
+                                    <td class="formtd">姓&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;名：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="xm" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">性&emsp;&emsp;&emsp;&emsp;别：<font class="redicon">*</font></td>
+                                    <td ><input class="awdCombox" name="xb" code="XB" required style="min-width:280px;"> </td>
+                                    <td class="formtd">出&emsp;&thinsp;&thinsp;生&emsp;&thinsp;年&emsp;&thinsp;&thinsp;月：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datebox" name="csny" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">民&emsp;&emsp;&emsp;&emsp;族：</td>
+                                    <td ><input class="awdCombox" name="mz" code="MZ" style="min-width:280px;"> </td>
+                                    <td class="formtd">学&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;历：<font class="redicon">*</font></td>
+                                    <td ><input class="awdCombox" name="xl" code="WHCD" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">身&nbsp;份&nbsp;证&nbsp;号&nbsp;码：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="sfzh" required data-options="validType:'idcard'" style="min-width:280px;"> </td>
+                                    <td class="formtd">工&emsp;&thinsp;&thinsp;作&emsp;&thinsp;岗&emsp;&thinsp;&thinsp;位：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="bm" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">籍&emsp;&emsp;&emsp;&emsp;贯：<font class="redicon">*</font></td>
+                                    <td ><input class="awdCombox" name="hjszd" code="XZQH" required style="min-width:280px;"> </td>
+                                    <td class="formtd">政&emsp;&thinsp;&thinsp;治&emsp;&thinsp;面&emsp;&thinsp;&thinsp;貌：<font class="redicon">*</font></td>
+                                    <td ><input class="awdCombox" name="zzmm" code="ZZMM" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">职&emsp;&emsp;&emsp;&emsp;务：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="bmzw" required style="min-width:280px;"> </td>
+                                    <td class="formtd">职&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;别：<font class="redicon">*</font></td>
+                                    <td ><input class="awdCombox" name="gbzwjb" code="ZWJB" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">入&ensp;&thinsp;团&ensp;&thinsp;时&ensp;&thinsp;间：</td>
+                                    <td ><input class="easyui-datebox" name="rtsj" style="min-width:280px;"> </td>
+                                    <td class="formtd">入&emsp;&thinsp;&thinsp;党&emsp;&thinsp;时&emsp;&thinsp;&thinsp;间：</td>
+                                    <td ><input class="easyui-datebox" name="rdsj" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">参加工作时间：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datebox" name="cjgzsj" required style="min-width:280px;"> </td>
+                                    <td class="formtd">从事监管工作时间：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-datebox" name="jggzsj" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">技&ensp;&thinsp;术&ensp;&thinsp;职&ensp;&thinsp;称：</td>
+                                    <td ><input class="easyui-textbox" name="jszc" style="min-width:280px;"> </td>
+                                    <td class="formtd">警&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;衔：<font class="redicon">*</font></td>
+                                    <td ><input class="awdCombox" name="jx" code="JX" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">使&ensp;&thinsp;用&ensp;&thinsp;卡&ensp;&thinsp;号：</td>
+                                    <td ><input class="easyui-textbox" name="kh" style="min-width:280px;"> </td>
+                                    <td class="formtd">联&emsp;&thinsp;&thinsp;系&emsp;&thinsp;电&emsp;&thinsp;&thinsp;话：</td>
+                                    <td ><input class="easyui-textbox" name="lxdh" data-options="validType:'mphone'" style="min-width:280px;"> </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="formtd">住&emsp;&emsp;&emsp;&emsp;址：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="jtzz" required style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">备&emsp;&emsp;&emsp;&emsp;注：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="bz" data-options="multiline:true" style="width:100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">负&ensp;&thinsp;责&ensp;&thinsp;拘&ensp;&thinsp;室：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="fzjs" style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">用户所属角色：<font class="redicon">*</font></td>
+                                    <td colspan="3">
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)系统管理员"><font>(默认)系统管理员</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)所领导岗位"><font>(默认)所领导岗位</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)医务岗位"><font>(默认)医务岗位</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)管教岗位"><font>(默认)管教岗位</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)巡控岗位"><font>(默认)巡控岗位</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)窗口服务岗位"><font>(默认)窗口服务岗位</font><br>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)内勤岗位"><font>(默认)内勤岗位</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)值班民警岗位"><font>(默认)值班民警岗位</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)全局查询"><font>(默认)全局查询</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)数据考核"><font>(默认)数据考核</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="(默认)日常考核"><font>(默认)日常考核</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="收拘岗位"><font>收拘岗位</font><br>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="巡控、管教岗位"><font>巡控、管教岗位</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="查询、报表"><font>查询、报表</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="查询统计"><font>查询统计</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="基础查询"><font>基础查询</font>
+
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="总队会计"><font>总队会计</font><br>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="反恐总队专用"><font>反恐总队专用</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="内勤"><font>内勤</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="业务指导"><font>业务指导</font>
+                                            <input name="yhssjs" type="checkbox" class="ssjs" value="总队会计"><font>总队会计</font>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

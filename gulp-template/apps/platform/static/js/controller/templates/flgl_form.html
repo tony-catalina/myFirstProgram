@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<form action="" method="" id="fm" class="layui-form">
+    <h2>新建分类</h2>
+	<input type="text"  name="id"  value="{{id}}" hidden="hidden">
+    <div class="layui-form-item">
+        <label class="layui-form-label">类&emsp;&emsp;型：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" name="lx" value="{{lx}}" field="id" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入"
+                autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">父类编号：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" name="parentid" value="{{parentid}}" field="parentid" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入"
+                autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">分类编号：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" name="classid" value="{{classid}}" field="classid" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入"
+                autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">名&emsp;&emsp;称：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" name="name" value="{{name}}" field="name" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入"
+                autocomplete="off" class="layui-input">
+        </div>
+    </div>
+</form>

@@ -1,0 +1,202 @@
+<!--
+模块名称： 首頁收押
+开始时间： 2020-2-25
+-->
+
+<!-- partial:./partials/_head_start.html -->
+<!-- partial -->
+<link rel="stylesheet" type="text/css" href="../static/css/homePage.css">
+<!-- partial:./partials/_head_end.html -->
+<!-- partial -->
+
+<body class="easyui-layout" data-options="fit:true">
+    <div style="width:100%;height:80%;overflow-y:auto">
+    <div class="layui-fluid">
+        <div class="layui-row h80">
+            <div class="layui-col-md10 " style="height:100%">
+                <div class="layui-row layui-col-space10 h50">
+                    <div class="layui-col-md4">
+                        <div class="wrap-item">
+                            <div class="item-title">交接班</div>
+                            <div class="item-content jjb flex">
+                                <div class='jjb'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="wrap-item">
+                            <div class="item-title">勤务保障</div>
+                            <div class="item-content">
+                                <div class='zhqwbz' id="zhqwbz"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="wrap-item">
+                            <div class="item-title">绩效管理</div>
+                            <div class='zhjxgl' id="zhjxgl"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-row layui-col-space10 h50">
+                    <div class="layui-col-md4">
+                        <div class="wrap-item">
+                            <div class="item-title">监所总控</div>
+                            <!-- <div class="item-content">
+                                <div class="ryqk"></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="wrap-item">
+                            <div class="item-title">当日警力</div>
+                            <!-- <div class="item-content">
+                                <table class="layui-hide" id="zbqk"></table>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="wrap-item">
+                            <div class="item-title">违规处理</div>
+                            <div class="item-content">
+                                <div class='layui-hide' id='sgqk'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md2" style="padding:0 0 10px 10px">
+                <div class="wrap-item">
+                    <div class="item-title">安全检查情况</div>
+                    <div class="item-content list_ul">
+                        <ul>
+                            <li>
+                                <icon class="iconfont icon-chuangkoufuwu"></icon>
+                                <span>检查人：<font>张三</font></span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <icon class="iconfont icon-menjin"></icon>
+                                <span>检查时间：<font>2020-03-19</font></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap-item">
+                        <div class="item-title">检查记录</div>
+                        <div class="item-content jcqk_ul">
+                            <ul>
+                                <li>
+                                    <icon class="iconfont icon-zhangdanbulu"></icon>
+                                    <span class="span_red">西一监区出现越狱举动</span>
+                                </li>
+                                <li>
+                                    <icon class="iconfont icon-zhangdanbulu"></icon>
+                                    <span class="span_red">西三监区出现斗殴现象</span>
+                                </li>
+                                <li>
+                                    <icon class="iconfont icon-zhangdanbulu"></icon>
+                                    <span class="span_red">东一监区出现人员暴动</span>
+                                </li>
+                                <li>
+                                    <icon class="iconfont icon-zhangdanbulu"></icon>
+                                    <span class="span_yellow">东二监区下水道口泄露</span>
+                                </li>
+                                <li>
+                                    <icon class="iconfont icon-zhangdanbulu"></icon>
+                                    <span class="span_yellow">东二监区出现私自交易</span>
+                                </li>
+                                <li>
+                                    <icon class="iconfont icon-zhangdanbulu"></icon>
+                                    <span class="span_green">西二监区暂无安全状况</span>
+                                </li>
+                                <li>
+                                    <icon class="iconfont icon-zhangdanbulu"></icon>
+                                    <span class="span_green">西四监区暂无安全状况</span>
+                                </li>
+                                <li>
+                                    <icon class="iconfont icon-zhangdanbulu"></icon>
+                                    <span class="span_green">东三监区暂无安全状况</span>
+                                </li>
+                                <li>
+                                    <icon class="iconfont icon-zhangdanbulu"></icon>
+                                    <span class="span_green">东四监区暂无安全状况</span>
+                                </li>
+                                <li>
+                                    <icon class="iconfont icon-zhangdanbulu"></icon>
+                                    <span class="span_green">东五监区暂无安全状况</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row h80">
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">今日待办事项</div>
+                        <div class='layui-hide' id='jrdbsx'></div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">奖惩情况</div>
+                        <div class='layui-hide' id='jcqk'></div>
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="wrap-item">
+                        <div class="item-title">队伍管理</div>
+                        <div class='layui-hide' id='dwgl'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="layui-fluid">
+        <div class="layui-row h20 layui-col-space10">
+            <div class="layui-col-md12" style="padding-top:0;padding-bottom:0;">
+                <div class="wrap-item">
+                    <div class="item-title">其他应用</div>
+                    <div class="item-content">
+                        <div class="icon_box" role="21">
+                            <div class="icon_content"><span class="iconfont icon-xingshizhifa"></span></div>
+                            <font>收押岗位</font>
+                        </div>
+                        <div class="icon_box" role="23">
+                            <div class="icon_content"><span class="iconfont icon-guanjiaogangwei"></span></div>
+                            <font>管教管理</font>
+                        </div>
+                        <div class="icon_box" role="27">
+                            <div class="icon_content"><span class="iconfont icon-caiwuguanli"></span></div>
+                            <font>财务岗位</font>
+                        </div>
+                        <div class="icon_box" role="24">
+                            <div class="icon_content"><span class="iconfont icon-yiwurenyuan"></span></div>
+                            <font>医务岗位</font>
+                        </div>
+                        <div class="icon_box" role="26">
+                            <div class="icon_content"><span class="iconfont icon-xunkong"></span></div>
+                            <font>巡控</font>
+                        </div>
+                        <div class="icon_box" role="28">
+                            <div class="icon_content"><span class="iconfont icon-suolingdao"></span></div>
+                            <font>所领导</font>
+                        </div>
+                        <div class="icon_box" role="22">
+                            <div class="icon_content"><span class="iconfont icon-qitafuwu"></span></div>
+                            <font>综合岗位</font>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <script src="/apps/jls/static/lib/require.js" data-main="dashboard_zh.js"></script>
+    <script src="/apps/jls/static/js/require.config.js"></script>
+    <script src="/apps/jls/static/lib/loading.js"></script>
+</body>
+<!-- partial:./partials/_foot.html -->
+<!-- partial -->

@@ -1,0 +1,102 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">警&emsp;&emsp;号：</td>
+                                                    <td><input class="easyui-textbox" name="jh" value="{{jh}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">性&emsp;&emsp;别：</td>
+                                                    <td><input class="awdCombox" name="xb" value="{{xb}}"
+                                                            text="{{xbString}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">民&emsp;&emsp;族：</td>
+                                                    <td><input class="awdCombox" name="mz" value="{{mz}}"
+                                                            text="{{mzString}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">出生年月：</td>
+                                                    <td><input class="easyui-textbox" name="csny" value="{{csny}}"
+                                                            readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">警&emsp;&emsp;衔：</td>
+                                                    <td><input class="awdCombox" name="jx" value="{{jx}}"
+                                                            text="{{jxString}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">学&emsp;&emsp;历：</td>
+                                                    <td><input class="awdCombox" name="xl" value="{{xl}}"
+                                                            text="{{xlString}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">政治面貌：</td>
+                                                    <td><input class="awdCombox" name="zzmm" value="{{zzmm}}"
+                                                            text="{{zzmmString}}" readonly style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>工作经历</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">关&emsp;&emsp;&emsp;&emsp;&emsp;系：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="awdCombox" id="gx" code="GX" name="gx" required
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">关&nbsp;&nbsp;系&nbsp;&nbsp;人&nbsp;姓&nbsp;&nbsp;名：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="easyui-textbox" name="gxrxm" value="{{gxrxm}}"
+                                                            required style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">关系人工作单位：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="easyui-textbox" name="gxrgzdw" value="{{gxrgzdw}}"
+                                                            required style="min-width:280px;"> </td>
+                                                    <td class="formtd">关系人政治面貌：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input class="awdCombox" id="gxrzzmm" code="ZZMM" name="gxrzzmm"
+                                                            required style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">关系人联系电话：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td colspan="3"><input class="easyui-textbox"
+                                                            data-options="validType:'mphone'" required name="gxrlxdh"
+                                                            value="{{gxrlxdh}}" style="min-width:710px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

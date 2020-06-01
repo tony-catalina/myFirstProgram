@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none
+} */
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #F4F9FF;
+    box-sizing: border-box;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.header {
+    height: 110px;
+    width: 100%;
+    background: url(../images/header_bar.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.header .header-left {
+    position: absolute;
+    left: 35px;
+    top: 21px;
+}
+
+.header .hader-logo {
+    vertical-align: middle;
+}
+
+.header .logo-txt {
+    margin-left: 20px;
+    height: 34px;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 64px;
+    color: #fff;
+    vertical-align: middle;
+    transition: all .5s;
+}
+
+.header .header-right {
+    position: absolute;
+    right: 80px;
+    top: 18px
+}
+
+.header .h-r-item {
+    float: left;
+    font-size: 18px;
+    color: #BEEBFF;
+    margin-left: 18px;
+    margin-right: 18px;
+    line-height: 30px;
+    position: relative;
+    text-decoration: none;
+}
+
+.header .h-r-item:after {
+    content: '';
+    width: 2px;
+    height: 18px;
+    background-color: #BEEBFF;
+    position: absolute;
+    right: -18px;
+    top: 6px;
+}
+
+.header .h-r-item.mr0:after {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.header .user-avatar {
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: absolute;
+    right: 65px;
+    top: -10px;
+}
+
+.main {
+    padding: 20px 40px 20px 40px;
+}
+
+.tab-wrap {
+    width: 100%;
+}
+
+.tab-wrap .title {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    background-color: #00c1de;
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+}
+
+.tab-wrap .tab-title {
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+}
+
+.tab-wrap .tab-content {
+    box-shadow: 0px 3px 24px rgba(1, 30, 49, 0.15);
+    width: 100%;
+    position: relative;
+    background: #fff;
+}
+
+.tab-wrap .tab-content .content-item {
+    display: none;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.tab-wrap .tab-content .content-item1 {
+    display: none;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    height: 500px;
+
+}
+
+#neironh::-webkit-scrollbar {
+    display: none
+}
+
+#neironh {
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+}
+
+#test1 {
+    position: absolute;
+    bottom: 10px;
+    right: 40%;
+}
+
+.tab-wrap .tab-content .content-item1.active {
+    display: block;
+}
+
+.tab-wrap .tab-content .content-item.active {
+    display: block;
+}
+
+
+.tab-title .title-item {
+    float: left;
+    width: 167px;
+    height: 43px;
+    background: #5A99D8;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    opacity: 1;
+    border-radius: 6px 6px 0px 0px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 43px;
+    margin-left: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.tab-title .title-item.active {
+    width: 167px;
+    height: 51px;
+    line-height: 51px;
+    background: #0081C2;
+    margin-top: 0;
+}
+
+.tab-mini .tab-title .title-item {
+    width: 71px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 0;
+}
+
+.my-app {
+    width: 100%;
+}
+
+.row .tab-content {
+    height: 350px;
+    position: relative;
+    background: #fff;
+}
+
+.tab-main {
+    /* height: 800px; */
+    position: relative;
+}
+
+.tab-main:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(../images/bg_img.png) no-repeat right bottom;
+    width: 100%;
+    height: 100%;
+}
+
+.content-item h1 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.content-item h3 {
+    padding-bottom: 2%;
+    text-align: right;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+}
+
+.xxxx {
+    margin: 1%;
+    font-size: 20px;
+}
+
+.search {
+    height: 50px;
+    margin: 0 40px;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+}
+
+.home-input {
+    width: 632px;
+    position: absolute;
+    right: 0;
+}
+
+.home-input .select-left {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+    float: left;
+    border: 1px solid #ccd0d7;
+    transition: border .1s linear;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0 7px;
+}
+
+.home-input .default {
+    font-size: 13px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    cursor: pointer;
+    margin-left: 21px;
+}
+
+.arrow-down {
+    /* margin-left: 5px; */
+    background-image: url(../images/sprite-1.png);
+    background-position: 33px -50px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 8px;
+}
+
+.home-input .list {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccd0d7;
+    border-top: 0;
+    z-index: 5000;
+    border-radius: 0 0 4px 4px;
+    top: 40px;
+    font-size: 13px;
+}
+
+.home-input .list li {
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 114px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.home-input .content {
+    float: left;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    color: #222;
+    width: 374px;
+    outline: none;
+}
+
+.home-input .searchBtn {
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    /* font-weight: bolder; */
+    background-color: #00a1d6;
+    color: #fff;
+    border: 1px solid #008cd2;
+    width: 120px;
+    height: 40px;
+    border-radius: 0 4px 4px 0;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+.ggContent {
+    border-bottom: 1px solid #eee;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+}
+
+.ggContent h3 {
+    font-weight: 600 !important;
+}
+
+.ggContent p {
+    width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.ggContent a {
+    display: block;
+    text-decoration: red;
+}
+
+.ggContent a:hover {
+   color: red;
+}
+
+.ggContent div {
+    width: 95%;
+    /* text-align: right; */
+    margin-top: 5px;
+}

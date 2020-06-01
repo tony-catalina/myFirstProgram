@@ -1,0 +1,11 @@
+{
+    "code": 0,
+    "msg": "查询成功",
+    "result": {
+        "spzfje|1-1000": 0, 
+        "cwth|1-1000": 0, 
+        "jszje|1-1000": 0, 
+        "zczje|1-1000": 0
+    },
+    "success": true
+}

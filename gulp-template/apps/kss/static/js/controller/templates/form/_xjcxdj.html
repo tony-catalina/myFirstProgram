@@ -1,0 +1,47 @@
+<form id="fm" class="fm" style="text-align: center;margin-top: 5%" novalidate>
+    <div class="fitem" style="display: none" >
+        <input id="cxcb_bllx"  name="bllx" class="easyui-textbox" />
+    </div>
+    <div class="fitem" style="margin-bottom: 10px">
+        <label style="margin-left: 5.45px">人员编号:</label>
+        <input id="cxcb_rybh" name="rybh" class="easyui-textbox" required="required" style="width:200px" value="{{jbxx.rybh}}">
+    </div>
+    <div class="fitem" style="margin-bottom: 10px">
+        <label style="margin-left: 29.45px">姓名:</label>
+        <input id="cxcb_xm" name="xm" class="easyui-textbox"  required="required" style="width:200px" value="{{jbxx.xm}}">
+    </div>
+    <div class="fitem" style="margin-bottom: 10px">
+        <label style="margin-left: 17.45px">监室号:</label>
+        <input id="cxcb_jsh" name="jsh" class="easyui-textbox"  required="required" style="width:200px" value="{{jbxx.jsh}}">
+    </div>
+    <div class="fitem" style="margin-bottom: 10px">
+        <label>撤销原因<font color="red">*</font>:</label>
+        <input id="cxcb_ly" name="ly" class="awdSelect" code="JJCXYY" panelHeight='auto' required="required"
+               style="width:200px;height: 40px" data-options="multiline:true">
+    </div>
+    <div class="fitem" style="margin-bottom: 10px">
+        <label>械具名称<font color="red">*</font>:</label>
+        <input id="cxcb_xjmc" class="awdSelect" code="XJMC" name="xjmc" editable="false" style="width: 200px" required="required">
+    </div>
+    <div class="fitem" style="margin-bottom: 10px">
+        <label  style="margin-left: 5.45px">开始时间:</label>
+        <input id="cxcb_kssj" name="kssj" class="easyui-datetimebox"  required="required" style="width:200px">
+    </div>
+    <div class="fitem" style="margin-bottom: 10px">
+        <label  style="margin-left: 5.45px">结束时间:</label>
+        <input id="cxcb_jssj" name="jssj" class="easyui-datetimebox"  required="required" style="width:200px">
+    </div>
+    <div class="fitem" style="margin-bottom: 10px">
+        <label style="margin-left: 17.45px">办理人:</label>
+        <input id="cxcb_blr" name="blr" class="easyui-textbox"  required="required" style="width:200px" value="{{blr}}">
+    </div>
+    <div class="fitem" style="margin-bottom: 10px">
+        <label  style="margin-left: 5.45px">办理日期:</label>
+        <input id="cxcb_blrq" name="blrq" class="easyui-datetimebox"  required="required" style="width:200px">
+    </div>
+    <div class="fitem" style="margin-bottom: 10px">
+        <label  style="margin-left: 29.45px">备注:</label>
+        <input id="cxcb_bz" name="bz" class="easyui-textbox" style="height: 60px;width: 200px"
+               data-options="multiline:true" >
+    </div>
+</form>

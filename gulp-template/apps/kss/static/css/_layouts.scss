@@ -1,0 +1,136 @@
+// 关于页面布局使用的css,仅可用于布局 by huanglu
+body {
+    &>.section-container {
+        height:100%;
+        background-color: #ebf2ff;
+        overflow-y:scroll;
+    }
+}
+
+
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+
+    &.section-container-row {
+        flex-direction: row;
+
+        .section-item {
+            margin: 1.04% 0 1.04% 1px;
+
+            &:first-child {
+                margin: 1.04% 0 1.04% 1.04%;
+            }
+
+            &:last-child {
+                margin: 1.04% 1.04% 1.04% 1px;
+            }
+        }
+    }
+
+    .section-item {
+        flex: 0 0 none;
+        margin: 1px 1.04% 0 1.04%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+            margin: 1px 1.04% 1.04% 1.04%;
+        }
+
+        &:first-child {
+            margin: 1.04% 1.04% 0 1.04%;
+        }
+
+        &.section-item-padding {
+            flex: 1 1 auto;
+        }
+
+        &.section-item-one {
+            margin: 1.04%;
+        }
+        .section-header {
+            flex: 0 0 auto;
+            display: flex;
+            position: relative;
+            padding: 10px 0 10px 18px;
+
+            .section-title {
+                @extend .font-22;
+                flex: 1 1 auto;
+                font-weight: bold;
+            }
+
+            .section-controls {
+                float: left;
+                padding-top: 9px;
+                margin: -10px 18px;
+                overflow: hidden;
+
+                button {
+                float: left;
+                margin-left: 1px;
+                padding: 5px 12px;
+                outline: none;
+                cursor: pointer;
+
+                &:first-child {
+                    border-radius: 4px 0 0 4px;
+                }
+
+                &:last-child {
+                    border-radius: 0 4px 4px 0;
+                }
+                }
+            }
+
+            .section-corner {
+                margin: -10px 18px;
+                padding-top: 9px;
+
+                button {
+                @extend .font-18;
+                float: left;
+                margin-left: 1px;
+                padding: 5px 12px;
+                border: none;
+                background-color: #fff;
+                outline: none;
+                }
+            }
+            }
+
+        .section-item-content {
+            flex: 0 0 none;
+            
+            // &:last-child {
+            //     border-top:1px solid #ebf2ff;
+            // }
+
+            &.section-item-content-padding {
+                flex: 1 1 auto;
+            }
+        }
+
+        .section-container {
+            height: 100%;
+            background-color: #ebf2ff;
+
+            .section-item {
+                margin: 0;
+            }
+            
+        }
+    }
+
+
+}
+
+.border-left {
+    border-left: 1px solid #ebf2ff;
+}
+.border-top {
+    border-top: 1px solid #ebf2ff;
+}

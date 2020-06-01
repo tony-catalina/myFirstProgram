@@ -1,0 +1,64 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2> 基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">日常项目：</td>
+                                    <td ><input class="easyui-textbox" name="bzlx" readonly value="{{bzlx}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                    <td ><input class="easyui-textbox" name="jsh" readonly value="{{jsh}}" style="min-width:280px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                            <div class="timeline-icon">
+                               <span class="iconfont icon-jibenxinxi"></span>
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>制度信息</h2>
+                                <table class="container-formtable">
+                                    <tr>
+                                        <td class="formtd">开始时间：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-datetimebox" value="{{kssj}}" style="min-width:280px;" required name="kssj"> </td>
+                                        <td class="formtd">结束时间：<font class="redicon">*</font></td>
+                                        <td ><input class=" easyui-datetimebox" value="{{jssj}}" style="min-width:280px;" required name="jssj"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">带出民警：<font class="redicon">*</font></td>
+                                        <td ><input name="dcmj" class="easyui-textbox" style="min-width:280px;" required> </td>
+                                        <td class="formtd">地&emsp;&emsp;点：</td>
+                                        <td ><input name="dd" class="easyui-textbox" style="min-width:280px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">备&emsp;&emsp;注：</td>
+                                        <td colspan="3"><input name="bz" class="easyui-textbox" data-options="multiline:true" style="min-height: 80px;width: 100%;"> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                 </div>
+
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

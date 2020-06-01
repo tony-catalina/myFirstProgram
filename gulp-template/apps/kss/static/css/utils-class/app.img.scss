@@ -1,0 +1,84 @@
+@for $i from 0 to 4{
+  .rect-#{$i}{
+    background-image: url('./../../assets/img/index/rect/rect.#{$i}.png');
+  }
+}
+@for $i from 0 to 4{
+  .target-img-#{$i}{
+    background-image: url('./../../assets/img/index/bg/bg.road.#{$i}.png');
+  }
+}
+@for $i from 0 to 4{
+  .t-icon-#{$i}{
+    background-image: url('./../../assets/img/index/icon/icon.c.#{$i}.png');
+  }
+}
+.btn-back-img {
+  background-image: url('../../assets/img/index/bg/bg.inter.off.png');
+}
+.head-img {
+  background-image: url('../../assets/img/index/bg/bg.public.head.png');
+}
+.c-head-img {
+  background-image: url('../../assets/img/index/bg/bg.aline.data.png');
+}
+.map-road-img {
+  background-image: url('../../assets/img/index/bg/bg.road.png');
+}
+.radar-img {
+  background-image: url('../../assets/img/index/bg/bg.radar.png');
+}
+.radar-sub-img {
+  background-image: url('../../assets/img/index/bg/bg.radar.scan.png');
+}
+.charge-cont-img {
+  background-image: url('../../assets/img/index/bg/bg.swiper.write.png');
+}
+.charge-icon-img {
+  background-image: url('../../assets/img/index/icon/icon.car.png');
+}
+.equip-circle-img {
+  background-image: url('../../assets/img/index/icon/icon.equip.circle.png');
+}
+.equip-call-police-img {
+  background-image: url('../../assets/img/index/icon/icon.aline.png');
+}
+.equip-fault-img {
+  background-image: url('../../assets/img/index/icon/icon.fault.png');
+}
+.equip-number-img {
+  background-image: url('../../assets/img/index/bg/bg.equip.number.png');
+}
+.aline-hr-img {
+  background-image: url('../../assets/img/index/line.equip.png');
+}
+.call-police-img {
+  background-image: url('../../assets/img/index/icon/icon.call.police.png');
+}
+.core-cond-hr-img {
+  background-image: url('../../assets/img/index/bg/bg.car.seg.png')
+}
+.core-rect-img {
+  background-image: url('../../assets/img/index/rect/rect.aline.png');
+}
+.core-person-img {
+  background-image: url('../../assets/img/index/car.detail.jpg');
+}
+.gauge-border-img {
+  background-image: url('../../assets/img/index/bg/bg.gauge.dish.png');
+}
+.gauge-pointer-img {
+  background-image: url('../../assets/img/index/icon/icon.gauge.pointer.png');
+}
+.map-pop-img {
+  background-image: url('../../assets/img/index/pop.map.msg.png');
+}
+.l-rect-img {
+  background-image: url('../../assets/img/index/rect/rect.full.png');
+}
+.l-photo {
+  background-image: url('../../assets/img/index/bg/bg.map.pop.pot.jpg');
+}
+.pop-bg-img {
+  background-image: url('./../../assets/img/index/bg/bg.pop.png');
+}

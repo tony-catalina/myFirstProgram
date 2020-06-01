@@ -1,0 +1,14 @@
+{{each menugroups as menus  i}}
+<li>
+  <div class="t"><i class="{{menus.img}} malign-center-left bg-img"></i>
+    <a class="malign-center font-22" href="#">{{menus.title}}</a>
+    <i class="i2 malign-center-right bg-img"></i>
+  </div>
+  <div class="txt font-20 dper-por">
+    <div class="xian malign-tl"></div>
+    {{each menus.list as menu  j}}
+    <p class="dper-por nav-info" data-name="{{menu.title}}" data-url="{{menu.url}}" ><a class="malign-center-text " href="#" data-uk-tooltip title="{{menu.title}}">------{{menu.title}}</a></p>
+    {{/each}}
+  </div>
+</li>
+{{/each}}

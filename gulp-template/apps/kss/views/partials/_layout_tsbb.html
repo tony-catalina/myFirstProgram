@@ -1,0 +1,157 @@
+<!-- 布局模板：上下两栏 -->
+<div class="section-container tsbb-container">
+    <div class="section-item">
+        <div class="section-header">
+            <div class="section-title">简项查询</div>
+            <div id='print'>打印</div>
+        </div>
+        <div class="section-item-content border-top">
+            <form id="search" class="search-form"></form>
+            <table id="table" class="padding-18"></table>
+        </div>
+    </div>
+    <div class="section-item section-item-padding" style="margin-top:1.04%;">
+        <div class="section-header">
+            <!-- <div class="section-title">
+                <div class="section-title">报表</div>
+            </div> -->
+        </div>
+        <div class="tsbb-record">
+			<ul class="tab">
+				<li class="tab-item active">报表一</li>
+				<li class="tab-item second">报表二</li>
+			</ul>
+			<div class="content products">
+				<div class="mainCont selected">
+					<table id="tsbb_radio"> 
+                        <tr>
+                            <td><input type="radio" name="tsbb" id="radio11" value="kss_syzfdjb"> <label
+                                for="radio11" name="title">收押罪犯登记表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio12" value="kss_syzfstjcb"> <label
+                                for="radio12" name="title">收押罪犯身体检查表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio13" value="kss_zfjcspb"> <label
+                                for="radio13" name="title">罪犯奖惩审批表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio14" value="kss_zfpsjdb"> <label
+                                for="radio14" name="title">罪犯评审鉴定表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio15" value="kss_zfqzcjtzs"> <label
+                                for="radio15" name="title">罪犯驱逐出境通知书</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="tsbb" id="radio21" value="kss_zxxfddtzs"> <label
+                                for="radio21" name="title">罪犯执行刑罚地点通知书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio22" value="kss_zfbrzzyrzm"> <label
+                                for="radio22" name="title">罪犯哺乳自己婴儿证明</label></td>
+                            <td><input type="radio" name="tsbb" id="radio23" value="kss_zflstqspb"> <label
+                                for="radio23" name="title">罪犯离所探亲审批表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio24" value="kss_zflstqzms"> <label
+                                for="radio24" name="title">罪犯离所探亲证明书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio25" value="kss_zfswbgs"> <label
+                                for="radio25" name="title">罪犯死亡报告书</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="tsbb" id="radio31" value="kss_zfzxxfdztzs"> <label
+                                for="radio31" name="title">罪犯执行刑罚地点通知书(家属)</label></td>
+                            <td><input type="radio" name="tsbb" id="radio32" value="kss_csjlb"> <label
+                                for="radio32" name="title">出所记录表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio33" value="kss_qdldfspb"> <label
+                                for="radio33" name="title">确定劳动犯审批表</label></td>
+                            <td><input type="radio"name="tsbb" id="radio34" value="kss_zyryxwgfkhb"> <label
+                                for="radio34" name="title">在押人员行为规范考核表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio35" value="kss_lssyldfsqb"> <label
+                                for="radio35" name="title">临时使用劳动犯申请表</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="tsbb" id="radio41" value="kss_jgcspasqb"> <label
+                                for="radio41" name="title">打印监管场配案申请表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio42" value="kss_tbjd"> <label
+                                for="radio42" name="title">坦白交代</label></td>
+                            <td><input type="radio" name="tsbb" id="radio43" value="kss_rzhgbxzms"> <label
+                                for="radio43" name="title">认罪悔过表现证明书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio44" value="kss_chldfspb"> <label
+                                for="radio44" name="title">撤换劳动犯审批表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio45" value="kss_xsyrygdjyjdb"> <label
+                                for="radio45" name="title">新收人员过渡考核鉴定表</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="tsbb" id="radio51" value="kss_xmsfzms"> <label
+                                for="radio51" name="title">刑满释放证明书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio52" value="kss_xmsftzs"> <label
+                                for="radio52" name="title">刑满释放通知书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio53" value="kss_sfzms"> <label
+                                for="radio53" name="title">释放证明书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio54" value="kss_jszms"> <label
+                                for="radio54" name="title">假释证明书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio55" value="kss_zzbjlqk"> <label
+                                for="radio55" name="title">总值班记录情况</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="tsbb" id="radio61" value="kss_zyryqlywgzs"> <label
+                                for="radio61" name="title">在押人员权利、义务告知书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio62" value="kss_llythdjl"> <label
+                                for="radio62" name="title">理论研讨活动记录</label></td>
+                            <td><input type="radio" name="tsbb" id="radio63" value="kss_mjywksqk"> <label
+                                for="radio63" name="title">民警业务考试情况 </label></td>
+                            <td><input type="radio" name="tsbb" id="radio64" value="kss_sqtzd"> <label
+                                for="radio64" name="title">伤情通知单</label></td>
+                            <td><input type="radio" name="tsbb" id="radio65" value="kss_bwqybzs"> <label
+                                for="radio65" name="title">保外就医保证书</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="tsbb" id="radio71" value="kss_zyjwzxtzs"> <label
+                                for="radio71" name="title">暂予监外执行通知书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio72" value="kss_shbnzljdb"> <label
+                                for="radio72" name="title">生活不能自理鉴定表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio73" value="kss_jyqxjmtzs"> <label
+                                for="radio73" name="title">羁押期限届满通知书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio74" value="kss_cqjijmbgs"> <label
+                                for="radio74" name="title">超期羁押届满报告书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio75" value="kss_sywgjzfbgs"> <label
+                                for="radio75" name="title">收押外国籍罪犯报告书</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="tsbb" id="radio81" value="kss_zyjwzxspb"> <label
+                                for="radio81" name="title">暂予监外执行审批表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio82" value="kss_tqjxjsspb"> <label
+                                for="radio82" name="title">提请减刑假释审批表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio83" value="kss_tqjxjsjys"> <label
+                                for="radio83" name="title">提请减刑假释建议书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio84" value="kss_jyzfhjtqzms"> <label
+                                for="radio84" name="title">拘役罪犯回家探亲证明书</label></td>
+                            <td><input type="radio" name="tsbb" id="radio85" value="kss_zbxsjl"> <label
+                                for="radio85" name="title">值班巡视记录</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="tsbb" id="radio91" value="kss_jyzfhjtqspb"> <label
+                                for="radio91" name="title">拘役罪犯回家、探亲审批表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio92" value="kss_wzrypcdjb"> <label
+                                for="radio92" name="title">维族（藏族）人员排查登记表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio93" value="kss_txz"> <label
+                                for="radio93" name="title">提审证</label></td>
+                            <td><input type="radio" name="tsbb" id="radio94" value="kss_zfcjjdb"> <label
+                                for="radio94" name="title">岀监鉴定表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio95" value="kss_anfjbqkb"> <label
+                                for="radio95" name="title">案犯基本情况表</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="tsbb" id="radio101" value="kss_xsryjcjcdjb"> <label
+                                for="radio101" name="title">新收人员健康检查登记表</label></td>
+                            <td><input type="radio" name="tsbb" id="radio102" value="kss_zfswbgs"> <label
+                                for="radio102" name="title"><font style="color: red">罪犯死亡通知书</font></label></td>
+                        </tr>
+                    </table>
+				</div>
+				<div class="mainCont">
+					<table id="tsbb_radio2">
+                        <tr>
+                            <td>
+                                <input type="radio" name="tsbb" id="radioXmb">
+                                <label for="radioXmb" name="title">违法犯罪嫌疑人员初查工作项目表</label>
+                            </td>
+                        </tr>
+                    </table>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+

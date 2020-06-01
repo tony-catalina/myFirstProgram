@@ -1,0 +1,48 @@
+<form id="fm" style="padding: 0 0 0 0;" class="awdform">
+    <div class="basic-head">
+        <h1>监控日志登记表</h1>
+    </div>
+    <table style="border-collapse: collapse;background-color: #ffffff;width: 100%;height: 100%;margin:0 auto;">
+        <tbody>
+        <tr>
+            <td colspan="6">
+                <div class="basic-title" style="height:100%;text-align:left;border:0px;">
+                    <h1><i class="fa fa-book"></i>登记信息</h1>
+                </div>
+            </td>
+        </tr>
+        <table style="border-collapse: collapse;background-color: #ffffff;width: 100%;height: 100%;margin:0 auto;">
+            <tbody>
+            <tr>
+                <td style="width:20%;" class="form-title">开始时间:<span style="color: #fe8181; float: right;">*</span></td>
+                <td style="width:30%;" ><input id="jkrz_kssj" name="kssj" class="easyui-datetimebox" required style="width: 100%;height: 100%"></td>
+                <td style="width:20%;" class="form-title">结束时间:<span style="color: #fe8181; float: right;">*</span></td>
+                <td style="width:30%;" ><input id="jkrz_jssj" name="jssj" class="easyui-datetimebox" required  style="width: 100%;height: 100%"></td>
+            </tr>
+            <tr>
+                <td style="width:20%;" class="form-title">监控人:<span style="color: #fe8181; float: right;">*</span></td>
+                <td style="width:30%;" ><input id="jkrz_jkr" name="jkr" class="easyui-textbox" required style="width: 100%;height: 100%"></td>
+                <td style="width:20%;" class="form-title">监控时长:<span style="color: #fe8181; float: right;">*</span></td>
+                <td style="width:30%;" ><input id="jkrz_jksc" required name="jksc" class="easyui-textbox" style="width: 93%;height: 100%" data-options="validType:'number'">(分)</td>
+            </tr>
+            <tr>
+                <td style="width:20%;" class="form-title">监区号:<span style="color: #fe8181; float: right;">*</span></td>
+                <td style="width:80%;" colspan="3"><select id="jkrz_jqh"  class="awdCombox" readonly data-options="panelHeight:'auto',valueField: 'label',textField: 'value',required:true" name="jqh" style="width:100%;height: 100%"  ></select> </td>
+            </tr>
+            </tbody>
+        </table>
+        <table style="border-collapse: collapse;background-color: #ffffff;width: 100%;height: 100%;margin:0 auto;">
+            <tbody>
+            <tr>
+                <td style="width:20%;" class="form-title">监控情况:</td>
+                <td style="width:80%;" colspan="3"><input id="jkrz_jkqk" name="jkqk" class="easyui-textbox" data-options="multiline:true" style="height: 120px;width: 100%"></td>
+            </tr>
+            <tr>
+                <td style="width:20%;" class="form-title">备注:</td>
+                <td style="width:80%;" colspan="3"><input id="jkrz_bz" name="bz" class="easyui-textbox" data-options="multiline:true" style="height: 120px;width: 100%"></td>
+            </tr>
+            </tbody>
+        </table>
+        </tbody>
+    </table>
+</form>

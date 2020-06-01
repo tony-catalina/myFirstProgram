@@ -1,0 +1,130 @@
+<!--
+模块名称： 
+开始时间： 2020-3-7
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<body class="easyui-layout" data-options="fit:true">
+<!--页面主体布局-->
+<form class="ywdt-form">
+    <div class="section-container ywdt">
+
+    <div class="section-item section-item-title  section-item-row"><span class="iconfont icon-taizhang"></span>关押动态</div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">在所人员: </div>
+        <div class="section-item-content"><input class="easyui-textbox" value="" /></div>
+        <div class="section-item-content align-center section-item-content-title">男: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="nannum"  value="" /></div>
+        <div class="section-item-content align-center section-item-content-title">女: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="nvnum" value="" /></div>
+        <div class="section-item-content align-center section-item-content-title">外国籍: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="wgjnum" value="" /></div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">行政拘留: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="xzjlnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">司法拘留: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="sfjlnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">拘留审查: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="jlscnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">其他: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="qtnum" value="" /><span class="wz"></span></div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">入所: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="dbrsnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">不宜拘留: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="byjlnum" value="" /><span class="wz"></span></div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">出所: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="dbcsnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">期满: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="qmnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">请假: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="qjnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">变更措施: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="bgcsnum" value="" /><span class="wz"></span></div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title"></div>
+        <div class="section-item-content align-center section-item-content-title"></div>
+        <div class="section-item-content align-center section-item-content-title">临时出所: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="lslsnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">未回所: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="whsnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">已回所: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="yhsnum" value="" /><span class="wz"></span></div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">拘留区出入: </div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">拘留区内 </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="jlqnnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">拘留区外: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="jlqwnum" value="" /><span class="wz"></span></div>
+        
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">医疗管理 </div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">重病号: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="zdbhnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">所外就医: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="swjynum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">所内就医: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="snjynum" value="" /><span class="wz"></span></div>
+    </div>
+   
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">安全管理 </div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">严管对象: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="ygnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">安全信息员: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="aqxxynum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">违规: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="wgnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">使用械具: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="syjjnum" value="" /><span class="wz"></span></div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">提讯: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="tsnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">亲属会见: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="jshjnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">律师会见: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="lshjnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content"></div>
+        <div class="section-item-content"></div>
+    </div>
+    <div class="section-item section-item-row">
+        <div class="section-item-content align-center section-item-content-title">今天到期: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="jtdqnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">明天到期: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="mtdqnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">后天到期: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="htdqnum" value="" /><span class="wz"></span></div>
+        <div class="section-item-content align-center section-item-content-title">超期: </div>
+        <div class="section-item-content"><input class="easyui-textbox" name="cqnum" value="" /><span class="wz"></span></div>
+    </div>
+
+    <!-- <div class="section-item section-item-row table" style="width:98%;">
+         <table id="ywdtTable" ></table> -->
+    </div>
+</div>
+</form>
+<!--页面主体布局-->
+<script src="/apps/jls/static/lib/require.js" data-main="/apps/jls/static/js/require.config" id="current-page" current-page="pages\gydt\index"></script>
+
+<script src="/apps/jls/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

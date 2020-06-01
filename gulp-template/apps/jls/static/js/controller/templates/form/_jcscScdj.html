@@ -1,0 +1,63 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content scdj-container">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+ 
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>视察情况登记表</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">视察时间：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="rq" required value="{{dateTime}}" style="min-width:280px;"> </td>
+                                                    <td class="formtd">陪同领导：</td>
+                                                    <td><input class="easyui-textbox" name="ldxm" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">职&emsp;&emsp;务：</td>
+                                                    <td colspan="3"><input class="awdCombox" name="ldzw" code='ZW' style="width:100%;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <div class="jcscScdj right">
+                                                <div title="视察代表" class="tabCard" style="padding:20px; ">
+                                                    <div style="text-align: right; "><a href="# ">添加行</a></div>
+                                                </div>
+                                            </div>
+                                                
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">视&emsp;察&emsp;&ensp;情&emsp;&ensp;况：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="scnr" required data-options="multiline:true" style="min-width:700px;min-height: 80px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">提出的意见和建议：</td>
+                                                    <td><input class="easyui-textbox" name="yjjy" data-options="multiline:true" style="min-width:700px; min-height: 80px;"> </td>
+                                                </tr>
+                                            </table>
+                                    
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </form>
+</div>
+</body>

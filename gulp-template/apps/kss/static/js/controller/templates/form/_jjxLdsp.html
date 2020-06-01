@@ -1,0 +1,106 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">人员编号：</td>
+                                    <td ><input name="snbh" value="{{snbh}}" class="easyui-textbox" style="min-width:280px;" readonly> </td>
+                                    <td class="formtd">姓&ensp;&ensp;&ensp;&ensp;名：</td>
+                                    <td ><input name="xm" value="{{xm}}" class="easyui-textbox" style="min-width:280px;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                    <td ><input name="jsh" value="{{jsh}}" class="easyui-textbox" style="min-width:280px;" readonly> </td>
+                                    <td class="formtd">申请原因：</td>
+                                    <td ><input name="sqyy" value="{{ldpsxx.sqyy}}" class="easyui-textbox" style="min-width:280px;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">申&ensp;请&ensp;人：</td>
+                                    <td ><input name="sqr" value="{{ldpsxx.sqr}}" class="easyui-textbox" style="min-width:280px;" readonly> </td>
+                                    <td class="formtd">申请日期：</td>
+                                    <td ><input name="sqsj" value="{{ldpsxx.sqrq}}" class="easyui-datetimebox" style="min-width:280px;" readonly> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">原刑满释放日期：<font class="redicon">*</font></td>
+                                    <td ><input name="yxmrq" value="{{gyqx}}" class="easyui-datebox" style="min-width:280px;" required> </td>
+                                    <td class="formtd">现刑满释放日期：<font class="redicon">*</font></td>
+                                    <td ><input name="xmsfrq" value="{{ldpsxx.xmsfrq}}" class="easyui-datebox" style="min-width:280px;" required> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">审&ensp;&ensp;批&ensp;&ensp;意&ensp;&ensp;见：</td>
+                                    <td colspan="3">
+                                        <input type="radio" name="psbz" value="1" class="radiocss" checked required><font>同意</font>
+                                        <input type="radio" name="psbz" value="2" class="radiocss" required><font>不同意</font></td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">审批&ensp;意见&ensp;内容：</td>
+                                    <td colspan="3"><input name="ldyj" id="ldyj" class="easyui-textbox" data-options="multiline:true"  style="min-height: 80px;width: 100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">办&ensp;&ensp;&ensp;&ensp;理&ensp;&ensp;&ensp;&ensp;人：<font class="redicon">*</font></td>
+                                    <td ><input name="ldxm"  value="{{ldxm}}" class="easyui-textbox" style="min-width:280px;" required> </td>
+                                    <td class="formtd">批&ensp;&ensp;准&ensp;&ensp;文&ensp;&ensp;号：<font class="redicon">*</font></td>
+                                    <td ><input name="pzwh"  class="easyui-textbox" style="min-width:280px;" required> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">办&ensp;&ensp;理&ensp;&ensp;日&ensp;&ensp;期：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input name="blsj" value="{{blsj}}" class="easyui-datetimebox" style="min-width:700px;" required> </td>
+                                </tr>
+                                <tr style="display: none;">
+                                    <td colspan="3">
+                                        <input name="taskid" value="{{taskid}}" class="">
+                                    </td>
+                                </tr>
+                                <tr style="display: none;">
+                                    <td colspan="3">
+                                        <input name="ywlcid" value="{{ywlcid}}" class="">
+                                    </td>
+                                </tr>
+                                <tr style="display: none;">
+                                    <td colspan="3">
+                                        <input name="processName" value="kss_jjx" class="">
+                                    </td>
+                                </tr>
+                                <tr style="display: none;">
+                                    <td colspan="3">
+                                        <input name="processNode" value="kss_jjx_ldsp" class="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

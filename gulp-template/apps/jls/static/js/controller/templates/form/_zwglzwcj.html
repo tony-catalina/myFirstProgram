@@ -1,0 +1,134 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>指纹管理--指纹采集</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}" style="min-width:280px;"> </td>
+                                                    <td class="formtd">性&emsp;&emsp;别：</td>
+                                                    <td><input class="awdCombox" name="xb" value="{{xbString}}" code="XB" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">档案编号：</td>
+                                                    <td><input class="easyui-textbox" name="dabh" value="{{dabh}}" style="min-width:280px;"> </td>
+                                                    <td class="formtd">出生日期：</td>
+                                                    <td><input class="easyui-datebox" name="csrq" value="{{csrq}}" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">文化程度：</td>
+                                                    <td><input class="awdCombox" name="whcd" value="{{whcdString}}" code="WHCD" style="min-width:280px;"> </td>
+                                                    <td class="formtd">人员级别：</td>
+                                                    <td><input class="easyui-textbox" name="ryjb" value="{{ryjb}}" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">类&emsp;&emsp;别：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="lb" value="{{lb}}" style="width:100%;">
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                            <div class="bblrzw">
+                                                <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>采集说明</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <dl>
+                                                            <dt>1.请在上方先选择要录入指纹的手指。</dt>
+                                                            <dt>2.被监管人员按指纹。</dt>
+                                                            <dt>3.当提示“指纹录入成功”后，可按图片选择录入其他手指，当提示“指纹录入失败”时，则再需被监管人员重新按指纹。
+                                                            </dt>
+                                                        </dl>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="lrzwsz">
+                                                    <td>
+                                                        <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                                        <p>左手拇指</p>
+                                                    </td>
+                                                    <td>
+                                                        <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                                        <p>食指</p>
+                                                    </td>
+                                                    <td>
+                                                        <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                                        <p>中指</p>
+                                                    </td>
+                                                    <td>
+                                                        <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                                        <p>无名指</p>
+                                                    </td>
+                                                    <td>
+                                                        <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                                        <p>小指</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="lrzwsz">
+                                                    <td>
+                                                        <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                                        <p>右手小指</p>
+                                                    </td>
+                                                    <td>
+                                                        <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                                        <p>无名指</p>
+                                                    </td>
+                                                    <td>
+                                                        <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                                        <p>中指</p>
+                                                    </td>
+                                                    <td>
+                                                        <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                                        <p>食指</p>
+                                                    </td>
+                                                    <td>
+                                                        <img src="/apps/jls/static/images/moren.jpg" alt="">
+                                                        <p>拇指</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <dl>
+                                                            <dt style="color: red;">提示：指纹采集时，会删除当前人员已有的所有指纹后重新增加</dt>
+                                                        </dl>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

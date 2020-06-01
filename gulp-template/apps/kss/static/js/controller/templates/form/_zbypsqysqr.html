@@ -1,0 +1,93 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>个人信息</h2>
+                                            <table class="container-formtable">
+                                                <td>
+                                                <td class="formtd">人员编号：</td>
+                                                <td><input class="easyui-textbox" value="{{snbh}}" name="snbh" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">姓名：</td>
+                                                <td><input class="easyui-textbox" value="{{xm}}" name="xm" readonly style="min-width:180px;"> </td>
+                                                <td class="formtd">监室号：</td>
+                                                <td><input class="easyui-textbox" value="{{jsh}}" name="jsh" readonly style="min-width:180px;"> </td>
+                                                </td>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">申&nbsp;&nbsp;请&emsp;原&nbsp;&nbsp;因：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.sqyy}}"  readonly data-options="multiline:true" style="min-height: 80px;width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">申&emsp;&nbsp;&nbsp;请&emsp;&nbsp;&nbsp;人：</td>
+                                                    <td><input class="easyui-textbox"  value="{{ldpsxx.sqr}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">申请日期：</td>
+                                                    <td><input class="easyui-datetimebox" value="{{ldpsxx.sqsjString}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">申&nbsp;&nbsp;请&emsp;药&nbsp;&nbsp;品：</td>
+                                                    <td><input class="easyui-textbox" name="tm" value="{{ldpsxx.ypbh}}"  readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">申请数量：</td>
+                                                    <td><input class="easyui-textbox" name="sqsl" value="{{ldpsxx.sl}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">是&nbsp;&nbsp;否&emsp;发&nbsp;&nbsp;放：<font class="redicon">*</font></td>
+                                                    <td colspan="3">
+                                                        <input type="radio" class="spyjy" id="fffm" name="ypcz" value="1" checked>同意
+                                                        <input type="radio" class="spyjy" id="bffm" value="0" name="ypcz" required>不同意
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">是否申请购药：<font class="redicon">*</font></td>
+                                                    <td colspan="3">
+                                                        <input type="radio" class="sqgy" id="sqgyfm" name="sfgy" value="1" checked>是
+                                                        <input type="radio" id="bsqgyfm"  class="sqgy" value="0" name="sfgy" required>否
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="formtd">药&nbsp;品&nbsp;库&nbsp;存&nbsp;量：</td>
+                                                    <td><input class="easyui-textbox" name="ypbh" value="{{ldpsxx.ypbh}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">购药数量：</td>
+                                                    <td><input class="easyui-numberspinner" data-options="prompt:'请输数字！',min:1,validType:'number'" name="gysl" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办&emsp;&nbsp;&nbsp;理&emsp;&nbsp;&nbsp;人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="ysxm" value="{{ldxm}}" required style="min-width:280px;"> </td>
+                                                    <td class="formtd">办理日期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="ysblsj" value="{{ldpssj}}" required style="min-width:280px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

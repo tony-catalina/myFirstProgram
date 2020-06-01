@@ -1,0 +1,41 @@
+<!--
+模块名称： 人员病历
+开始时间： 2020-2-25
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<body class="easyui-layout" data-option="fit:true">
+<!--页面主体布局-->
+<div class="section-container section-container-row">
+    <div class="section-item">
+        <div id="tree">
+            <div class="tree-Headline">监区树<span class="iconfont icon-liebiaoxiangzuo"></span></div>
+            <ul class="easyui-tree" id="jqtree"></ul>
+        </div>
+    </div>
+    <div class="section-item section-item-padding">
+        <div class="section-header">
+            <div class="section-title">简项查询</div>
+            <div class="section-controls single-colors" id="tools">
+            </div>
+            <div class="section-corner" id="links">
+            </div>
+        </div> 
+        <div class="section-item-content border-top">
+            <form id="search" class="search-form"></form>
+            <table id="table" ></table>
+        </div>
+    </div>
+</div>
+
+<!--页面主体布局-->
+<script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/require.config" id="current-page" current-page="pages/rybl/index"></script>
+
+<script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

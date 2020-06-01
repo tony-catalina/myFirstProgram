@@ -1,0 +1,126 @@
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<style>
+    .textbox {
+        width: 100% !important;
+    }
+</style>
+
+<body class="easyui-layout" data-option="fit:true"  style="width:100%;height:100%;">
+    <!--页面主体布局-->
+    <form id="fm" name="aqjcfm" method="post" action="javaScript:void(0)"  style="padding: 0 0 0 0;" class="awdform ywdt-form">
+        <div class="section-content gwjj-container">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                    <div class="htmleaf-container">
+                        <div class="container">
+                            <div class="timeline-content right">
+                                <div class="gwjj-title"><span class="iconfont icon-taizhang"></span>人员信息</div>
+                                <table class="container-formtable">
+                                    <tr>
+                                        <td class="formjb">来所事由：<font class="redicon">*</font></td>
+                                        <td class="jbry"><input class="awdCombogrid" url="/kss_dictionary/getDictionaryPage" code-text="代码" missingMessage="该输入项为必输项" required="true" name="lssy" code="LSSY" style="width: 100%;"> </td>
+                                        <td class="formjb">具&ensp;体事&ensp;由：&thinsp;&thinsp;</td>
+                                        <td class="jbry"><input name="jtsy" class="easyui-textbox" style="width: 100%;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formjb">来访人数：<font class="redicon">*</font></td>
+                                        <td class="jbry"><input name="lfrs" class="easyui-numberbox easyui-validatebox"
+                                                missingMessage="该输入项为必输项" data-options="validType: 'absoluteNum'" required="true" style="width: 100%;"> </td>
+                                        <td class="formjb">随行车辆数：<font class="redicon">*</font></td>
+                                        <td class="jbry"><input class="easyui-numberbox easyui-validatebox" name="sxcls"
+                                                missingMessage="该输入项为必输项" data-options="validType: 'numberCheckSub'" required="true" style="width: 100%;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formjb">带入民警：&thinsp;&thinsp;</td>
+                                        <td class="jbry"><input id="drmj" name="drmj" class="easyui-textbox" style="width: 100%;"> </td>
+                                        <td class="formjb">带&ensp;入时&ensp;间：<font class="redicon">*</font></td>
+                                        <td class="jbry"><input id="drsj" name="drsj" class="easyui-textbox easyui-validatebox"
+                                                missingMessage="该输入项为必输项" required="true" style="width: 100%;"> </td>
+                                    </tr>
+                                </table>
+                                <div class="wlrydj-container">
+                                    <div class="wlrydj-record">
+                                        <ul class="tab">
+                                            <li class="tab-item active">基本信息</li>
+                                            <li class="tab-item gap">车辆信息</li>
+                                        </ul>
+                                        <div class="content products wlrydj-content">
+                                            <div class="mainCont selected">
+                                                <table style="width:75%;">
+                                                    <tbody>
+                                                        <tr style="text-align: center;">
+                                                            <td style="width:10%;padding:3px;">姓名</td>
+                                                            <td style="width:10%;padding:3px;">证件号</td>
+                                                            <td style="width:10%;padding:3px;">单位</td>
+                                                            <td style="width:10%;padding:3px;">联系电话</td>
+                                                            <td style="width:10%;padding:3px;">所内证件号</td>
+                                                            <td style="width:10%;padding:3px;">二代证</td>
+                                                            <td style="width:10%;padding:3px;">增删</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody id="jbxxTbody">
+														<tr>
+														<td style="width:10%;padding:3px;"><input class="easyui-textbox" id="xm1" /></td>
+														<td style="width:10%;padding:3px;" class="jbry"><input class=" easyui-textbox" data-options="validType:'idcard'" id="zjh1"/></td>
+														<td style="width:10%;padding:3px;"><input class="easyui-textbox" id="dw1"/></td>
+														<td style="width:10%;padding:3px;" class="jbry"><input class="easyui-textbox " data-options="validType:'mphone'" id="dh1"/></td>
+														<td style="width:10%;padding:3px;"><input class="easyui-textbox" id="snzjh1"/></td>
+														<td style="width:10%;padding:3px;padding-left: 23px;"><input class="smBtn" value="扫描" type='button' id="edz6"/></td>
+														<td style="width:10%;padding:3px;padding-left: 32px;"><span class="iconfont icon-jiahao jbxxAdd"></span><span class="iconfont icon-jianhao jbxxDel"></span></td>
+														</tr>
+													</tbody>
+                                                </table>
+                                            </div>
+                                            <div class="mainCont">
+                                                <table style="width:75%;">
+                                                    <tbody>
+                                                        <tr style="text-align: center;">
+                                                            <td style="width:10%;padding:3px;">车辆所属单位</td>
+                                                            <td style="width:10%;padding:3px;">车牌号码</td>
+                                                            <td style="width:10%;padding:3px;">安全检查情况</td>
+                                                            <td style="width:10%;padding:3px;">所内准停证号码</td>
+                                                            <td style="width:10%;padding:3px;">所内证件号</td>
+                                                            <td style="width:10%;padding:3px;">增删</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody id="clxxTbody">
+														<tr>
+														<td style="width:10%;padding:3px;"><input class="easyui-textbox" id="clssdw1"/></td>	
+														<td style="width:10%;padding:3px;"><input class="easyui-textbox" data-options="validType:'carNo'" id="cphm1"/></td>
+														<td style="width:10%;padding:3px;"><input class="easyui-textbox" id="aqjcqk1"/></td>
+														<td style="width:10%;padding:3px;"><input class="easyui-textbox" id="snztzhm1"/></td>
+														<td style="width:10%;padding:3px;"><input class="easyui-textbox" id="snzjhc1"/></td>
+														<td style="width:10%;padding:3px;padding-left: 40px;"><span class="iconfont icon-jiahao clxxAdd"></span><span class="iconfont icon-jianhao clxxDel"></span></td>
+														</tr>
+													</tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="gwjjBtn">
+                                <button class="keepBtn">保存</button>
+                                <button class="closeBtn" onClick="location.href='ywlc_dv.html'">关闭</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--页面主体布局-->
+    <script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/require.config" id="current-page" current-page="pages/wlry/wlrydj"></script>
+
+    <script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

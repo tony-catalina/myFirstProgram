@@ -1,0 +1,61 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="jshjldspfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>个人信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">人员编号：</td>
+                                    <td><input class="easyui-textbox" value="{{snbh}}" readonly style="min-width:180px;"> </td>
+                                    <td class="formtd">姓名：</td>
+                                    <td><input class="easyui-textbox" value="{{xm}}" readonly style="min-width:180px;"> </td>
+                                    <td class="formtd">监室号：</td>
+                                    <td><input class="easyui-textbox" value="{{jsh}}" readonly style="min-width:180px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-anjian"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">申&emsp;&emsp;请&emsp;&emsp;人：<font class="redicon">*</font></td>
+                                    <td><input class="easyui-textbox" required name="sqr" VALUE="{{xm}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">申请时间：<font class="redicon">*</font></td>
+                                    <td><input class="easyui-datetimebox" required name="sqsj" style="min-width:280px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">联系理由及事项：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="lyjsx" required data-options="multiline:true" style="width:100%;height:120px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

@@ -1,0 +1,23 @@
+<!-- form表单中的增删部分公共html模板-->
+
+<a href="#" class="add">添加</a>
+<table class="layui-table " style="width: 100%;">
+    <thead>
+        <tr>
+            {{each title}}
+            <td>{{$value}}</td>
+            {{/each}}
+            <td style="width: 30px; ">操作</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{each options as val key}}
+        <tr>
+            {{each val}}
+            <td><input class="{{$value.type}}" code="{{$value.code}}" name="{{$value.name}}" data-options="validType: '{{$value.valid}}'" /></td>
+            {{/each}}
+            <td><a href="# " class="remove" style="display: block;width: 30px;">删除</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

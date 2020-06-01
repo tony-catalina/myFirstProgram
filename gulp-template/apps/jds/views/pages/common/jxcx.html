@@ -1,0 +1,17 @@
+
+    <!-- 头部标题部分 -->
+    <div class="section-header">
+        <div class="section-title">{{title}}</div>
+        <div class="section-controls single-colors">
+            {{each controlButtonList}}
+            <button type="button" data-command="{{$value.command}}"><span
+                    class="iconfont {{$value.icon}}"></span>&nbsp;&nbsp;{{$value.name}}</button>
+            {{/each}}
+        </div>
+        <div class="section-corner">
+            <button><span class="iconfont icon-gengduo7"></span></button>
+            <button><span class="iconfont icon-gengduo1"></span></button>
+            <button><span class="iconfont icon-gengduo6"></span></button>
+        </div>
+    </div>
+

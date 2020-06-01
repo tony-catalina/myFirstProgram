@@ -1,0 +1,84 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content jjwpgl-container">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>在押人员信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">人员编号：</td>
+                                    <td ><input class="easyui-textbox" readonly name="snbh" value="{{snbh}}" style="min-width:280px;"> </td>
+                                    <td class="formtd">姓&emsp;&emsp;&emsp;&emsp;&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" readonly name="ryxm" value="{{xm}}" style="min-width:280px;"> </td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <div>
+                                <h2 style="display: inline-block;">接济人信息</h2>
+                                <span style="margin-left:3%"><button class="drxxBtn"><i class='iconfont icon-jiahao'></i>导入家属信息</button></span>
+                            </div>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">姓&emsp;&emsp;名：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="jsxm" required style="min-width:280px;"> </td>
+                                    <td class="formtd">与被接济人关系：</td>
+                                    <td ><input class="awdCombox" name="gx" code="GX" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">证&ensp;件&ensp;号：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" data-options="validType: 'idcard'" name="jszjh" required style="min-width:280px;"> </td>
+                                    <td class="formtd">办&emsp;理&emsp;日&emsp;期：</td>
+                                    <td ><input class="easyui-datetimebox" name="blrq" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">联系电话：</td>
+                                    <td ><input class="easyui-textbox" data-options="validType: 'telephone '" name="dh" style="min-width:280px;"> </td>
+                                    <td class="formtd">联&emsp;系&emsp;地&emsp;址：</td>
+                                    <td ><input class="easyui-textbox" name="dz" style="min-width:280px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                   
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>随身物品信息</h2>
+                                <table class="container-formtable" id="sswpTable">
+                                        <div style="text-align:right;">
+                                            <button type="button" class="buttonstyle" id="sswpAdd">添加物品</button>
+                                            <!-- <button type="button" class="buttonstyle" id="sswpDel">删除物品</button> -->
+                                        </div>
+                                </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

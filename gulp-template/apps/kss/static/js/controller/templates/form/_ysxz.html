@@ -1,0 +1,120 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">人员编号：</td>
+                                    <td ><input  readonly value="{{snbh}}" class="easyui-textbox" style="min-width:280px;"> </td>
+                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                    <td ><input  readonly value="{{jsh}}" class="easyui-textbox" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                    <td ><input  readonly value="{{xm}}"
+                                                class="easyui-textbox" style="min-width:280px;"> </td>
+                                    <td class="formtd">巡诊日期：</td>
+                                    <td ><input id="xzrqfm" name="xzrq" value="{{xzrq}}" class="easyui-datetimebox"
+                                        style="min-width:280px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">血&emsp;&emsp;&emsp;&emsp;压：</td>
+                                    <td ><input name="xy" data-options="prompt:'示例：80/120'"  class="easyui-textbox" style="min-width:280px;"> </td>
+                                    <td class="formtd">心&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;率：<font class="redicon">*</font></td>
+                                    <td ><input name="xl"  required data-options="prompt:'请输数字！'" validType="xl" class="easyui-numberspinner"  min="30" max ="300" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">疾&emsp;病名&emsp;称：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input name="jbmc" required class="awdCombox" code="JBMC" value="" style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">病&emsp;人病&emsp;情：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input name="brbq" required class="easyui-textbox" value="" data-options="multiline:true"  style="min-height: 80px;width: 100%;"	                                        > </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">诊&emsp;治情&emsp;况：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input name="zz" required class="easyui-textbox"data-options="multiline:true"  style="min-height: 80px;width: 100%;"                                        > </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">注&emsp;意事&emsp;项：</td>
+                                    <td colspan="3"><input name="zysx"  class="easyui-textbox"data-options="multiline:true"  style="min-height: 80px;width: 100%;"                                        > </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">医&emsp;生嘱&emsp;托：</td>
+                                    <td colspan="3"><input name="yszt" class="easyui-textbox"data-options="multiline:true"  style="min-height: 80px;width: 100%;"                                        > </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">备&emsp;&emsp;&emsp;&emsp;注：</td>
+                                    <td colspan="3"><input name="bz"  class="easyui-textbox"data-options="multiline:true"  style="min-height: 80px;width: 100%;"                                        > </td>
+                                </tr>
+                                <tr>
+                                        <td class="formtd">是否需要发药：</td>
+                                    <td>
+                                        
+                                        <input type="radio" id="sfxyfy" name="sfkyz" value="1" class="radiocss"><font>是</font> <input type="radio" id="sfxyfymm" name="sfkyz" value="0" checked class="radiocss"><font>否</font>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr class="xfypSH" style="display: none">
+                                    <td class="formtd">发药开始日期：<span style="color: #fe8181; float: right;">*</span></td>
+                                    <td ><input id="fyksrqfm" name="fyksrq" required class="easyui-datebox" style="width:100%;height:100%;" ></td>
+                                    <td class="formtd">发&ensp;药&nbsp;结束&nbsp;日&ensp;期：<br><font color="red">(不填则长期发药)</font></td>
+                                    <td ><input id="fyjsrqfm" name="fyjsrq" class="easyui-datebox" style="width:100%;height:100%;" ></td>
+                                </tr>
+                                <tr class="xfypSH" style="display: none">
+                                    <td class="formtd">药&emsp;品名&emsp;称：<span style="color: #fe8181; float: right;">*</span></td>
+                                    <td id="hxtd1"  ><input id="ypbhfm" required name="ypbh" class="easyui-combobox" style="width:100%;" ></td>
+                                    <td class="formtd">次&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;数：<span style="color: #fe8181; float: right;">*</span></td>
+                                    <td id="hxtd2" ><input  id="csfm" required data-options="min:1,max:10" name="cs"  class="easyui-numberbox" style="width:100%;height:100%;" ></td>
+                                </tr>
+                                <tr class="xfypSH" style="display: none">
+                                    <td class="formtd">数&emsp;&emsp;&emsp;&emsp;量：<span style="color: #fe8181; float: right;">*</span></td>
+                                    <td><input  id="slfm" required data-options="min:1,max:999" name="sl"  class="easyui-numberbox" style="width:100%;height:100%;" ></td>
+                                    <td class="formtd">服&emsp;&nbsp;药&emsp;间&nbsp;&emsp;隔：<span style="color: #fe8181; float: right;">*</span></td>
+                                    <td><input  id="fyjgfm" required data-options="min:1,max:24" name="fyjg"  class="easyui-numberbox" style="width:100%;height:100%;" ></td>
+                                </tr>
+                                <tr class="xfypSH" style="display: none">
+                                    <td class="formtd">服药注意事项：</td>
+                                    <td colspan="3"><input  id="fyzysxfm" data-options="multiline:true" name="fyzysx"  class="easyui-textbox" style="width:100%;height:120%;" ></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

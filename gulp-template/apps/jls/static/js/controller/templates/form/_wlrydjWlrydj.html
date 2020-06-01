@@ -1,0 +1,92 @@
+<style>
+    .textbox {
+        width: 149px !important;
+    }
+</style>
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;overflow-y: scroll;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>外来人员登记表</h2>
+                                            <table class="container-formtable">
+                                                <tr style="display: none;">
+                                                    <td colspan="3">
+                                                        <input name="id" value="{{id}}" class="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">来所事由：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" name="lssy" code='LSSY' required
+                                                            style="min-width:280px;">
+                                                    </td>
+                                                    <td class="formtd">具&nbsp;体&nbsp;事&nbsp;&thinsp;由：</td>
+                                                    <td><input class="easyui-textbox" name="jtsy"
+                                                            style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">来访人数：</td>
+                                                    <td><input class="easyui-numberbox" name="sxrs"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">随行车辆数：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-numberbox" name="sxcls" required
+                                                            style="min-width:280px;" min="0" data-options="prompt:'随行车辆数最少为0'"> </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="formtd">被&nbsp;&nbsp;访&nbsp;&thinsp;人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="bfr" required
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">被访人部门：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="bfrbm" required
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">带入民警：</td>
+                                                    <td><input id="tbr" class="easyui-textbox" name="drmj" value="{{tbr}}"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">带&nbsp;入&nbsp;时&nbsp;&thinsp;间：</td>
+                                                    <td><input class="easyui-datetimebox" name="drsj"
+                                                            value="{{dateTime}}" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+
+                                            <div class="timeline-content2 easyui-tabs right">
+                                                <div title="基本信息" class="tabCard" style="padding:20px; ">
+                                                    <div style="text-align: right; "><a href="# ">添加行</a></div>
+                                                </div>
+                                                <div title="车辆信息" class="tabCard jiajian "
+                                                    style="padding:20px;display:none; ">
+                                                    <div style="text-align: right; "><a href="# ">添加行</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

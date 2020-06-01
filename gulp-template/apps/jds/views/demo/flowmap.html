@@ -1,0 +1,32 @@
+<!-- partial:../../views/partials/_head.html -->
+<!-- partial -->
+<!-- partial:../../views/partials/_head_end.html -->
+<!-- partial -->
+<body>
+<div class="easyui-layout"   data-options="fit:true"  style="width: 100%; height:100%; border-right-width: 0px; padding-right: 0px; margin-right: 0px">
+    <div class="easyui-tabs" data-options="fit:true" style="width: 100%;border: solid #fafafa">
+        <div  data-options="region:'center'," style="width: 100%; height:40%;padding: 0px" title="业务流程">
+            <div>
+				<span id="pictureId" style="position:absolute ;top:170px; background:#ffffff;z-index:9999;width:200px;display: none;">
+				</span>
+            </div>
+            <div id="main" style="position:absolute;width:100%;height:100%;"></div>
+        </div>
+        <div title="业务动态" style="display:none;" >
+        </div>
+        <div title="业务台账" style="display:none" >
+        </div>
+        <div title="文书补打" style="display:none" id="wsbdym" >
+        </div>
+        <div title="规范帮助" style="padding: 10px;color: #306aa4;display:none;font-size: 16px;">
+        </div>
+    </div>
+</div>
+<script src="/apps/jds/static/lib/seaJs/sea.js"></script>
+<script src="/apps/jds/static/js/seajs.config.js"></script>
+<script>
+    seajs.use("/apps/jds/static/js/controller/pages/demo/flow.js")
+</script>
+</body>
+<!-- partial:../../views/partials/_foot.html -->
+<!-- partial -->

@@ -1,0 +1,60 @@
+// 字体基数
+$font_size_base: 1920;
+// 字体集合
+$font_size_list: 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40;
+// 媒体集合
+$media_list: 2160, 2040, 1920, 1680, 1560, 1440, 1366, 1220, 1200, 1024;
+
+// 生成默认字体 默认
+@for $idx from 1 to length($font_size_list)+1 {
+  .font-#{nth($font_size_list, $idx)} {
+    font-size: nth($font_size_list, $idx)+px
+  }
+;
+}
+
+// 生成多段自适应字体
+@for $idx from 1 to length($media_list)+1 {
+  @media screen and (max-width: #{nth($media_list, $idx)+px}) {
+    @for $idx_ from 1 to length($font_size_list)+1 {
+      .font-#{nth($font_size_list, $idx_)} {
+        font-size: (if((nth($font_size_list, $idx_)*(nth($media_list, $idx)/$font_size_base))<12, 12, (nth($font_size_list, $idx_)*(nth($media_list, $idx)/$font_size_base))))+px
+      }
+    }
+
+  }
+}
+
+/* 颜色 */
+.co-black {
+  color: #000;
+}
+
+.co-white {
+  color: #fff;
+}
+
+/* 文字阴影 */
+.co-blue-shadow {
+  color: #0ff;
+  font-weight: 400;
+  text-shadow: 0 0 5px rgba(34, 158, 250, 0.8), 0 0 10px rgba(34, 158, 2500, 0.8), 0 0 15px #000,
+  0 0 35px #2791fa, 0 0 40px #2791fa;
+  @extend .co-white
+}
+
+/* 水平渐变字体 */
+.co-blue-linearhor {
+  color: #36b3ff;
+  background: -webkit-linear-gradient(left, #50efff, #b2b1fc 50%, #1578fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 垂直渐变字体 */
+.co-blue-linearvtl {
+  color: #36b3ff;
+  background: linear-gradient(top, #50efff, #1578fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

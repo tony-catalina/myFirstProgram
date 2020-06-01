@@ -1,0 +1,390 @@
+{
+    "result": {
+        "menugroups": [{
+                "title": "出入所",
+                "img": "",
+                "list": [{
+                        "title": "社会关系",
+                        "url": "/apps/jls/views/pages/shgx/index.html"
+                    },
+                    {
+                        "title": "正常入所",
+                        "url": "/apps/jls/views/pages/zcrs/index.html"
+                    },
+                    {
+                        "title": "请假回所",
+                        "url": "/apps/jls/views/pages/qjhs/index.html"
+                    },
+                    {
+                        "title": "期满出所",
+                        "url": "/apps/jls/views/pages/qmcs/index.html"
+                    },
+                    {
+                        "title": "提前解除",
+                        "url": "/apps/jls/views/pages/tqjc/index.html"
+                    },
+                    {
+                        "title": "变更处理",
+                        "url": "/apps/jls/views/pages/bgcl/index.html"
+                    },
+                    {
+                        "title": "请假出所",
+                        "url": "/apps/jls/views/pages/qjcs/index.html"
+                    },
+                    {
+                        "title": "临时离所",
+                        "url": "/apps/jls/views/pages/lsls/index.html"
+                    }
+                ]
+            },
+            {
+                "title": "窗口服务",
+                "img": "",
+                "list": [{
+                        "title": "亲属会见",
+                        "url": "/apps/jls/views/pages/qshj/index.html"
+                    },
+                    {
+                        "title": "律师会见",
+                        "url": "/apps/jls/views/pages/lshj/index.html"
+                    },
+                    {
+                        "title": "外来人员登记",
+                        "url": "/apps/jls/views/pages/wlrydj/index.html"
+                    },
+                    {
+                        "title": "领导接访",
+                        "url": "/apps/jls/views/pages/ldjf/index.html"
+                    },
+                    {
+                        "title": "检查视察",
+                        "url": "/apps/jls/views/pages/jcsc/index.html"
+                    },
+                    {
+                        "title": "提讯",
+                        "url": "/apps/jls/views/pages/tx/index.html"
+                    },
+                    {
+                        "title": "送物",
+                        "url": "/apps/jls/views/pages/sw/index.html"
+                    },
+                    {
+                        "title": "对外开放",
+                        "url": "/apps/jls/views/pages/dwkf/index.html"
+                    },
+                    {
+                        "title": "亲情电话",
+                        "url": "/apps/jls/views/pages/qqdh/index.html"
+                    }
+                ]
+            },
+            {
+                "title": "信息维护",
+                "img": "",
+                "list": [{
+                        "title": "人员信息补录",
+                        "url": "/apps/jls/views/pages/ryxxbl/index.html"
+                    },
+                    {
+                        "title": "人员信息维护",
+                        "url": "/apps/jls/views/pages/ryxxwh/index.html"
+                    },
+                    {
+                        "title": "出所人员维护",
+                        "url": "/apps/jls/views/pages/csrywh/index.html"
+                    },
+                    {
+                        "title": "照片管理",
+                        "url": "/apps/jls/views/pages/zpgl/index.html"
+                    },
+                    {
+                        "title": "信息发布",
+                        "url": "/apps/jls/views/pages/xxfb/index.html"
+                    },
+                    {
+                        "title": "错误数据维护",
+                        "url": "/apps/jls/views/pages/cwsjwh/index.html"
+                    },
+                    {
+                        "title": "CCIC维护",
+                        "url": "/apps/jls/views/pages/ccicwh/index.html"
+                    },
+                    {
+                        "title": "CCIC查询",
+                        "url": "/apps/jls/views/pages/cciccx/index.html"
+                    },
+                    {
+                        "title": "临控人员维护",
+                        "url": "/apps/jls/views/pages/lkrywh/index.html"
+                    },
+                    {
+                        "title": "安全风险人员",
+                        "url": "/apps/jls/views/pages/aqfxry/index.html"
+                    },
+                    {
+                        "title": "法律手续变更",
+                        "url": "/apps/jls/views/pages/flsxbg/index.html"
+                    }
+                ]
+            },
+            {
+                "title": "值班管理",
+                "img": "",
+                "list": [{
+                        "title": "巡视情况登记",
+                        "url": "/apps/jls/views/pages/xsqkdj/index.html"
+                    },
+                    {
+                        "title": "房间人员名单",
+                        "url": "/apps/jls/views/pages/fjrymd/index.html"
+                    },
+                    {
+                        "title": "总交接班",
+                        "url": "/apps/jls/views/pages/zjjb/index.html"
+                    },
+                    {
+                        "title": "岗位交接班",
+                        "url": "/apps/jls/views/pages/gwjjb/index.html"
+                    }
+                ]
+            },
+            {
+                "title": "拘室管理",
+                "img": "",
+                "list": [{
+                        "title": "奖励管理",
+                        "url": "/apps/jls/views/pages/jlgl/index.html"
+                    },
+                    {
+                        "title": "文明评比",
+                        "url": "/apps/jls/views/pages/wmpb/index.html"
+                    },
+                    {
+                        "title": "深挖犯罪",
+                        "url": "/apps/jls/views/pages/swfz/index.html"
+                    },
+                    {
+                        "title": "械具使用",
+                        "url": "/apps/jls/views/pages/xjsy/index.html"
+                    },
+                    {
+                        "title": "信件管理",
+                        "url": "/apps/jls/views/pages/xjgl/index.html"
+                    },
+                    {
+                        "title": "申诉复议",
+                        "url": "/apps/jls/views/pages/ssfy/index.html"
+                    },
+                    {
+                        "title": "安全信息员管理",
+                        "url": "/apps/jls/views/pages/aqxxygl/index.html"
+                    },
+                    {
+                        "title": "人力情报线索",
+                        "url": "/apps/jls/views/pages/rlqbxs/index.html"
+                    },
+                    {
+                        "title": "床位管理",
+                        "url": "/apps/jls/views/pages/cwgl/index.html"
+                    },
+                    {
+                        "title": "衣服号管理",
+                        "url": "/apps/jls/views/pages/yfhgl/index.html"
+                    },
+                    {
+                        "title": "重点人员",
+                        "url": "/apps/jls/views/pages/zdry/index.html"
+                    },
+                    {
+                        "title": "拘室调整",
+                        "url": "/apps/jls/views/pages/jstz/index.html"
+                    },
+                    {
+                        "title": "严管人员",
+                        "url": "/apps/jls/views/pages/ygry/index.html"
+                    },
+                    {
+                        "title": "个别教育",
+                        "url": "/apps/jls/views/pages/gbjy/index.html"
+                    },
+                    {
+                        "title": "集体教育",
+                        "url": "/apps/jls/views/pages/jtjy/index.html"
+                    }
+                ]
+            },
+            {
+                "title": "医疗卫生",
+                "img": "",
+                "list": [{
+                        "title": "医生巡诊",
+                        "url": "/apps/jls/views/pages/ysxz/index.html"
+                    },
+                    {
+                        "title": "所内就医",
+                        "url": "/apps/jls/views/pages/snjy/index.html"
+                    },
+                    {
+                        "title": "出所治疗",
+                        "url": "/apps/jls/views/pages/cszl/index.html"
+                    },
+                    {
+                        "title": "死亡登记",
+                        "url": "/apps/jls/views/pages/swdj/index.html"
+                    },
+                    {
+                        "title": "伤情补录",
+                        "url": "/apps/jls/views/pages/sqbl/index.html"
+                    },
+                    {
+                        "title": "重病号登记",
+                        "url": "/apps/jls/views/pages/zbhdj/index.html"
+                    },
+                    {
+                        "title": "心理咨询",
+                        "url": "/apps/jls/views/pages/xlzx/index.html"
+                    },
+                    {
+                        "title": "卫生防疫",
+                        "url": "/apps/jls/views/pages/wsfy/index.html"
+                    }
+                ]
+            },
+            {
+                "title": "当日动态",
+                "img": "",
+                "list": [{
+                        "title": "关押动态",
+                        "url": "/apps/jls/views/pages/gydt/index.html"
+                    },
+                    {
+                        "title": "到期出所人员",
+                        "url": "/apps/jls/views/pages/dqcsry/index.html"
+                    },
+                    {
+                        "title": "严管人员分布图",
+                        "url": "/apps/jls/views/pages/ygryfbt/index.html"
+                    },
+                    {
+                        "title": "病号动态",
+                        "url": "/apps/jls/views/pages/bhdt/index.html"
+                    },
+                    {
+                        "title": "正在提讯会见",
+                        "url": "/apps/jls/views/pages/zztxhj/index.html"
+                    },
+                    {
+                        "title": "拘室分布",
+                        "url": "/apps/jls/views/pages/jsfb/index.html"
+                    },
+                    {
+                        "title": "风险评估",
+                        "url": "/apps/jls/views/pages/fxpg/index.html"
+                    }
+                ]
+            },
+            {
+                "title": "安全管理",
+                "img": "",
+                "list": [{
+                        "title": "动态分析",
+                        "url": "/apps/jls/views/pages/dtfx/index.html"
+                    },
+                    {
+                        "title": "安全检查",
+                        "url": "/apps/jls/views/pages/aqjc/index.html"
+                    },
+                    {
+                        "title": "事故处理",
+                        "url": "/apps/jls/views/pages/sgcl/index.html"
+                    },
+                    {
+                        "title": "应急演练",
+                        "url": "/apps/jls/views/pages/yjyl/index.html"
+                    }
+                ]
+            },
+            {
+                "title": "统计查询",
+                "img": "",
+                "list": [{
+                        "title": "人员信息查询",
+                        "url": "/apps/jls/views/pages/ryxxcx/index.html"
+                    },
+                    {
+                        "title": "高级查询",
+                        "url": "/apps/jls/views/pages/gjcx/index.html"
+                    },
+                    {
+                        "title": "保管物品查询",
+                        "url": "/apps/jls/views/pages/bgwpcx/index.html"
+                    },
+                    {
+                        "title": "关押量统计",
+                        "url": "/apps/jls/views/pages/gyltj/index.html"
+                    },
+                    {
+                        "title": "月报表",
+                        "url": "/apps/jls/views/pages/ybb/index.html"
+                    },{
+                        "title": "年报表",
+                        "url": "/apps/jls/views/pages/nbb/index.html"
+                    },{
+                        "title": "总队报表",
+                        "url": "/apps/jls/views/pages/zdbb/index.html"
+                    },
+                    {
+                        "title": "在逃比对",
+                        "url": "/apps/jls/views/pages/ztbd/index.html"
+                    }
+                ]
+            },
+            {
+                "title": "数据质量",
+                "img": "",
+                "list": [{
+                    "title": "不合格数据查询",
+                    "url": "/apps/jls/views/pages/bhgsjcx/index.html"
+                }]
+            },
+            {
+                "title": "档案管理",
+                "img": "",
+                "list": [{
+                        "title": "指纹管理",
+                        "url": "/apps/jls/views/pages/zwgl/index.html"
+                    },
+                    {
+                        "title": "文书扫描",
+                        "url": "/apps/jls/views/pages/wssm/index.html"
+                    },
+                    {
+                        "title": "电子档案",
+                        "url": "/apps/jls/views/pages/dzda/index.html"
+                    }
+                ]
+            },
+            {
+                "title": "队伍管理",
+                "img": "",
+                "list": [{
+                    "title": "民警登记",
+                    "url": "/apps/jls/views/pages/mjdj/index.html"
+                }]
+            },
+            {
+                "title": "数据考核",
+                "img": "",
+                "list": [{
+                        "title": "及时性考核",
+                        "url": "/apps/jls/views/pages/jsxkh/index.html"
+                    },
+                    {
+                        "title": "完整性考核",
+                        "url": "/apps/jls/views/pages/wzxkh/index.html"
+                    }
+                ]
+            }
+        ]
+    }
+}

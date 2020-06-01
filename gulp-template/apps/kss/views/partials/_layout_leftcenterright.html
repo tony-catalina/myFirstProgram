@@ -1,0 +1,36 @@
+<!-- 布局模板：左中右（三栏布局）-->
+<div class="section-container section-container-row">
+    <div class="section-item" style="width:15%;">
+        <div id="tree">
+            <div class="tree-Headline">监区树<span class="iconfont icon-liebiaoxiangzuo"></span></div>
+            <ul class="easyui-tree" id="jqtree"></ul>
+        </div>
+    </div>
+    <div class="section-item" style="width:55%;">
+        <div class="section-header">
+            <div class="section-title">简项查询</div>
+            <div class="section-corner" id="links"></div>
+        </div>
+        <div class="section-item-content">
+            <form id="search" class="search-form searchBar"></form>
+            <table id="table" class="section-item-padding"></table>
+        </div>
+    </div>
+    <div class="section-item section-item-padding">
+        <div class="section-header">
+            <div class="section-title">在押人员违规</div>
+        </div>
+        <div></div>
+    </div>
+</div>
+<style>
+    .searchBar .search-group .search-item label{
+        min-width:60px !important;
+    }
+    .searchBar .search-group .search-item .textbox{
+        width:95px !important;
+    }
+    .searchBar .search-group .button-group button{
+        padding: 5px 5px;
+    }
+</style>

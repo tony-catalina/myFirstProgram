@@ -1,0 +1,138 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">监&emsp;&emsp;室&emsp;号：</td>
+                                                    <td><input class="easyui-textbox" readonly value="{{jsh}}"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" readonly value="{{xm}}"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">别&emsp;&emsp;&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" readonly value="{{bm}}"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">性&emsp;&emsp;&emsp;&emsp;别：</td>
+                                                    <td><input class="awdCombox" readonly value="{{xb}}" text="{{xbString}}"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">出&emsp;生&emsp;日期：</td>
+                                                    <td><input class="easyui-datebox" readonly value="{{csrq}}"
+                                                            style="min-width:280px;">
+                                                    </td>
+                                                    <td class="formtd">入&emsp;所&emsp;日期：</td>
+                                                    <td><input class="easyui-datetimebox" readonly value="{{rsrq}}"
+                                                            style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办&emsp;案&emsp;环节：</td>
+                                                    <td><input class="awdCombox" readonly value="{{bahj}}" text="{{bahjString}}"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">涉&emsp;嫌&emsp;罪名：</td>
+                                                    <td><input class="awdCombox" readonly value="{{ay}}" text="{{ayString}}"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">户籍地&emsp;详址：</td>
+                                                    <td><input class="easyui-textbox" readonly value="{{hjdxz}}"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">简&emsp;要&emsp;案情：</td>
+                                                    <td><input class="easyui-textbox" readonly value="{{jyaq}}"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">使用械具天数：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:280px;" readonly
+                                                            value="{{ldpsxx.xj_syts}}"> </td>
+                                                    <td class="formtd">使用械具种类：</td>
+                                                    <td><input class="awdCombox" readonly
+                                                            value="{{ldpsxx.xj_xjmc}}"  text="{{ldpsxx.xj_xjmcString}}" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">械具使用开始日期：<font class="redicon">*</font></td>
+                                                    <td><input id="kssj" class="easyui-datetimebox" name="kssj" 
+                                                            required style="min-width:280px;">
+                                                    </td>
+                                                    <td class="formtd">械具使用结束日期：<font class="redicon">*</font></td>
+                                                    <td><input id="jssj" class="easyui-datetimebox" name="jssj" 
+                                                            required style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">执&emsp;&emsp;&emsp;行&emsp;&emsp;人：<font class="redicon">*</font></td>
+                                                    <td><input id="xjsyblr" class="easyui-textbox" name="xjsyblr" 
+                                                            required style="min-width:280px;"> </td>
+                                                    <td class="formtd">执&emsp;行&emsp;&emsp;情&emsp;况：</td>
+                                                    <td><input class="easyui-textbox" name="xjsyzxqk" required
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="xjsybz"
+                                                            data-options="multiline:true"
+                                                            style="width:100%;height: 80px;"> </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="rybh" value="{{rybh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="taskid" value="{{taskid}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="ywlcid" value="{{ywlcid}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="xjsyblsj" value="{{xjsyblsj}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

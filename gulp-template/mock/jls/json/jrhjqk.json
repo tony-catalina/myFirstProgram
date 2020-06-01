@@ -1,0 +1,11 @@
+{
+    "code":0,
+    "msg":"保存成功",
+    "result":{
+        "lsdhjrs|1-1000":1,
+        "jsyhjrs|1-1000":1,
+        "lsyhjrs|1-1000":1,
+        "jsdhjrs|1-1000":1
+    },
+    "success":true
+}

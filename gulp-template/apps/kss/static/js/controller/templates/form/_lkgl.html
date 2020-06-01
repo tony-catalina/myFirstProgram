@@ -1,0 +1,72 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>个人信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">姓名：</td>
+                                    <td ><input class="easyui-textbox" name="xm" value="{{xm}}" readonly style="min-width:180px;"> </td>
+                                    <td class="formtd">人员编号：</td>
+                                    <td ><input class="easyui-textbox" name="snbh" value="{{snbh}}" readonly style="min-width:180px;"> </td>
+                                    <td class="formtd">监室号：</td>
+                                    <td ><input class="easyui-textbox" name="jsh" value="{{jsh}}" readonly style="min-width:180px;"> </td>
+                                    
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                            <div class="timeline-icon">
+                               <span class="iconfont icon-jibenxinxi"></span>
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>业务信息</h2>
+                                <table class="container-formtable">
+                                     <tr style="width: 100%;">
+                                        <td class="formtd">列&ensp;控&emsp;原&ensp;由：<font class="redicon">*</font></td>
+                                        <td colspan="3"><input class="easyui-textbox" value="{{lkyy}}" name="lkyy" required style="min-width:660px;width:100%;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">申&emsp;&ensp;请&emsp;&ensp;人：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-textbox" name="sqr" required style="min-width:280px;"> </td>
+                                        <td class="formtd">申&ensp;请&emsp;日&ensp;期：<font class="redicon">*</font></td>
+                                        <td ><input id="sqsj" class="easyui-datetimebox" name="sqsj" required style="min-width:280px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">是&ensp;否&emsp;取&ensp;消：<font class="redicon">*</font></td>
+                                        <td colspan="3"><input type="radio" checked name="sfqx" class="radiocss" value="0"><font>列控</font><input type="radio" name="sfqx" class="radiocss" value="1"><font>取消</font> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">办&emsp;&ensp;理&emsp;&ensp;人：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-textbox" name="blr" required style="min-width:280px;"> </td>
+                                        <td class="formtd">办&ensp;理&emsp;日&ensp;期：<font class="redicon">*</font></td>
+                                        <td ><input id="blsj" class="easyui-datetimebox" name="blsj" value="{{blsj}}" required style="min-width:280px;"> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                 </div>
+                 
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

@@ -1,0 +1,72 @@
+<!--
+模块名称： 业务台账
+开始时间： 2020-2-29
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<style>
+    .textbox {
+        width: 100% !important;
+    }
+</style>
+
+<body class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <!--页面主体布局-->
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform ywdt-form">
+        <div class="section-content jjb-container">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                    <div class="htmleaf-container">
+                        <div class="container">
+                            <div class="timeline-content right">
+                                <div class="jjb-title"><span class="iconfont icon-taizhang"></span>业务信息</div>
+                                <table class="container-formtable">
+                                    <tr>
+                                        <td class="formtd">交班岗位：</td>
+                                        <td style="text-align:left !important;" colspan="3"><input
+                                                class="easyui-textbox" name="jbgw" id="jbgw" value="巡控岗位" style="width:100%;" readonly></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">交班人员：</td>
+                                        <td class="jbry"><input class="easyui-combobox easyui-validatebox" id="jbry" name="jbry"
+                                                missingMessage="该输入项为必输项" required="true" style="width: 100%;"> </td>
+                                        <td class="formtd">交班时间：</td>
+                                        <td class="jbry"><input class="easyui-datetimebox" name="jbsj"
+                                                missingMessage="该输入项为必输项" required="true" style="width: 100%;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">工作记录：</td>
+                                        <td colspan="3"><textarea class="easyui-textbox easyui-validatebox" name="gzjl"
+                                                style="width:101%;height:100%;min-height:80px;"
+                                                missingMessage="该输入项为必输项" data-options="multiline:true"
+                                                required="true"></textarea></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">注意事项：</td>
+                                        <td colspan="3"><textarea class="easyui-textbox" data-options="multiline:true" name="zysx"
+                                                style="width:100%;height:100%;min-height:80px;"></textarea></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="jjbBtn">
+                                <span class="keepBtn" id="save">保存</span>
+                                <a class="closeBtn"  id="close" href="../jjb/index.html">关闭</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--页面主体布局-->
+    <script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/require.config" id="current-page" current-page="pages/jjb/jb"></script>
+
+    <script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

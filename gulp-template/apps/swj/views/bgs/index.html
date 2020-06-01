@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>北京公安监管综合业务平台</title>
+    <link rel="stylesheet" href="/apps/swj/static/lib/pace/pace.min.css">
+    <link rel="stylesheet" href="/apps/swj/static/css/bgs.css">
+    <script src="/apps/swj/static/lib/pace/pace.min.js"></script>
+</head>
+
+<body>
+<div class="container bg-img-full dper-full-h dper-por">
+    <!--头部-->
+    <div class="tit-left malign-tl font-18 dper-fw">
+        <div class="tit-one bg-img malign-tl ">
+            <span class="malign-center-text">每日情况</span>
+        </div>
+        <div class="tit-two tit-twoo bg-img malign-tl">
+            <span class="malign-center-text">全市预警</span>
+        </div>
+        <div class="tit-three tit-twoo bg-img malign-tr">
+            <span class="malign-center-text">绩效考核</span>
+        </div>
+    </div>
+    <div class="tit-right malign-tr font-18 dper-fw">
+        <div class="tit-four tit-right-bg bg-img malign-tl ">
+            <span class="malign-center-text">疑点分析</span>
+        </div>
+        <div class="tit-fif tit-right-bg bg-img malign-tl">
+            <span class="malign-center-text">外出就医</span>
+        </div>
+        <div class="tit-six tit-right-bg bg-img malign-tr">
+            <span class="malign-center-text">其它...</span>
+        </div>
+    </div>
+    <!--主体-->
+    <div class="body malign-tl co-white dper-overh">
+        <!--左边-->
+        <div class="left malign-tl dper-full-h">
+            <!--左上-->
+            <div class="left-top malign-tl dper-full-w">
+                <div class="left-top-span malign-tl">
+                    <span class="malign-center-text font-22">全市医疗情况</span>
+                </div>
+                <div class="left-top-b dper-full-w malign-bl">
+                    <div class="left-top-span1 malign-center-top dper-full-w">
+                        <div class="left-top-span1-left malign-tl dper-full-h">
+                            <p class="malign-center-text font-20">全市三级风险人员<span class="font-30 ">500</span> <span
+                                    class="font-14">人</span></p>
+                        </div>
+                        <div class="left-top-span1-right malign-tr dper-full-h">
+                            <p class="malign-center-text font-20">全市所外就医<span class="font-30">100</span> <span
+                                    class="font-14">人</span></p>
+                        </div>
+                    </div>
+                    <div class="e1 bg-img malign-center z-level-3"></div>
+                    <div class="e2 bg-img malign-center z-level-3"></div>
+                    <div class="echars0  dper-full-h z-level-2"></div>
+                </div>
+            </div>
+            <!--左下-->
+            <div class="left-bottom malign-bl dper-full-w">
+                <div class="left-bottom-span malign-tl">
+                    <span class="malign-center-text font-22">交付执行情况</span>
+                </div>
+                <div class="left-bottom-b bg-img dper-full-w malign-bl">
+                    <div class="left-bottom-left malign-tl">
+                        <p class="p1 malign-tl dper-full-w"><span class="font-16 malign-center-text">全市本月交付执行人数</span>
+                        </p>
+                        <p class="p2 malign-bl dper-full-w"><span class="font-30 malign-center">500</span><span
+                                class="span1 font-14 malign-center-bottom">人</span></p>
+                    </div>
+                    <div class="left-bottom-right malign-tr">
+                        <p class="p1 malign-tl dper-full-w"><span class="font-16 malign-center-text">因疾病交付拒收人数</span>
+                        </p>
+                        <p class="p2 malign-bl dper-full-w"><span class="font-30 malign-center">100</span><span
+                                class="span1 font-14 malign-center-bottom">人</span></p>
+                    </div>
+                    <div class="left-bottom-bg bg-img malign-center-bottom"></div>
+                </div>
+            </div>
+        </div>
+        <!--中间-->
+        <div class="center malign-tl dper-full-h">
+            <!--中上-->
+            <div class="center-top malign-tl dper-full-w">
+                <div class="center-top-t bg-img dper-full-w malign-center-top"></div>
+                <div class="center-top-b dper-full-w malign-bl">
+                    <div class="center-top-b-l malign-tl bg-img red">
+                        <div id="b-l-span" class="b-l-span malign-center">
+                            <p class="p1 malign-tl dper-full-w"><span class="font-30 malign-center">300</span><span
+                                    class="span1 font-14 malign-center-bottom">人</span></p>
+                            <p class="p2 malign-bl dper-full-w"><span class="font-16 malign-center-text">全市一级风险</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="center-top-b-r" class="center-top-b-r malign-tr bg-img huang">
+                        <div id="b-r-span" class="b-r-span malign-center">
+                            <p class="p1 malign-tl dper-full-w"><span class="font-30 malign-center">800</span><span
+                                    class="span1 font-14 malign-center-bottom">人</span></p>
+                            <p class="p2 malign-bl dper-full-w"><span class="font-16 malign-center-text">全市二级风险</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="center-top-b-b" class="center-top-b-b malign-center-bottom bg-img lan">
+                        <div id="b-b-span" class="b-b-span malign-center">
+                            <p class="p1 malign-tl dper-full-w"><span class="font-30 malign-center">3000</span><span
+                                    class="span1 font-14 malign-center-bottom">人</span></p>
+                            <p class="p2 malign-bl dper-full-w"><span class="font-16 malign-center-text">全市三级级风险</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--中下-->
+            <div class="center-bottom malign-bl dper-full-w">
+                <div class="center-bottom-span malign-tl">
+                    <span class="malign-center-text font-22">拒收、缓收情况</span>
+                </div>
+                <div class="center-bottom-b dper-full-w malign-bl">
+                    <div class="center-bottom-bt malign-center-top dper-full-w">
+                        <div class="center-bottom-bt-span malign-center dper-full-h">
+                            <p class="malign-center-text font-20">全市入所缓收人员<span class="span1 font-30">1200</span> <span
+                                    class="font-14">人</span></p>
+                        </div>
+                    </div>
+                    <div class="center-bottom-bb bg-img malign-center">
+                        <div class="bottom-bb-l malign-tl dper-full-h">
+                            <div class="l-cent malign-center">
+                                <div class="l-cent-t malign-tl dper-full-w">
+                                    <span class="font-16 malign-center-text">其中因怀孕</span>
+                                </div>
+                                <div class="l-cent-b malign-bl dper-full-w">
+                                    <span class="font-32 malign-center-text">1200</span>
+                                    <span class=" span2 font-14 malign-br">人</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-bb-r malign-tr dper-full-h">
+                            <div class="r-cent malign-center">
+                                <div class="r-cent-t malign-tl dper-full-w">
+                                    <span class="font-16 malign-center-text">其中因传染病</span>
+                                </div>
+                                <div class="r-cent-b malign-bl dper-full-w">
+                                    <span class="font-32 malign-center-text">1200</span>
+                                    <span class=" span2 font-14 malign-br">人</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右边-->
+        <div class="right malign-tr dper-full-h">
+            <!--右上-->
+            <div class="right-top malign-tl dper-full-w">
+                <div class="right-top-span malign-tl">
+                    <span class="malign-center-text font-22">执法考评数据</span>
+                </div>
+                <div class="right-top-b dper-full-w malign-bl">
+                    <div class="right-top-bt malign-center-top dper-full-w">
+                        <p class="malign-center-text font-22">全市执法质量考评执法问题<span class="font-30 span1">800</span> <span
+                                class="font-14">条</span></p>
+                    </div>
+                    <div id="right-bg" class="right-bg bg-img z-level-3"></div>
+                    <div class="right-bg1 bg-img malign-center z-level-3 font-16">
+                        <p class="p1 malign-tl dper-full-w"><span class="malign-center-text">执法</span></p>
+                        <p class="p2 malign-bl dper-full-w"><span class="malign-center-text">问题</span></p>
+                    </div>
+                    <div class="echars1 dper-full-h z-level-2"></div>
+                </div>
+            </div>
+            <!--右下-->
+            <div class="right-bottom malign-bl dper-full-w">
+                <div class="right-bottom-span malign-tl">
+                    <span class="malign-center-text font-22">协助破案情况</span>
+                </div>
+                <div class="right-bottom-b dper-full-w malign-bl">
+                    <div class="right-bottom-bt malign-center-top dper-full-w">
+                        <p class="malign-center-text font-20">全国线索登记<span class="font-30 span1">1200</span> <span
+                                class="font-14">条</span></p>
+                    </div>
+                    <div class="right-bottom-bb dper-full-w malign-center">
+                        <div class="bottom-bb-l malign-tl dper-full-h">
+                            <div class="bb-l-span dper-full-w malign-center-top font-18 dper-fw"><span
+                                    class="malign-center-text">3200条</span></div>
+                            <div class="bb-l-cent malign-center">
+                                <div class="l-cent-tiao malign-center-top">
+                                    <div class="l-cent-tiao1 dper-full-w malign-center-bottom"></div>
+                                </div>
+                                <div class="l-cent-span font-16 malign-center-bottom"><span class="malign-center-text">已流转</span>
+                                </div>
+                            </div>
+                            <div class="bb-l-span1 dper-full-w malign-center-bottom font-26 dper-fw"><span
+                                    class="malign-center-text">82.5%</span></div>
+                        </div>
+                        <div class="bottom-bb-c malign-center dper-full-h">
+                            <div class="bb-c-span dper-full-w malign-center-top font-18 dper-fw"><span
+                                    class="malign-center-text">1200条</span></div>
+                            <div class="bb-c-cent malign-center">
+                                <div class="l-cent-tiao malign-center-top">
+                                    <div class="l-cent-tiao1 dper-full-w malign-center-bottom"></div>
+                                </div>
+                                <div class="l-cent-span font-16 malign-center-bottom"><span class="malign-center-text">已反馈</span>
+                                </div>
+                            </div>
+                            <div class="bb-c-span1 dper-full-w malign-center-bottom font-26 dper-fw"><span
+                                    class="malign-center-text">8.52%</span></div>
+                        </div>
+                        <div class="bottom-bb-r malign-tr dper-full-h">
+                            <div class="bb-r-span dper-full-w malign-center-top font-18 dper-fw"><span
+                                    class="malign-center-text">50条</span></div>
+                            <div class="bb-r-cent malign-center">
+                                <div class="l-cent-tiao malign-center-top">
+                                    <div class="l-cent-tiao1 dper-full-w malign-center-bottom"></div>
+                                </div>
+                                <div class="l-cent-span font-16 malign-center-bottom"><span class="malign-center-text">已录用</span>
+                                </div>
+                            </div>
+                            <div class="bb-r-span1 dper-full-w malign-center-bottom font-26 dper-fw"><span
+                                    class="malign-center-text">5.32%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--弹出层1-->
+        <div id="tan1" class="tan1 bg-img-full malign-center">
+            <div class="tan1-tit malign-center-top dper-full-w"><span class="malign-center-text font-30 dper-fw">全市一级风险人员</span>
+            </div>
+            <div id="tan1-tit1" class="tan1-tit1 malign-center dper-full-w font-24 dper-fw"></div>
+            <div id="swiperBox" class="tan1-swiper dper-full-w malign-center-bottom font-20 dper-fw"></div>
+        </div>
+    </div>
+    <!--左侧弹出层-->
+    <div id="tan2" class="tan2 bg-img-full malign-center-left">
+        <div class="tan2-box dper-full-w malign-center">
+            <div class="tan2-box-top dper-full-w malign-tl">
+                <div class="box-top-t hh dper-full-w malign-tl">
+                    <div class="left-1 malign-center-top bg-img"></div>
+                    <div class="box-top-t-span malign-center-bottom font-20"><span
+                            class="malign-center-text">收押前台</span></div>
+                </div>
+                <div class="box-top-c hh dper-full-w malign-tl">
+                    <div class="left-2 malign-center-top bg-img"></div>
+                    <div class="box-top-t-span malign-center-bottom font-20"><span
+                            class="malign-center-text">文件系统</span></div>
+                </div>
+                <div class="box-top-b hh dper-full-w malign-bl">
+                    <div class="left-3 malign-center-top bg-img"></div>
+                    <div class="box-top-t-span malign-center-bottom font-20"><span
+                            class="malign-center-text">定时任务</span></div>
+                </div>
+            </div>
+            <div class="tan2-box-bottom dper-full-w malign-bl">
+                <div class="box-bottom-t hh dper-full-w malign-tl">
+                    <div class="left-4 malign-center-top bg-img"></div>
+                    <div class="box-top-t-span malign-center-bottom font-20"><span
+                            class="malign-center-text">RabbitMQ</span></div>
+                </div>
+                <div class="box-bottom-c hh dper-full-w malign-tl">
+                    <div class="left-5 malign-center-top bg-img"></div>
+                    <div class="box-top-t-span malign-center-bottom font-20"><span
+                            class="malign-center-text">应用商城</span></div>
+                </div>
+                <div class="box-bottom-b hh dper-full-w malign-bl">
+                    <div class="left-6 malign-center-top bg-img"></div>
+                    <div class="box-top-t-span malign-center-bottom font-20"><span class="malign-center-text">上位机</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/apps/swj/static/lib/require.js" data-main="page\bgs\bgs.index.js"></script>
+<script src="/apps/swj/static/js/require.config.js"></script>
+</body>
+</html>

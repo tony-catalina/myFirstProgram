@@ -1,0 +1,55 @@
+<!--
+模块名称： 衣服号管理
+开始时间： 2020-3-11
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<body class="easyui-layout" data-options="fit:true">
+<!--页面主体布局-->
+<div class="section-container ybb-container">
+    <div class="section-item section-item-one section-item-padding">
+        <div class="dynamic-head">2019新月报表统计条件</div>
+    <div class="ytable">
+        <table cellspacing="0" style="width:100%;">
+            <tr>
+                <td class="formtd">开始日期</td>
+                <td class="ksrq">
+                    <input id="ksrq" style="width:100%;" type="text" class="easyui-datebox">
+                </td>
+            </tr>
+            <tr>
+                <td class="formtd">结束日期</td>
+                <td class="jsrq">
+                    <input id="jsrq" style="width:100%;" type="text" class="easyui-datebox">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="Button">
+                    <input  id="tj" class="tjBtn" type="button" value="统计" >
+                    <input  id="cz" class="czBtn" type="button" value="重置" >
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="zysx">
+        <p>注意事项：</p>
+        <u1 style="font-size: 11px">
+            <li>统计包含开始日期以及结束日期</li>
+            <li>统计前应该确保没有出生日期、性别、婚姻状况、身份、文化程度为空的人员</li>
+            <li>月末实有人数可以选择当前人员或所有人员进行计算</li>
+            <li>上月末人数可以选择是否进行统计</li>
+        </u1>
+    </div>
+    </div>
+</div>
+<!--页面主体布局-->
+<script src="/apps/jls/static/lib/require.js" data-main="/apps/jls/static/js/require.config" id="current-page" current-page="pages\ybb\index"></script>
+
+<script src="/apps/jls/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

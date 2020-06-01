@@ -1,0 +1,99 @@
+<form id="formId" method="post" novalidate>
+    <div style="display: none">
+        <input class="easyui-textbox" id="jsbhId" name="jsbh" style="width: 60%">
+    </div>
+    <div style="margin-bottom:15px;padding-left: 292px;">
+        入所时间从:&nbsp;&nbsp;<input id="kssj" class="easyui-datetimebox"> 至  <input id="jssj" class="easyui-datetimebox">
+    </div>
+    <div style="margin-bottom:15px;padding-left: 304px">
+        <table>
+            <tr>
+                <td style="text-align:right;">人员类型:</td>
+                <td style="text-align:left">
+                    <span class="radioSpan">
+	                     <input type="radio" name="rylx" value="R8">在押人员</input>
+                        <input type="radio" name="rylx" value="R7">历史人员</input>
+	                 </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-bottom:15px;padding-left: 336px">
+        <table>
+            <tr>
+                <td style="text-align:right;">性别:</td>
+                <td style="text-align:left">
+                    <span class="radioSpan">
+	                     <input type="radio" name="xb" value="1">男
+	                     <input type="radio" name="xb" value="2">女
+	                 </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="fitem" style="margin-left: 308px;">
+        统计类型:
+        <span>
+	                 <input type="radio" name="adminFlag" value="whcd">文化程度</input>
+	                 </span>
+        <span style="margin-left: 10px">
+	                 	<input type="radio" name="adminFlag" value="rsxz">入所性质</input>
+	                 </span>
+        <span style="margin-left: 40px">
+	                 	<input type="radio" name="adminFlag" value="ay">案由</input>
+	                 </span>
+    </div>
+    <div>
+        <span style="margin-left: 380px;margin-bottom: 10px;">
+	                 	<input type="radio" name="adminFlag" value="bahj">诉讼环节</input>
+	                 </span>
+        <span style="margin-left: 9px">
+	                 	<input type="radio" name="adminFlag" value="sf">身份</input>
+	                 </span>
+        <span style="margin-left: 73px">
+	                 	<input type="radio" name="adminFlag" value="zy">职业</input>
+	                 </span>
+    </div>
+    <div>
+        <span style="margin-left: 380px;margin-bottom: 10px;">
+	                 	<input type="radio" name="adminFlag" value="csrq">年龄</input>
+	                 </span>
+        <span style="margin-left: 42px">
+	                 	<input type="radio" name="adminFlag" value="dwlx">办案单位类型</input>
+	                 </span>
+        <span style="margin-left: 8px">
+	                 	<input type="radio" name="adminFlag" value="hyzk">婚姻状况</input>
+	                 </span>
+    </div>
+    <div>
+        <span style="margin-left: 380px;margin-bottom: 10px;">
+	                 	<input type="radio" name="adminFlag" value="hjd">户籍地</input>
+	                 </span>
+        <span style="margin-left: 26px">
+	                 	<input type="radio" name="adminFlag" value="zzmm">政治面貌</input>
+	                 </span>
+        <span style="margin-left: 40px">
+	                 	<input type="radio" name="adminFlag" value="tssf">特殊身份</input>
+	                 </span>
+    </div>
+    <div>
+        <span style="margin-left: 380px;margin-bottom: 10px;">
+	                 	<input type="radio" name="adminFlag" value="sy">收押人</input>
+	                 </span>
+        <span style="margin-left: 26px">
+	                 	<input type="radio" name="adminFlag" value="gj">国籍</input>
+	                 </span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <span style="margin-left: 272px;">
+						<a href="#" class="easyui-linkbutton" iconCls="icon-search"
+                           data-options="selected:true" style="width:480px;height:32px" id="tongji">统计</a>
+					</span>
+    </div>
+</form>

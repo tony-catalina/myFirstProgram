@@ -1,0 +1,85 @@
+<!--
+模块名称： 到期出所人员
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<body class="easyui-layout" data-option="fit:true">
+    <!--页面主体布局-->
+    <div class="section-container pljstz-content">
+        <div class="section-item section-item-padding" style="height:50%;">
+            <div class="section-container section-container-row">
+                <div class="section-item section-item-padding">
+                    <div class="section-container ">
+                        <div class="section-item" id="jstz-pltz"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-item section-item-padding" style="height:49%;">
+            <div class="section-container section-container-row">
+                <div class="section-item " style="width:50%;">
+                    <div class="section-container">
+                        <div class="section-item title">监室人员</div>
+                        <div class="section-item-padding" id="jsry"></div>
+                    </div>
+                </div>
+                <div class="section-item section-item-padding"  style="width:50%;">
+                    <div class="section-container ">
+                        <div class="section-item title">人员详情</div>
+                        <div class="section-item-padding"> 
+                            <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;display:flex;" class="awdform">
+                                <table class="container-formtable">
+                                    <tr>
+                                        <td class="formtd">姓名：</td>
+                                        <td ><input class="easyui-textbox" id="xm" style="min-width:150px;"> </td>
+                                        <td class="formtd">性别：</td>
+                                        <td ><input class="easyui-textbox" id="xb" style="min-width:150px;"> </td>
+                                        <td rowspan='5' colspan="1"><img id="rypic" style="width: 125px;height: 165px;border:1px solid #ccc;background-size: 100% 100%;" src="../../../static/images/moren.jpg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">别名：</td>
+                                        <td ><input class="easyui-textbox" id="bm" style="min-width:150px;"> </td>
+                                        <td class="formtd">出生日期：</td>
+                                        <td ><input class="easyui-textbox" id="csrq" style="min-width:150px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">证件类型：</td>
+                                        <td ><input class="easyui-textbox" id="zjlx" style="min-width:150px;"> </td>
+                                        <td class="formtd">民族：</td>
+                                        <td ><input class="easyui-textbox" id="mz" style="min-width:150px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">政治面貌</td>
+                                        <td ><input class="easyui-textbox" id="zzmm" style="min-width:150px;"> </td>
+                                        <td class="formtd">职业：</td>
+                                        <td ><input class="easyui-textbox" id="zy" style="min-width:150px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">婚否：</td>
+                                        <td ><input class="easyui-textbox" id="hf" style="min-width:150px;"> </td>
+                                        <td class="formtd">文化程度：</td>
+                                        <td ><input class="easyui-textbox" id="whcd" style="min-width:150px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">户籍地：</td>
+                                        <td colspan="5"><input id="hjd" class="easyui-textbox" style="width:100%;"> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面主体布局-->
+    <script src="/apps/jls/static/lib/require.js" data-main="/apps/jls/static/js/require.config" id="current-page" current-page="pages\dqcsry\womanjs"></script>
+
+<script src="/apps/jls/static/lib/loading.js"></script>
+    </body>
+    <!-- partial:../../partials/_foot.html -->
+    <!-- partial -->

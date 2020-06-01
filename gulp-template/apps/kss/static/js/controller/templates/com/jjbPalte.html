@@ -1,0 +1,11 @@
+{{each data}}
+<div class="item-list flex-item">
+    <div class="list-palte flex-item-auto text-center">
+        <div class="palte-icon"><span class="iconfont icon-{{$value.icon}}"></span></div>
+        <div class="palte-title">{{$value.title}}：</div>
+    </div>
+    <div class="list-title text-center">
+            <a href="#" title="查看详情">{{$value.info}}</a>
+    </div>
+</div>
+{{/each}}

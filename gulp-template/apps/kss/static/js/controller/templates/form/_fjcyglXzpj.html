@@ -1,0 +1,103 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container fjcygl-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>人员信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <input type="hidden"  name="rybh"  value="{{rybh}}" >
+                                                    <input type="hidden"  name="dqssjd"  value="{{bahj}}" >
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">人&thinsp;&thinsp;员&thinsp;编&thinsp;&thinsp;号：</td>
+                                                    <td><input class="easyui-textbox" value="{{snbh}}" name="snbh" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" value="{{xm}}" name="xm" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td class="formtd">监&emsp;室&emsp;号：</td>
+                                                    <td><input class="easyui-textbox"  readonly value="{{jsh}}" name="jsh"  style="min-width:280px;"></td>
+                                                    <td class="formtd">当前诉讼阶段：</td>
+                                                    <td><input class="awdCombox" value="{{bahj}}" text="{{bahjString}}" readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">加扣分记录：</td>
+                                                    <td><input class="easyui-textbox" name="jkfjl" readonly style="min-width:280px;">
+                                                    </td>
+                                                    <td class="formtd">评&ensp;&thinsp;鉴&ensp;&thinsp;日&ensp;&thinsp;期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" id="pjrqfm" readonly name="pjrq" value="{{cypjrq}}" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable table-border">
+                                                <tr>
+                                                    <td rowspan="7">综合评定意见：<font class="redicon">*</font></td>
+                                                    <td><input type="checkbox" class="group-required" name="zhpdyj" id="yj1" value="1"><label for="yj1">1.主动检举揭发其他犯罪嫌疑人、被告人私藏、自制各类可能危及看守所安全的。或危险品，及时消除安全隐患的</label>。</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" class="group-required" name="zhpdyj" id="yj2" value="2"><label for="yj2">2.主动检举揭发其他犯罪嫌疑人、被告人强占他人物品，欺辱、殴打他人等行为或其他严重违规行为的。</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="group-required" name="zhpdyj" id="yj3" value="3"><label for="yj3">3.及时救治或主动照料患重病犯罪嫌疑人、被告人并脱离生命危险的。</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="group-required" name="zhpdyj" id="yj4" value="4"><label for="yj4">4.有效劝阻犯罪嫌疑人、被告人行凶、逃跑、自杀及其他违法犯罪活动的。</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="group-required" name="zhpdyj" id="yj5" value="5"><label for="yj5">5.有效处置突发事件，成功避免安全事故发生的。</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" class="group-required" name="zhpdyj" id="yj6" value="6"><label for="yj6">6.看护重点人员（一般为涉嫌重特大恶性暴力犯罪、社会影响重大的被监管人员）并及时反映重点人员思想动态，有助于确保安全的。</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" class="group-required" name="zhpdyj" id="yj7" value="7"><label for="yj7">7.具有其他突出表现，应予奖励的。</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width: 130px;" >备&emsp;&emsp;&emsp;&emsp;注：</td>
+                                                    <td>
+                                                        <input type="text" class="easyui-textbox" name="bz" multiline='true' style="width:100%;height: 80px;border:0px solid #fff;​outline:none">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

@@ -1,0 +1,45 @@
+<form id="ksrsJbxxForm" style="">
+    <p style="text-align: center; font-weight: bold; font-size: 20px; margin-top: 10px; padding:0 0 0 0;color: #3498db">信件管理--信件查看</p>
+    <span style="margin-left: 5%"><label>填表人：</label><input class="easyui-textbox" style="width: 70%;" value="{{users}}"/></span>
+    <span style="float: right; margin-right: 3%"><label>填表日期：</label><input class="easyui-datebox" id="tbsj" name="tbsj" style="width: 70%;" /></span>
+    <div style=" width: 95%; height: 95%; margin: 0 auto; margin-top: 20px;border :1px solid #3498db">
+        <table style="border-collapse: collapse; background-color: #ffffff;width: 100%; height: 100%; border: solid 2px #95c4ec" align="center">
+            <tbody>
+            <tr>
+                <td style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>接收地址<span style="color: #fe8181; float: right;">*</span></span></td>
+                <td style="width: 23%;border: solid 1px #cfcfcf" align="center"><input id="jwdz" name="jwdz" class="easyui-textbox"  value="{{jbxx.badw}}" style="width:90%;text-align:center"/></td>
+                <td style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>接收人<span style="color: #fe8181; float: right;">*</span></span></td>
+                <td style="width: 23%;border: solid 1px #cfcfcf" align="center"><input id="jsr" name="jsr" class="easyui-textbox"  value="{{jbxx.xm}}" style="width:90%;text-align:center"/></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;border: solid 1px #cfcfcf" align="center">信件内容<span style="color: #fe8181;float: right;">*</span></td>
+                <td colspan="3" style="border: solid 1px #cfcfcf" align="center"><input style="text-align: left;width:100%;height:70px" class="easyui-textbox" data-options="multiline:true"></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>管教意见<span style="color: #fe8181; float: right;">*</span></span></td>
+                <td style="width: 80%;text-align:leftborder: solid 1px #cfcfcf" colspan="3">
+                    <label><input type="radio" name="gjyj" value="" id="jc" checked/>寄出</label>
+                    <label><input type="radio" name="gjyj" value="" id="byjc"/>信件存档，不予寄出</label>
+                    <label><input type="radio" name="gjyj" value="" id="xhxj"/>销毁信件</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>管教<span style="color: #fe8181; float: right;">*</span></span></td>
+                <td style="width: 23%;border: solid 1px #cfcfcf" align="center"><input class="easyui-textbox" id = "gj" name="gj"  value="{{users}}" style="width:90%;text-align:center"/></td>
+                <td style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>登记日期<span style="color: #fe8181; float: right;">*</span></span></td>
+                <td style="width: 23%;border: solid 1px #cfcfcf" align="center"><input class="easyui-datebox" id="djrq1" name="djrq"  style="width:90%;text-align:center"/></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;border: solid 1px #cfcfcf" align="center">接收日期<span style="color: #fe8181;float: right;">*</span></td>
+                <td colspan="3"style="border: solid 1px #cfcfcf" align="center"><input class="easyui-datebox" id="jsrq" name="cbsj"  style="width:97%;text-align:center"/></td>
+            </tr>
+            <tr>
+                <td style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>登记人<span style="color: #fe8181; float: right;">*</span></span></td>
+                <td style="width: 23%;border: solid 1px #cfcfcf" align="center"><input class="easyui-textbox" id = "djr" name="djr"  value="{{users}}" style="width:90%;text-align:center"/></td>
+                <td style="width: 20%;border: solid 1px #cfcfcf" align="center"><span>登记日期<span style="color: #fe8181; float: right;">*</span></span></td>
+                <td style="width: 23%;border: solid 1px #cfcfcf" align="center"><input class="easyui-datebox" id="djrq2" name="djrq"  style="width:90%;text-align:center"/></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</form>

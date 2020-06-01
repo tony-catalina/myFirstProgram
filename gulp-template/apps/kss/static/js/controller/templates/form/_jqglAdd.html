@@ -1,0 +1,66 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>警情信息</h2>
+                            <table class="container-formtable">
+                                <tr style="display: none;">
+                                    <td colspan="3">
+                                        <input name="id" value="{{id}}" class="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">发&ensp;布&ensp;人：</td>
+                                    <td ><input id="fbrfm" name="fbr" value="{{fbr}}" class="easyui-textbox"  style="min-width:280px;"> </td>
+                                    <td class="formtd">发布时间：</td>
+                                    <td ><input id="fbsjfm" name="fbsj"  value="{{fbsj}}" class="easyui-datetimebox" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">发布地点：</td>
+                                    <td >
+                                        <select  id="fbdd" name="fbdd" class="easyui-combobox" style="min-width:280px;" editable="false">
+                                            <option value="监管总队">监管总队</option>
+                                            <option value="视频巡查办">视频巡查办</option>
+                                            <option value="三科">三科</option>
+                                        </select>
+                                    </td>
+                                    <td class="formtd">来&emsp;&emsp;源：</td>
+                                    <td >
+                                        <select  id="ly" name="ly" class="easyui-combobox" style="min-width:280px;" editable="false">
+                                            <option value="监控">监控</option>
+                                            <option value="录像">录像</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">警情内容：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input  id="jqnr" name="jqnr" class="easyui-textbox" style="min-width:660px;" required> </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

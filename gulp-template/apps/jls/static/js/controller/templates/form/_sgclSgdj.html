@@ -1,0 +1,67 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    
+                   
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">事故发生&emsp;时间：<font class="redicon">*</font></td>
+                                    <td ><input id="sgsj"  class="easyui-datetimebox" name="sgsj" value="{{sgsj}}" required style="min-width:280px;"> </td>
+                                    <td class="formtd">事故&emsp;类&ensp;&ensp;别：</td>
+                                    <td ><input class="awdCombox" name="sglx" code="FSSGLX" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">事故发生&emsp;单位：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="sgdw" required style="min-width:280px;"> </td>
+                                    <td class="formtd">事故发生地点：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="sgdd" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">经&emsp;&emsp;办&emsp;&emsp;人：</td>
+                                    <td colspan="3"><input id="jbr" class="easyui-textbox" name="jbr"  style="width: 100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">主要经过及理由：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="jyqk" required data-options="multiline:true" style="width: 100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr style="display: none;">
+                                    <td colspan="3">
+                                        <input name="tbr" value="{{tbr}}" class="">
+                                    </td>
+                                </tr>
+                                <tr style="display: none;">
+                                    <td colspan="3">
+                                        <input name="tbrq" value="{{tbrq}}" class="">
+                                    </td>
+                                </tr>
+                                <tr style="display: none;">
+                                    <td colspan="3">
+                                        <input name="sfcl" value="0" class="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

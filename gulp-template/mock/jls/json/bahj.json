@@ -1,0 +1,19 @@
+{
+    "code": 0,
+    "msg": "保存成功",
+    "result":[
+        {"bahjCode": "11", "bahjString": "刑事拘留", "count": 4},
+        {"bahjCode": "33", "bahjString": "发回重审", "count": 0},
+        {"bahjCode": "99", "bahjString": "其它", "count": 1},
+        {"bahjCode": "12", "bahjString": "逮捕", "count": 4},
+        {"bahjCode": "34", "bahjString": "死刑复核", "count": 0},
+        {"bahjCode": "24", "bahjString": "检察补充侦查", "count": 0},
+        {"bahjCode": "35", "bahjString": "待执行","count": 0},
+        {"bahjCode": "36", "bahjString": "已决","count": 0},
+        {"bahjCode": "13,14", "bahjString": "公安补充侦查", "count": 0},
+        {"bahjCode": "21,22,23", "bahjString": "审查起诉","count": 0},
+        {"bahjCode": "31", "bahjString": "一审","count": 0},
+        {"bahjCode": "32", "bahjString": "二审","count": 1}
+    ],
+    "success": true
+}

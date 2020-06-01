@@ -1,0 +1,88 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">人员编号：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:180px;"  value="{{snbh}}" readonly> </td>
+                                                    <td class="formtd">姓名：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:180px;"  value="{{xm}}" readonly> </td>
+                                                    <td class="formtd">监室号：</td>
+                                                    <td >
+                                                        <input class="awdCombox" style="min-width: 180px;"  value="{{jsh}}" readonly>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">原结束时间：</td>
+                                                    <td><input class="easyui-datetimebox"  id="yjssj" readonly style="min-width:280px;"  value="{{jssj}}" > </td>
+                                                    <td class="formtd">结束时间：</td>
+                                                    <td><input id="jssj" class="easyui-datetimebox" style="min-width:280px;" name="jssj"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办&nbsp;理&nbsp;&thinsp;日&nbsp;期：</td>
+                                                    <td><input id="blrq" class="easyui-datetimebox" style="min-width:280px;" name="blrq" > </td>
+                                                    <td class="formtd">办&ensp;理&ensp;人：</td>
+                                                    <td><input  class="easyui-textbox" style="min-width:280px;" name="jbr" > </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">延&nbsp;长&nbsp;&thinsp;天&nbsp;数：<font class="redicon">*</font></td>
+                                                    <td colspan="3">
+                                                        <select class="easyui-combobox" style="width:100%;" name="syts">
+                                                            <option value="1">1天</option>
+                                                            <option value="2">2天</option>
+                                                            <option value="3">3天</option>
+                                                            <option value="4">4天</option>
+                                                            <option value="5">5天</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">延&nbsp;长&nbsp;&thinsp;原&nbsp;因：<font class="redicon">*</font></td>
+                                                    <td colspan="3">
+                                                        <input class="awdCombox" style="width:100%;" name="ly" code="JBYY" required >
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&emsp;&emsp;&emsp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" data-options="multiline:true" style="min-height: 80px;width: 100%;" name="bz" >
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

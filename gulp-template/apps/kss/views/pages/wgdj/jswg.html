@@ -1,0 +1,66 @@
+<!--
+模块名称： 监室违规
+开始时间： 2020-2-25
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<body class="easyui-layout" data-option="fit:true">
+<!--页面主体布局-->
+<div class="section-container jswg-container">
+    <div class="section-item section-item-one section-item-padding">
+        <div style="display:flex;width:100%;height: 100%;">
+            <div class="section-item">
+                <div id="tree" >
+                    <div class="tree-Headline">监区树<span class="iconfont icon-liebiaoxiangzuo"></span></div>
+                    <ul class="easyui-tree" id="jqtree"></ul>
+                </div>
+            </div>
+            <div class="jswgqk">
+                <form id="fm"> 
+                    <div class="timeline-content right">
+                        <table class="container-formtable">
+                            <tr>
+                                <td class="formtd" style="min-width:250px;">违&ensp;规&emsp;情&ensp;况<font class="redicon">*</font>：</td>
+                                <td colspan="3"><input id="wgqkfm" class="awdComboxtree" style="min-width:858px !important;" checkBox = 'true' required missingMessage="该输入项为必输项"> </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="formtd" style="min-width:250px;">违规详细情况<font class="redicon">*</font>：</td>
+                                <td ><input  id="wgxxqk" class="easyui-textbox" style="height:80px;min-width:858px !important;" data-options="multiline:true" missingMessage="该输入项为必输项" required> </td>
+                            </tr>
+                            <tr>
+                                <td class="formtd" style="min-width:250px;">违&ensp;规&emsp;时&ensp;间<font class="redicon">*</font>：</td>
+                                <td ><input id="wgsjfm" class="easyui-datetimebox" style="min-width:858px !important;" missingMessage="该输入项为必输项" required editable="false"> </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="formtd" style="min-width:250px;">处&ensp;理&emsp;情&ensp;况<font class="redicon">*</font>：</td>
+                                <td class="formtext"><input id="clqkfm" class="awdCombox" code="WGCLQK" checkBox="true"  style="min-width:858px !important;" missingMessage="该输入项为必输项" required></td>
+                            </tr>
+                            <tr>
+                                <td class="formtd" style="min-width:250px;">备&emsp;&emsp;&emsp;&emsp;注：</td>
+                                <td ><input id="bzfm" class="easyui-textbox" style="height:80px;min-width:858px !important;" data-options="multiline:true"></td>
+                            </tr>
+                        </table>
+                       
+                    </div>
+                </form>
+                <div class="jswgBtn">
+                    <button id="saveBtn" class="keepBtn">保存</button>
+                    <button class="closeBtn">关闭</button>
+                </div>
+            </div>
+        </div>  
+    </div>    
+</div>
+<!--页面主体布局-->
+<script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/require.config" id="current-page" current-page="pages/wgdj/jswg"></script>
+
+<script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

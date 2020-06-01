@@ -1,0 +1,68 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                    <td ><input class="easyui-textbox" name="jsh" value="{{jsh}}" style="min-width:280px;" readonly> </td>
+                                    <td class="formtd">姓&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;名：</td>
+                                    <td ><input class="easyui-textbox" name="xm" value="{{xm}}" style="min-width:280px;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">出生日期：</td>
+                                    <td ><input class="easyui-textbox" name="csrq" value="{{csrq}}" style="min-width:280px;" readonly> </td>
+                                    <td class="formtd">拘留开始时间：</td>
+                                    <td ><input class="easyui-textbox" name="jlrq" value="{{jlrq}}" style="min-width:280px;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">文化程度：</td>
+                                    <td ><input class="awdCombox" name="whcd" value="{{whcd}}"  text="{{whcdString}}" style="min-width:280px;" readonly> </td>
+                                    <td class="formtd">拘留截止时间：</td>
+                                    <td ><input class="easyui-textbox" name="dbrq" value="{{dbrq}}" style="min-width:280px;" readonly> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-hj"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>虹膜采集</h2>
+                            <table class="container-formtable" style="width:100%;">
+                                <tr>
+                                    <td><img class="eximg" src="../../../static/images/hm.png" alt=""/></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <button type="button" class="collectBtn">虹膜采集</button>
+                                        <button type="button" class="obtain">获取虹膜</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

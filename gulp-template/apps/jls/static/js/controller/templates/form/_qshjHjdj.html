@@ -1,0 +1,193 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr style="display: none;">
+                                                    <td colspan="3">
+                                                        <input name="id" value="{{id}}" class="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">拘&emsp;&emsp;室&emsp;&emsp;号：</td>
+                                                    <td><input class="easyui-textbox" value="{{jsh}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" value="{{xm}}" readonly
+                                                            style="min-width:280px;"> </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">性&emsp;&emsp;&emsp;&emsp;&emsp;别：</td>
+                                                    <td><input class="awdCombox" value="{{xb}}" text="{{xbString}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">入所时间：</td>
+                                                    <td><input class="easyui-textbox" value="{{rsrq}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">档&emsp;案&emsp;编&emsp;号：</td>
+                                                    <td><input class="easyui-textbox" value="{{dah}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                     <td class="formtd">案&emsp;&emsp;别：</td>
+                                                    <td><input class="awdCombox" value="{{ay}}"  text="{{ayString}}"readonly
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">户&ensp;籍&ensp;所&ensp;在&ensp;地：</td>
+                                                    <td colspan="3"><input class="awdCombox" readonly
+                                                            value="{{hjd}}"  text="{{hjdString}}" style="width:100%;"> </td>
+                                                </tr>
+                                            </table>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td style="min-width: 170px;"></td>
+                                                    <td style="min-width: 200px;" align="center">
+                                                        <span style="color: #fff;
+                                                        background: #6FB4FA;
+                                                        padding: 4px 10px;
+                                                        border-radius: 5px;">会见人1扫描</span>
+                                                    </td>
+                                                    <td style="min-width: 200px;" align="center"> <span style="color: #fff;
+                                                        background: #6FB4FA;
+                                                        padding: 4px 10px;
+                                                        border-radius: 5px;">会见人2扫描</span></td>
+                                                    <td style="min-width: 200px;" align="center"> <span style="color: #fff;
+                                                        background: #6FB4FA;
+                                                        padding: 4px 10px;
+                                                        border-radius: 5px;">会见人3扫描</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width: 170px;">会&ensp;见&ensp;人&ensp;姓&ensp;名：<font class="redicon">*</font></td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="jsxm" style="width:100%; height:100%;" required>
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="jsxm" style="width:100%; height:100%;">
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="jsxm" style="width:100%; height:100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width: 170px;">会&ensp;见&ensp;人&ensp;性&ensp;别：<font class="redicon">*</font></td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="awdCombox" code="XB" name="hjrxb" style="width:100%; height:100%;" required>
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="awdCombox" code="XB" name="hjrxb" style="width:100%; height:100%;">
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="awdCombox" code="XB" name="hjrxb" style="width:100%; height:100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width: 170px;">证&emsp;件&emsp;类&emsp;型：<font class="redicon">*</font></td>
+                                                    <td>
+                                                        <input type="radio" name="jszjlx1" checked value="11">身份证件
+                                                        <input type="radio" name="jszjlx1" value="99">其他证件
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="jszjlx2" checked value="11">身份证件
+                                                        <input type="radio" name="jszjlx2" value="99">其他证件
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="jszjlx3" checked value="11">身份证件
+                                                        <input type="radio" name="jszjlx3" value="99">其他证件
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td  style="min-width: 170px;">联&emsp;系&emsp;电&emsp;话：<font class="redicon">*</font></td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="dh" data-options="validType:'telephone'" style="width:100%; height:100%;" required>
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="dh" data-options="validType:'telephone'" style="width:100%; height:100%;">
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="dh" data-options="validType:'telephone'" style="width:100%; height:100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td  style="min-width: 170px;">证&emsp;件&emsp;号&emsp;码：<font class="redicon">*</font></td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="zjh" data-options="validType:'idcard'" style="width:100%; height:100%;" required>
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="zjh" data-options="validType:'idcard'" style="width:100%; height:100%;">
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="zjh" data-options="validType:'idcard'" style="width:100%; height:100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width: 170px;">与被拘留人关系：<font class="redicon">*</font></td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="awdCombox" code="GX" name="gx" style="width:100%; height:100%;" required>
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="awdCombox" code="GX" name="gx" style="width:100%; height:100%;">
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="awdCombox" code="GX" name="gx" style="width:100%; height:100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width: 170px;">现&emsp;&emsp;住&emsp;&emsp;址：<font class="redicon">*</font></td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="dz" style="width:100%; height:100%;" required>
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="dz" style="width:100%; height:100%;">
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="dz" style="width:100%; height:100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width: 170px;">单&emsp;&emsp;&emsp;&emsp;&emsp;位：<font class="redicon">*</font></td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="gzdw" style="width:100%; height:100%;" required>
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="gzdw" style="width:100%; height:100%;">
+                                                    </td>
+                                                    <td  width='200px' height='30px'>
+                                                        <input class="easyui-textbox" name="gzdw" style="width:100%; height:100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>备&emsp;&emsp;&emsp;&emsp;&emsp;注：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" required name="bz" data-options="multiline:true" style="min-height: 80px;width: 100%;"></td>
+                                                </tr>
+												<input type="hidden" name="tbr" value="{{tbr}}">
+												<input type="hidden" name="tbrq" value="{{tbrq}}">
+												<input type="hidden" name="jsbh" value="{{jsbh}}">
+												<input type="hidden" name="creator" value="{{creator}}">
+												<input type="hidden" name="rybh" value="{{rybh}}">
+												<input type="hidden" name="taskid" value="{{taskid}}">
+												<input type="hidden" name="ywlcid" value="{{ywlcid}}">
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<link rel="stylesheet" href="/apps/platform/static/css/iconfont/iconfont.css">
+<form class="layui-form" action="" id="fm">
+    <h2>新建用户</h2>
+    <div class="layui-form-item">
+        <label class="layui-form-label">用&ensp;户&ensp;名：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" name="name" lay-verify="required" autocomplete="off" class="layui-input"
+                placeholder="用户登录...">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">真实姓名：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" name="realname" lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">密&emsp;&emsp;码：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" name="password" lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">警&emsp;&emsp;号：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" name="jh" lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">E&nbsp;M&nbsp;A&nbsp;I&nbsp;L：&nbsp;</label>
+        <div class="layui-input-block">
+            <input type="text" name="email" lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">身份证号：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <input type="text" id="sfzhfm" placeholder="若有X则为大写" name="sfzh"  lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">角&emsp;&emsp;色：<font color="red">*</font></label>
+        <div class="layui-input-block">
+            <button class="layui-btn layui-btn-primary iconfont icon-discount
+            " id="bjjs" style="width: 20%;text-align: center;margin:0 5px 10px 0;" type="button">&ensp;编辑角色</button>
+			<span id="BlockButton"></span>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">用&ensp;户&ensp;组：&nbsp;</label>
+        <div class="layui-input-block">
+            <input type="text" name="group" lay-verify="required" autocomplete="off" class="layui-input" id="yhz"  disabled>
+        </div>
+    </div>
+</form>

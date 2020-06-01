@@ -1,0 +1,118 @@
+ /* css禁止文字被选中 */
+ body {
+     -moz-user-select: none;
+     /*火狐*/
+     -webkit-user-select: none;
+     /*webkit浏览器*/
+     -ms-user-select: none;
+     /*IE10*/
+     -khtml-user-select: none;
+     /*早期浏览器*/
+     user-select: none;
+ }
+
+ input,
+ button {
+     outline: none;
+     cursor: pointer;
+ }
+
+ textarea {
+     resize: none;
+ }
+
+ .fl {
+     float: left;
+ }
+
+ .fr {
+     float: right;
+ }
+
+ //使用overflow：hidden清除浮动
+ .oflow {
+     overflow: hidden;
+ }
+
+ // 使用after伪元素清除浮动
+ .clearfix:after {
+     content: "";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+ }
+
+ .clearfix {
+     *zoom: 1;
+ }
+
+ .hide {
+     display: none;
+ }
+
+ .show {
+     display: block;
+ }
+
+ // 盒子阴影效果,注意写类名的话不需要加上hover，类名为：box_shadow，如果这个阴影效果达不到效果，可以自己写阴影效果
+ .box_shadow:hover {
+     box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.5);
+ }
+
+ // 盒子效果平缓过渡的效果 .transition
+ .transition {
+     transition: all 0.2s linear;
+ }
+
+ //默认按钮,注意按钮都是用span写的，给span加类名既可
+ .btn_default {
+     background: #418BCA;
+     padding: 6px 20px;
+     border-radius: 5px;
+     color: #fff;
+     text-align: center;
+     font-size: 15px;
+     border: 1px solid #2F7ABB;
+
+ }
+
+ //提交按钮的样式
+ .btn_default:active {
+     background: #3176B1;
+     border: 1px solid #21598A;
+ }
+
+ //禁用按钮的样式
+ .btn_disabled {
+     background: #84B4DC;
+     padding: 6px 20px;
+     border-radius: 5px;
+     color: #fff;
+     text-align: center;
+     font-size: 15px;
+     border: 1px solid #78A9D2;
+     opacity: 0.8;
+ }
+
+ //警告按钮样式
+ .btn_warning {
+     background: #EFAD4D;
+     padding: 6px 20px;
+     border-radius: 5px;
+     color: #fff;
+     text-align: center;
+     font-size: 15px;
+     border: 1px solid #ED9F30;
+ }
+
+ // 危险按钮样式
+ .btn_danger {
+     background: #D9544F;
+     padding: 6px 20px;
+     border-radius: 5px;
+     color: #fff;
+     text-align: center;
+     font-size: 15px;
+     border: 1px solid #D43935;
+ }

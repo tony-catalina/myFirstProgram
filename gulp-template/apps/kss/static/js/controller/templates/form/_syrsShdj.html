@@ -1,0 +1,138 @@
+﻿<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                                    <td><input class="easyui-textbox" value="{{jsh}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">姓&ensp;&ensp;&ensp;&ensp;名：</td>
+                                                    <td><input class="easyui-textbox" value="{{xm}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">别&ensp;&ensp;&ensp;&ensp;名：</td>
+                                                    <td><input class="easyui-textbox" value="{{bm}}"
+                                                            style="min-width:280px;" readonly> </td>
+
+                                                    <td class="formtd">性&ensp;&ensp;&ensp;&ensp;别：</td>
+                                                    <td><input  class="awdCombox" value="{{xb}}" text="{{xbString}}" id="xb"
+                                                            style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td class="formtd">出生日期：</td>
+                                                    <td><input class="easyui-textbox" value="{{csrq}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">涉嫌罪名：</td>
+                                                    <td><input class="awdCombox" value="{{ay}}" text="{{ayString}}" id="ay" style="min-width:280px;"
+                                                            readonly> </td>
+                                                </tr>
+                                                <tr>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">出所时间：</td>
+                                                    <td><input class="easyui-textbox" value="{{cssj}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">出所原因：</td>
+                                                    <td><input class="awdCombox" value="{{csyy}}" id="csyy" text="{{csyyString}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">出所流向：</td>
+                                                    <td><input class="easyui-textbox" value="{{cslx}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">是否接收：</td>
+                                                    <td><input class="awdCombox" value="{{czzt}}" text="{{czztString}}"
+                                                            style="width:100%;" readonly> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item" id="ywxx">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2> 业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">姓&ensp;&ensp;&ensp;&ensp;名：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}"
+                                                            style="min-width:280px;" required> </td>
+                                                    <td class="formtd">入&ensp;所&ensp;原&ensp;因：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" code="RSXZ" name="rsxz"
+                                                            value="{{RSXZ}}"  text="{{rsxzString}}"  style="min-width:280px;" required> </td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">监&ensp;室&ensp;号：<font class="redicon">*</font></td>
+                                                    <td><input class="jsh" name="jsh" id="jsh"
+                                                            style="min-width:280px;" required> </td>
+                                                    <td class="formtd">法律&ensp;文书号： </td>
+                                                    <td><input class="easyui-textbox" name="flwsh"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">收回原因：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" code="AJLB" name="shyy" value="{{AJLB}}"
+                                                        style="min-width:280px;" required> </td>  
+                                                  
+                                                    <td class="formtd">收&ensp;回&ensp;日&ensp;期：<font class="redicon">*</font></td>
+                                                    <td><input id="rsrq" class="easyui-datetimebox" name="rsrq" value="{{rsrq}}"
+                                                            style="min-width:280px;" required> </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="id" value="{{id}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="zjh" value="{{zjh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="zjlx" value="{{zjlx}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="SHFO" class="" value="{{shfo}}">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="gcbh" value="{{gcbh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

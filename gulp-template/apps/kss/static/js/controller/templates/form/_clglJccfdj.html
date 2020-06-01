@@ -1,0 +1,120 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">监&emsp;室&emsp;号：</td>
+                                                    <td><input class="easyui-textbox" name="jsh" value="{{jsh}}"
+                                                            readonly style="min-width:280px;">
+                                                    </td>
+                                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}" readonly
+                                                            style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">别&emsp;&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" name="bm" value="{{bm}}" readonly
+                                                            style="min-width:280px;">
+                                                    </td>
+                                                    <td class="formtd">性&emsp;&emsp;别：</td>
+                                                    <td><input class="awdCombox" name="xb" value="{{xb}}"  text="{{xbString}}" readonly
+                                                            style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">出&thinsp;&thinsp;生&thinsp;日&thinsp;&thinsp;期：</td>
+                                                    <td><input class="easyui-textbox" name="csrq" value="{{csrq}}"
+                                                            readonly style="min-width:280px;">
+                                                    </td>
+                                                    <td class="formtd">入所日期：</td>
+                                                    <td><input class="easyui-textbox" name="rsrq" value="{{rsrq}}"
+                                                            readonly style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办&thinsp;&thinsp;案&thinsp;环&thinsp;&thinsp;节：</td>
+                                                    <td><input class="awdCombox" name="bahj" value="{{bahj}}" text="{{bahjString}}"
+                                                            readonly style="min-width:280px;">
+                                                    <td class="formtd">涉嫌罪名：</td>
+                                                    <td><input class="awdCombox" name="ay" value="{{ay}}" text="{{ayString}}" readonly
+                                                            style="min-width:280px;">
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">户籍所在地：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" readonly
+                                                            style="width:100%;" name="hjdxz" value="{{hjdxz}}">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+
+                                                <tr>
+                                                    <td class="formtd">解&nbsp;除&nbsp;&nbsp;处&nbsp;罚&nbsp;&nbsp;日&nbsp;期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="jcrq"
+                                                            style="min-width:180px;" required>
+                                                    </td>
+                                                    <td class="formtd">解除人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="jcr"
+                                                            style="min-width:180px;" required> </td>
+                                                    <td class="formtd">登记日期：<font class="redicon">*</font></td>
+                                                    <td><input id="jcdjrq" class="easyui-datetimebox" name="jcdjrq"
+                                                             style="min-width:180px;" required>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">处罚期间表现情况：<font class="redicon">*</font></td>
+                                                    <td colspan="5"><input class="easyui-textbox"
+                                                            data-options="multiline:true" required name="cfqjbx"
+                                                            style="width:100%;height: 80px;"> </td>
+
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="rybh" value="{{rybh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="ywlcid" value="{{ywlcid}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="id" value="{{ldpsxx.cfjl_id}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

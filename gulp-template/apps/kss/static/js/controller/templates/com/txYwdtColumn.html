@@ -1,0 +1,17 @@
+<div class="section-item section-item-title section-item-row">
+    <div class="section-item-content" style="border:none;"><span class="iconfont icon-taizhang"></span>查询信息</div>
+    <div class="section-item-content" style="border: none;"></div>
+    <div class="section-item-content"><input type="button" id="ywdt-btn" value="点击查询" /></div>
+</div>
+<div class="section-item section-item-row">
+    {{each formItems.itemCloumnTitle}}
+    <div class="section-item-content section-item-content-title align-center">{{$value}}</div>
+    {{/each}}
+</div>
+{{each formItems.itemCloumnDatas}}
+<div class="section-item section-item-row" style="color:#912627">
+    <div class="section-item-content align-center">{{$value.hjsString}}</div>
+    <div class="section-item-content align-center">{{$value.lfrxm}}</div>
+    <div class="section-item-content align-center">{{$value.kssj}}</div>
+</div>
+{{/each}}

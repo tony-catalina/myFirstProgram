@@ -1,0 +1,54 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">药品名称：</td>
+                                                    <td><input class="easyui-textbox" value="{{ldpsxx.ypbh}}" style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">购药数量：</td>
+                                                    <td><input class="easyui-textbox" value="{{ldpsxx.gysl}}" style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">送药名称：<font class="redicon">*</font></td>
+                                                    <td><input id="sqrfm" class="easyui-textbox" style="min-width:280px;" required> </td>
+                                                    <td class="formtd">送药数量：<font class="redicon">*</font></td>
+                                                    <td><input id="sqrqfm" class="easyui-textbox" style="min-width:280px;" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">是否一致：<font class="redicon">*</font></td>
+                                                    <td colspan="3">
+                                                        <input type="radio" name="sfsyyz" value="1" checked>是
+                                                        <input type="radio" name="sfsyyz" value="0">否
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办&nbsp;&nbsp;理&nbsp;&nbsp;人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="syblr" style="min-width:280px;" required> </td>
+                                                    <td class="formtd">办理日期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="updatetime" value="{{ldpssj}}" style="min-width:280px;" required> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

@@ -1,0 +1,121 @@
+<form id="fm" class="awdform" >
+    <table style="border-collapse: collapse; width: 100%; margin: 0 auto;">
+        <tbody>
+        <input name="rybh" value="{{jbxx.rybh}}" type="hidden"/>
+        <input name="id" value="{{jbxx.id}}" type="hidden"/>
+        <input name="syqx" readonly value="{{jbxx.ldpsxx.xj_syqx}}" type="hidden"/>
+        <input name="sqrq" readonly value="{{jbxx.ldpsxx.xj_blrq}}" type="hidden"/>
+        <input name="ly" readonly value="{{jbxx.ldpsxx.xj_ly}}" type="hidden"/>
+        <td colspan="4">
+            <div class="basic-title" style="height:100%;text-align:left;border:0px;">
+                <h1><i class="fa fa-address-book"></i>基本信息</h1>
+            </div>
+        </td>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>监室号</span></td>
+            <td style="width: 30%;" class="hxsj"><input id="jshfm" name="jsh"
+                                                        class="easyui-combobox awdSelect" readonly value="{{jbxx.jsh}}" style="width:100%;height:100%" disabled/></td>
+            <td style="width: 20%;" class="form-title"><span>姓名</span></td>
+            <td style="width: 30%;" class="hxsj"><input id="xmfm" name="xm"
+                                                        class="easyui-textbox" readonly value="{{jbxx.xm}}" style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>别名</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-textbox"
+                                                        id="bmfm" name="bm" readonly value="{{jbxx.bm}}" style="width:100%;height:100%"  disabled/></td>
+            <td style="width: 20%;" class="form-title"><span>性别</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-combobox awdSelect"
+                                                        id="xbfm" name="xb" readonly  style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>出生日期</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-datebox"
+                                                        id = "csrqfm" name="csrq" readonly value="{{jbxx.csrq}}" style="width:100%;height:100%" disabled/></td>
+            <td style="width: 20%;" class="form-title"><span>入所日期</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-datebox"
+                                                        id="rsrqfm" name="rsrq" readonly value="{{jbxx.rsrq}}" style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>办案环节</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-combobox awdSelect"
+                                                        id = "bahjfm" name="bahj" readonly  style="width:100%;height:100%" disabled/></td>
+            <td style="width: 20%;" class="form-title"><span>涉嫌罪名</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-combobox awdSelect"
+                                                        id="ayfm" name="ay" readonly  style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>户籍地详址</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-textbox"
+                                                        id = "hjdfm" name="hjd" readonly  style="width:100%;height:100%" disabled/></td>
+            <td style="width: 20%;" class="form-title"><span>简要案情</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-textbox"
+                                                        id="jyaqfm" name="jyaq" readonly value="{{jbxx.jyaq}}"  style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title">使用械具种类</td>
+            <td colspan="3" style="width: 80%" class="hxsj"><input style="width:100%;height:100%" id="xjzlfm" name=""  readonly value="{{jbxx.ldpsxx.xj_xjmc}}" text="{{jbxx.ldpsxx.xj_xjmcString}}" class="awdCombox" disabled ></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>使用械具天数</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-textbox"
+                                                        id = "xjtsfm" name="syts" value="{{jbxx.ldpsxx.xj_syts}}" readonly  style="width:100%;height:100%" disabled/></td>
+            <td style="width: 20%;" class="form-title"><span>使用情形</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="awdCombox"
+                                                        id="syqxfm" name="syqx" readonly value="{{jbxx.ldpsxx.xj_syqx}}"  text="{{jbxx.ldpsxx.xj_syqxString}}" style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title">使用械具理由</td>
+            <td colspan="3" style="width: 80%" class="hxsj"><input style="width:100%;height:100%" id="xjlyfm" name="ly" value="{{jbxx.ldpsxx.xj_ly}}"  text="{{jbxx.ldpsxx.xj_lyString}}" class="awdCombox" readonly data-options="multiline:true" disabled></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>经办民警</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-textbox"
+                                                        id = "blr" name="blr" readonly value="{{jbxx.ldpsxx.xj_blr}}" style="width:100%;height:100%" disabled/></td>
+            <td style="width: 20%;" class="form-title"><span>经办时间</span></td>
+            <td style="width: 30%;" class="hxsj"><input class="easyui-datetimebox"
+                                                        id="blrqfm"  readonly style="width:100%;height:100%" value="" disabled/></td>
+        </tr>
+        </tr>
+        <td style="width: 20%;" class="form-title"><span>中队/警署意见</span></td>
+        <td style="width: 30%;" class="hxsj"><input class="easyui-textbox"
+                                                    id = "zdyjfm" name="zdzyj" readonly value="{{jbxx.ldpsxx.xj_zdzyj}}" style="width:100%;height:100%" disabled/></td>
+        <td style="width: 20%;" class="form-title"><span>中队</span></td>
+        <td style="width: 30%;" class="hxsj"><input class="easyui-textbox"
+                                                    id="zdfm" name="zdzxm" readonly value="{{jbxx.ldpsxx.xj_zdzxm}}" style="width:100%;height:100%" disabled/></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title">中队/警署意见内容</td>
+            <td colspan="3" style="width: 80%" class="hxsj"><input style="width:100%;height:100%" readonly id="zdyjnrfm" name="zdzpsbz" value="{{jbxx.ldpsxx.xj_zdzyj}}" class="easyui-textbox" disabled ></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="basic-title" style="height:100%;text-align:left;border:0px;">
+                    <h1><i class="fa fa-address-card-o"></i>所领导意见</h1>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>领导意见<span
+                    style="color: #fe8181; float: right;">*</span></span></td>
+            <td style="width: 80%;text-align:center" colspan="3">
+                <label for="xzyes"><input type="radio"  checked name="ldpsbz" id="xzyes" value="1" required/>同意</label>
+                <label for="xzno"><input type="radio"   name="ldpsbz" id="xzno" value="2" required/>不同意</label></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title">领导意见内容<span style="color: #fe8181;float: right;">*</span></td>
+            <td colspan="3" style="width: 80%"><input style="text-align: left;width:100%;height:120px" id="ldyjnrfm" name="ldyj" required class="easyui-textbox" data-options="multiline:true" value="同意"></td>
+        </tr>
+        <tr>
+            <td style="width: 20%;" class="form-title"><span>所领导签名<span style="color: #fe8181;float: right;">*</span></span></td>
+            <td style="width: 30%;">
+                <input class="easyui-textbox" style="width:100%;height:100%"  id="czrfm" name="ldxm" required value="{{users}}"/>
+            </td>
+            <td style="width: 20%;" class="form-title"><span>签名日期<span style="color: #fe8181;float: right;">*</span></span></td>
+            <td style="width: 30%;">
+                <input class="easyui-datetimebox" style="width:100%;height:100%"  id="czsjfm" name="ldpssj" required/>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</form>

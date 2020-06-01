@@ -1,0 +1,129 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">拘&emsp;&ensp;室&emsp;&ensp;号：</td>
+                                    <td ><input class="easyui-textbox" value="{{jsh}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">姓&emsp;&emsp;&emsp;&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" value="{{xm}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">出&ensp;&thinsp;生&ensp;日&ensp;&thinsp;期：</td>
+                                    <td ><input class="easyui-datebox" value="{{csrq}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">拘留开始日期：</td>
+                                    <td ><input class="easyui-datebox" value="{{jlrq}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">文&ensp;&thinsp;化&ensp;程&ensp;&thinsp;度：</td>
+                                    <td ><input class="awdCombox" value="{{whcd}}" text="{{whcdString}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">拘留截止日期：</td>
+                                    <td ><input class="easyui-datebox" value="{{gyqx}}"  readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">身&thinsp;&thinsp;高&thinsp;&thinsp;(厘&thinsp;&thinsp;米)：<font class="redicon" >*</font></td>
+                                    <td ><input class="easyui-textbox" name="sg" id="sgfm" required style="min-width:280px;"> </td>
+                                    <td class="formtd">体&thinsp;&thinsp;重&thinsp;&thinsp;(公&thinsp;&thinsp;斤)：<font class="redicon" >*</font></td>
+                                    <td ><input class="easyui-textbox" name="tz" id="tzfm" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">足&thinsp;&thinsp;长&thinsp;&thinsp;(鞋&thinsp;&thinsp;码)：<font class="redicon" >*</font></td>
+                                    <td ><input class="easyui-textbox" name="zc" id="zcfm" required style="min-width:280px;"> </td>
+                                    <td class="formtd">心&emsp;&emsp;&emsp;&emsp;脏：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="xl" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">血&emsp;&emsp;&emsp;&emsp;压：<font class="redicon" >*</font></td>
+                                    <td ><input class="easyui-textbox" name="xy" id="xyfm" required style="min-width:280px;"> </td>
+                                    <td class="formtd">检&ensp;&thinsp;察&ensp;人&ensp;&thinsp;员：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="jcr" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td width="15%" class="label">检&ensp;&thinsp;查&ensp;日&ensp;&thinsp;期：<font class="redicon">*</font></td> 
+                                    <td > 
+                                        <input  style="min-width:280px;" class="easyui-datebox" id="jcrq" name="jcrq" data-options="required:true,editable:false"/> 
+                                                    
+                                    </td>
+                                    <td class="formtd">医&ensp;&thinsp;生&ensp;签&ensp;&thinsp;名：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="ysqm" required  value="{{tbr}}" style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td width="15%" class="label">签&ensp;&thinsp;名&ensp;日&ensp;&thinsp;期：<font class="redicon">*</font></td> 
+                                    <td > 
+                                        <input  style="min-width:280px;"  class="easyui-datebox" id="qmrq" name="qmrq" data-options="required:true,editable:false"/> 
+                                                     
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">体表特殊标志：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="tbtsbj" required data-options="multiline:true" style="width:100%;min-height:80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">既&ensp;&thinsp;往&ensp;病&ensp;&thinsp;史：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="brbs" required data-options="multiline:true" style="width:100%;min-height:80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">有&nbsp;何&nbsp;传&nbsp;染&nbsp;病：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="crb" required data-options="multiline:true" style="width:100%;min-height:80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">家&ensp;&thinsp;庭&ensp;病&ensp;&thinsp;史：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="jtbs" required data-options="multiline:true" style="width:100%;min-height:80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">手&emsp;&ensp;术&emsp;&ensp;史：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="sss" required data-options="multiline:true" style="width:100%;min-height:80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">外&emsp;&ensp;伤&emsp;&ensp;史：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="wss" required data-options="multiline:true" style="width:100%;min-height:80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">自&ensp;&thinsp;述&ensp;症&ensp;&thinsp;状：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="zszz" required data-options="multiline:true" style="width:100%;min-height:80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">病&emsp;&ensp;伤&emsp;&ensp;史：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="sbq" required data-options="multiline:true" style="width:100%;min-height:80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">健&ensp;&thinsp;康&ensp;状&ensp;&thinsp;况：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="awdCombox" code='JKZK' name="jkzk" required style="width:100%"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">医&ensp;&thinsp;生&ensp;意&ensp;&thinsp;见：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="ysyj" required style="width:100%;min-height:80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">备&emsp;&emsp;&emsp;&emsp;注：</td>
+                                    <td colspan="3"><input class="easyui-textbox" name="bz" data-options="multiline:true" style="width:100%;min-height:80px;"> </td>
+                                </tr>
+                                <input type="hidden" name="tbr" value="{{tbr}}">
+                                <input type="hidden" name="tbrq" value="{{tbrq}}">
+                                <input type="hidden" name="tab" value="{{tab2}}">
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

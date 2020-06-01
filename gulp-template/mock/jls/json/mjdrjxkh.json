@@ -1,0 +1,6 @@
+{
+    "code": 0,
+"msg": "查询成功",
+"result": {"total": 4, "rows": {"cd": 3, "zc": 2, "zt": 1, "kg": 1}},
+"success": true
+}

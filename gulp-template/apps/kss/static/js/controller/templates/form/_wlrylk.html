@@ -1,0 +1,133 @@
+<style>
+    #clxx .textbox {
+        width: 149px !important;
+    }
+</style>
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content wllk-container">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>人员信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">来所事由：</td>
+                                                    <td><input class="awdCombox" id="lssy" name="lssy"
+                                                            value="{{lssy}}" text="{{lssyString}}" readonly style="min-width:280px;">
+                                                    </td>
+                                                    <td class="formtd">具&ensp;体事&ensp;由：</td>
+                                                    <td><input class="easyui-textbox" name="jtsy" value="{{jtsy}}"
+                                                            readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">来访人数：</td>
+                                                    <td><input class="easyui-textbox" name="lfrs" value="{{lfrs}}"
+                                                            readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">随行车辆数：</td>
+                                                    <td><input class="easyui-textbox" name="sxcls" value="{{sxcls}}"
+                                                            readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">带入民警：</td>
+                                                    <td><input class="easyui-textbox" id="drmj" name="drmj"
+                                                            value="{{drmj}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">带&ensp;入时&ensp;间：</td>
+                                                    <td><input class="easyui-datetimebox" name="drsj" value="{{drsj}}"
+                                                            readonly style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input hidden name="updator" value="管理员"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input hidden name="id" value="{{id}}"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>详细信息</h2>
+                                            <div class="wllk-record">
+                                                <ul class="tab">
+                                                    <li class="tab-item active">基本信息</li>
+                                                    <li class="tab-item gap">车辆信息</li>
+                                                </ul>
+                                                <div class="content products wllk-content">
+                                                    <div class="mainCont selected">
+                                                        <table style="width:100%;">
+                                                            <tbody>
+                                                                <tr style="text-align: center;">
+                                                                    <td
+                                                                        style="width:10%;padding:3px;border: 1px solid #297aff;">
+                                                                        序号</td>
+                                                                    <td
+                                                                        style="width:10%;padding:3px;border: 1px solid #297aff;">
+                                                                        姓名</td>
+                                                                    <td
+                                                                        style="width:10%;padding:3px;border: 1px solid #297aff;">
+                                                                        证件号</td>
+                                                                    <td
+                                                                        style="width:10%;padding:3px;border: 1px solid #297aff;">
+                                                                        单位</td>
+                                                                    <td
+                                                                        style="width:10%;padding:3px;border: 1px solid #297aff;">
+                                                                        所内证件号</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tbody id="jbxxTbody"></tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="mainCont">
+                                                        <table style="width:100%;">
+                                                            <tbody>
+                                                                <tr style="text-align: center;">
+                                                                    <td
+                                                                        style="width:10%;padding:3px;border: 1px solid #297aff;">
+                                                                        序号</td>
+                                                                    <td
+                                                                        style="width:10%;padding:3px;border: 1px solid #297aff;">
+                                                                        车辆所属单位</td>
+                                                                    <td
+                                                                        style="width:10%;padding:3px;border: 1px solid #297aff;">
+                                                                        车牌号码</td>
+                                                                    <td
+                                                                        style="width:10%;padding:3px;border: 1px solid #297aff;">
+                                                                        安全检查情况</td>
+                                                                    <td
+                                                                        style="width:10%;padding:3px;border: 1px solid #297aff;">
+                                                                        所内准停证号码</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tbody id="clxxTbody"></tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

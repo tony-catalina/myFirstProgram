@@ -1,0 +1,48 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                            <div class="timeline-icon">
+                               <span class="iconfont icon-jibenxinxi"></span>
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>业务信息</h2>
+                                <table class="container-formtable">
+                                    <tr>
+                                        <td class="formtd">监&ensp;室&ensp;号：</td>
+                                        <td ><input class="easyui-textbox" id="jsh" name="jsh" readonly value="{{jsh}}" style="min-width:280px;"> </td>
+                                        <td class="formtd">点&ensp;名&ensp;人：<font class="redicon">*</font></td>
+                                        <td ><input id="dmr" class="easyui-textbox" style="min-width:280px;" required name="dmr"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">开始时间：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-datetimebox" name="kssj" required style="min-width:280px;"> </td>
+                                        <td class="formtd">结束时间：<font class="redicon">*</font></td>
+                                        <td ><input class="easyui-datetimebox" name="jssj" required style="min-width:280px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">未到人数：</td>
+                                        <td ><input class="easyui-textbox" name="wdrs"  style="min-width:280px;"> </td>
+                                        <td class="formtd">未到人员：</td>
+                                        <td ><input class="awdCombotree" checkBox="true" url="/kss/kss_jbxx/selectJbxx" style="min-width:280px;" name="wrrybh" code="WRRYBH"> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                 </div>
+                 
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

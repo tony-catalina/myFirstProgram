@@ -1,0 +1,104 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>人员信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">姓名：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:180px;"
+                                                            value="{{xm}}" readonly> </td>
+                                                    <td class="formtd">人员编号：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:180px;"
+                                                            value="{{snbh}}" readonly> </td>
+                                                    <td class="formtd">监室号：</td>
+                                                    <td style="min-width:180px;">
+                                                        <input class="easyui-textbox" style="min-width:180px;"
+                                                            value="{{jsh}}" readonly>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">带&emsp;领民&emsp;警：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="djrfm" name="dlmj"
+                                                            style="min-width:280px;" required> </td>
+                                                    <td class="formtd">办理时间：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" id="blsjfm" name="blsj"
+                                                            value="{{blsj}}" style="min-width:280px;" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" colspan="4" id="ywtbs"><input type="checkbox"
+                                                            value="1" name="ywtbs"
+                                                            id="ywtbsfm" /><span>体表有无伤（不选则为无伤）</span></td>
+                                                </tr>
+                                                <tr class="tbsbqk">
+                                                    <td class="formtd"><label>体表伤病情况：<font color="red">*</font></label>
+                                                    </td>
+                                                    <td colspan="3"><input class="easyui-textbox" id="sbqkfm"
+                                                            name="sbqk" data-options="multiline:true"
+                                                            style="width:100%;min-height: 80px;" required>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" colspan="4" id="ywwjp"><input type="checkbox"
+                                                            value="1" name="ywwjp"
+                                                            id="ywwjp1" /><span>有无违禁品（不选则为无违禁品）</span></td>
+                                                </tr>
+                                                <tr class="ywwjp">
+                                                    <td class="formtd"><label>违&nbsp;禁&nbsp;品&nbsp;情&nbsp;况：<font color="red">*</font></label>
+                                                    </td>
+                                                    <td colspan="3"><input class="easyui-textbox" id="wjpqkfm"
+                                                            name="wjpqk" data-options="multiline:true"
+                                                            style="width:100%;min-height: 80px;" required>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" colspan="4" id="ywqxyc"><input type="checkbox"
+                                                            value="1" name="ywqxyc"
+                                                            id="ywqxyc1" /><span>有无异常（不选则为无异常）</span></td>
+                                                </tr>
+                                                <tr class="ywyc">
+                                                    <td class="formtd"><label>异&emsp;常情&emsp;况：<font color="red">*</font></label>
+                                                    </td>
+                                                    <td colspan="3"><input class="easyui-textbox" id="qxycqkfm"
+                                                            name="qxycqk" data-options="multiline:true"
+                                                            style="width:100%;min-height: 80px;" required>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

@@ -1,0 +1,54 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2></h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">监&emsp;&ensp;区&ensp;&emsp;号：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input name="jqh" class="jsh" value="{{jqh}}"   required style="min-width:680px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">工作要求情况：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" data-options="multiline:true" style="min-height: 80px;width: 100%;" name="yqqk" required > </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">反&emsp;&ensp;馈&emsp;&ensp;人：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="fkr" required style="min-width:680px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">反&ensp;馈&emsp;时&ensp;间：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-datetimebox" value="${notices.release_time}" name="fksj" required style="min-width:680px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">工作要求内容：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" data-options="multiline:true" style="min-height: 80px;width: 100%;"
+                                        name="yqnr" required  > </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                   
+                
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

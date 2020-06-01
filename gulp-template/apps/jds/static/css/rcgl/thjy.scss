@@ -1,0 +1,154 @@
+.item-first {
+  position: relative;
+  overflow: scroll;
+  height: 217px !important;
+
+  .btn {
+    background: #5196aa;
+    border: 1px solid #4f95ad;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    width: 92px;
+
+    &:nth-child(1) {
+      margin: 15px 20px 89px 24px;
+    }
+
+    &:nth-child(2) {
+      margin: 0 20px 25px 24px;
+    }
+
+    &:nth-child(3) {
+      margin: 0 20px 25px 24px;
+    }
+  }
+
+  .group_one {
+    position: absolute;
+    top: 37px;
+    left: 135px;
+    width: 1000px;
+    height: 70px;
+
+    & .btn1 {
+      background: #2bb7ea;
+      border: 1px solid #339edc;
+      padding: 8px 20px;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 4px;
+
+      & b {
+        font-weight: normal;
+        color: red;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .group_two {
+    position: absolute;
+    top: 76px;
+    left: 135px;
+    width: 1000px;
+    height: 70px;
+
+    & .btn1 {
+      background: #2bb7ea;
+      border: 1px solid #339edc;
+      padding: 8px 20px;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 4px;
+
+      & b {
+        font-weight: normal;
+        color: red;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .group_three {
+    position: absolute;
+    top: 159px;
+    left: 135px;
+    width: 1000px;
+    height: 70px;
+
+    & .btn1 {
+      background: #2bb7ea;
+      border: 1px solid #339edc;
+      padding: 8px 20px;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 4px;
+
+      & b {
+        font-weight: normal;
+        color: red;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .group_four {
+    position: absolute;
+    top: 219px;
+    left: 135px;
+    width: 1000px;
+    height: 70px;
+
+    & .btn1 {
+      background: #2bb7ea;
+      border: 1px solid #339edc;
+      padding: 8px 20px;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 4px;
+
+      & b {
+        font-weight: normal;
+        color: red;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.photo_jianshi {
+  height: 35px;
+  background: #3498db;
+  color: #fff;
+  line-height: 35px;
+  padding-left: 7px;
+}
+
+.people-item {
+  float: left;
+  margin: 0;
+  height: 144px;
+
+  & img {
+    width: 68px;
+    height: 68px;
+  }
+}
+.people_info {
+  font-size: 14px;
+  margin-left: 22px;
+  margin-top: 20px;
+  & tr {
+    height: 43px;
+    & td {
+      width: 67px !important;
+    }
+  }
+}
+.photo-right {
+  position: absolute;
+  right: 8px;
+  top: 321px;
+}

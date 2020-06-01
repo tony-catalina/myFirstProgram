@@ -1,0 +1,79 @@
+
+<body class="easyui-layout" data-option="fit:true">
+        <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+        <div class="section-content">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                 <div class="htmleaf-container">
+                 <div class="container">
+                    <div id="timeline">
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                               <span class="iconfont icon-jibenxinxi"></span> 
+                            </div>
+                            <div class="timeline-content right">
+                                <h2>药品信息</h2>
+                                <table class="container-formtable">
+                                    <tr>
+                                        <td class="formtd">药品名称：<font class="redicon">*</font></td>
+                                        <td ><input name="ypbh" data-options="valueField:'tm',textField:'ypmc',url:'{{ypmcurl}}'"  class="easyui-combobox" required    style="min-width:280px;"> </td>
+                                        <td class="formtd">进货数量：<font class="redicon">*</font></td>
+                                        <td ><input name="jhsl" required data-options="validType:'number',prompt:'请输入数字'"  class="easyui-textbox" style="min-width:280px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">批准文号：</td>
+                                        <td ><input name="pzwh"  class="easyui-textbox" style="min-width:280px;"> </td>
+                                        <td class="formtd">批&nbsp;&nbsp;次&nbsp;&nbsp;号：</td>
+                                        <td ><input name="pch"  class="easyui-textbox" style="min-width:280px;"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="formtd">价&emsp;&emsp;格：</td>
+                                        <td colspan="3">
+                                            <input name="jg"  class="easyui-textbox" data-options="validType:'number',prompt:'请输入数字'" style="width:100%;"> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                                <div class="timeline-icon">
+                                   <span class="iconfont icon-jibenxinxi"></span>
+                                </div>
+                                <div class="timeline-content right">
+                                    <h2>进货信息</h2>
+                                    <table class="container-formtable">
+                                        <tr>
+                                            <td class="formtd">总金额：</td>
+                                            <td ><input name="zje" readonly value="{{zje}}" class="easyui-textbox" style="min-width:280px;"> </td>
+                                            <td class="formtd">生产日期：<font class="redicon">*</font></td>
+                                            <td ><input name="scrq" required class="easyui-datebox" style="min-width:280px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">保质期：<font class="redicon">*</font></td>
+                                            <td ><input name="bzq" required class="easyui-textbox" style="min-width:280px;"> </td>
+                                            <td class="formtd">到期时间：</td>
+                                            <td ><input name="dqsj" readonly class="easyui-datebox" style="min-width:280px;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formtd">进货人：</td>
+                                            <td ><input name="jhr" class="easyui-textbox" style="min-width:280px;"> </td>
+                                            <td class="formtd">进货时间：</td>
+                                            <td ><input name="jhsj" class="easyui-datebox" value="{{jhsj}}" style="min-width:280px;"> </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+       </div>
+    </form>
+    </body>

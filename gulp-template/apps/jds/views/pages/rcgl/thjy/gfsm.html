@@ -1,0 +1,47 @@
+<div class="section-container">
+    <div class="section-item section-item-padding">
+        <div class="section-item title" style="margin-top: 0px;"></div>
+        <div class="section-item border-top search-form-content section-item-padding">
+            <!-- 搜索栏部分 -->
+            <div class="section-item-content section-item-content-padding padding-18">
+                <table class="easyui-datagrid " data-options="url:'/mock/jds/datagrid/list',method:'GET',pagination:true, rownumbers:true,fitColumns:true,">
+                    <thead>
+                        <tr>
+                            <th data-options="field:'ck',checkbox:true,width:'100'"></th>
+                            <th data-options="field:'name',width: '100'">姓名</th>
+                            <th data-options="field:'age', width: '100'">年龄</th>
+                            <th data-options="field:'firstTalkingTime', width: '200'">首次谈话时间</th>
+                            <th data-options="field:'personInCharge', width: '100'">负责人</th>
+                            <th data-options="field:'title', width: '200'">谈话主题</th>
+                            <th data-options="field:'content', width: '250'">谈话内容</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="section-item section-item-padding small-spacing" >
+        <div class="zpwhg">
+            <div style="background-color:#f9f9f9;">
+                <div class="section-header">
+                    <div class="section-title">
+                        <a href="#" class="active" id="zpwh" style="color:#333;">照片维护</a>
+                        <a href="#" class="shgl-title" id="shgl" style="color:#333;">手环管理</a>
+                    </div>
+                </div>
+                <div class="section-item-content section-item-content-padding padding-18">
+                    <table class="easyui-datagrid " data-options="url:'/mock/jds/datagrid/dzwdlist',method:'GET',pagination:true, rownumbers:true,fitColumns:true,">
+                        <thead>
+                            <tr>
+                                <th data-options="field:'ck',checkbox:true,width:'100'"></th>
+                                <th data-options="field:'place',width: '100'">位置</th>
+                                <th data-options="field:'picture', width: '100'">是否有照片</th>
+                                <th data-options="field:'see', width: '200'">照片查看</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>

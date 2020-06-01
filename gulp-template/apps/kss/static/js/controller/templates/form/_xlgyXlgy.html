@@ -1,0 +1,70 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>人员信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:180px;" name="xm" value="{{xm}}" readonly> </td>
+                                                    <td class="formtd">人&nbsp;员&nbsp;编&nbsp;号：</td>
+                                                    <td><input class="easyui-textbox" style="min-width:180px;" name="snbh" value="{{snbh}}" readonly> </td>
+                                                    <td class="formtd">监&nbsp;室&nbsp;号：</td>
+                                                    <td style="min-width:180px;">
+                                                        <input class="easyui-textbox" style="min-width:180px;" name="jsh" value="{{jsh}}" readonly>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">登&nbsp;&nbsp;&nbsp;记&nbsp;&nbsp;&nbsp;人：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="djr" value="{{djr}}" style="min-width:280px;" required> </td>
+                                                    <td class="formtd">登&nbsp;记&nbsp;时&nbsp;间：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="djsj" value="{{djsj}}" style="min-width:280px;" required> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">干&nbsp;预&nbsp;内&nbsp;容：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="gynr" style="width:100%;height: 100px;" required>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="bz" style="width:100%;height: 100px;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

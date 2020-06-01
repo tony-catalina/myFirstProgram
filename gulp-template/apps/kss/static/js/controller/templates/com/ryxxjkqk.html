@@ -1,0 +1,297 @@
+<body class="easyui-layout" data-option="fit:true">
+        <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+            <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+                <div class="section-content">
+                    <div class="section-item section-item-one section-item-padding">
+                        <div class="standard-content font-20">
+                            <div class="htmleaf-container">
+                                <div class="container">
+                                    <div id="">
+    
+    
+                                        <div class="">
+    
+                                            <div class="">
+                                                <h3>健康情况</h3>
+                                                
+                                                    <table class="container-formtable">
+                                                        <tr>
+                                                            <td class="formtd">身&emsp;&nbsp;&emsp;&emsp;&emsp;高(cm)：</td>
+                                                            <td><input id="sg" type="text" name="sg" readonly value="{{sg}}" class="easyui-textbox"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">体&emsp;&emsp;重(kg)：</td>
+                                                            <td><input id="tz" name="tz" readonly value="{{tz}}" class="easyui-textbox"
+                                                                    style="min-width:300px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">血&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;型：</td>
+                                                            <td><input name="xx" code="XX" readonly value="{{xx}}" class="easyui-textbox"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">血压(mmHg)：</td>
+                                                            <td><input id="xyfm" name="xy" readonly class="easyui-textbox" value="{{xy}}"
+                                                                    style="min-width:300px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">心&emsp;&nbsp;&emsp;&emsp;率(次/分)：</td>
+                                                            <td><input id="xl" name="xl" value="{{xl}}" readonly class="easyui-textbox"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">体&emsp;&emsp;温(℃)：</td>
+                                                            <td><input id="tw" name="tw" value="{{tw}}" readonly class="easyui-textbox"
+                                                                    style="min-width:300px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">足&emsp;&emsp;&emsp;&nbsp;&emsp;长(cm)：</td>
+                                                            <td><input id="zc" name="zc" value="{{zc}}" class="easyui-textbox"
+                                                                readonly    style="min-width:280px;"> </td>
+                                                            <td class="formtd">健&nbsp;&ensp;康&nbsp;&thinsp;状&nbsp;况：</td>
+                                                            <td><input name="jkzk" value="{{jkzk}}" readonly  code="JKZK" required
+                                                                    class="easyui-textbox" style="min-width:300px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">检&emsp;查&emsp;&emsp;&nbsp;类&emsp;型：</td>
+                                                            <td><input name="jclx" value="{{jclx}}" readonly code="JCLX" required
+                                                                    class="easyui-textbox" style="min-width:280px;"> </td>
+                                                            <td class="formtd">检&nbsp;&ensp;查&nbsp;&thinsp;日&nbsp;期：</td>
+                                                            <td><input name="ysjcrq" value="{{ysjcrq}}" readonly required class="easyui-textbox"
+                                                                    style="min-width:300px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">本&emsp;人&emsp;&emsp;&nbsp;病&emsp;史：</td>
+                                                            <td colspan="3"><input name="brbs" readonly class="easyui-textbox" value="{{brbs}}"
+                                                                    data-options="multiline:true"
+                                                                    style="height: 80px;min-width: 720px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">家&emsp;庭&emsp;&emsp;&nbsp;病&emsp;史：</td>
+                                                            <td colspan="3"><input name="jtbs" readonly class="easyui-textbox" value="{{jtbs}}"
+                                                                    data-options="multiline:true"
+                                                                    style="height: 80px;min-width: 720px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">传&emsp;&emsp;&emsp;&nbsp;染&emsp;&emsp;病：</td>
+                                                            <td colspan="3"><input name="crb" readonly class="easyui-textbox" value="{{crb}}"
+                                                                    data-options="multiline:true"
+                                                                    style="height: 80px;min-width: 720px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">医&emsp;生&emsp;&emsp;&nbsp;意&emsp;见：</td>
+                                                            <td colspan="3"><input name="ysyj" class="easyui-textbox" readonly value="{{ysyj}}"
+                                                                    data-options="multiline:true"
+                                                                    style="height: 80px;min-width: 720px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">登&emsp;&emsp;&nbsp;记&emsp;&emsp;&emsp;人：</td>
+                                                            <td colspan="3"><input id="jcys" name="jcys" readonly required value="{{jcys}}"
+                                                                    class="easyui-textbox" style="min-width: 720px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">备&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;注：</td>
+                                                            <td colspan="3"><input name="bz" class="easyui-textbox" readonly value="{{bz}}"
+                                                                    data-options="multiline:true"
+                                                                    style="height: 80px;min-width: 720px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">行&emsp;走&emsp;&emsp;&nbsp;状&emsp;况 ：</td>
+                                                            <td><input name="xzzk" readonly class="easyui-textbox" value="{{xzzk}}"
+                                                                    style="min-width:280px;">
+                                                            </td>
+                                                            <td class="formtd">过&ensp;&emsp;敏&ensp;&ensp;史：</td>
+                                                            <td><input name="gms" readonly class="easyui-textbox" value="{{gms}}"
+                                                                    style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">表&emsp;达&emsp;&emsp;&nbsp;能&emsp;力 ：</td>
+                                                            <td><input name="yy" readonly class="easyui-textbox" value="{{yy}}"
+                                                                    style="min-width:280px;">
+                                                            </td>
+    
+                                                        </tr>
+                                              
+    
+                                                
+                                                  
+                                                        <tr>
+                                                            <td class="formtd">血常规&nbsp;&ensp;(五项检查)：</td>
+                                                            <td colspan="3"><input name="xcg" readonly value="{{xcg}}" id="xcgfm"
+                                                                    class="easyui-textbox" data-options="multiline:true"
+                                                                    style="height: 80px;min-width: 720px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">心电图&nbsp;&ensp;(五项检查)：</td>
+                                                            <td colspan="3"><input name="xdt" value="{{xdt}}" id="xdtfm"
+                                                                    class="easyui-textbox" readonly data-options="multiline:true"
+                                                                    style="height: 80px;min-width: 720px"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">B超&nbsp;&emsp;&ensp;(五项检查)：</td>
+                                                            <td colspan="3"><input name="bc" readonly value="{{bc}}" id="bcfm"
+                                                                    class="easyui-textbox" data-options="multiline:true"
+                                                                    style="height: 80px;min-width: 720px"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">脏&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;器：</td>
+                                                            <td colspan="3"><input name="zq" readonly value="{{zq}}" id="bcfm"
+                                                                    class="easyui-textbox" data-options="multiline:true"
+                                                                    style="height: 80px;min-width: 720px"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">胸&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;片：</td>
+                                                            <td colspan="3"><input name="xp" readonly value="{{xp}}" id="xpfm"
+                                                                    class="easyui-textbox" data-options="multiline:true"
+                                                                    style="height: 80px;min-width: 720px"> </td>
+                                                        </tr>
+                                               
+                                                        <tr>
+                                                            <td class="formtd">人&emsp;体&emsp;&emsp;&nbsp;部&emsp;位：</td>
+                                                            <td><input id="rtbw1fm" class="easyui-textbox" value="{{rtbw1}}"
+                                                                 readonly   name="rtbw1" code="RTBW" style="min-width:280px;"></td>
+                                                            <td class="formtd">方&emsp;&emsp;&ensp;&ensp;&ensp;位：</td>
+                                                            <td><input id="fwfm" class="easyui-textbox" readonly name="fw1" value="{{fw1}}"
+                                                                    code="FW" style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">体&emsp;貌&emsp;&emsp;&nbsp;特&emsp;征：</td>
+                                                            <td><input id="tmtz1fm" class="easyui-textbox" readonly name="tmtz1"
+                                                                    value="{{tmtz1}}" code="TSBJ" style="min-width:280px;">
+                                                            </td>
+                                                            <td class="formtd">数&emsp;&emsp;&ensp;&ensp;&ensp;量：</td>
+                                                            <td><input id="sl1fm" class="easyui-textbox" readonly name="sl1" value="{{sl1}}"
+                                                                    code="SL" style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">人&emsp;体&emsp;&emsp;&nbsp;部&emsp;位：</td>
+                                                            <td><input id="rtbw2fm" class="easyui-textbox" value="{{rtbw2}}"
+                                                                    name="rtbw2" code="RTBW"  readonly style="min-width:280px;"></td>
+                                                            <td class="formtd">方&emsp;&emsp;&ensp;&ensp;&ensp;位：</td>
+                                                            <td><input id="fw2fm" class="easyui-textbox" readonly name="fw2" value="{{fw2}}"
+                                                                    code="FW" style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">体&emsp;貌&emsp;&emsp;&nbsp;特&emsp;征：</td>
+                                                            <td><input id="tmtz2fm" class="easyui-textbox" readonly name="tmtz2"
+                                                                    value="{{tmtz2}}" code="TSBJ" style="min-width:280px;">
+                                                            </td>
+                                                            <td class="formtd">数&emsp;&emsp;&ensp;&ensp;&ensp;量：</td>
+                                                            <td><input id="sl2fm" class="easyui-textbox" readonly name="sl2" value="{{sl2}}"
+                                                                    code="SL" style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+    
+    
+                                                        <tr>
+                                                            <td class="formtd">人&emsp;体&emsp;&emsp;&nbsp;部&emsp;位：</td>
+                                                            <td><input id="rtbw3fm" class="easyui-textbox" readonly value="{{rtbw3}}"
+                                                                    name="rtbw3" code="RTBW" style="min-width:280px;"></td>
+                                                            <td class="formtd">方&emsp;&emsp;&ensp;&ensp;&ensp;位：</td>
+                                                            <td><input id="fw3fm" class="easyui-textbox" readonly name="fw3" value="{{fw3}}"
+                                                                    code="FW" style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">体&emsp;貌&emsp;&emsp;&nbsp;特&emsp;征：</td>
+                                                            <td><input id="tmtz3fm" class="easyui-textbox" name="tmtz3"
+                                                                    value="{{tmtz3}}" code="TSBJ" readonly style="min-width:280px;">
+                                                            </td>
+                                                            <td class="formtd">数&emsp;&emsp;&ensp;&ensp;&ensp;量：</td>
+                                                            <td><input id="sl3fm" class="easyui-textbox" name="sl3" readonly value="{{sl3}}"
+                                                                    code="SL" style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+    
+    
+    
+                                                        <tr>
+                                                            <td class="formtd">人&emsp;体&emsp;&emsp;&nbsp;部&emsp;位：</td>
+                                                            <td><input id="rtbw4fm" class="easyui-textbox" value="{{rtbw4}}" readonly
+                                                                    name="rtbw4" code="RTBW" style="min-width:280px;"></td>
+                                                            <td class="formtd">方&emsp;&emsp;&ensp;&ensp;&ensp;位：</td>
+                                                            <td><input id="fw4fm" readonly class="easyui-textbox" name="fw4" value="{{fw4}}"
+                                                                    code="FW" style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">体&emsp;貌&emsp;&emsp;&nbsp;特&emsp;征：</td>
+                                                            <td><input id="tmtz4fm" readonly class="easyui-textbox" name="tmtz4"
+                                                                    value="{{tmtz4}}" code="TSBJ" style="min-width:280px;">
+                                                            </td>
+                                                            <td class="formtd">数&emsp;&emsp;&ensp;&ensp;&ensp;量：</td>
+                                                            <td><input id="sl4fm" readonly class="easyui-textbox" name="sl4" value="{{sl4}}"
+                                                                    code="SL" style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">人&emsp;体&emsp;&emsp;&nbsp;部&emsp;位：</td>
+                                                            <td><input id="rtbw5fm" readonly class="easyui-textbox" value="{{rtbw5}}"
+                                                                    name="rtbw5" code="RTBW" style="min-width:280px;"></td>
+                                                            <td class="formtd">方&emsp;&emsp;&ensp;&ensp;&ensp;位：</td>
+                                                            <td><input id="fw5fm" readonly class="easyui-textbox" name="fw5" value="{{fw5}}"
+                                                                    code="FW" style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">体&emsp;貌&emsp;&emsp;&nbsp;特&emsp;征：</td>
+                                                            <td><input id="tmtz5fm" readonly class="easyui-textbox" name="tmtz5"
+                                                                    value="{{tmtz5}}" code="TSBJ" style="min-width:280px;">
+                                                            </td>
+                                                            <td class="formtd">数&emsp;&emsp;&ensp;&ensp;&ensp;量：</td>
+                                                            <td><input id="sl5fm" readonly class="easyui-textbox" name="sl5" value="{{sl5}}"
+                                                                    code="SL" style="min-width:300px;">
+                                                            </td>
+                                                        </tr>
+    
+    
+                                                        
+                                                        <tr>
+                                                            <td class="formtd">致&emsp;伤&emsp;&emsp;&nbsp;部&emsp;位：
+                                                            </td>
+                                                            <td colspan="3">
+                                                                <input name="zsbw" readonly class="easyui-textbox" value="{{zsbw}}"
+                                                                    data-options="multiline:true"
+                                                                    style="min-width:720px;height:100px;">
+    
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">伤&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;势：
+                                                            </td>
+                                                            <td colspan="3">
+                                                                <input name="sbq" readonly class="easyui-textbox" value="{{sbq}}"
+                                                                    data-options="multiline:true"
+                                                                    style="min-width:720px;height:100px;">
+    
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">致&thinsp;伤&nbsp;日&ensp;期&nbsp;与&nbsp;原&ensp;因：</td>
+                                                            <td colspan="3">
+                                                                <input name="zsrqyyy" readonly class="easyui-textbox" value="{{zsrqyyy}}"
+                                                                    data-options="multiline:true"
+                                                                    style="min-width:720px;height:100px;">
+    
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">采&emsp;取&emsp;&emsp;&nbsp;措&emsp;施：
+                                                            </td>
+                                                            <td colspan="3">
+                                                                <input name="cqcs" class="easyui-textbox" readonly code="JKQKCQCS" value="{{cqcs}}"
+                                                                    style="min-width:720px;">
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </form>
+    </body>

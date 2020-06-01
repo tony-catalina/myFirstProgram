@@ -1,0 +1,17 @@
+{
+    "code": 0,
+    "msg": "查询成功",
+    "result": {
+        "kss_csgl|1-100": 1,
+        "kss_jsbjd|1-100": 1,
+        "kss_jshj|1-100": 1,
+        "kss_jwzx|1-100": 1,
+        "kss_lscs|1-100": 1,
+        "kss_lshj|1-100": 3,
+        "kss_rsdj|1-100": 1,
+        "kss_tj|1-100": 1,
+        "kss_tsdj|1-100": 1,
+        "kss_yq|1-100": 1
+    },
+    "success": true
+}

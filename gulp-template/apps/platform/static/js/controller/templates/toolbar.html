@@ -1,0 +1,20 @@
+<div class="layui-btn-container">
+    <form id="searchform" action="javascript:void(0)">
+        <div class="layui-inline">
+            <label class="layui-form-label">搜索</label>
+            <div class="layui-input-inline" style="width: 100px;">
+                <input type="text" name="{{searchname}}"  autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <button class="layui-btn layui-btn layui-bg-blue" id="searchBtn" >搜索</button>
+        {{each groups as group i}}
+        <div class="layui-btn-group">
+            {{each group.buttons as button k}}
+            <button {{if button.id!=""}} id="{{button.id}}" {{/if}} class="layui-btn layui-btn layui-bg-{{button.color}} " enable="{{button.enable}}" >{{button.name}}</button>
+            {{/each}}
+        </div>
+        {{/each}}
+
+    </form>
+</div>

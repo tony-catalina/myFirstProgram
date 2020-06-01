@@ -1,0 +1,18 @@
+<div id="Layout" class="easyui-layout" style="height:100%;">
+    <!-- tab切换 -->
+    <div data-options="region:'north', border: false" style="height:5%">
+        <div class="tab">
+            <ul class="tab-title font-18" id="tabButtonList">
+                {{each items}}
+                <li class="tab-control-button {{if activeIndex === $index}} tab-active {{/if}}" data-index="{{$index}}"><span class="iconfont {{$value.icon}}"></span>{{$value.name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <!-- 对应tab的内容栏 -->
+    <div class="tab-item-container" data-options="region:'center', border: false" style="height: 95%">
+        {{each items}}
+        <div class="tab-item {{if activeIndex === $index}} tab-item-active {{/if}}"></div>
+        {{/each}}
+    </div>
+</div>

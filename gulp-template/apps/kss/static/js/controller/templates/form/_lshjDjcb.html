@@ -1,0 +1,304 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>个人信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                                    <td><input class="easyui-textbox" name="jsh" value="{{jsh}}"
+                                                            readonly style="min-width:180px;"> </td>
+                                                    <td class="formtd">姓&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                    <td class="formtd">别&emsp;&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" name="bm" value="{{bm}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">性&emsp;&emsp;别：</td>
+                                                    <td><input id="xb" class="awdCombox" name="xb" code="XB"
+                                                            value="{{xb}}" text="{{xbString}}" readonly
+                                                            style="min-width:180px;"> </td>
+                                                    <td class="formtd">出生日期：</td>
+                                                    <td><input class="easyui-datebox" name="csrq" value="{{csrq}}"
+                                                            readonly style="min-width:180px;"> </td>
+                                                    <td class="formtd">入&ensp;所日&ensp;期：</td>
+                                                    <td><input class="easyui-datetimebox" name="rsrq" value="{{rsrq}}"
+                                                            readonly style="min-width:180px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">档案编号：</td>
+                                                    <td><input class="easyui-textbox" name="dah" value="{{dah}}"
+                                                            readonly style="min-width:180px;"> </td>
+                                                    <td class="formtd">涉嫌罪名：</td>
+                                                    <td><input class="awdCombox" name="ay" code="AY" value="{{ay}}"
+                                                            text="{{ayString}}" readonly style="min-width:180px;"> </td>
+                                                    <td class="formtd">户籍地详址：</td>
+                                                    <td><input class="easyui-textbox" name="hjdxz" value="{{hjdxz}}"
+                                                            readonly style="min-width:180px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-anjian"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <div id="tt" class="easyui-tabs" style="width:100%;min-height: 200px;">
+                                                <div title="律师/代理人1"
+                                                    style="padding:20px;">
+                                                    <table class="container-formtable">
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                律&emsp;&emsp;师&emsp;&emsp;姓&emsp;&emsp;名&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox" required name="lsxm"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                律&emsp;&emsp;师&emsp;&emsp;性&emsp;&emsp;别&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input id="lsxb" class="awdCombox" required name="lsxb"
+                                                                    code="XB" style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                证&emsp;&emsp;件&emsp;&emsp;类&emsp;&emsp;型&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input id="zjlx" class="awdCombox" required id="zjlxfm"
+                                                                    name="zjlx" code="ZJLX" style="min-width:280px;">
+                                                            </td>
+                                                            <td class="formtd">
+                                                                证&emsp;&emsp;件&emsp;&emsp;号&emsp;&emsp;码&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox"
+                                                                    data-options="validType:'idcard'" required
+                                                                    id="zjhfm" name="zjh" style="min-width:280px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                住&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;址&nbsp;：</td>
+                                                            <td><input class="easyui-textbox" name="zz"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                律&emsp;&ensp;师&emsp;会&emsp;见&emsp;&ensp;室&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input id="hjs" class="awdCombogrid" code="LSHJS"
+                                                                    style="min-width:280px;" required> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                律&ensp;师&ensp;职业资格&ensp;证&ensp;号&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox" required name="lszgzh"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">律师事务所介绍信编号&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox" required name="jsxbh"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                律&emsp;&emsp;师&emsp;&emsp;单&emsp;&emsp;位&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input id="lsdw" class="awdCombogrid" required
+                                                                    code="LSDW" name="dw" style="min-width:280px;">
+                                                            </td>
+                                                            <td class="formtd">
+                                                                批&emsp;&emsp;准&emsp;&emsp;单&emsp;&emsp;位&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox" required name="hjpzjg"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">联&ensp;系&emsp;方&ensp;&nbsp;式（固话）：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox"
+                                                                    data-options="validType:'telephone'" required
+                                                                    name="dh" style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                联&ensp;系&emsp;方&ensp;&nbsp;式（手机）：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox"
+                                                                    data-options="validType:'mphone'" required name="sj"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">律师职业证明是否到期&nbsp;：</td>
+                                                            <td><input class="easyui-datebox" name="lszkssj"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;至&nbsp;：
+                                                            </td>
+                                                            <td><input class="easyui-datebox" name="lszjssj"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                助&emsp;&emsp;理&emsp;&emsp;姓&emsp;&emsp;名&nbsp;：</td>
+                                                            <td><input class="easyui-textbox" name="lszl"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                助&emsp;&emsp;理&emsp;&emsp;性&emsp;&emsp;别&nbsp;：
+                                                            </td>
+                                                            <td><input id="zlxb" class="awdCombox" code="XB" name="zlxb"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                助&emsp;理&emsp;证件&emsp;类&emsp;型&nbsp;：</td>
+                                                            <td><input id="zlzjlx" class="awdCombox" code="ZJLX"
+                                                                    name="zlzjlx" style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                助&emsp;理&emsp;证件&emsp;号&emsp;码&nbsp;：
+                                                            </td>
+                                                            <td><input class="easyui-textbox"
+                                                                    data-options="validType:'idcard'" name="zlzjh"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div title="律师/代理人2" style="overflow:auto;padding:20px;display:none;">
+                                                    <table class="container-formtable">
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                律&emsp;&emsp;师&emsp;&emsp;姓&emsp;&emsp;名&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox" name="lsxm2"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                律&emsp;&emsp;师&emsp;&emsp;性&emsp;&emsp;别&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input id="lsxb2" class="awdCombox" name="lsxb2"
+                                                                    code="XB" style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                证&emsp;&emsp;件&emsp;&emsp;类&emsp;&emsp;型&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input id="zjlx2" class="awdCombox" name="zjlx2"
+                                                                    code="ZJLX" style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                证&emsp;&emsp;件&emsp;&emsp;号&emsp;&emsp;码&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox"
+                                                                    data-options="validType:'idcard'" name="zjh2"
+                                                                    id="zjhfm2" style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                住&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;址&nbsp;：
+                                                            </td>
+                                                            <td colspan="3"><input class="easyui-textbox" name="zz2"
+                                                                    style="width: 100%;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">律&ensp;师&ensp;职业资格&ensp;证&ensp;号&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox" name="lszgzh2"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">律师事务所介绍信编号：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox" name="jsxbh2"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                律&emsp;&emsp;师&emsp;&emsp;单&emsp;&emsp;位&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input id="lsdw" class="awdCombogrid" code="LSDW"
+                                                                    name="dw2" style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                批&emsp;&emsp;准&emsp;&emsp;单&emsp;&emsp;位&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox" name="hjpzjg2"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                联&ensp;系&emsp;方&ensp;&nbsp;式（固话）：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox"
+                                                                    data-options="validType:'telephone'" name="dh2"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                联&ensp;系&emsp;方&ensp;&nbsp;式（手机）：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox"
+                                                                    data-options="validType:'mphone'" name="sj2"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">律师职业证明是否到期&nbsp;：</td>
+                                                            <td><input class="easyui-datebox" name="lszkssj2"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;至&nbsp;：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-datebox" name="lszjssj2"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                助&emsp;&emsp;理&emsp;&emsp;姓&emsp;&emsp;名&nbsp;：
+                                                            </td>
+                                                            <td><input class="easyui-textbox" name="lszl2"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                助&emsp;&emsp;理&emsp;&emsp;性&emsp;&emsp;别&nbsp;：
+                                                            </td>
+                                                            <td><input id="zlxb2" class="awdCombox" code="XB"
+                                                                    name="zlxb2" style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">
+                                                                助&emsp;理&emsp;证件&emsp;类&emsp;型&nbsp;：
+                                                            </td>
+                                                            <td><input id="zlzjlx2" class="awdCombox" code="ZJLX"
+                                                                    name="zlzjlx2" style="min-width:280px;"> </td>
+                                                            <td class="formtd">
+                                                                助&emsp;理&emsp;证件&emsp;号&emsp;码&nbsp;：
+                                                            </td>
+                                                            <td><input class="easyui-textbox"
+                                                                    data-options="validType:'idcard'" name="zlzjh2"
+                                                                    style="min-width:280px;"> </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div title="其他辩护人" style="display:none;">
+                                                    <table class="container-formtable">
+                                                        <tr>
+                                                            <td class="formtd">姓&emsp;&emsp;名：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox" name="qtbhr"
+                                                                    style="min-width:280px;"> </td>
+                                                            <td class="formtd">性&emsp;&emsp;别：<font class="redicon">*</font></td>
+                                                            <td><input id="qtbhrxb" class="awdCombox" name="qtbhrxb"
+                                                                    code="XB" style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">证件类型：<font class="redicon">*</font></td>
+                                                            <td><input id="qtbhrzjlx" class="awdCombox" name="qtbhrzjlx"
+                                                                    id="qtzjlxfm" code="ZJLX" style="min-width:280px;">
+                                                            </td>
+                                                            <td class="formtd">证件号码：<font class="redicon">*</font></td>
+                                                            <td><input class="easyui-textbox"
+                                                                    data-options="validType:'idcard'" name="qtbhrzjh"
+                                                                    id="qtzjhfm" style="min-width:280px;"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="formtd">单&emsp;&emsp;位</td>
+                                                            <td colspan="3"><input class="easyui-textbox" name="qtbhrdw"
+                                                                    style="width: 100%;"> </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- <div style="padding: 20px;">
+                                                <a href="#" class="record-btn">点击查看历史记录</a>
+                                            </div> -->
+                                            <div class="hidden">
+                                                <table id="hiddenTable"></table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

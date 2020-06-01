@@ -1,0 +1,612 @@
+{
+  "result": {
+    "menugroups": [
+      {
+        "title": "收押接待",
+        "img": "",
+        "list": [
+          {
+            "title": "收押入所",
+            "url": "/apps/kss/views/pages/syrs/index.html"
+          },
+          {
+            "title": "出所管理",
+            "url": "/apps/kss/views/pages/csgl/index.html"
+          },
+          {
+            "title": "临时出所",
+            "url": "/apps/kss/views/pages/lscs/index.html"
+          },
+          {
+            "title": "暂予监外执行",
+            "url": "/apps/kss/views/pages/zyjwzx/index.html"
+          },
+          {
+            "title": "延期",
+            "url": "/apps/kss/views/pages/yq/index.html"
+          },
+          {
+            "title": "环节变动",
+            "url": "/apps/kss/views/pages/hjbd/index.html"
+          },
+          {
+            "title": "处理结果",
+            "url": "/apps/kss/views/pages/cljg/index.html"
+          },
+          {
+            "title": "协同执行督导",
+            "url": "/apps/kss/views/pages/xtzxjd/index.html"
+          },
+          {
+            "title": "所间移押",
+            "url": "/apps/kss/views/pages/sjyy/index.html"
+          },
+          {
+            "title": "投劳花名册",
+            "url": "/apps/kss/views/pages/tlhmc/index.html"
+          },
+          {
+            "title": "精神病鉴定",
+            "url": "/apps/kss/views/pages/jsbjd/index.html"
+          },
+          {
+            "title": "财务查询",
+            "url": "/apps/kss/views/pages/cwcx/index.html"
+          },
+          {
+            "title": "手环管理",
+            "url": "/apps/kss/views/pages/shgl/index.html"
+          }
+        ]
+      },
+      {
+        "title": "窗口服务",
+        "img": "",
+        "list": [
+          {
+            "title": "提解",
+            "url": "/apps/kss/views/pages/tj/index.html"
+          },
+          {
+            "title": "提讯",
+            "url": "/apps/kss/views/pages/tx/index.html"
+          },
+          {
+            "title": "提讯证管理",
+            "url": "/apps/kss/views/pages/tszgl/index.html"
+          },
+          {
+            "title": "家属会见",
+            "url": "/apps/kss/views/pages/jshj/index.html"
+          },
+          {
+            "title": "律师会见",
+            "url": "/apps/kss/views/pages/lshj/index.html"
+          },
+          {
+            "title": "律师违规登记",
+            "url": "/apps/kss/views/pages/lswg/index.html"
+          },
+          {
+            "title": "外来人员登记",
+            "url": "/apps/kss/views/pages/wlry/index.html"
+          },
+          {
+            "title": "领导接访",
+            "url": "/apps/kss/views/pages/ldjf/index.html"
+          },
+          {
+            "title": "送钱送物",
+            "url": "/apps/kss/views/pages/sqsw/index.html"
+          }
+        ]
+      },
+      {
+        "title": "管教管理",
+        "img": "",
+        "list": [
+          {
+            "title": "监室调整",
+            "url": "/apps/kss/views/pages/jstz/index.html"
+          },
+          {
+            "title": "涉维人员评估",
+            "url": "/apps/kss/views/pages/swrypg/index.html"
+          },
+          {
+            "title": "耳目管理",
+            "url": "/apps/kss/views/pages/emgl/index.html"
+          },
+          {
+            "title": "信件管理",
+            "url": "/apps/kss/views/pages/xjgl/index.html"
+          },
+          {
+            "title": "床位管理",
+            "url": "/apps/kss/views/pages/cwgl/index.html"
+          },
+          {
+            "title": "识别服管理",
+            "url": "/apps/kss/views/pages/sbfgl/index.html"
+          },
+          {
+            "title": "在押人员表现鉴定",
+            "url": "/apps/kss/views/pages/zyrybxjd/index.html"
+          },
+          {
+            "title": "重点人员",
+            "url": "/apps/kss/views/pages/zdry/index.html"
+          },
+          {
+            "title": "死刑人员",
+            "url": "/apps/kss/views/pages/sxry/index.html"
+          },
+          {
+            "title": "谈话教育",
+            "url": "/apps/kss/views/pages/thjy/index.html"
+          },
+          {
+            "title": "奖励管理",
+            "url": "/apps/kss/views/pages/jlgl/index.html"
+          },
+          {
+            "title": "处罚管理",
+            "url": "/apps/kss/views/pages/cfgl/index.html"
+          },
+          {
+            "title": "人员社会关系",
+            "url": "/apps/kss/views/pages/ryshgx/index.html"
+          },
+          {
+            "title": "械具使用",
+            "url": "/apps/kss/views/pages/xjsy/index.html"
+          },
+          {
+            "title": "协助破案",
+            "url": "/apps/kss/views/pages/xzpa/index.html"
+          },
+          {
+            "title": "禁闭管理",
+            "url": "/apps/kss/views/pages/jbgl/index.html"
+          },
+          {
+            "title": "救济品申领",
+            "url": "/apps/kss/views/pages/jjwpsl/index.html"
+          },
+          {
+            "title": "救济品管理",
+            "url": "/apps/kss/views/pages/jjpglyy/index.html"
+          },
+          {
+            "title": "耳目考核",
+            "url": "/apps/kss/views/pages/emkh/index.html"
+          },
+          {
+            "title": "值班安排",
+            "url": "/apps/kss/views/pages/zbap/index.html"
+          },
+          {
+            "title": "清监管理",
+            "url": "/apps/kss/views/pages/qjgl/index.html"
+          },
+          {
+            "title": "监室秩序检查",
+            "url": "/apps/kss/views/pages/jszxjc/index.html"
+          },
+          {
+            "title": "文明监室",
+            "url": "/apps/kss/views/pages/wmjs/index.html"
+          },
+          {
+            "title": "心理干预",
+            "url": "/apps/kss/views/pages/xlgy/index.html"
+          },
+          {
+            "title": "心理健康",
+            "url": "/apps/kss/views/pages/xljk/index.html"
+          },
+          {
+            "title": "风险评估",
+            "url": "/apps/kss/views/pages/fxpg/index.html"
+          },
+          {
+            "title": "分级处遇管理",
+            "url": "/apps/kss/views/pages/fjcygl/index.html"
+          },
+          {
+            "title": "严管人员",
+            "url": "/apps/kss/views/pages/ygry/index.html"
+          },
+          {
+            "title": "重要案犯",
+            "url": "/apps/kss/views/pages/zyaf/index.html"
+          },
+          {
+            "title": "同案犯",
+            "url": "/apps/kss/views/pages/taf/index.html"
+          },
+          {
+            "title": "违规处理",
+            "url": "/apps/kss/views/pages/wgcl/index.html"
+          },
+          {
+            "title": "岗位交接班",
+            "url": "/apps/kss/views/pages/gwjjb/index.html"
+          },
+          {
+            "title": "单独关押",
+            "url": "/apps/kss/views/pages/ddgy/index.html"
+          },
+          {
+            "title": "加扣分",
+            "url": "/apps/kss/views/pages/jkf/index.html"
+          },
+          {
+            "title": "亲情电话",
+            "url": "/apps/kss/views/pages/qqdh/index.html"
+          }
+        ]
+      },
+      {
+        "title": "综合业务",
+        "img": "",
+        "list": [
+          {
+            "title": "安全检查",
+            "url": "/apps/kss/views/pages/aqjc/index.html"
+          },
+          {
+            "title": "所情分析",
+            "url": "/apps/kss/views/pages/sqfx/index.html"
+          },
+          {
+            "title": "应急预案演练",
+            "url": "/apps/kss/views/pages/yjyayl/index.html"
+          },
+          {
+            "title": "武器使用",
+            "url": "/apps/kss/views/pages/wqsy/index.html"
+          },
+          {
+            "title": "民警基本信息",
+            "url": "/apps/kss/views/pages/mjjbxx/index.html"
+          },
+          {
+            "title": "民警教育经历",
+            "url": "/apps/kss/views/pages/mjjyjl/index.html"
+          },
+          {
+            "title": "民警奖惩记录",
+            "url": "/apps/kss/views/pages/mjjcjl/index.html"
+          },
+          {
+            "title": "民警工作经历",
+            "url": "/apps/kss/views/pages/mjgzjl/index.html"
+          },
+          {
+            "title": "民警社会关系",
+            "url": "/apps/kss/views/pages/mjshgx/index.html"
+          },
+          {
+            "title": "民警工作记录",
+            "url": "/apps/kss/views/pages/mjgzjljl/index.html"
+          },
+          {
+            "title": "公共事务",
+            "url": "/apps/kss/views/pages/ggsw/index.html"
+          },
+          {
+            "title": "事故事件登记",
+            "url": "/apps/kss/views/pages/sgsjdj/index.html"
+          },
+          {
+            "title": "巡检记录",
+            "url": "/apps/kss/views/pages/xjjl/index.html"
+          },
+          {
+            "title": "加减刑",
+            "url": "/apps/kss/views/pages/jjx/index.html"
+          },
+          {
+            "title": "教育质量改造评估",
+            "url": "/apps/kss/views/pages/jyzlgzpg/index.html"
+          },
+          {
+            "title": "投诉处理",
+            "url": "/apps/kss/views/pages/tscl/index.html"
+          },
+          {
+            "title": "上报报表",
+            "url": "/apps/kss/views/pages/sbbb/index.html"
+          },
+          {
+            "title": "相关报表",
+            "url": "/apps/kss/views/pages/xgbb/index.html"
+          },
+          {
+            "title": "特殊报表",
+            "url": "/apps/kss/views/pages/tsbb/index.html"
+          },
+          {
+            "title": "公安部台账",
+            "url": "/apps/kss/views/pages/gabtz/index.html"
+          },
+          {
+            "title": "警情管理",
+            "url": "/apps/kss/views/pages/jqgl/index.html"
+          },
+          {
+            "title": "值班登记",
+            "url": "/apps/kss/views/pages/zbdj/index.html"
+          },
+          {
+            "title": "人员信息维护",
+            "url": "/apps/kss/views/pages/ryxxwh/index.html"
+          },
+          {
+            "title": "文秘宣传",
+            "url": "/apps/kss/views/pages/wmxc/index.html"
+          },
+          {
+            "title": "党建管理",
+            "url": "/apps/kss/views/pages/djgl/index.html"
+          },
+          {
+            "title": "值班考勤",
+            "url": "/apps/kss/views/pages/zbkq/index.html"
+          },
+          {
+            "title": "绩效考核",
+            "url": "/apps/kss/views/pages/jxkh/index.html"
+          },
+          {
+            "title": "预案编制",
+            "url": "/apps/kss/views/pages/yabz/index.html"
+          },
+          {
+            "title": "消毒日志",
+            "url": "/apps/kss/views/pages/xdrz/index.html"
+          },
+          {
+            "title": "工作人员管理",
+            "url": "/apps/kss/views/pages/gzrygl/index.html"
+          }
+        ]
+      },
+      {
+        "title": "医疗管理",
+        "img": "",
+        "list": [
+          {
+            "title": "就医管理",
+            "url": "/apps/kss/views/pages/jygl/index.html"
+          },
+          {
+            "title": "医生巡诊",
+            "url": "/apps/kss/views/pages/ysxz/index.html"
+          },
+          {
+            "title": "人员病历",
+            "url": "/apps/kss/views/pages/rybl/index.html"
+          },
+          {
+            "title": "重病号管理",
+            "url": "/apps/kss/views/pages/zbhgl/index.html"
+          },
+          {
+            "title": "医疗信息补录",
+            "url": "/apps/kss/views/pages/ylxxbl/index.html"
+          },
+          {
+            "title": "健康检查",
+            "url": "/apps/kss/views/pages/jkjc/index.html"
+          },
+          {
+            "title": "抽血采样",
+            "url": "/apps/kss/views/pages/cxcy/index.html"
+          },
+          {
+            "title": "妊娠检查",
+            "url": "/apps/kss/views/pages/rsjc/index.html"
+          },
+          {
+            "title": "人员药品购买",
+            "url": "/apps/kss/views/pages/ryypgm/index.html"
+          },
+          {
+            "title": "在押人员发药",
+            "url": "/apps/kss/views/pages/zyryfy/index.html"
+          },
+          {
+            "title": "家属联系",
+            "url": "/apps/kss/views/pages/jslx/index.html"
+          },
+          {
+            "title": "药品库存",
+            "url": "/apps/kss/views/pages/ypkc/index.html"
+          },
+          {
+            "title": "自备药品申请",
+            "url": "/apps/kss/views/pages/zbypsq/index.html"
+          },
+          {
+            "title": "卫生防疫",
+            "url": "/apps/kss/views/pages/wsfy/index.html"
+          },
+          {
+            "title": "医疗预约",
+            "url": "/apps/kss/views/pages/ylyy/index.html"
+          },
+          {
+            "title": "精神异常管理",
+            "url": "/apps/kss/views/pages/jsycgl/index.html"
+          },
+          {
+            "title": "列控管理",
+            "url": "/apps/kss/views/pages/lkgl/index.html"
+          },
+          {
+            "title": "药品处理",
+            "url": "/apps/kss/views/pages/ypcl/index.html"
+          },
+          {
+            "title": "药品进货记录",
+            "url": "/apps/kss/views/pages/ypjhjl/index.html"
+          }
+        ]
+      },
+      {
+        "title": "巡控管理",
+        "img": "",
+        "list": [
+          {
+            "title": "违规登记",
+            "url": "/apps/kss/views/pages/wgdj/index.html"
+          },
+          {
+            "title": "交接班",
+            "url": "/apps/kss/views/pages/jjb/index.html"
+          },
+          {
+            "title": "权益保障",
+            "url": "/apps/kss/views/pages/qybz/index.html"
+          },
+          {
+            "title": "一日生活制度",
+            "url": "/apps/kss/views/pages/yrshzd/index.html"
+          },
+          {
+            "title": "督导辅警工作",
+            "url": "/apps/kss/views/pages/ddfjgz/index.html"
+          },
+          {
+            "title": "巡更记录",
+            "url": "/apps/kss/views/pages/xgjl/index.html"
+          },
+          {
+            "title": "巡视记录",
+            "url": "/apps/kss/views/pages/xsjl/index.html"
+          },
+          {
+            "title": "监控日志",
+            "url": "/apps/kss/views/pages/jkrz/index.html"
+          },
+          {
+            "title": "突发事件报告",
+            "url": "/apps/kss/views/pages/tfsjdj/index.html"
+          },
+          {
+            "title": "人员报告登记处理",
+            "url": "/apps/kss/views/pages/rybgcl/index.html"
+          },
+          {
+            "title": "文明监室",
+            "url": "/apps/kss/views/pages/wmjs/index.html"
+          }
+        ]
+      },
+      {
+        "title": "财务管理",
+        "img": "",
+        "list": [
+          {
+            "title": "送钱送物",
+            "url": "/apps/kss/views/pages/cwsqsw/index.html"
+          },
+          {
+            "title": "家属送物",
+            "url": "/apps/kss/views/pages/jssw/index.html"
+          },
+          {
+            "title": "接济品管理",
+            "url": "/apps/kss/views/pages/jjwpgl/index.html"
+          },
+          {
+            "title": "财务退还",
+            "url": "/apps/kss/views/pages/cwth/index.html"
+          },
+          {
+            "title": "财务统计",
+            "url": "/apps/kss/views/pages/cwtj/index.html"
+          },
+          {
+            "title": "购物管理",
+            "url": "/apps/kss/views/pages/gwgl/index.html"
+          },
+          {
+            "title": "财务查询",
+            "url": "/apps/kss/views/pages/cwcx/index.html"
+          }
+        ]
+      },
+      {
+        "title": "领导办公",
+        "img": "",
+        "list": [
+          {
+            "title": "领导审批",
+            "url": "/apps/kss/views/pages/ldsp/index.html"
+          },
+          {
+            "title": "领导检查",
+            "url": "/apps/kss/views/pages/ldjc/index.html"
+          },
+          {
+            "title": "领导查询",
+            "url": "/apps/kss/views/pages/ldcx/index.html"
+          }
+        ]
+      },
+      {
+        "title": "查询统计",
+        "img": "",
+        "list": [
+          {
+            "title": "超期羁押查询",
+            "url": "/apps/kss/views/pages/cqjy/index.html"
+          },
+          {
+            "title": "人员照片查询",
+            "url": "/apps/kss/views/pages/ryzp/index.html"
+          },
+          {
+            "title": "业务统计",
+            "url": "/apps/kss/views/pages/ywtj/index.html"
+          },
+          {
+            "title": "业务信息查询",
+            "url": "/apps/kss/views/pages/ywxx/index.html"
+          },
+          {
+            "title": "人员信息查询",
+            "url": "/apps/kss/views/pages/ryxxcx/index.html"
+          },
+          {
+            "title": "所务会议查询",
+            "url": "/apps/kss/views/pages/swhy/query.html"
+          },
+          {
+            "title": "安全检查查询",
+            "url": "/apps/kss/views/pages/aqjc/query.html"
+          },
+          {
+            "title": "狱情分析查询",
+            "url": "/apps/kss/views/pages/yqfx/query.html"
+          },
+          {
+            "title": "所情动态分析会议查询",
+            "url": "/apps/kss/views/pages/sqdtfxhy/query.html"
+          },
+          {
+            "title": "登录日志查询",
+            "url": "/apps/kss/views/pages/dlrzcx/index.html"
+          },
+          {
+            "title": "业务操作日志查询",
+            "url": "/apps/kss/views/pages/ywczrz/index.html"
+          }
+        ]
+      }
+    ]
+  }
+}

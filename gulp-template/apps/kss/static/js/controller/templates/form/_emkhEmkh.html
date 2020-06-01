@@ -1,0 +1,73 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">人员编号：</td>
+                                                    <td><input class="easyui-textbox"  value="{{rybh}}" readonly style="min-width:180px;"> </td>
+                                                    <td class="formtd">姓名：</td>
+                                                    <td><input class="easyui-textbox"  value="{{xm}}" readonly style="min-width:180px;"> </td>
+                                                    <td class="formtd">监室号：</td>
+                                                    <td><input class="easyui-textbox" value="{{jsh}}" readonly style="min-width:180px;"> </td>
+                                                </tr>
+                                                
+                                                
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">耳&emsp;&emsp;目&emsp;&emsp;类&emsp;&emsp;型：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" value="{{emlx}}" text="{{emlxString}}" readonly required code="EMLX" style="min-width:180px;"> </td>
+                                                    <td class="formtd">考核日期：<font class="redicon">*</font></td>
+                                                    <td><input id="szrq" class="easyui-datetimebox" name="szrq" value="{{szrq}}" required style="min-width:180px;"> </td>
+                                                    <td class="formtd">考核等级：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" name="khpj" code="PG" required style="min-width:180px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">自觉坚守监规监纪情况：<font class="redicon">*</font></td>
+                                                    <td colspan="5"><input class="easyui-textbox" name="jnbx" data-options="multiline:true" required style="width:100%;height: 100px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">反映&ensp;监室&emsp;动态&ensp;情况：<font class="redicon">*</font></td>
+                                                    <td colspan="5"><input class="easyui-textbox" name="xlzy" data-options="multiline:true" required style="width:100%;height: 100px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">其他耳目工作完成情况：<font class="redicon">*</font></td>
+                                                    <td colspan="5"><input class="easyui-textbox" name="qtqk" data-options="multiline:true" required style="width:100%;height: 100px;"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

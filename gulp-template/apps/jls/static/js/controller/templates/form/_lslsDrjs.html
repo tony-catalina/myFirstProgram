@@ -1,0 +1,122 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">姓&emsp;&emsp;&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" value="{{xm}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">性&emsp;&emsp;别：</td>
+                                    <td ><input class="awdCombox" value="{{xb}}" text="{{xbString}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">拘&emsp;室&emsp;号：</td>
+                                    <td ><input class="easyui-textbox" value="{{jsh}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">入所日期：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{rsrq}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">案&emsp;&emsp;&emsp;别：</td>
+                                    <td ><input class="awdCombox" value="{{ay}}" text="{{ayString}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">档案编号：</td>
+                                    <td ><input class="easyui-textbox" value="{{dah}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">户籍所在地：</td>
+                                    <td colspan="3"><input class="awdCombox" readonly value="{{hjd}}" text="{{hjdString}}" style="width:100%;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                 
+                   
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                
+                                <tr>
+                                    <td class="formtd">临时&ensp;离所&ensp;原因：</td>
+                                    <td ><input class="awdCombox" value="{{ldpsxx.lscs_csyy}}" text="{{ldpsxx.lscs_csyyString}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">拟出&ensp;所&ensp;日期：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{ncssj}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">离&emsp;所&ensp;&ensp;去&emsp;向：</td>
+                                    <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.lscs_lsqx}}" readonly style="width:100%;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">管&emsp;教&ensp;&ensp;意&emsp;见：</td>
+                                    <td colspan="3"><input class="easyui-textbox" readonly value="{{ldpsxx.lscs_gjyjnr}}" style="width:100%;height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">管&emsp;教&ensp;&ensp;签&emsp;名：</td>
+                                    <td ><input class="easyui-textbox" value="{{ldpsxx.lscs_gjqm}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">管教签名时间：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{ldpsxx.lscs_gjqmsj}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">所&emsp;长&ensp;&ensp;意&emsp;见：</td>
+                                    <td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.lscs_szyjnr}}" readonly style="width:100%;height: 80px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">所&emsp;&emsp;&emsp;&emsp;&emsp;长：</td>
+                                    <td ><input class="easyui-textbox" value="{{ldpsxx.lscs_szqm}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">所长签名日期：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{ldpsxx.lscs_szqmsj}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">离所&ensp;确认&ensp;签名：</td>
+                                    <td ><input class="easyui-textbox" value="{{ldpsxx.lscs_lsqrr}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">离&emsp;所时&emsp;间：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{ldpsxx.lscs_cssj}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">回所&ensp;确认&ensp;签名：</td>
+                                    <td ><input class="easyui-textbox" value="{{ldpsxx.lscs_hsqrr}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">回&emsp;所时&emsp;间：</td>
+                                    <td ><input class="easyui-datetimebox" value="{{ldpsxx.lscs_hssj}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">拘留区值班民警：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="drmj" id="drmj" required style="min-width:280px;"> </td>
+                                    <td class="formtd">检&emsp;查人&emsp;员：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" name="jcr" id="jcr" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">初步&ensp;检查&ensp;结果：<font class="redicon">*</font></td>
+                                    <td ><input type="radio" name="jcjg" value="1" checked class="radiocss"><font>正常</font>
+                                        <input type="radio" name="jcjg" value="2" class="radiocss"><font>异常</font> </td>
+                                    <td class="formtd">检&emsp;查时&emsp;间：</td>
+                                    <td ><input name="jcsj" class="easyui-datetimebox" id="jcsj" style="min-width:280px;"> </td>
+                                </tr>
+                                <input type="hidden" name="tbr" value="{{tbr}}">
+								<input type="hidden" name="tbrq" value="{{tbrq}}">
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

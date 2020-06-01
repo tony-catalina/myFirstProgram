@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<form action="" class="layui-form" id="fm">
+    
+        <h2>新增监区</h2>
+        <input type="text"  name="id"  value="{{id}}" hidden="hidden">
+        <div class="layui-form-item">
+            <label class="layui-form-label">监区号：<font color="red">*</font></label>
+            <div class="layui-input-block">
+                <input type="text" name="jqh" value="{{jqh}}" lay-verify="required" lay-reqtext="监区号是必填项，岂能为空？" placeholder="请输入" autocomplete="off"  class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">监区名：<font color="red">*</font></label>
+            <div class="layui-input-block">
+                <input type="text" name="jqmc" value="{{jqmc}}"  lay-verify="required" lay-reqtext="监区名是必填项，岂能为空？" placeholder="请输入" autocomplete="off"  class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">备&ensp;&ensp;注：&nbsp;</label>
+            <div class="layui-input-block">
+                <input type="text" name="bz" value="{{bz}}"  lay-verify="title"  autocomplete="off"  class="layui-input">
+            </div>
+        </div>
+    
+</form>

@@ -1,0 +1,145 @@
+<div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+        <div class="section-content">
+            <div class="section-item section-item-one section-item-padding">
+                <div class="standard-content font-20">
+                    <div class="htmleaf-container">
+                        <div class="container">
+                            <div id="">
+                                <div class="">
+                                    
+                                    <div class=" ">
+                                        <h3>案件情况</h3>
+                                        <table class="container-formtable">
+                                            
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">监&emsp;室&emsp;号：</td>
+                                                <td><input readonly class="easyui-textbox" name="jsh" value="{{jsh}}"
+                                                         style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">单位类型</td>
+                                                <td><input readonly class="easyui-textbox" name="dwlx" value="{{dwlxString}}"
+                                                         style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">过程ID号：</td>
+                                                <td><input readonly class="easyui-textbox" name="gcbh" value="{{gcbh}}" required
+                                                        style="min-width:240px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">入&nbsp;所&nbsp;&thinsp;性&nbsp;质：</td>
+                                                <td><input readonly class="easyui-textbox" name="rsxz" value="{{rsxzString}}"
+                                                        style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">转入单位：</td>
+                                                <td><input readonly  class="easyui-textbox" name="zrdw" value="{{zrdw}}"
+                                                     id="zjlx"    style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">指纹编号：</td>
+                                                <td><input readonly class="easyui-textbox"
+                                                      name="zwbh" value="{{zwbh}}" style="min-width:240px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">诉&nbsp;讼&nbsp;&thinsp;环&nbsp;节：</td>
+                                                <td><input readonly class="easyui-textbox" name="bahj" value="{{bahjString}}"
+                                                     required style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">办案单位：</td>
+                                                <td><input readonly class="easyui-textbox" name="badw" value="{{badw}}"
+                                                        required style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">处理结果：</td>
+                                                <td><input readonly class="easyui-textbox" name="cljg" value="{{cljgString}}"
+                                                     required style="min-width:240px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">羁&nbsp;押&nbsp;&thinsp;日&nbsp;期：</td>
+                                                <td><input readonly class="easyui-textbox" name="rsrq" value="{{rsrq}}" 
+                                                   required style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">出所日期：</td>
+                                                <td><input readonly class="easyui-textbox" name="csrq" value="{{csrq}}" 
+                                                     style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">刑&emsp;&emsp;期：</td>
+                                                <td><input readonly class="easyui-textbox" name="xq" value="{{xq}}" 
+                                                      required style="min-width:240px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">关&nbsp;押&nbsp;&thinsp;期&nbsp;限：</td>
+                                                <td><input readonly class="easyui-textbox" name="gyqx" value="{{gyqx}}"
+                                                      required style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">出所去向：</td>
+                                                <td><input readonly class="easyui-textbox" name="csqx" value="{{csqx}}"
+                                                        style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">缓刑期限：</td>
+                                                <td><input readonly class="easyui-textbox" name="hxqx" value="{{hxqx}}" 
+                                                       id="xzd" required style="min-width:240px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">收&nbsp;押&nbsp;&thinsp;凭&nbsp;证：</td>
+                                                <td><input readonly class="easyui-textbox" name="sypz" value="{{sypzString}}"
+                                                        style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">出所原因：</td>
+                                                <td><input readonly class="easyui-textbox" name="csyy" value="{{csyyString}}"
+                                                        required style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">附&ensp;加&ensp;刑：</td>
+                                                <td><input readonly class="easyui-textbox" name="fjx" value="{{fjxString}}" 
+                                                      required style="min-width:240px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">成&nbsp;员&nbsp;&thinsp;类&nbsp;型：</td>
+                                                <td><input readonly class="easyui-textbox" name="cylx" value="{{cylxString}}"
+                                                        style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">犯罪经历：</td>
+                                                <td><input readonly class="easyui-textbox"  name="fzjl" value="{{fzjl}}"
+                                                       style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">档&ensp;案&ensp;号：</td>
+                                                <td><input readonly class="easyui-textbox" name="dah" value="{{dah}}" 
+                                                       style="min-width:240px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">当前办案人：</td>
+                                                <td><input readonly class="easyui-textbox" name="bar" value="{{bar}}"
+                                                       required style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">简要案情：</td>
+                                                <td><input readonly class="easyui-textbox"  name="jyaq" value="{{jyaq}}" style="min-width:240px;"> </td>
+                                                <td class="formtd" style="width: 180px;">备&emsp;&emsp;注：</td>
+                                                <td><input readonly class="easyui-textbox"  name="bz" 
+                                                      value="{{bz}}" required style="min-width:240px;"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">办案人电话：</td>
+                                                <td ><input readonly class="easyui-textbox" name="bardh" value="{{bardh}}" 
+                                                        style="min-width:240px;">
+                                                </td>
+                                                
+                                                <td class="formtd" style="width: 180px;">细化案由：</td>
+                                                <td ><input readonly class="easyui-textbox" name="xhay" value="{{xhayString}}" 
+                                                        style="min-width:240px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">送&emsp;押&emsp;人：</td>
+                                                <td ><input readonly class="easyui-textbox" name="syr" value="{{syr}}" 
+                                                        style="min-width:240px;">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">送&nbsp;押&nbsp;&thinsp;单&nbsp;位：</td>
+                                                <td ><input readonly class="easyui-textbox" name="sydw" value="{{sydw}}" 
+                                                        style="min-width:240px;">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="formtd" style="width: 180px;">主&nbsp;要&nbsp;&thinsp;案&nbsp;由：</td>
+                                                <td ><input readonly class="easyui-textbox" name="ay" value="{{ayString}}" 
+                                                        style="min-width:240px;">
+                                                </td>
+                                                
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

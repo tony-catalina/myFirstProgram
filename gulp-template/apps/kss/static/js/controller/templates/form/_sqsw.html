@@ -1,0 +1,260 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content sqsw-container">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>个人信息</h2>
+                                            <table class="container-formtable form-jbxx">
+                                                <tr>
+                                                    <td class="formtd">姓&emsp;&emsp;&emsp;&thinsp;名：</td>
+                                                    <td><input class="easyui-textbox" value="{{xm}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">别&emsp;&emsp;名：</td>
+                                                    <td><input class="easyui-textbox" value="{{bm}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">性&emsp;&emsp;&emsp;&thinsp;别：</td>
+                                                    <td><input class="awdCombox" value="{{xb}}" text="{{xbString}}"  readonly
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">出生日期：</td>
+                                                    <td><input class="easyui-textbox" value="{{csrq}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">档&thinsp;&thinsp;案&thinsp;&thinsp;编&thinsp;&thinsp;号：</td>
+                                                    <td><input class="easyui-datebox" value="{{gcbh}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">入所日期：</td>
+                                                    <td><input class="easyui-textbox" value="{{rsrq}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办&thinsp;&thinsp;案&thinsp;&thinsp;环&thinsp;&thinsp;节：</td>
+                                                    <td><input class="awdCombox" value="{{bahj}}" text="{{bahjString}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">涉嫌罪名：</td>
+                                                    <td><input class="awdCombox" value="{{ay}}" text="{{ayString}}" readonly
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">户籍地详&thinsp;址：</td>
+                                                    <td colspan="3"><input class="awdCombox" value="{{hjd}}" text="{{bahjString}}"
+                                                            readonly style="width:100%;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>家属送物信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">家&thinsp;&thinsp;&thinsp;&thinsp;属&thinsp;&thinsp;&thinsp;姓&thinsp;&thinsp;&thinsp;名：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required name="jsxm"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">家&thinsp;&thinsp;&thinsp;&thinsp;&nbsp;&nbsp;属&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;性&ensp;&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;别：<font class="redicon">*</font></td>
+                                                    <td><input id="jsxb" class="awdCombox" required name="xb" code='XB'
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">家&thinsp;&thinsp;&thinsp;&thinsp;属&thinsp;&thinsp;&thinsp;民&thinsp;&thinsp;&thinsp;族：<font class="redicon">*</font></td>
+                                                    <td><input id="mz" class="awdCombox" required code="MZ" alike="1" name="mz"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">家&nbsp;属&nbsp;出&nbsp;生&nbsp;&nbsp;日&nbsp;&nbsp;期：</td>
+                                                    <td><input class="easyui-datebox" name="jscsrq"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">家属证件类型：<font class="redicon">*</font></td>
+                                                    <td><input id="zjlx" class="awdCombox" required name="zjlx" code='ZJLX'
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">与被送物品人关系：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" code='GX' name="gx" required
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">家属证件号码：<font class="redicon">*</font></td>
+                                                    <td>
+                                                        <input class="easyui-textbox" required name="jszjh"
+                                                            data-options="validType:'idcard'" value="{{jszjh}}" style="min-width:280px;">
+                                                    </td>
+                                                    <td colspan="2">
+                                                        <button class="zjhBtn">扫描二代证</button>
+                                                        <button class="zjhBtn">在逃对比</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">家属户籍详址：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required name="dz"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">联&thinsp;&thinsp;&thinsp;&thinsp;&nbsp;&nbsp;系&thinsp;&thinsp;&thinsp;&thinsp;电&nbsp;&ensp;&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;话：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" required name="dh"
+                                                            data-options="validType:'mphone'" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">住&emsp;&emsp;&emsp;&emsp;址：</td>
+                                                    <td colspan='3'><input class="easyui-textbox" name="zzdz"
+                                                            style="width:87.6%;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">送钱送物日期：<font class="redicon">*</font></td>
+                                                    <td><input id="blrq" class="easyui-datetimebox" required name="blrq"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">金&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;额：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-numberbox" required name="jsje"
+                                                            style="min-width:280px;" min="0" data-options="prompt:'金额最小为0'"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">工&thinsp;&thinsp;&thinsp;&thinsp;作&thinsp;&thinsp;&thinsp;单&thinsp;&thinsp;&thinsp;位：</td>
+                                                    <td><input class="easyui-textbox" name="gzdw"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">是否&emsp;涉维&emsp;关系：</td>
+                                                    <td><input type="radio" name="sfswgx" value="1" class="radiocss">
+                                                        <font>是</font> <input type="radio" name="sfswgx" value="0"
+                                                            checked class="radiocss">
+                                                        <font>否</font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">物&thinsp;&thinsp;&thinsp;&thinsp;品&thinsp;&thinsp;&thinsp;信&thinsp;&thinsp;&thinsp;息：<font class="redicon">*</font></td>
+                                                    <td style="width: 89%;border:none;" colspan="3">
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp1" name="wpmc"
+                                                                value="1" /><label for="wp1">毯子</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp2" name="wpmc" value="2"><label
+                                                                for="wp2">卫生衫</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp3" name="wpmc" value="3"><label
+                                                                for="wp3">卫生裤</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp4" name="wpmc" value="4"><label
+                                                                for="wp4">绒线衫</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp5" name="wpmc" value="5"><label
+                                                                for="wp5">绒线裤</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp6" name="wpmc" value="6"><label
+                                                                for="wp6">绒线背心</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp7" name="wpmc" value="7"><label
+                                                                for="wp7">棉毛衫</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp8" name="wpmc" value="8"><label
+                                                                for="wp8">棉毛裤</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp9" name="wpmc" value="9"><label
+                                                                for="wp9">晴纶衫</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp10" name="wpmc"
+                                                                value="10"><label for="wp10">晴纶裤</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp11" name="wpmc"
+                                                                value="11"><label for="wp11">线衫</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp12" name="wpmc"
+                                                                value="12"><label for="wp12">线裤</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp13" name="wpmc"
+                                                                value="13"><label for="wp13">羊毛衫</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp14" name="wpmc"
+                                                                value="14"><label for="wp14">羊毛裤</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp15" name="wpmc"
+                                                                value="15"><label for="wp15">羊毛背心</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp16" name="wpmc"
+                                                                value="16"><label for="wp16">上装</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp17" name="wpmc"
+                                                                value="17"><label for="wp17">长裤</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp18" name="wpmc"
+                                                                value="18"><label for="wp18">长袖衬衫</label>
+                                                        </div>
+                                                        <div style="float:left;margin:1px;width:90px;text-align:left">
+                                                            <input type="checkbox" id="wp19" name="wpmc"
+                                                                value="19"><label for="wp19">短袖衬衫</label>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&emsp;&emsp;&emsp;&emsp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="bz"
+                                                            data-options="multiline:true"
+                                                            style="width: 87.6%;height:80px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">经&ensp;&ensp;&ensp;办&ensp;&ensp;&ensp;人：<font class="redicon">*</font></td>
+                                                    <td><input id="blr" class="easyui-textbox" required name="blr" 
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">经&emsp;办&emsp;&emsp;时&emsp;间：<font class="redicon">*</font></td>
+                                                    <td><input id="blrq2" class="easyui-datetimebox" name="blrq" required
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                            </table>
+											<input type="hidden" name="rybh" value="{{rybh}}" />
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right toggler">
+                                            <h2>历史信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">历史记录:</td>
+                                                    <td colspan="3" style="width:92%;text-align:right;">
+                                                        <button class="lsjlBtn" id="zklbk">展开列表框</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div id="xxdiv" class="zklb">
+                                                <table id="yqlsxx"></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>

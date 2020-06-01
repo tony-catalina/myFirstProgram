@@ -1,0 +1,117 @@
+<form id="fm" method="post" novalidate >
+    <div style="background-color: #e3ecfd;width: 70%;margin: 0 auto;overflow: auto;">
+        <p style="text-align:center;font-weight: bold;font-size: 20px;margin-top: 10px;padding: 20px 0 0 0;">信件管理--信件寄出确认</p>
+        <span style="margin-left: 3%"><label>填表人：</label><input type="text" class="easyui-textbox" style="width: 120px;" value="{{tbr}}"/></span>
+        <span style="float: right;margin-right: 3%"><label>填表日期：</label><input class="easyui-datebox" style="width: 120px;"/></span>
+    </div>
+    <div style="width: 70%; margin: 0 auto;overflow: auto;">
+        <div class="easyui-layout"  data-options="fit:true" id="ysh" style="width: 100%; height: 100%; border-right-width: 0px; padding-right: 0px; margin-right: 0px;">
+            <div style="background-color: #e3ecfd;width: 100%;margin: 0 auto;overflow: auto;" >
+                <table style="border-collapse: collapse;background-color: #ffffff;width: 95%;height: 95%;margin:0 auto;margin-top: 5px; text-align: center">
+                    <tbody>
+                    <tr>
+                        <td style="width: 20%;"><span>监室号<span
+                                style="color: #fe8181; float: right;"></span></span></td>
+                        <td style="width: 30%;"><input id="jsh"
+                                                       name="jsh" class="easyui-textbox"/></td>
+                        <td style="width: 20%;"><span>姓名<span
+                                style="color: #fe8181; float: right;"></span></span></td>
+                        <td style="width: 30%;"><input id="xm"
+                                                       name="xm" class="easyui-textbox"/></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;"><span>别名<span
+                                style="color: #fe8181; float: right;"></span></span></td>
+                        <td style="width: 30%;"><input class="easyui-textbox"
+                                                       value="" /></td>
+                        <td style="width: 20%;"><span>性别<span
+                                style="color: #fe8181; float: right;"></span></span></td>
+                        <td style="width: 30%;"><input class="easyui-textbox"
+                                                       value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;"><span>出生日期<span
+                                style="color: #fe8181; float: right;"></span></span></td>
+                        <td style="width: 30%;"><input class="easyui-datebox"
+                                                       value="" /></td>
+                        <td style="width: 20%;"><span>入所日期<span
+                                style="color: #fe8181; float: right;"></span></span></td>
+                        <td style="width: 30%;"><input class="easyui-datebox"
+                                                       value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;"><span>办案环节<span
+                                style="color: #fe8181; float: right;"></span></span></td>
+                        <td style="width: 30%;"><input class="easyui-textbox"
+                                                       value="" /></td>
+                        <td style="width: 20%;"><span>涉嫌罪名<span
+                                style="color: #fe8181; float: right;"></span></span></td>
+                        <td style="width: 30%;"><input class="easyui-textbox"
+                                                       value="" /></td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 20%;"><span>承办人</span></td>
+                        <td style="width: 30%;"><input class="easyui-textbox"
+                                                       value="" /></td>
+                        <td style="width: 20%;"><span>承办日期</span></td>
+                        <td style="width: 30%;"><input class="easyui-datebox"
+                                                       value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;"><span>户籍所在地<span
+                                style="color: #fe8181; float: right;"></span></span></td>
+                        <td style="width: 30%;" colspan="3"><input class="easyui-textbox" style="width: 89%"
+                                                                   value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;height: 60px"><span>布建理由及任务</span></td>
+                        <td colspan="3" style="width:80%;height: 60px"><input data-options="multiline:true"   name="" class="easyui-textbox" style="width: 100%;height: 100%"/></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;height: 60px"><span>承办意见</span></td>
+                        <td colspan="3" style="width:80%;height: 60px"><input  data-options="multiline:true"  name="" class="easyui-textbox" style="width: 100%;height: 100%"/></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;"><span>中队/警组意见<span style="color: #fe8181; float: right;">*</span></span></td>
+                        <td colspan="3" style="width:80%;">
+                            <input   name="" type="radio"/>同意
+                            <input   name="" type="radio" />不同意
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;height: 60px"><span>中队/警组意见内容</span></td>
+                        <td colspan="3" style="width:80%;height: 60px"><input  data-options="multiline:true"  name="" class="easyui-textbox" style="width: 100%;height: 100%"/></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;"><span>中队签名<span style="color: #fe8181; float: right;">*</span></span></td>
+                        <td style="width: 30%;"><input class="easyui-textbox"
+                                                       value="" /></td>
+                        <td style="width: 20%;"><span>签名日期<span style="color: #fe8181; float: right;">*</span></span></td>
+                        <td style="width: 30%;"><input class="easyui-datebox"
+                                                       value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;"><span>审核意见<span style="color: #fe8181; float: right;">*</span></span></td>
+                        <td colspan="3" style="width:80%;">
+                            <input   name="" type="radio"/>同意
+                            <input   name="" type="radio" />不同意
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;height: 60px"><span>审核意见内容</span></td>
+                        <td colspan="3" style="width:80%;height: 60px"><input  data-options="multiline:true"  name="" class="easyui-textbox" style="width: 100%;height: 100%"/></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%;"><span>审核人签名<span style="color: #fe8181; float: right;">*</span></span></td>
+                        <td style="width: 30%;"><input class="easyui-textbox"
+                                                       value="" /></td>
+                        <td style="width: 20%;"><span>签名日期<span style="color: #fe8181; float: right;">*</span></span></td>
+                        <td style="width: 30%;"><input class="easyui-datebox"
+                                                       value="" /></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</form>

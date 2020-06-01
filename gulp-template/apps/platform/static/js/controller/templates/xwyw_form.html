@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<form action="" method="" id="fm" class="layui-form">
+	<h2>新闻要闻</h2>
+	<input type="text"  name="id"  value="{{id}}" hidden="hidden">
+	<div class="layui-form-item">
+		<label class="layui-form-label">监所类型：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<select name="jslx" lay-filter='jslx' code="DM" field="DM" value="{{jslx}}" lay-verify="required" class="awdcombox"
+			 field="JSLX">
+			</select>
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">新闻标题：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<input type="text" name="title" value="{{title}}" field="title" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？"
+			 placeholder="请输入" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">新闻链接：&thinsp;&thinsp;</label>
+		<div class="layui-input-block">
+			<input type="text" name="url" value="{{url}}" field="url" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入" autocomplete="off"
+			 class="layui-input">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">公告内容：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<textarea id="content" name="content" lay-verify="required" style="display: none;">
+	         {{content}}
+	        </textarea>
+		</div>
+	</div>
+</form>

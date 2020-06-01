@@ -1,0 +1,103 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content jjwpsl-container">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <input type="hidden" id="id" name="id" value="{{id}}">
+                                                    <input  name="rybh" type="hidden" value="{{rybh}}"/>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">人员编号：</td>
+                                                    <td><input class="easyui-textbox" name="snbh" value="{{snbh}}" style="min-width:180px;"> </td>
+                                                    <td class="formtd">姓名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}" style="min-width:180px;"> </td>
+                                                    <td class="formtd">监室号：</td>
+                                                    <td><input class="easyui-textbox" name="jsh" value="{{jsh}}" style="min-width:180px;"> </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-yewubaobiao"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>物品信息</h2>
+                                            <table class="container-formtable">
+                                                <tr style="position:relative">
+                                                    <td class="formtd">物品名称：<font class="redicon">*</font></td>
+                                                    <td  id="wpid">
+                                                        <div style="display:flex;padding: 0px 10px 10px 0px;">
+                                                        <div><input class="easyui-combobox" id="wpmc0" name="wpmc0"  required></div>
+                                                            <div><input class="easyui-numberbox" id="wp0n" name="wp0n"  required></div>
+                                                            <div>
+                                                                <span style="font-weight:bold;display:block;margin-left:7px;padding: 3px 5px 3px 5px;border: 1px solid #1b5b9b;cursor: pointer;" class="iconfont icon-jianhao wpjian"></span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <select id="ccc" class="easyui-combobox" name="depst"
+                                                            style="width:100%;">
+                                                            <option value="aa">001</option>
+                                                            <option>002</option>
+                                                        </select> -->
+                                                    </td>
+                                                    <td style="position: absolute;right:28%;top:15%;"><span class="iconfont icon-jiahao wpjia" style="padding: 5px 7px 5px 7px;border:1px solid #1260b1;cursor: pointer;"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">人&ensp;民&ensp;币：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="wp28n" required style="width: 100%"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">救济日期：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input id="jjrq" class="easyui-datetimebox" name="jjrq"  required style="width: 100%""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">救济原因：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="jjyy" value="{{jjyy}}" required style="width: 100%""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">登&ensp;记&ensp;人：<font class="redicon">*</font></td>
+                                                    <td>
+                                                        <div>
+                                                            <input id="djr" class="easyui-textbox" required name="djr"  style="min-width:320px;">
+                                                            <span>登记时间：<font class="redicon">*</font></span>
+                                                            <input id="djsj" class="easyui-datetimebox" required name="djsj" style="min-width:320px;">
+                                                        </div>
+                                                        
+                                                    </td>
+                                                    <!-- <td class="formtd">登记时间<font class="redicon">*</font>：</td>
+                                                    <td><input class="easyui-datetimebox" required style="width:100%;"></td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&emsp;&emsp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="bz" style="width: 100%;height: 100px;"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

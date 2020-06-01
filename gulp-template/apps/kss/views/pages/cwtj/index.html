@@ -1,0 +1,93 @@
+<!--
+模块名称： 财务统计
+开始时间： 2020-2-25
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+
+<body class="easyui-layout" data-options="fit:true">
+    <!--页面主体布局-->
+    <div class="section-container cwtj-container">
+        <div class="section-item section-item-padding cwtjqk">
+            <div class="timeline-content right">
+                <table class="container-formtable">
+                    <tr>
+                        <td class="cwtj-title" colspan="4">
+                            <span class="iconfont icon-taizhang"></span>业务信息
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formtd" style="width:20%;">统&nbsp;计&ensp;类&nbsp;型：&thinsp;&thinsp;</td>
+                        <td style="text-align:left !important;width:80%;" colspan="3">
+                            <input type="radio" name="tjlx" id="rytj" checked text="个人统计"><label for="rytj">个人统计</label>
+                            <input type="radio" name="tjlx" id="xflxtj" text="消费类型统计"><label for="xflxtj">消费类型统计</label>
+                            <input type="radio" name="tjlx" id="zttj" text="总体统计"><label for="zttj">总体统计</label>
+                            <input type="radio" name="tjlx" id="xflxzttj" text="消费类型总体统计"><label
+                                for="xflxzttj">消费类型总体统计</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formtd" style="width:20%;">工&nbsp;作&ensp;记&nbsp;录：&thinsp;&thinsp;</td>
+                        <td colspan="3" style="text-align:left !important;width:80%;">
+                            <input id="cwtj_zyry" type="radio" name="zyls"><label for="cwtj_zyry">在押人员</label>
+                            <input id="cwtj_lsry" type="radio" name="zyls" checked><label for="cwtj_lsry">历史人员</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formtd" style="width:20%;">统计时间从：<font style="color:red">*</font>
+                        </td>
+                        <td style="width:30%;"><input class="easyui-datebox" missingMessage="该输入项为必输项" required
+                                style="min-width:530px;"></td>
+                        <td class="formtd" style="width:20%;">至：<font style="color:red">*</font>
+                        </td>
+                        <td style="width:30%;"><input class="easyui-datebox" missingMessage="该输入项为必输项" required
+                                style="min-width:530px;"></td>
+                    </tr>
+                    <tr class="cssj">
+                        <td class="formtd" style="width:20%;">出所时间从：&thinsp;&thinsp;</td>
+                        <td style="width:30%;"><input class="easyui-datebox" style="min-width:530px;"></td>
+                        <td class="formtd" style="width:20%;">至：&thinsp;&thinsp;</td>
+                        <td style="width:30%;"><input class="easyui-datebox" style="min-width:530px;"></td>
+                    </tr>
+                    <tr id="xbtj">
+                        <td class="formtd" style="width:20%">性&emsp;&emsp;&emsp;别：&thinsp;&thinsp;</td>
+                        <td colspan="3" style="text-align:left !important;width:80%">
+                            <input id="cwtj_man" type="radio" name="sex"><label for="cwtj_man">男</label>
+                            <input id="cwtj_woman" type="radio" name="sex" checked><label for="cwtj_woman">女</label>
+                            <input id="cwtj_all" type="radio" name="sex" checked><label for="cwtj_all">全部</label>
+                        </td>
+                    </tr>
+                    <tr id="ry">
+                        <td class="formtd" style="width:20%">人&nbsp;员&ensp;编&nbsp;号：<font style="color:red">*</font>
+                        </td>
+                        <td style="width:30%"><input id="ssxj_rybh" class="easyui-combobox" missingMessage="该输入项为必输项"
+                                style="min-width:530px;" required /></td>
+                        <td style="width:20%"></td>
+                        <td style="width:30%"><textarea class="easyui-textbox" readonly
+                                style="min-width:530px;"></textarea></td>
+                    </tr>
+                    <tr class="jqjs">
+                        <td class="formtd" style="width:20%">监&emsp;室&emsp;号：&thinsp;&thinsp;</td>
+                        <td style="width:30%"><input class="easyui-combobox" style="min-width:530px;" /></td>
+                        <td style="width:20%"></td>
+                        <td style="width:30%"><textarea class="easyui-textbox" readonly
+                                style="min-width:530px;"></textarea></td>
+                    </tr>
+                </table>
+                <div class="cwtjBtn">
+                    <button class="censusBtn">统计</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面主体布局-->
+    <script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/require.config" id="current-page" current-page="pages/cwtj/index"></script>
+
+    <script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

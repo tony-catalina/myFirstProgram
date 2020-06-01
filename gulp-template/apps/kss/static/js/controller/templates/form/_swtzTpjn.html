@@ -1,0 +1,110 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                                    <td><input class="easyui-textbox" name="jsh" value="{{jsh}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">姓&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">出生日期：</td>
+                                                    <td><input class="easyui-textbox" name="csrq" value="{{csrq}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">拘留开始时间：</td>
+                                                    <td><input class="easyui-textbox" name="jlrq" value="{{jlrq}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">文化程度：</td>
+                                                    <td><input class="awdCombox" name="whcd" value="{{whcd}}" text="{{whcdString}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                    <td class="formtd">拘留截止时间：</td>
+                                                    <td><input class="easyui-textbox" name="dbrq" value="{{dbrq}}"
+                                                            style="min-width:280px;" readonly> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-zhaopian"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>照片补录</h2>
+                                            <table class="container-formtable zpbl">
+                                                <td colspan="3">
+                                                    <img src="/apps/kss/static/images/cm1.png" alt="" id="img4">
+                                                </td>
+                                                <td colspan="3">
+                                                    <dl>
+                                                        <dt>采集标准</dt>
+                                                        <dt>1.三张照片均按照"人脸左侧单标尺线"进行采集。</dt>
+                                                        <dt>2.正面照。</dt>
+                                                        <dd>(a).头顶与相框上沿对齐，眼睛居于人眼对齐线中间（红线为上沿，绿线为下沿);</dd>
+                                                        <dd>(b).人像居中，两边耳根下沿与各绿块对齐;</dd>
+                                                        <dd>(c).蓝色块与红色刻度标尺线对齐;</dd>
+                                                        <dt>3.左侧照、右侧照</dt>
+                                                        <dd>(a).头顶与相框上沿对齐，眼睛居于人眼对齐线中间（红线为上沿，绿线为下沿);</dd>
+                                                        <dd>(b).人像居中，鼻尖、后脑勺分别与各绿快对齐;</dd>
+                                                        <dd>(c).蓝色块与红色刻度标尺对齐;</dd>
+                                                    </dl>
+                                                </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <img src="/apps/kss/static/images/zm.png" alt="" id="img1">
+                                                        <p><input type="file" id="imgFile1"
+                                                                class="choose easyui-validatebox">
+                                                        </p>
+                                                    </td>
+                                                    <td colspan="2">
+                                                        <img src="/apps/kss/static/images/cm1.png" alt="" id="img2">
+                                                        <p><input type="file" id="imgFile2"
+                                                                class="choose easyui-validatebox">
+                                                        </p>
+                                                    </td>
+                                                    <td colspan="2">
+                                                        <img src="/apps/kss/static/images/cm2.png" alt="" id="img3">
+                                                        <p><input type="file" id="imgFile3"
+                                                                class="choose easyui-validatebox">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="rybh" value="{{rybh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="snbh" value="{{snbh}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

@@ -1,0 +1,35 @@
+<!-- partial:../../../partials/_head.html -->
+<!-- partial -->
+<!-- 此处引入页面相关的 CSS 样式 -->
+<link rel="stylesheet" href="/apps/jds/static/css/gzry/jbxx.css" />
+<!-- partial:../../../partials/_head_end.html -->
+<!-- partial -->
+<!-- 页面主体内容 -->
+<body class="easyui-layout" data-options="fit:true" >
+    <div id="Layout" class="easyui-layout" style="height:100%;">
+        <!-- tab切换 -->
+        <div data-options="region:'north', border: false" style="height:5%">
+            <div class="tab">
+                <ul class="tab-title font-18" id="tabButtonList">
+                    <li class="tab-control-button tab-active"><span class="iconfont icon-liucheng"></span>业务流程</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 对应tab的内容栏 -->
+        <div class="tab-item-container" data-options="region:'center', border: false" style="height: 95%">
+            <div class="tab-item tab-item-active ">
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="/apps/jds/static/lib/seaJs/sea.js"></script>
+    <script src="/apps/jds/static/lib/seaJs/seajs-text.js"></script>
+    <script src="/apps/jds/static/js/seajs.config.js"></script>
+    <script>
+        seajs.use("/apps/jds/static/js/controller/pages/gzry/jbxx/main.js")
+    </script>
+</body>
+<!-- 页面结束 -->
+<!-- partial:../../../partials/_foot.html -->
+<!-- partial -->

@@ -1,0 +1,5 @@
+{{each contents}}
+<div class="tab-item {{if activeIndex === $index}} tab-item-active {{/if}}" >
+    <iframe id="{{$value.id}}" class="malign-tl dper-full-w dper-full-h" style="border: none; background-color: #FFFFFF;" data-src="{{$value.url}}">{{$value.name}}</iframe>
+</div>
+{{/each}}

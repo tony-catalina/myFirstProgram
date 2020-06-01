@@ -1,0 +1,60 @@
+<form id="fm" style="padding: 0 0 0 0;" class="awdform">
+    <div class="basic-head tt">
+        <h1>巡诊登记</h1>
+    </div>
+    <table style="border-collapse: collapse;background-color: #ffffff;width: 100%;height: 100%;margin:0 auto;">
+        <tbody>
+        <td colspan="4">
+            <div class="basic-title" style="height:100%;text-align:left;border:0px;">
+                <h1><i class="fa fa-book"></i>登记信息</h1>
+            </div>
+            <tr>
+                <td style="width:20%;" class="form-title">民警姓名<span style="color: #fe8181; float: right;">*</span></td>
+                <td style="width:30%;">
+                    <input  name="mjxm" class="easyui-textbox" required="required" style="width:100%;height:100%;">
+                </td>
+                <td style="width:20%;" class="form-title">带领医生<span style="color: #fe8181; float: right;">*</span></td>
+                <td style="width:30%;">
+                    <input class="easyui-textbox" name="dlys" required="required" style="width:100%;height:100%;">
+                </td>
+            </tr>
+            <tr>
+                <td style="width:20%;" class="form-title">开始时间<span style="color: #fe8181; float: right;">*</span></td>
+                <td style="width:30%;">
+                    <input id="kssj_ptxz" name="kssj" class="easyui-datetimebox startDate" required="required"  style="width:100%;height:100%;">
+                </td>
+                <td style="width:20%;" class="form-title">结束时间<span style="color: #fe8181; float: right;">*</span></td>
+                <td style="width:30%;">
+                    <input id="jssj_ptxz" name="jssj" class="easyui-datetimebox endDate" required="required"  style="width:100%;height:100%;">
+                </td>
+            </tr>
+            <tr>
+                <td style="width:20%;" class="form-title">日常项目</td>
+                <td style="width:30%;">
+                    <input id="rcxm_ptxz" name="bzlx" class="easyui-textbox" readonly="readonly" style="width:100%;height:100%;"/>
+                </td>
+                <td style="width:20%;" class="form-title">监室号</td>
+                <td style="width:30%;">
+                    <input id="jsh_ptxz" name="jsh" class="easyui-textbox"  readonly="readonly" style="width:100%;height:100%;" >
+                </td>
+            </tr>
+            <tr>
+                <td style="width:20%;" class="form-title">区域</td>
+                <td style="width:80%;" colspan="3">
+                    <input class="easyui-textbox" name="qy" style="width:100%;height:100%;">
+                </td>
+            </tr>
+            <tr>
+                <td style="width:10%;" class="form-title">具体情况</td>
+                <td style="width:30%;" colspan="3">
+                    <input class="easyui-textbox" name="jtqk" data-options="multiline:true"  style="width:100%;height:110px;">
+                </td>
+            </tr>
+        </td>
+        </tbody>
+    </table>
+    <div id = "dlg-buttons" style="text-align:center; margin-top:5%">
+        <a href="#" class="basic-button-save" iconCls="icon-ok" id="saveptxz" >保存</a>
+        <a href="#" class="basic-button-cancel" iconCls="icon-cancel" id="cancelptxz">关闭</a>
+    </div>
+</form>

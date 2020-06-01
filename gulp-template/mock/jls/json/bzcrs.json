@@ -1,0 +1,10 @@
+{
+    "code": 0,
+    "msg": "查询成功",
+    "result": {
+        "jrrs|1-100": 4,
+        "jrcs|1-100": 5,
+        "bzlscs|1-100": 0
+    },
+    "success": true
+}

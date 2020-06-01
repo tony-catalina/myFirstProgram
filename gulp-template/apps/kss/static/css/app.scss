@@ -1,0 +1,3917 @@
+@import "base.scss";
+@import "iconfont.scss";
+@import "utils-class/swiper.min";
+@import "easyui-reset.scss";
+@import "_layouts.scss";
+@import "_form.scss";
+$primary-color: #0069f6;
+$secondary-color: #2c80ff;
+$link-color: #2c80ff;
+$link-hover-color: #81b3ff;
+$link-active-color: #1774ff;
+
+// public css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background: #0069f6;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #0069f6;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background: #0069f6;
+    color: #fff;
+}
+
+// 加载页面的动画效果
+#loading-icon {
+    display: inline-block;
+    @extend.font-42;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    // background-color:#fff;
+}
+
+$width: 1920;
+$height: 1080;
+$w: 1870;
+$h: 980;
+
+@font-face {
+    font-family: "Acens";
+    src: url("./../fonts/Acens.ttf");
+}
+
+@font-face {
+    font-family: "Akzidenz";
+    src: url("./../fonts/Akzidenz.otf");
+}
+
+@font-face {
+    font-family: "kongx";
+    src: url("./../fonts/kongx.ttf");
+}
+
+@font-face {
+    font-family: "DFLiJinHei";
+    src: url("./../fonts/DFLiJinHeiGB-W8-subset.woff2");
+}
+
+.peo {
+    background-image: url("./../images/fif/tit-right.png");
+}
+
+.r1 {
+    background-image: url("./../images/fif/r1.png");
+}
+
+.r2 {
+    background-image: url("./../images/fif/r2.png");
+}
+
+.r3 {
+    background-image: url("./../images/fif/r3.png");
+}
+
+.r4 {
+    background-image: url("./../images/fif/r4.png");
+}
+
+.tu {
+    background-image: url("./../assets/img/fif/tu.png");
+}
+
+.img1 {
+    background-image: url("./../images/fif/left1.png");
+}
+
+.img2 {
+    background-image: url("./../images/fif/left2.png");
+}
+
+.img3 {
+    background-image: url("./../images/fif/left3.png");
+}
+
+.img4 {
+    background-image: url("./../images/fif/left4.png");
+}
+
+.i2 {
+    background-image: url("./../images/fif/ioc_l.png");
+}
+
+.right-t1 {
+    background-image: url("./../images/fif/right-t1.png");
+}
+
+.right-t2 {
+    background-image: url("./../images/fif/right-t2.png");
+}
+
+.container {
+    overflow: hidden;
+
+    //  background-color:#f2f2f2;
+    //头部背景色
+    .head-bg {
+        background-image: url("./../images/header-bg.png");
+        height: cptSize(80, $height);
+        background-repeat: repeat-y;
+
+        // logo 部分
+        .head-title {
+            height: 100%;
+
+            .head-logo {
+                position: relative;
+                float: left;
+                top: cptSize(11.5, 80);
+                height: cptSize(57, 80);
+                margin: 0 cptSize(10, $width) 0;
+            }
+
+            h1 {
+                float: left;
+                margin: 0;
+                position: relative;
+                top: 50%;
+                transform: translate(0, -50%);
+                color: #fff;
+                font-family: DFLiJinHei, SimSun;
+            }
+        }
+
+        .tit-right {
+            width: cptSize(360, $width);
+            height: cptSize(80, $height);
+            right: cptSize(10, 360);
+
+            .tit-right-cent {
+                height: cptSize(22, 80);
+
+                .peo {
+                    width: cptSize(20, 360);
+                    height: cptSize(20, 22);
+                }
+
+                .tit-right-span {
+                    width: cptSize(340, 360);
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    /*主体*/
+    .body {
+        width: 100%;
+        height: cptSize($height - 80, $height);
+        top: cptSize(80, $height);
+
+        /*左边*/
+        .left {
+            position: relative;
+            width: cptSize(150, $width);
+            z-index: 999;
+            box-sizing: content-box;
+            background-color: #fff;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .icon {
+                position: relative;
+                height: cptSize(61, $h);
+                border-bottom: 1px dashed #ccc;
+                text-align: center;
+
+                span {
+                    color: #02c0e8;
+                    @extend.font-28;
+
+
+                }
+
+            }
+
+            .left_nav {
+                a {
+                    color: $link-color;
+                }
+
+                ul {
+                    li.sub-menus {
+                        border-bottom: 1px dashed #ccc;
+                        padding-left: 3px;
+
+                        .menu-title {
+                            color: #000;
+                        }
+
+                        &:hover {
+                            background-color: $link-color;
+
+                            .t,
+                            span {
+                                color: #fff;
+                            }
+                        }
+
+                        &.active {
+                            background-color: $primary-color;
+
+                            .t,
+                            span {
+                                color: #fff;
+                            }
+                        }
+
+                        .t {
+                            @extend .font-26;
+                            display: inline-block;
+                            height: 55px;
+                            line-height: 55px;
+                            text-align: center;
+                            text-decoration: none;
+                            color: $primary-color;
+                            margin-right: 6%;
+                            margin-left: 7%;
+                        }
+
+                        &:hover .txt {
+                            transform: scale(1, 1);
+                            opacity: 1;
+                            visibility: visible;
+                        }
+
+                        .txt {
+                            visibility: hidden;
+                            transition-duration: 0.3s;
+                            transform: scale(0.8, 0.8);
+                            transform-origin: left top;
+                            opacity: 0;
+                            position: absolute;
+                            box-sizing: content-box;
+                            margin-left: 100%;
+                            margin-top: -55px;
+                            width: 200%;
+                            padding-left: 2px;
+                            box-shadow: 4px 4px 11px 0 rgba(0, 0, 0, 0.1);
+
+                            .menu-title {
+                                height: 55px;
+                                padding: 0 12px;
+                                line-height: 55px;
+                                background-color: $link-color;
+                                color: #FFF;
+                            }
+
+                            .scroll-wrapper {
+                                height: 22rem;
+                                overflow: auto;
+                                padding: 2px;
+                                background-color: #fff;
+
+                                li {
+                                    border-bottom: 1px dashed #ccc;
+
+                                    a {
+                                        &:hover {
+                                            background-color: $link-hover-color;
+                                            color: #fff;
+                                        }
+
+                                        &.active {
+                                            background-color: $link-active-color;
+                                            color: #fff;
+                                        }
+
+                                        display: block;
+                                        padding: 0 20px;
+                                        height: 42px;
+                                        line-height: 42px;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /*右边*/
+        .right {
+            width: cptSize(1770, $width);
+
+            .right-top {
+                background-color: #fff;
+                height: cptSize(61, $h);
+                border-bottom: 1px solid #e6e6e6;
+
+                .right-top-left {
+                    width: cptSize(30, 1800);
+                    height: cptSize(22, 61);
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: .5;
+                    }
+
+                    .right-t1 {
+                        width: cptSize(7, 30);
+                        height: cptSize(9, 22);
+
+                    }
+
+                    .right-t2 {
+                        width: cptSize(23, 30);
+                        height: cptSize(18, 22);
+                    }
+                }
+
+                .right-top-right {
+                    margin-left: cptSize(60, 1800);
+                    width: cptSize(1567, 1800);
+
+                    .r-nav-child {
+                        .inside-box {
+                            width: 90%;
+                            border-radius: 50px;
+                            color: black;
+                            background: #f5f5f5;
+                            cursor: pointer;
+
+                            &:hover {
+                                background: #0069f6;
+                                color: white;
+                            }
+
+                            .close {
+                                right: 8%;
+
+                                &:hover {
+                                    opacity: 0.5;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            .inside-box {
+                                background: #0069f6;
+                                color: white;
+                                box-shadow: 5px 2px 6px #afb4ba;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-bottom {
+                height: cptSize(980 - 61, $h);
+                width: cptSize(1800, 1800);
+                left: 0;
+                bottom: 0;
+
+                .right-bottom1 {
+                    height: cptSize(172, 903);
+                    z-index: 2;
+
+                    .right-bottom1-t {
+                        width: cptSize(182, 1800);
+                        height: cptSize(60, 172);
+                        top: cptSize(20, 172);
+                        left: cptSize(10, 1800);
+                        z-index: 2;
+
+                        .r1 {
+                            width: cptSize(64, 182);
+                            height: cptSize(65, 60);
+                        }
+
+                        .r1-span {
+                            width: cptSize(100, 182);
+                            color: #1c73ff;
+                        }
+                    }
+
+                    .right-bottom1-c {
+                        width: cptSize(1086, 1800);
+                        height: cptSize(34, 172);
+                        top: cptSize(78, 172);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(314, 1086);
+
+                            .tu {
+                                width: cptSize(16, 314);
+                                height: cptSize(15, 34);
+                                left: 23.847134%;
+                            }
+
+                            .input1 {
+                                width: cptSize(220, 314);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(260, 1086);
+                            left: cptSize(344, 1086);
+
+                            .tu {
+                                width: cptSize(16, 260);
+                                height: cptSize(15, 34);
+                                left: 29.847134%;
+                            }
+
+                            .input2 {
+                                width: cptSize(158, 260);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span3 {
+                            width: cptSize(122, 1086);
+                            height: 80%;
+                            left: cptSize(634, 1086);
+                            border: 1px solid #b8b8b8;
+                            /* 清除默认的箭头样式 */
+                            appearance: none;
+                            -moz-appearance: none;
+                            -webkit-appearance: none;
+                            /* 右侧添加小箭头的背景图 */
+                            background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                            background-size: 20px 20px;
+                        }
+
+                        .c-span4 {
+                            width: cptSize(130, 1086);
+                            height: 80%;
+                            right: cptSize(160, 1086);
+                            background: #297aff;
+                            border: 1px solid #b8b8b8;
+                            color: white;
+                            cursor: pointer;
+                        }
+
+                        .c-span5 {
+                            width: cptSize(130, 1086);
+                            height: 80%;
+                            background: #f3f7f8;
+                            border: 1px solid #297aff;
+                            color: #297aff;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .right-bottom1-b {
+                        width: cptSize(1086, 1800);
+                        height: cptSize(34, 172);
+                        bottom: cptSize(18, 172);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(606, 1086);
+
+                            .tu {
+                                width: cptSize(16, 606);
+                                height: cptSize(15, 34);
+                                left: 12%;
+                            }
+
+                            .input1 {
+                                width: cptSize(510, 606);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(176, 1086);
+                            left: cptSize(636, 1086);
+                            background: #297aff;
+                            color: white;
+
+                            .tu {
+                                width: cptSize(16, 176);
+                                height: cptSize(15, 34);
+                                right: cptSize(10, 176);
+                            }
+                        }
+
+                        .c-span3 {
+                            width: cptSize(110, 1086);
+                            right: cptSize(130, 1086);
+                            color: black;
+
+                            .input1 {
+                                width: cptSize(20, 110);
+                                height: cptSize(20, 34);
+                                background: palegoldenrod;
+                                cursor: pointer;
+                            }
+
+                            .span1 {
+                                left: cptSize(22, 110);
+                            }
+
+                            .input2 {
+                                width: cptSize(20, 110);
+                                height: cptSize(20, 34);
+                                right: cptSize(20, 110);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .xian {
+                        width: cptSize(1450, 1800);
+                        height: 1px;
+                        background: #adadad;
+                    }
+                }
+
+                .right-bottom2 {
+                    height: cptSize(154, 903);
+                    top: cptSize(190, 903);
+                    z-index: 2;
+
+                    .right-bottom2-t {
+                        width: cptSize(182, 1800);
+                        height: cptSize(60, 154);
+                        left: cptSize(10, 1800);
+                        z-index: 2;
+
+                        .r2 {
+                            width: cptSize(64, 182);
+                            height: cptSize(65, 60);
+                        }
+
+                        .r2-span {
+                            width: cptSize(100, 182);
+                            color: #1c73ff;
+                        }
+                    }
+
+                    .right-bottom2-c {
+                        width: cptSize(1380, 1800);
+                        height: cptSize(34, 154);
+                        top: cptSize(60, 154);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(110, 1380);
+
+                            .tu {
+                                width: cptSize(16, 110);
+                                height: cptSize(15, 34);
+                                right: cptSize(8, 110);
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(300, 1380);
+                            left: cptSize(116, 1380);
+
+                            .span1 {
+                                left: cptSize(24, 296);
+                            }
+
+                            .span2 {
+                                right: cptSize(30, 296);
+                            }
+
+                            .input1 {
+                                width: cptSize(20, 296);
+                                height: cptSize(20, 34);
+                            }
+
+                            .input2 {
+                                width: cptSize(20, 296);
+                                height: cptSize(20, 34);
+                                right: cptSize(112, 296);
+                            }
+                        }
+
+                        .c-span3 {
+                            width: cptSize(600, 1380);
+                            right: cptSize(350, 1380);
+
+                            .tu {
+                                width: cptSize(16, 600);
+                                height: cptSize(15, 34);
+                                left: 14%;
+                            }
+
+                            .input1 {
+                                width: cptSize(488, 600);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span4 {
+                            width: cptSize(322, 1380);
+
+                            .tu {
+                                width: cptSize(16, 322);
+                                height: cptSize(15, 34);
+                                left: 18%;
+                            }
+
+                            .input1 {
+                                width: cptSize(230, 322);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+                    }
+
+                    .right-bottom2-b {
+                        width: cptSize(1380, 1800);
+                        height: cptSize(34, 154);
+                        bottom: cptSize(18, 172);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(504, 1380);
+
+                            .tu {
+                                width: cptSize(16, 504);
+                                height: cptSize(15, 34);
+                                left: 16%;
+                            }
+
+                            .input1 {
+                                width: cptSize(394, 504);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(430, 1380);
+                            left: cptSize(536, 1380);
+
+                            .tu {
+                                width: cptSize(16, 430);
+                                height: cptSize(15, 34);
+                                left: 16%;
+                            }
+
+                            .input1 {
+                                width: cptSize(320, 430);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span3 {
+                            width: cptSize(378, 1380);
+
+                            .tu {
+                                width: cptSize(16, 378);
+                                height: cptSize(15, 34);
+                                left: 20%;
+                            }
+
+                            .input1 {
+                                width: cptSize(266, 378);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+                    }
+
+                    .xian {
+                        width: cptSize(1450, 1800);
+                        height: 1px;
+                        background: #adadad;
+                    }
+                }
+
+                .right-bottom3 {
+                    height: cptSize(300, 903);
+                    bottom: cptSize(244, 903);
+                    z-index: 2;
+
+                    .right-bottom3-t {
+                        width: cptSize(182, 1800);
+                        height: cptSize(60, 300);
+                        left: cptSize(10, 1800);
+                        z-index: 2;
+
+                        .r3 {
+                            width: cptSize(64, 182);
+                            height: cptSize(65, 60);
+                        }
+
+                        .r3-span {
+                            width: cptSize(100, 182);
+                            color: #1c73ff;
+                        }
+                    }
+
+                    .right-bottom3-t1 {
+                        width: cptSize(1380, 1800);
+                        height: cptSize(34, 300);
+                        top: cptSize(60, 300);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(316, 1380);
+
+                            .tu {
+                                width: cptSize(16, 316);
+                                height: cptSize(15, 34);
+                                left: 30%;
+                            }
+
+                            .input1 {
+                                width: cptSize(190, 316);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(306, 1380);
+                            left: cptSize(350, 1380);
+
+                            .tu {
+                                width: cptSize(16, 306);
+                                height: cptSize(15, 34);
+                                left: 25%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(190, 306);
+                                right: cptSize(20, 306);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span3 {
+                            width: cptSize(356, 1380);
+                            left: cptSize(680, 1380);
+
+                            .tu {
+                                width: cptSize(16, 356);
+                                height: cptSize(15, 34);
+                                left: 25%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(228, 356);
+                                right: cptSize(20, 356);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span4 {
+                            width: cptSize(314, 1380);
+
+                            .tu {
+                                width: cptSize(16, 314);
+                                height: cptSize(15, 34);
+                                left: 18%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(238, 314);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+                    }
+
+                    .right-bottom3-t2 {
+                        width: cptSize(1380, 1800);
+                        height: cptSize(34, 300);
+                        top: cptSize(106, 300);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(316, 1380);
+
+                            .tu {
+                                width: cptSize(16, 316);
+                                height: cptSize(15, 34);
+                                left: 30%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(190, 316);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(306, 1380);
+                            left: cptSize(350, 1380);
+
+                            .tu {
+                                width: cptSize(16, 306);
+                                height: cptSize(15, 34);
+                                left: 25%;
+                            }
+
+                            .input1 {
+                                width: cptSize(190, 306);
+                                right: cptSize(20, 306);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span3 {
+                            width: cptSize(356, 1380);
+                            left: cptSize(680, 1380);
+
+                            .tu {
+                                width: cptSize(16, 356);
+                                height: cptSize(15, 34);
+                                left: 25%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(228, 356);
+                                right: cptSize(20, 356);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span4 {
+                            width: cptSize(314, 1380);
+
+                            .tu {
+                                width: cptSize(16, 314);
+                                height: cptSize(15, 34);
+                                left: 18%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(238, 314);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+                    }
+
+                    .right-bottom3-t3 {
+                        width: cptSize(1380, 1800);
+                        height: cptSize(34, 300);
+                        top: cptSize(154, 300);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(316, 1380);
+
+                            .tu {
+                                width: cptSize(16, 316);
+                                height: cptSize(15, 34);
+                                left: 30%;
+                            }
+
+                            .input1 {
+                                width: cptSize(190, 316);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(306, 1380);
+                            left: cptSize(350, 1380);
+
+                            .tu {
+                                width: cptSize(16, 306);
+                                height: cptSize(15, 34);
+                                left: 25%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(190, 306);
+                                right: cptSize(20, 306);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span3 {
+                            width: cptSize(356, 1380);
+                            left: cptSize(680, 1380);
+
+                            .tu {
+                                width: cptSize(16, 356);
+                                height: cptSize(15, 34);
+                                left: 25%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(228, 356);
+                                right: cptSize(20, 356);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span4 {
+                            width: cptSize(314, 1380);
+
+                            .tu {
+                                width: cptSize(16, 314);
+                                height: cptSize(15, 34);
+                                left: 18%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(238, 314);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+                    }
+
+                    .right-bottom3-t4 {
+                        width: cptSize(1380, 1800);
+                        height: cptSize(34, 300);
+                        top: cptSize(202, 300);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(1034, 1380);
+
+                            .tu {
+                                width: cptSize(16, 1034);
+                                height: cptSize(15, 34);
+                                left: 11.5%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(876, 1034);
+                                right: cptSize(20, 1034);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99.8% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(316, 1380);
+
+                            .tu {
+                                width: cptSize(16, 316);
+                                height: cptSize(15, 34);
+                                left: 22%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(222, 316);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+                    }
+
+                    .right-bottom3-t5 {
+                        width: cptSize(1380, 1800);
+                        height: cptSize(34, 300);
+                        bottom: cptSize(18, 300);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(630, 1380);
+
+                            .tu {
+                                width: cptSize(16, 630);
+                                height: cptSize(15, 34);
+                                left: 16%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(502, 630);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99.6% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(700, 1380);
+
+                            .tu {
+                                width: cptSize(16, 700);
+                                height: cptSize(15, 34);
+                                left: 12.5%;
+                            }
+
+                            .input1 {
+                                width: cptSize(592, 700);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+                    }
+
+                    .xian {
+                        width: cptSize(1450, 1800);
+                        height: 1px;
+                        background: #adadad;
+                    }
+                }
+
+                .right-bottom4 {
+                    height: cptSize(138, 903);
+                    bottom: cptSize(60, 903);
+                    z-index: 2;
+
+                    .right-bottom4-t {
+                        width: cptSize(182, 1800);
+                        height: cptSize(60, 138);
+                        left: cptSize(10, 1800);
+                        z-index: 2;
+
+                        .r4 {
+                            width: cptSize(64, 182);
+                            height: cptSize(65, 60);
+                        }
+
+                        .r4-span {
+                            width: cptSize(100, 182);
+                            color: #1c73ff;
+                        }
+                    }
+
+                    .right-bottom4-c {
+                        width: cptSize(1380, 1800);
+                        height: cptSize(34, 138);
+                        top: cptSize(60, 138);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(316, 1380);
+
+                            .tu {
+                                width: cptSize(16, 316);
+                                height: cptSize(15, 34);
+                                left: 30%;
+                            }
+
+                            .input1 {
+                                width: cptSize(190, 316);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(306, 1380);
+                            left: cptSize(344, 1380);
+
+                            .tu {
+                                width: cptSize(16, 306);
+                                height: cptSize(15, 34);
+                                left: 16%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(230, 306);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span3 {
+                            width: cptSize(248, 1380);
+                            left: cptSize(680, 1380);
+
+                            .tu {
+                                width: cptSize(16, 248);
+                                height: cptSize(15, 34);
+                                left: 36%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(134, 248);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span4 {
+                            width: cptSize(214, 1380);
+                            right: cptSize(212, 1380);
+
+                            .tu {
+                                width: cptSize(16, 214);
+                                height: cptSize(15, 34);
+                                left: 28%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(134, 214);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span5 {
+                            width: cptSize(186, 1380);
+
+                            .tu {
+                                width: cptSize(16, 186);
+                                height: cptSize(15, 34);
+                                left: 30%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(106, 186);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+                    }
+
+                    .right-bottom4-b {
+                        width: cptSize(1380, 1800);
+                        height: cptSize(34, 138);
+                        left: cptSize(88, 1800);
+                        color: black;
+
+                        .c-span1 {
+                            width: cptSize(316, 1380);
+
+                            .tu {
+                                width: cptSize(16, 316);
+                                height: cptSize(15, 34);
+                                left: 30%;
+                            }
+
+                            .input1 {
+                                width: cptSize(190, 316);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span2 {
+                            width: cptSize(306, 1380);
+                            left: cptSize(344, 1380);
+
+                            .tu {
+                                width: cptSize(16, 306);
+                                height: cptSize(15, 34);
+                                left: 29%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(196, 306);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span3 {
+                            width: cptSize(248, 1380);
+                            left: cptSize(680, 1380);
+
+                            .tu {
+                                width: cptSize(16, 248);
+                                height: cptSize(15, 34);
+                                left: 36%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(134, 248);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+
+                        .c-span4 {
+                            width: cptSize(214, 1380);
+                            right: cptSize(212, 1380);
+
+                            .tu {
+                                width: cptSize(16, 214);
+                                height: cptSize(15, 34);
+                                left: 31.5%;
+                            }
+
+                            .input1 {
+                                width: cptSize(130, 214);
+                                height: 80%;
+                                background: #f3f7f8;
+                                border: 1px solid #b8b8b8;
+                            }
+                        }
+
+                        .c-span5 {
+                            width: cptSize(186, 1380);
+
+                            .tu {
+                                width: cptSize(16, 186);
+                                height: cptSize(15, 34);
+                                left: 50%;
+                            }
+
+                            .c-span2-s {
+                                width: cptSize(70, 186);
+                                height: 80%;
+                                border: 1px solid #b8b8b8;
+                                /* 清除默认的箭头样式 */
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                /* 右侧添加小箭头的背景图 */
+                                background: #f3f7f8 url("../images/fif/xiala.png") no-repeat 99% 50%;
+                                background-size: 20px 20px;
+                            }
+                        }
+                    }
+                }
+
+                .left-xian {
+                    width: 1px;
+                    height: cptSize(626, 903);
+                    background: #aaaaaa;
+                    left: 2.5%;
+                    top: 43%;
+                }
+
+                .sub {
+                    width: cptSize(154, 1800);
+                    height: cptSize(44, 903);
+                    left: 35%;
+                    bottom: cptSize(10, 903);
+                    background: white;
+                    border: 1px #fe980f solid;
+                    color: #fe980f;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #fe980f;
+                        color: white;
+                    }
+                }
+
+                .sub1 {
+                    width: cptSize(154, 1800);
+                    height: cptSize(44, 903);
+                    left: 45%;
+                    bottom: cptSize(10, 903);
+                    background: white;
+                    color: #fe980f;
+                    border: 1px #fe980f solid;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #fe980f;
+                        color: white;
+                    }
+                }
+
+                .shui {
+                    width: cptSize(400, 1800);
+                    height: cptSize(44, 903);
+                    color: #f1f1f0;
+                    font-family: "kongx";
+                    transform: rotate(-19deg);
+                    -ms-transform: rotate(-19deg);
+                    /* Internet Explorer */
+                    -moz-transform: rotate(-19deg);
+                    /* Firefox */
+                    -webkit-transform: rotate(-19deg);
+                    /* Safari 和 Chrome */
+                    -o-transform: rotate(-19deg);
+                    /* Opera */
+                }
+
+                .shui0 {
+                    top: 20%;
+                }
+
+                .shui1 {
+                    top: 20%;
+                    left: 35%;
+                }
+
+                .shui2 {
+                    top: 20%;
+                    left: 70%;
+                }
+
+                .shui3 {
+                    top: 70%;
+                }
+
+                .shui4 {
+                    top: 70%;
+                    left: 35%;
+                }
+
+                .shui5 {
+                    top: 70%;
+                    left: 70%;
+                }
+            }
+        }
+    }
+}
+
+
+/*右击事件*/
+
+.right-youji {
+    width: 100px;
+    box-shadow: #999 0.1em 0.1em 0.2em;
+    background: white;
+    display: none;
+    z-index: 10;
+
+    ul li {
+        padding: 5px 0;
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+            background: #cccccc;
+        }
+    }
+}
+
+// 查询栏部分的公共样式
+.icon-rotate-90 {
+    transform: rotate(90deg);
+}
+
+.search-form {
+    padding: 0 18px 0 18px;
+
+    .search-group {
+        margin: 20px 0 20px 0;
+        overflow: hidden;
+
+        .search-item {
+            float: left;
+            margin-right: 50px;
+
+            label {
+                height: 28px;
+                display: inline-block;
+                min-width: 80px;
+                text-align: left;
+                text-align: jue;
+                text-align: justify;
+                line-height: 28px;
+                text-align-last: justify;
+                text-align: justify;
+                text-justify: distribute-all-lines;
+                padding: 0 15px 0 0;
+            }
+        }
+
+        .button-group {
+            overflow: hidden;
+
+            button {
+                float: left;
+                margin-left: -1px;
+                border: 1px solid #297aff;
+                padding: 5px 24px;
+                outline: none;
+                background-color: #fff;
+                color: #297aff;
+                font-family: "Microsoft YaHei";
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #75aaff;
+                    color: #fff;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                    background-color: #297aff;
+                    color: #fff;
+                }
+
+                &:active {
+                    background-color: #297aff;
+                    color: #fff;
+                }
+
+                &:first-child {
+                    border-radius: 6px 0 0 6px;
+                }
+
+                &:last-child {
+                    border-radius: 0 6px 6px 0;
+                }
+
+                .iconfont {
+                    display: inline-block;
+                    margin-right: 10px;
+                    text-align: left;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+    .search-more {
+        display: none;
+
+        .search-group:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+
+/**
+ *
+ * TAB
+ *
+ */
+
+.tab {
+    height: 100%;
+    border-bottom: 1px solid #e6e6e6;
+
+    .tab-title {
+        height: 100%;
+        display: table;
+
+        li {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            padding: 0 20px;
+            // border-right: 1px solid #e6e6e6;
+            cursor: pointer;
+
+            &:hover {
+                background-image: linear-gradient(to right top, #5191f0, #97bdf7);
+                color: #fff;
+            }
+
+            &.tab-active {
+                background-image: linear-gradient(to right top, #005ee9, #5498ff);
+                color: #fff;
+            }
+
+            .iconfont {
+                display: inline-block;
+                width: 24px;
+            }
+        }
+    }
+}
+
+.tab-item {
+    display: none;
+    height: 100%;
+    background-color: #ebf2ff;
+
+    &>* {
+        flex: 1 1 auto;
+    }
+
+    &.tab-item-active {
+        display: flex;
+    }
+}
+
+
+/**
+ *
+ * section
+ *
+ */
+
+
+/**
+ *
+ * button
+ *
+ */
+
+.single-colors {
+    button {
+        background-color: #1e7fe3;
+        color: #ebebeb;
+        border: 1px solid #297aff;
+
+        &:hover {
+            background-color: #178ff5d1;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: #297aff;
+            color: #fff;
+        }
+    }
+}
+
+.padding-18 {
+    padding: 0 18px;
+}
+
+// 增加的对话框
+.addInfo_table {
+    font-size: 16px;
+    margin-left: 64px;
+
+    & tr {
+        height: 50px;
+
+        & td:nth-child(odd) {
+            text-align: right;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+
+    .cz_tr {
+        height: 100px !important;
+
+        .cz_td {
+            text-align: center !important;
+        }
+
+        .save,
+        .cancel {
+            font-size: 16px;
+            background-color: #4289ff;
+            color: #fff;
+            border-radius: 5px;
+            padding: 7px 17px;
+            margin-left: 60px;
+        }
+    }
+}
+
+.people-item {
+    flex: none;
+    height: 180px;
+    margin: 15px 0 15px 15px;
+    padding: 10px;
+    box-shadow: 1px 2px 3px 0 rgba($color: #000000, $alpha: 0.5);
+    text-align: center;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    div {
+        height: 30px;
+        line-height: 30px;
+        @extend.font-18;
+    }
+}
+
+// 规范说明样式
+.gfsm-title {
+    letter-spacing: 10px;
+    color: #1b5b9b;
+    font-weight: bold;
+    margin-top: 37px;
+    margin-bottom: -3px;
+}
+
+// .standard-content {
+//     color: #1b5b9b;
+//     padding: 10px;
+// }
+
+// 规范帮助页面样式
+dl {
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    @extend.font-22;
+
+    dt {
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        &:first-child {
+            margin-top: 10px;
+        }
+    }
+
+    dd {
+        line-height: 30px;
+        margin-bottom: 10px;
+        text-indent: 20px;
+
+        dl {
+            margin: 10px 0;
+
+            dt {
+                font-weight: normal;
+            }
+
+            dd {
+                padding-left: 20px;
+                // @extend.font-18;
+            }
+        }
+    }
+}
+
+// 业务动态页面样式 开始
+.ywdt-form {
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #ebf2ff;
+
+    .section-container {
+        &.ywdt {
+            .section-item {
+                display: flex;
+                margin-top: 0;
+                border-top: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                min-height: 40px;
+                line-height: 40px;
+                @extend.font-18;
+
+                &:first-child {
+                    // $margin-top:1.04% !global;
+                    // $margin-top:1.04% !global;
+                    margin-top: 1.04%;
+                }
+
+                &.section-title {
+                    margin-top: 1.04%;
+                    background: #1e6dec;
+
+                    h1 {
+                        color: #fff;
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: 1px solid #ccc;
+                }
+
+                &.section-item-title {
+                    font-weight: bold;
+                }
+
+                .totals {
+                    font-weight: bold;
+                    color: #ad0cab;
+
+                    &>div {
+                        display: inline;
+                    }
+
+                    .total-name {
+                        color: #047ed3;
+                        padding-left: 15px;
+                    }
+                }
+
+                .section-item-content {
+                    flex: 1 0 0;
+                    border-right: 1px solid #ccc;
+
+                    &:last-child {
+                        border: none;
+                    }
+
+                    &.flex-grow-2 {
+                        flex-grow: 2;
+                    }
+
+                    .wz {
+                        display: inline-block;
+                        width: 4%;
+                        text-align: center;
+                    }
+
+                    &.section-item-content-title {
+                        background-color: #f2f2f2;
+                        //  padding-right:15px;
+                    }
+                }
+
+                &.section-item-row {
+                    flex-direction: row;
+                }
+            }
+
+            .iconfont {
+                padding-left: 15px;
+            }
+
+            input[type="button"] {
+                &#ywdt-btn {
+                    background-color: #297aff;
+                    color: #fff;
+                }
+
+                cursor:pointer;
+                display: block;
+                border: none;
+                background-color: #fff;
+                height: 100%;
+                width: 100%;
+                outline: none;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: #297aff;
+                    color: #fff;
+                }
+            }
+
+            .textbox {
+                border: none;
+                width: 48% !important;
+                outline: none;
+
+                input {
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+
+// 业务动态页面样式 结束
+// 文书补打部分样式开始
+.section-item-content {
+    &#glws {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .item-file {
+            flex: none;
+            width: 10%;
+            margin: 1% 0 1% 1%;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-shadow: 1px 4px 6px #bfb8b8;
+            cursor: pointer;
+
+            img {
+                display: block;
+                margin: 0 auto;
+                margin-top: 7%;
+                width: 70%;
+                height: 70%;
+            }
+
+            .file-name {
+                @extend.font-20;
+                @extend.align-center;
+            }
+        }
+    }
+}
+
+// 文书补打部分样式结束
+// 字段选择弹框开始
+.field-warp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @extend.font-20;
+
+    .field-item {
+        flex: none;
+        padding: 10px 0 0 15px;
+        width: 33.3%;
+
+        label {
+            padding-left: 2px;
+        }
+    }
+}
+
+// 字段选择弹框结束
+// 图示说明样式开始
+.legend {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    .legend-title {
+        flex: 1;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .legend-content {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .legend-content-item {
+            flex: none;
+
+            .lump {
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                vertical-align: middle;
+                margin-right: 2px;
+
+                &.one-level {
+                    background-color: #e91e1b;
+                }
+
+                &.two-level {
+                    background-color: #ffdd27;
+                }
+
+                &.three-level {
+                    background-color: #006e44;
+                }
+
+                &.not-evaluated {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
+
+// 图示说明样式结束
+.datagrid-mask {
+    background: #fff;
+}
+
+//点开监区树样式
+.section-item {
+    overflow-y: scroll;
+}
+
+.section-item::-webkit-scrollbar {
+    display: none;
+}
+
+.wsbdcss {
+    overflow: hidden !important;
+}
+
+.section-item-content::-webkit-scrollbar {
+    display: none;
+}
+
+//指纹弹窗  开始
+.container-formtable img {
+    width: 305px;
+    margin-left: 36%;
+}
+
+.collectBtn {
+    width: 100px;
+    height: 30px;
+    background: #2e8ded;
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.collectBtn:hover {
+    background: #d2d2d2;
+}
+
+.obtain {
+    width: 100px;
+    height: 30px;
+    background: #f1f1f1;
+    border: 0;
+    color: #333;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.obtain:hover {
+    background: #d2d2d2;
+}
+
+//指纹弹窗  结束
+//生物特征 开始
+.swtz-container {
+    .swtz-record {
+        width: 100%;
+
+        .tab {
+            height: 35px;
+            border: 1px solid #ebf2ff !important;
+
+            .tab-item {
+                list-style: none;
+                display: inline-block;
+                width: 120px;
+                text-align: center;
+                font-size: 16px;
+                border: 0.5px solid #fff;
+                background: #5191f0;
+                color: #fff;
+                padding: 0 20px;
+                cursor: pointer;
+                height: 35px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    .products .mainCont {
+        display: none;
+        overflow: scroll;
+        min-height: 300px;
+        min-width: 1500px;
+    }
+
+    .products .mainCont.selected {
+        display: block;
+    }
+}
+
+//生物特征 结束
+//耳目管理业务动态 开始
+#emglTit {
+    position: fixed;
+}
+
+#emglCon {
+    margin-top: 3%;
+    height: 660px;
+    background: #fff;
+}
+
+.emglScroll {
+    overflow-y: scroll;
+    background: #fff;
+}
+
+.emglScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.emgl {
+    width: 100%;
+    height: 100%;
+}
+
+#bjem {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid white !important;
+    width: 98%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    color: #1e6dec;
+}
+
+.show {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ywdt-form .section-container.ywdt .section-item.emdt {
+    flex-direction: column !important;
+}
+
+//耳目管理业务动态 结束
+//快速入所页面样式 开始
+.ksrs-container {
+    .standard-content {
+        padding: 1.04% !important;
+    }
+
+    .container {
+        height: 660px;
+        overflow-y: scroll;
+    }
+
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container-formtable.zpbl .choose {
+        margin-left: 95px;
+    }
+
+    .htmleaf-container {
+        width: 100%;
+        border: 1px solid #ccc;
+        background: #fff;
+    }
+
+    .ksrs-title {
+        height: 40px;
+        color: #726f77;
+        font-weight: bold;
+        line-height: 40px;
+        font-size: 13.5px;
+
+        .iconfont {
+            padding-left: 15px;
+            font-weight: bold;
+            color: #726f77;
+        }
+    }
+
+    .ksrs-zplr {
+        border-left: 0 !important;
+        border-right: 0 !important;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .ksrsBtn {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+
+        .closeBtn,
+        .keepBtn {
+            width: 100px;
+            height: 34px;
+            background: #5a98fd;
+            color: white;
+            outline: none;
+            border: 0;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        .keepBtn:hover {
+            background: #2271f3;
+        }
+
+        .closeBtn:hover {
+            background: #afacac;
+        }
+
+        .closeBtn {
+            color: #333;
+            margin-left: 25px;
+            background: #e2dfdf;
+        }
+    }
+
+    .jbxx {
+        .container-formtable .textbox a {
+            height: 40px !important;
+        }
+
+        .container-formtable tr td {
+            text-align: right;
+            height: 40px;
+            padding: 0px !important;
+            border: 1px solid #ccc;
+            border-radius: 0px !important;
+        }
+
+        .container-formtable tr td span input {
+            height: 43px;
+        }
+
+        .container-formtable .textbox {
+            margin-right: 0px !important;
+            border: 0px !important;
+            border-radius: 0px;
+            height: 40px;
+        }
+
+        .formtd {
+            background: #f2f2f2;
+            color: #726f77;
+        }
+    }
+
+    .zplr dl {
+        color: #726f77;
+    }
+
+    .zplr .timeline-content {
+        border-bottom: 1px solid #ccc;
+        margin-top: -2px;
+    }
+}
+
+//快速入所页面样式 结束
+//监室批量调整 开始
+.pljstz-content {
+    html {
+        overflow-y: scroll;
+    }
+
+    .title {
+        height: 30px;
+        width: 100%;
+        background-color: #3381f6 !important;
+        color: white;
+        line-height: 30px;
+    }
+
+    .section-container {
+        background: #fff !important;
+    }
+
+    #jstz-pltz::-webkit-scrollbar {
+        display: none;
+    }
+
+    #jstz-pltz {
+        overflow-y: scroll;
+
+        .pljstz-top {
+            width: 100%;
+            display: flex;
+            padding-bottom: 50px;
+            padding: 20px;
+
+            .pljstz-jq {
+                float: left;
+
+                .bluebutton {
+                    cursor: pointer;
+                    padding: 12px 30px 12px 30px;
+                    color: white;
+                    border-radius: 7px;
+                    background: #287af3;
+                    box-shadow: 0px 10px 14px -7px #287af3;
+                    text-decoration: none;
+                }
+
+                .bluebutton:hover {
+                    color: white;
+                    text-decoration: none;
+                    background: #0f57cc;
+                }
+            }
+
+            .pljstz-js {
+                margin-left: 2%;
+                width: 81%;
+
+                button {
+                    cursor: pointer;
+                    border-radius: 6px;
+                    border: 1px solid #0997f5;
+                    color: #fff;
+                    margin-right: 5px;
+                    margin-top: 0.5%;
+                    background: #1296db;
+                    padding: 12px 30px 12px 30px;
+
+                    span {
+                        color: red;
+                        position: relative;
+                        left: 20%;
+                    }
+                }
+
+                button:hover {
+                    background: #057fd0;
+                }
+            }
+        }
+    }
+
+    .textbox {
+        border: 1px solid #1296db !important;
+    }
+
+    .formtd {
+        min-width: 80px !important;
+    }
+
+    #jsry {
+        display: flex;
+        flex-wrap: wrap;
+
+        .jsry-tp {
+            width: 12%;
+            text-align: center;
+            margin: 12px;
+            background: #dcdcdc;
+
+            .jsry-img {
+                width: 70px;
+                padding-left: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//监室批量调整 结束
+//值班安排 开始
+.zbap-container {
+    .datagrid-row {
+        height: 45px !important;
+    }
+}
+
+//值班安排 结束
+//岗位交接班-交班 开始
+.gwjj-container {
+    .standard-content {
+        padding: 1.04% !important;
+
+        .htmleaf-container {
+            width: 100%;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+
+        .container {
+            .gwjj-title {
+                height: 40px;
+                color: #726f77;
+                font-weight: bold;
+                line-height: 40px;
+                font-size: 13.5px;
+
+                .iconfont {
+                    padding-left: 15px;
+                    font-weight: bold;
+                    color: #726f77;
+                }
+            }
+
+            .container-formtable .textbox a {
+                height: 40px !important;
+            }
+
+            .container-formtable {
+                border-collapse: collapse;
+                background-color: #ffffff;
+                width: 100%;
+                height: 100%;
+
+                .formtd {
+                    width: 20%;
+                    background: #f2f2f2;
+                    border-left: 0px solid #ccc;
+                }
+
+                .formjb {
+                    min-width: 325px;
+                    background: #f2f2f2;
+                    border-left: 0px solid #fff;
+                    text-align: right;
+                }
+            }
+
+            .container-formtable tr td {
+                // text-align: right;
+                height: 40px;
+                padding: 0px !important;
+                border: 1px solid #ccc;
+                border-radius: 0px !important;
+                color: #726f77;
+            }
+
+            //       // .jbry span {
+            //       //   width: 360px !important;
+            //       //   a {
+            //       //     margin-right: 9px;
+            //       //   }
+            //       // }
+            .container-formtable tr td span input {
+                height: 43px;
+            }
+
+            .container-formtable .textbox {
+                margin-right: 0px !important;
+                border: 0px !important;
+                border-radius: 0px;
+                height: 40px;
+            }
+
+            .gwjjBtn {
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+
+                .closeBtn,
+                .keepBtn {
+                    width: 100px;
+                    height: 34px;
+                    background: #5a98fd;
+                    color: white;
+                    outline: none;
+                    border: 0;
+                    cursor: pointer;
+                    border-radius: 2px;
+                }
+
+                .keepBtn:hover {
+                    background: #2271f3;
+                }
+
+                .closeBtn:hover {
+                    background: #afacac;
+                }
+
+                .closeBtn {
+                    color: #333;
+                    margin-left: 25px;
+                    background: #e2dfdf;
+                }
+            }
+        }
+    }
+}
+
+//岗位交接班-交班 结束
+//交接班 开始
+.jjb-container {
+    .standard-content {
+        padding: 1.04% !important;
+
+        .htmleaf-container {
+            width: 100%;
+            border: 1px solid #ccc;
+            background: #fff;
+
+            .container {
+                .jjb-title {
+                    height: 40px;
+                    color: #726f77;
+                    font-weight: bold;
+                    line-height: 40px;
+                    font-size: 13.5px;
+
+                    .iconfont {
+                        padding-left: 15px;
+                        font-weight: bold;
+                        color: #726f77;
+                    }
+                }
+
+                .container-formtable .textbox a {
+                    height: 40px !important;
+                }
+
+                .container-formtable {
+                    border-collapse: collapse;
+                    background-color: #ffffff;
+                    width: 100%;
+                    height: 100%;
+
+                    .formtd {
+                        // width: 20%;
+                        min-width:150px;
+                        text-align: right;
+                        // background: #f2f2f2;
+                        // border-left: 0px solid #ccc;
+                    }
+
+                    // .formjb {
+                    //     // min-width: 175px;
+                    //     // background: #f2f2f2;
+                    //     // border-left: 0px solid #fff;
+                    //     // text-align: right;
+                    // }
+                }
+
+                .container-formtable tr td {
+                    // text-align: right;
+                    // height: 40px;
+                    // padding: 0px !important;
+                    // border: 1px solid #ccc;
+                    // border-radius: 0px !important;
+                    // color: #726f77;
+                }
+
+                .container-formtable tr td span input {
+                    height: 38px !important;
+                    width:100% !important;
+                }
+
+                .container-formtable .textbox {
+                    height: 40px;
+                }
+
+                .jjbBtn {
+                    // width: 100%;
+                    text-align: center;
+                    padding: 20px;
+
+                    .closeBtn,
+                    .keepBtn {
+                        padding: 7px 18px;
+                        // width: 100px;
+                        // height: 34px;
+                        background: #5a98fd;
+                        color: white;
+                        outline: none;
+                        border: 0;
+                        cursor: pointer;
+                        border-radius: 2px;
+                    }
+
+                    .keepBtn:hover {
+                        background: #2271f3;
+                    }
+
+                    .closeBtn:hover {
+                        background: #afacac;
+                    }
+
+                    .closeBtn {
+                        color: #333;
+                        margin-left: 25px;
+                        background: #e2dfdf;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//交接班 结束
+//上报报表 开始
+.sbbb-container {
+    .sbbb-search {
+        margin: 20px 0 20px 0;
+        overflow: hidden;
+
+        button {
+            background-color: #297aff;
+            border-radius: 6px;
+            border: 1px solid #297aff;
+            color: #fff;
+            padding: 5px 24px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        td .textbox {
+            margin-right: 50px;
+        }
+    }
+
+    #sbbb_form {
+        border: 1px solid #ebf2ff;
+        padding: 20px;
+        height: 100%;
+
+        .fitem {
+            font-size: 15px;
+            padding: 0px 0px 10px 0px;
+        }
+    }
+}
+
+//上报表表 结束
+//相关报表 开始
+.xgbb-container {
+    .xgbb-search {
+        margin: 20px 0 20px 0;
+        overflow: hidden;
+
+        button {
+            background-color: #297aff;
+            border-radius: 6px;
+            border: 1px solid #297aff;
+            color: #fff;
+            padding: 5px 24px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        td .textbox {
+            margin-right: 50px;
+        }
+    }
+
+    #xgbb_form {
+        border: 1px solid #ebf2ff;
+        padding: 20px;
+        height: 100%;
+
+        .formRadio {
+            font-size: 15px;
+            padding: 0px 0px 10px 0px;
+        }
+    }
+}
+
+//相关报表 结束
+//特殊报表 开始
+.tsbb-container {
+    element.style {
+        height: 28px;
+        line-height: 28px;
+    }
+
+    #print {
+        width: 90px;
+        height: 28px;
+        line-height: 28px;
+        cursor: pointer;
+        background: #297aff;
+        border-radius: 5px;
+        text-align: center;
+        margin-right: 5%;
+        margin-top: -4px;
+        margin-bottom: -7px;
+        color: white;
+    }
+
+    #print:hover {
+        background: #0060eb;
+    }
+
+    .tsbb-record {
+        width: 100%;
+
+        .tab {
+            height: auto;
+            border: 1px solid #ebf2ff !important;
+
+            .tab-item {
+                list-style: none;
+                display: inline-block;
+                width: 100px;
+                text-align: center;
+                font-size: 16px;
+                background-image: linear-gradient(to right top, #005ee9, #5498ff);
+                color: #fff;
+                padding: 0 20px;
+                cursor: pointer;
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .second {
+                margin-left: -4px;
+            }
+        }
+
+        #tsbb_radio2 {
+            border-collapse: separate;
+            border-spacing: 0px;
+        }
+
+        #tsbb_radio {
+            border-collapse: separate;
+            border-spacing: 0px;
+        }
+    }
+
+    .products .mainCont {
+        display: none;
+        overflow: auto;
+        min-height: 300px;
+        text-align: left;
+
+        td {
+            padding: 8px 12px 0px 15px;
+            font-size: 15px;
+        }
+    }
+
+    .products .mainCont.selected {
+        display: block;
+    }
+}
+
+//特殊报表 结束
+//公安部台账 开始
+.gabtz-container {
+    .gabtz-search {
+        margin: 20px 0 20px 0;
+        overflow: hidden;
+
+        button {
+            background-color: #297aff;
+            border-radius: 6px;
+            border: 1px solid #297aff;
+            color: #fff;
+            padding: 5px 24px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        td .textbox {
+            margin-right: 50px;
+        }
+    }
+
+    #gabtz_form {
+        border: 1px solid #ebf2ff;
+        padding: 20px;
+        height: 100%;
+
+        .fitem {
+            font-size: 15px;
+            padding: 0px 0px 4px 0px;
+        }
+    }
+}
+
+//公安部台账 结束
+//当前值班 开始
+.dqzb-container {
+    .title {
+        height: 30px;
+        background: #5498ff;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .amount {
+        background: #efeaea;
+        height: 26px;
+        line-height: 26px;
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+    }
+
+    .dqzb-body {
+        background: #fff;
+        padding: 15px;
+
+        .dqzb-content {
+            width: 25%;
+            padding: 15px;
+            border: 1px dotted #ccc;
+            border-right: 0px solid #fff;
+        }
+
+        .dqzb-last {
+            width: 25%;
+            border: 1px dotted #ccc;
+            padding: 15px;
+        }
+    }
+
+    .datagrid-body {
+        display: flex;
+        box-shadow: 1px 4px 6px #ccc;
+        background: #fff;
+    }
+}
+
+//当前值班 结束
+//人员病历 开始
+.rybl-container {
+    .rybl-record {
+        width: 100%;
+
+        .tab {
+            height: 35px;
+            border: 1px solid #ebf2ff !important;
+
+            .tab-item {
+                list-style: none;
+                display: inline-block;
+                width: 120px;
+                text-align: center;
+                font-size: 16px;
+                border: 0.5px solid #fff;
+                background: #5191f0;
+                color: #fff;
+                padding: 0 20px;
+                cursor: pointer;
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .gap {
+                margin-left: -4px;
+                border-left: 0px solid #fff;
+            }
+
+            .freedom {
+                margin-left: -4px;
+            }
+        }
+    }
+
+    .products .mainCont {
+        display: none;
+        overflow: scroll;
+        min-height: 300px;
+        min-width: 1500px;
+
+        button {
+            background-color: #297aff;
+            border-radius: 6px;
+            border: 1px solid #297aff;
+            color: #fff;
+            margin-left: 45px;
+            padding: 5px 24px;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    .products .mainCont.selected {
+        display: block;
+    }
+}
+
+//人员病历 结束
+//重病号管理分布图 开始
+.zbhfbt-content {
+    html {
+        overflow-y: scroll;
+    }
+
+    .title {
+        height: 30px;
+        width: 100%;
+        background-color: #3381f6 !important;
+        color: white;
+        line-height: 30px;
+    }
+
+    .section-container {
+        background: #fff !important;
+    }
+
+    #zbhgl-fbt::-webkit-scrollbar {
+        display: none;
+    }
+
+    #zbhgl-fbt {
+        overflow-y: scroll;
+
+        .zhbfbt-top {
+            width: 100%;
+            display: flex;
+            padding-bottom: 50px;
+            padding: 20px;
+
+            .zbhfbt-jq {
+                float: left;
+
+                .bluebutton {
+                    cursor: pointer;
+                    padding: 12px 30px 12px 30px;
+                    color: white;
+                    border-radius: 7px;
+                    background: #287af3;
+                    box-shadow: 0px 10px 14px -7px #287af3;
+                    text-decoration: none;
+                }
+
+                .bluebutton:hover {
+                    color: white;
+                    text-decoration: none;
+                    background: #0f57cc;
+                }
+            }
+
+            .zbhfbt-js {
+                margin-left: 2%;
+                width: 81%;
+
+                button {
+                    cursor: pointer;
+                    border-radius: 6px;
+                    border: 1px solid #0997f5;
+                    color: #fff;
+                    margin-right: 5px;
+                    margin-top: 0.5%;
+                    background: #1296db;
+                    padding: 12px 30px 12px 30px;
+
+                    span {
+                        color: red;
+                        position: relative;
+                        left: 20%;
+                    }
+                }
+
+                button:hover {
+                    background: #057fd0;
+                }
+            }
+        }
+    }
+
+    .textbox {
+        border: 1px solid #1296db !important;
+    }
+
+    .formtd {
+        min-width: 80px !important;
+    }
+
+    #zbhry {
+        display: flex;
+        flex-wrap: wrap;
+
+        .zbhry-tp {
+            width: 12%;
+            text-align: center;
+            margin: 12px;
+            background: #dcdcdc;
+
+            .zbhry-img {
+                width: 70px;
+                padding-left: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//重病号管理分布图 结束
+//违规登记-监区违规 开始
+.jqwg-container {
+    #tree {
+        min-width: 210px !important;
+        width: 15%;
+        height: 100%;
+        border-right: 1px solid #ebf2ff;
+
+        .tree-expanded,
+        .tree-collapsed,
+        .tree-folder,
+        .tree-file,
+        .tree-indent {
+            display: inline !important;
+        }
+    }
+
+    .jqwgqk {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: 18px 18px 0px 0px;
+
+        .container-formtable .textbox a {
+            height: 43px !important;
+        }
+
+        .container-formtable tr td {
+            text-align: right;
+            height: 40px;
+            // padding: 0px !important;
+        }
+
+        .container-formtable tr td span input {
+            height: 43px;
+        }
+
+        // .container-formtable .textbox {
+        //     margin-right: 0px !important;
+        //     border: 0px !important;
+        //     border-radius: 0px;
+        //     height: 40px;
+        // }
+
+        .formtd {
+            font-size: 15px;
+            color: #726f77;
+        }
+    }
+
+    .jqwgBtn {
+        width: 100%;
+        text-align: center;
+        padding: 45px 0px 0px 0px;
+
+        .closeBtn,
+        .keepBtn {
+            width: 100px;
+            height: 34px;
+            background: #5a98fd;
+            color: white;
+            outline: none;
+            border: 0;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        .keepBtn:hover {
+            background: #2271f3;
+        }
+
+        .closeBtn:hover {
+            background: #afacac;
+        }
+
+        .closeBtn {
+            color: #333;
+            margin-left: 25px;
+            background: #e2dfdf;
+        }
+    }
+}
+
+//违规登记-监区违规 结束
+//违规登记-监室违规 开始
+.jswg-container {
+    .section-container .section-item:first-child {
+        margin: 0px !important;
+    }
+
+    #tree {
+        min-width: 210px !important;
+        width: 15%;
+        height: 100%;
+        border-right: 1px solid #ebf2ff;
+    }
+
+    .jswgqk {
+        width: 85%;
+        height: 100%;
+        overflow: hidden;
+        padding: 18px 18px 0px 0px;
+
+        .container-formtable .textbox a {
+            height: 43px !important;
+        }
+
+        .container-formtable tr td {
+            text-align: right;
+            height: 40px;
+        }
+
+        .container-formtable tr td span input {
+            height: 43px;
+        }
+
+        // .container-formtable .textbox {
+        //     margin-right: 0px !important;
+        //     border: 0px !important;
+        //     border-radius: 0px;
+        //     height: 40px;
+        // }
+
+        .formtd {
+            font-size: 15px;
+            color: #726f77;
+        }
+
+        .jswgBtn {
+            width: 100%;
+            text-align: center;
+            padding: 45px 0px 0px 0px;
+
+            .closeBtn,
+            .keepBtn {
+                width: 100px;
+                height: 34px;
+                background: #5a98fd;
+                color: white;
+                outline: none;
+                border: 0;
+                cursor: pointer;
+                border-radius: 2px;
+            }
+
+            .keepBtn:hover {
+                background: #2271f3;
+            }
+
+            .closeBtn:hover {
+                background: #afacac;
+            }
+
+            .closeBtn {
+                color: #333;
+                margin-left: 25px;
+                background: #e2dfdf;
+            }
+        }
+    }
+}
+
+//违规登记-监室违规 结束
+//违规登记-在押人员违规 开始
+.rywg-container {
+    .search-form .search-group .search-item {
+        margin-right: 20px !important;
+
+        label {
+            min-width: 55px !important;
+        }
+    }
+
+    .rywgqk {
+        overflow: hidden;
+
+        .container-formtable .textbox a {
+            height: 40px !important;
+        }
+
+        .container-formtable tr td {
+            text-align: right;
+            height: 40px;
+            padding: 0px !important;
+            border: 1px solid #ccc;
+            border-radius: 0px !important;
+        }
+
+        .container-formtable tr td span input {
+            height: 43px;
+        }
+
+        .container-formtable .textbox {
+            margin-right: 0px !important;
+            border: 0px !important;
+            border-radius: 0px;
+            height: 40px;
+        }
+
+        .formtd {
+            background: #f2f2f2;
+            font-size: 15px;
+            color: #726f77;
+        }
+
+        .rywgBtn {
+            width: 100%;
+            text-align: center;
+            padding: 45px 0px 0px 0px;
+
+            .closeBtn,
+            .keepBtn {
+                width: 100px;
+                height: 34px;
+                background: #5a98fd;
+                color: white;
+                outline: none;
+                border: 0;
+                cursor: pointer;
+                border-radius: 2px;
+            }
+
+            .keepBtn:hover {
+                background: #2271f3;
+            }
+
+            .closeBtn:hover {
+                background: #afacac;
+            }
+
+            .closeBtn {
+                color: #333;
+                margin-left: 25px;
+                background: #e2dfdf;
+            }
+        }
+    }
+}
+
+//违规登记-在押人员违规 结束
+//财务统计 开始
+.cwtj-container {
+    margin: 1.04% !important;
+
+    .cwtjqk {
+        overflow: hidden;
+
+        .container-formtable {
+            width: 100%;
+
+            .cwtj-title {
+                height: 40px;
+                color: #726f77;
+                text-align: left;
+                font-weight: bold;
+                line-height: 40px;
+                font-size: 13.5px;
+
+                .iconfont {
+                    padding-left: 15px;
+                    font-weight: bold;
+                    color: #726f77;
+                }
+            }
+
+            tr td {
+                text-align: right;
+                height: 40px;
+                padding: 0px !important;
+                border: 1px solid #ccc;
+                border-radius: 0px !important;
+
+                span input {
+                    height: 43px;
+                }
+            }
+
+            .textbox a {
+                height: 40px !important;
+            }
+
+            .textbox {
+                margin-right: 0px !important;
+                border: 0px !important;
+                border-radius: 0px;
+                height: 40px;
+            }
+        }
+
+        .formtd {
+            background: #f2f2f2;
+            font-size: 15px;
+            color: #726f77;
+        }
+
+        .cwtjBtn {
+            width: 100%;
+            text-align: center;
+            padding: 45px 0px 0px 0px;
+
+            .censusBtn {
+                width: 100px;
+                height: 34px;
+                background: #5a98fd;
+                color: white;
+                outline: none;
+                border: 0;
+                cursor: pointer;
+                border-radius: 2px;
+            }
+
+            .censusBtn:hover {
+                background: #2271f3;
+            }
+        }
+    }
+}
+
+//财务统计 结束
+//领导查询 开始
+.jshj-container {
+    .jshjTitle {
+        height: 30px;
+        width: 100%;
+        background-color: #3381f6 !important;
+        color: white;
+        margin-bottom: 15px;
+        line-height: 30px;
+    }
+
+    .search-form .search-group .search-item {
+        margin-right: 40px !important;
+
+        label {
+            min-width: 80px !important;
+        }
+    }
+}
+
+//领导查询 结束
+//业务统计 开始
+.ywtj-container {
+    margin: 1.04% !important;
+
+    .ywtjqk {
+        overflow: hidden;
+
+        .container-formtable {
+            width: 100%;
+
+            .ywtj-title {
+                height: 40px;
+                color: #726f77;
+                text-align: left;
+                font-weight: bold;
+                line-height: 40px;
+                font-size: 13.5px;
+
+                .iconfont {
+                    padding-left: 15px;
+                    font-weight: bold;
+                    color: #726f77;
+                }
+            }
+
+            tr td {
+                text-align: right;
+                height: 40px;
+                padding: 0px !important;
+                border: 1px solid #ccc;
+                border-radius: 0px !important;
+
+                span input {
+                    height: 43px;
+                }
+            }
+
+            .textbox a {
+                height: 40px !important;
+            }
+
+            .textbox {
+                margin-right: 0px !important;
+                border: 0px !important;
+                border-radius: 0px;
+                height: 40px;
+            }
+        }
+
+        .formtd {
+            background: #f2f2f2;
+            font-size: 15px;
+            color: #726f77;
+        }
+
+        .ywtjBtn {
+            width: 100%;
+            text-align: center;
+            padding: 45px 0px 0px 0px;
+
+            .censusBtn {
+                width: 100px;
+                height: 34px;
+                background: #5a98fd;
+                color: white;
+                outline: none;
+                border: 0;
+                cursor: pointer;
+                border-radius: 2px;
+            }
+
+            .censusBtn:hover {
+                background: #2271f3;
+            }
+        }
+    }
+}
+
+//业务统计 结束
+//业务信息查询 开始
+.ywxx-container {
+    .ywxx-title {
+        padding: 0px;
+        overflow: hidden;
+
+        .hide {
+            display: flex;
+            background: #0069f6;
+
+            .title {
+                width: 93%;
+                margin-left: 19px;
+                font-size: 17px;
+                height: 40px;
+                line-height: 40px;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+
+            a {
+                width: 80px;
+                line-height: 40px;
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .xsyc {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .tabs .tabs-last {
+        width: 104px !important;
+    }
+
+    .tabs-title {
+        font-size: 15px !important;
+    }
+
+    .tabs li .tabs-inner {
+        color: white !important;
+        border-radius: 0px;
+        margin-left: -4px;
+    }
+
+    .tabs li .tabs-inner:hover {
+        background: #fff !important;
+        font-weight: bold;
+        color: #726f77 !important;
+    }
+
+    .tabs-controller-left {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 18px;
+        font-size: 1px;
+        display: none;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .tabs-controller-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 18px;
+        font-size: 1px;
+        display: none;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .tabs .tabs-selected .tabs-title {
+        color: #726f77 !important;
+    }
+
+    .tabs-header,
+    .tabs-tool {
+        padding: 0px;
+        background-color: #0069f6 !important;
+    }
+}
+
+//业务信息查询 结束
+//提解出所登记 同案人员form
+// .tjCsdjtary-container{
+//   .standard-content{
+//     padding:0 !important;
+//   }
+//   .datagrid .panel-body{
+//     overflow-y:scroll !important;
+//   }
+//   .panel-body.datagrid-wrap .datagrid-view{
+//     height:300px !important;
+//   }
+// }
+//提解出所登记 同案人员form
+//收回登记页面 开始
+.shdj-container {
+    .shdj-record {
+        width: 100%;
+
+        .tab {
+            height: 36px;
+            border: 1px solid #ebf2ff !important;
+
+            .tab-item {
+                list-style: none;
+                display: inline-block;
+                width: 122px;
+                text-align: center;
+                font-size: 16px;
+                background-image: linear-gradient(to right top, #005ee9, #5498ff);
+                color: #fff;
+                padding: 0 20px;
+                cursor: pointer;
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .second {
+                margin-left: -4px;
+            }
+        }
+
+        #tsbb_radio2 {
+            border-collapse: separate;
+            border-spacing: 0px
+        }
+
+        #tsbb_radio {
+            border-collapse: separate;
+            border-spacing: 0px;
+        }
+    }
+
+    .products .mainCont {
+        display: none;
+        overflow: auto;
+        min-height: 300px;
+        text-align: left;
+
+        td {
+            padding: 8px 12px 0px 15px;
+            font-size: 15px;
+        }
+    }
+
+    .products .mainCont.selected {
+        display: block;
+    }
+}
+
+//收回登记页面 结束
+//谈话教育-个别教育 开始
+.gbjy-container {
+    .gbjy-record {
+        width: 100%;
+
+        // .datagrid-body{
+        //     overflow-y: scroll;
+        // }
+        .datagrid-body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tab {
+            height: 36px;
+            border: 1px solid #ebf2ff !important;
+
+            .tab-item {
+                list-style: none;
+                display: inline-block;
+                width: 122px;
+                text-align: center;
+                font-size: 16px;
+                background-image: linear-gradient(to right top, #005ee9, #5498ff);
+                color: #fff;
+                padding: 0 20px;
+                cursor: pointer;
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .second {
+                margin-left: -4px;
+            }
+        }
+    }
+
+    .products .mainCont {
+        display: none;
+        overflow: auto;
+        min-height: 300px;
+        text-align: left;
+
+        td {
+            padding: 8px 12px 0px 15px;
+            font-size: 15px;
+        }
+    }
+
+    .products .mainCont.selected {
+        display: block;
+    }
+}
+
+//谈话教育-个别教育 结束
+.jtjy-container {
+    .search-form .search-group .search-item {
+        margin-right: 25px !important;
+    }
+
+    .search-form .search-group .search-item label {
+        min-width: 65px !important;
+    }
+
+    .textbox {
+        width: 110px !important;
+    }
+}
+
+//接济物品管理 开始
+.jjwpgl-container {
+    .tabs {
+        background: #297aff;
+        margin-bottom: 18px;
+
+        li {
+            margin-left: -5px !important;
+        }
+
+        .tabs-selected .tabs-title {
+            color: #333;
+        }
+
+        .tabs-selected a {
+            border-radius: 0px;
+            height: 38px !important;
+            line-height: 38px !important;
+        }
+    }
+
+    .tabs-title {
+        font-size: 16px;
+        color: white;
+    }
+
+    .tabs-title:hover {
+        color: #333 !important;
+    }
+}
+
+//接济物品管理 结束
+// 领导办公 领导审批
+.gwdbdiv {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 2% 0 0 2%;
+}
+
+.titlegw {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #0069f6;
+    color: #fff;
+    padding-left: 1%;
+    font-size: 20px;
+}
+
+.bqnr {
+    cursor: pointer;
+    width: 31%;
+    height: 100px;
+    border: 1px solid #0069f6;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainnr a:hover {
+    text-decoration: none;
+}
+
+.bqnr .tunr {
+    width: 25%;
+    height: 100%;
+    padding: 2%;
+}
+
+.bqnr .tunr img {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.mainnr {
+    width: 50%;
+    height: 100%;
+
+    .mainnrtitle {
+        cursor: pointer;
+        color: #0069f6;
+        font-size: 18px;
+    }
+
+    .mainnrtitle:hover {
+        color: red;
+    }
+}
+
+.numbernr {
+    width: 15%;
+    height: 100%;
+
+    p {
+        width: 100%;
+        height: 100%;
+        background: #0069f6;
+        color: #fff;
+        margin-top: 0;
+        line-height: 100px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+//外来人员登记 开始
+.wlrydj-container {
+    .wlrydj-record {
+        width: 100%;
+
+        .wlrydj-content {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-top: 0px solid #ccc;
+
+            #jbxxTbody span {
+                width: 160px !important;
+                margin-left: 5px;
+            }
+
+            #jbxxTbody span:hover {
+                cursor: pointer;
+            }
+
+            .smBtn {
+                width: 60px;
+                border: 0;
+                height: 25px;
+                border-radius: 5px;
+                color: white;
+                background: #2f8ded;
+            }
+
+            #clxxTbody span {
+                width: 179px !important;
+            }
+        }
+
+        .tab {
+            height: 35px;
+
+            .tab-item {
+                list-style: none;
+                display: inline-block;
+                width: 120px;
+                text-align: center;
+                font-size: 16px;
+                border: 0.5px solid #fff;
+                background: #5191f0;
+                color: #fff;
+                padding: 0 20px;
+                cursor: pointer;
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .gap {
+                margin-left: -4px;
+                border-left: 0px solid #fff;
+            }
+
+            .freedom {
+                margin-left: -4px;
+            }
+        }
+    }
+
+    .products .mainCont {
+        display: none;
+        overflow: scroll;
+        width: 100%;
+
+        button {
+            background-color: #297aff;
+            border-radius: 6px;
+            border: 1px solid #297aff;
+            color: #fff;
+            margin-left: 45px;
+            padding: 5px 24px;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    .products .mainCont.selected {
+        display: block;
+    }
+}
+
+//突发事件报告 开始
+.tfsjdj-container {
+    #tree {
+        min-width: 210px !important;
+        width: 15%;
+        height: 100%;
+        border-right: 1px solid #ebf2ff;
+
+        .tree-expanded,
+        .tree-collapsed,
+        .tree-folder,
+        .tree-file,
+        .tree-indent {
+            display: inline !important;
+        }
+    }
+}
+
+//突发事件报告 结束
+//领导查询 开始
+.ldcxTitle {
+    .tab .tab-title li {
+        padding: 3px 7px !important;
+    }
+}
+
+//领导查询 结束
+// 人员照片查询
+#blockphoto {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding-left: 1.5%;
+}
+
+#blockphoto div {
+    width: 12%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+#blockphoto div img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #eee;
+}
+
+#blockphoto div p {
+    text-align: center;
+}

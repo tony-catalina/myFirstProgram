@@ -1,0 +1,107 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>基本信息</h2>
+                                            <table class="container-formtable">
+                                                <tr style="display: none;">
+                                                    <td colspan="3">
+                                                        <input name="id" value="{{id}}" class="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">姓&ensp;&ensp;名：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="xm" required
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">性&ensp;&ensp;&ensp;&ensp;别：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" id="xb" name="xb" code='XB' required
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">拘室号：<font class="redicon">*</font></td>
+                                                    <td><input class="jsh" name="jsh" value="{{jsh}}" required
+                                                          id="Person_jsh"  style="min-width:280px;"> </td>
+                                                    <td class="formtd">入所日期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="rsrq" id="rsrq" required
+                                                            value="{{rsrq}}" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">案&ensp;&ensp;别：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" name="ay" code="JLSAJLB" required
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">档案编号：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="dah"  name="dah" required
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>照片录入</h2>
+                                            <table class="container-formtable zpbl">
+                                                <td colspan="3">
+                                                    <img src="/apps/jls/static/images/cm1.png" alt="" class="showPic">
+                                                </td>
+                                                <td colspan="3">
+                                                    <dl>
+                                                        <dt>采集标准</dt>
+                                                        <dt>1.三张照片均按照"人脸左侧单标尺线"进行采集。</dt>
+                                                        <dt>2.正面照。</dt>
+                                                        <dd>(a).头顶与相框上沿对齐，眼睛居于人眼对齐线中间（红线为上沿，绿线为下沿);</dd>
+                                                        <dd>(b).人像居中，两边耳根下沿与各绿块对齐;</dd>
+                                                        <dd>(c).蓝色块与红色刻度标尺线对齐;</dd>
+                                                        <dt>3.左侧照、右侧照</dt>
+                                                        <dd>(a).头顶与相框上沿对齐，眼睛居于人眼对齐线中间（红线为上沿，绿线为下沿);</dd>
+                                                        <dd>(b).人像居中，鼻尖、后脑勺分别与各绿快对齐;</dd>
+                                                        <dd>(c).蓝色块与红色刻度标尺对齐;</dd>
+                                                    </dl>
+                                                </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <img src="/apps/jls/static/images/zm.png" alt=""
+                                                            class="pic preview-image" />
+                                                        <p><input type="file" id="pic1" class="imgFile file1">
+                                                        </p>
+                                                    </td>
+                                                    <td colspan="2">
+                                                        <img src="/apps/jls/static/images/cm1.png" alt=""
+                                                            class="pic preview-image" />
+                                                        <p><input type="file" id="pic2" class="imgFile file2">
+                                                        </p>
+                                                    </td>
+                                                    <td colspan="2">
+                                                        <img src="/apps/jls/static/images/cm2.png" alt=""
+                                                            class="pic preview-image" />
+                                                        <p><input type="file" id="pic3" class="imgFile file3">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

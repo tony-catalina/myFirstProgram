@@ -1,0 +1,225 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="jshjldspfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>在押人员信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">人员编号：</td>
+                                                    <td><input class="easyui-textbox" name="rybh" value="{{rybh}}" readonly style="min-width:180px;"> </td>
+                                                    <td class="formtd">姓名：</td>
+                                                    <td><input class="easyui-textbox" name="xm" value="{{xm}}" readonly style="min-width:180px;"> </td>
+                                                    <td class="formtd">监室号：</td>
+                                                    <td><input class="easyui-textbox" name="jsh" value="{{jsh}}" readonly style="min-width:180px;"> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-anjian"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>申请联系信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">申&emsp;&emsp;请&emsp;&emsp;人：</td>
+                                                    <td><input class="easyui-textbox" name="sqr" value="{{ldpsxx.sqr}}" readonly style="min-width:280px;"> </td>
+                                                    <td class="formtd">申请时间：</td>
+                                                    <td><input class="easyui-datetimebox" name="sqsj" value="{{ldpsxx.sqsj}}" readonly style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">联系理由及事项：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="lxly"  value="{{ldpsxx.sqyy}}" readonly style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">中&ensp;队&ensp;长&ensp;意&ensp;见：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="zdzyj" value="{{ldpsxx.zdzyj}}" readonly style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">所&emsp;长&emsp;意&emsp;见：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="szyj" value="{{ldpsxx.sldyj}}" readonly style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">办&emsp;&emsp;理&emsp;&emsp;人：<font class="redicon">*</font></td>
+                                                    <td><input id="lxr" class="easyui-textbox" name="blr" value={{blr}} style="min-width:280px;"> </td>
+                                                    <td class="formtd">办理时间：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="lxsj" value="{{blsj}}" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-anjian"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>家属信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd" style="min-width:130px !important;"></td>
+                                                    <td colspan="3">
+                                                        <input type="checkbox" id="js1Checkbox" /><label for="js1Checkbox">家属一</label>
+                                                    </td>
+                                                </tr>
+                                                <tr class="elements-hidden table-row-hidden">
+                                                    <td class="formtd">姓&emsp;&emsp;名：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="jsxm1" required name="jsxm1" style="min-width:280px;"> </td>
+                                                    <td class="formtd">与在押人员关系：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" code="GX" id="gx1" required name="gx1" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr class="elements-hidden table-row-hidden">
+                                                    <td class="formtd">联系电话：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="jslxdh1" required name="jslxdh1" data-options="validType:'mphone'" style="min-width:280px;"> </td>
+                                                    <td class="formtd">身&emsp;份&emsp;证&emsp;号：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="jszjh1" required name="jszjh1" data-options="validType:'idcard'" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                               <tr class="elements-hidden table-row-hidden">
+                                                    <td class="formtd">联系地址：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" id="dz1" required name="dz1" style="width: 100%;">
+                                                    </td>
+                                               </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width:130px !important;"></td>
+                                                    <td colspan="3">
+                                                        <input type="checkbox" name="js2Checkbox" id="js2Checkbox"><label>家属二</label>
+                                                    </td>
+                                                </tr>
+                                                <tr class="js2Checkbox" style="display:none;">
+                                                    <td class="formtd">姓&emsp;&emsp;名：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="jsxm1" required name="jsxm1" style="min-width:280px;"> </td>
+                                                    <td class="formtd">与在押人员关系：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" code="GX" id="gx2" required name="gx2" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr class="js2Checkbox" style="display:none;">
+                                                    <td class="formtd">联系电话：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="jslxdh1" required name="jslxdh1" data-options="validType:'mphone'" style="min-width:280px;"> </td>
+                                                    <td class="formtd">身&emsp;份&emsp;证&emsp;号：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="jszjh1" required name="jszjh1" data-options="validType:'idcard'" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                               <tr class="js2Checkbox" style="display:none;">
+                                                    <td class="formtd">联系地址：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" required id="dz1" name="dz1" style="width: 100%;">
+                                                    </td>
+                                               </tr>
+                                                <tr>
+                                                    <td class="formtd" style="min-width:130px !important;"></td>
+                                                    <td colspan="3">
+                                                        <input type="checkbox" name="js3Checkbox" id="js3Checkbox"><label>家属三</label>
+                                                    </td>
+                                                </tr>
+                                                <tr class="js3Checkbox" style="display:none;">
+                                                    <td class="formtd">姓&emsp;&emsp;名：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" id="jsxm3" required name="jsxm3" style="min-width:280px;"> </td>
+                                                    <td class="formtd">与在押人员关系：<font class="redicon">*</font></td>
+                                                    <td><input class="awdCombox" code="GX" name="gx3" required id="gx3" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr class="js3Checkbox" style="display:none;">
+                                                    <td class="formtd">联系电话：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="jslxdh3" required id="jslxdh3" data-options="validType:'mphone'" style="min-width:280px;"> </td>
+                                                    <td class="formtd">身&emsp;份&emsp;证&emsp;号：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="jszjh3" required id="jszjh3" data-options="validType:'idcard'" style="min-width:280px;">
+                                                    </td>
+                                                </tr>
+                                                <tr class="js3Checkbox" style="display:none;">
+                                                    <td class="formtd">联系地址：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" id="dz3" required name="dz3" style="width: 100%;">
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-anjian"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>登记联系详情</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd" style="width: 150px;">联&emsp;&nbsp;系&emsp;&ensp;状&emsp;&ensp;态：</td>
+                                                    <td colspan="3">
+                                                        <select style="min-width:710px !important;" id="lxzt" name="lxzt" class="easyui-combobox">
+                                                            <option value="0">未联系</option>
+                                                            <option value="1">未联系上</option>
+                                                            <option value="2">已联系上</option>
+                                                        </select>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd" style="width: 150px;">联&ensp;系&nbsp;具&nbsp;体&nbsp;情&ensp;况：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" required multiline='true' name="lxqk" style="width: 100%;height:80px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd"></td>
+                                                    <td colspan="3">
+                                                        <input name="rsqsfyjb" id="rsqsfyjb" type="checkbox">&nbsp;&nbsp;入所前是否有疾病</td>
+                                                </tr>
+                                                <tr class="rsqsfyjb" style="display:none;">
+                                                    <td class="formtd" style="width: 150px;">入&emsp;所&emsp;前&emsp;疾&emsp;病&ensp;详&ensp;细&ensp;情&ensp;况：<font class="redicon">*</font></td>
+                                                    <td>
+                                                        <input class="easyui-textbox" required name="rsqjbxxqk" style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd"></td>
+                                                    <td colspan="3">
+                                                        <input name="sfyjzbs" id="sfyjzbs" type="checkbox">&nbsp;&nbsp;是否有家族病史</td>
+                                                </tr>
+                                                <tr class="sfyjzbs" style="display:none;">
+                                                    <td class="formtd" style="width: 150px;">家&emsp;族&emsp;病&emsp;史&emsp;详&emsp;细&emsp;情&emsp;况：<font class="redicon">*</font></td>
+                                                    <td >
+                                                        <input class="easyui-textbox" required name="jzbsxxqk"style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd"></td>
+                                                    <td colspan="3">
+                                                        <input name="sfcqfyhfyzmyw" id="sfcqfyhfyzmyw" type="checkbox">&nbsp;&nbsp;是否长期服药或服用专门药物</td>
+                                                </tr>
+                                                <tr class="sfcqfyhfyzmyw" style="display:none;">
+                                                    <td class="formtd" style="width: 150px;">长期服药或服用专门药物详细情况：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td>
+                                                        <input class="easyui-textbox" required name="cqfyhfyzmywxxqk" style="width: 100%;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>

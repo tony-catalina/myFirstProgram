@@ -1,0 +1,49 @@
+#fm {
+    /* width: 100%; */
+    padding: 1%;
+    overflow-y: scroll;
+    height: 100%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+#fm::-webkit-scrollbar {
+    display: none
+}
+
+h2 {
+    text-align: center;
+    margin: 3% 0;
+}
+
+.layui-form-item .layui-form-label {
+    width: 15%;
+}
+
+.layui-form-item .layui-input-block {
+    margin-left: 15%;
+}
+
+.layui-form-item .layui-input,
+.layui-form-item .layui-textarea {
+    width: 90%;
+}
+
+.layui-form-item .layui-form-select .layui-edge {
+    right: 11%;
+}
+
+.layui-form-item .layui-form-select dl {
+    width: 90% !important;
+}
+
+/* #bjjs {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #eee;
+} */

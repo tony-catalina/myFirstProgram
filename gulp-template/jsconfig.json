@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "disableSizeLimit": true
+    },
+    "typeAcquisition": {
+        "include": [
+            "apps/jds/static/js/controller/modules/tabs.d.ts"
+        ]
+    },
+    "exclude": ["node_modules"]
+}

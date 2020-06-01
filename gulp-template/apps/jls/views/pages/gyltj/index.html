@@ -1,0 +1,49 @@
+<!--
+模块名称： 
+开始时间： 2020-3-7
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<style>
+    p {
+        margin: 0 !important;
+    }
+</style>
+
+<body class="easyui-layout" data-options="fit:true">
+    <!--页面主体布局-->
+    <form class="ywdt-form gyltj">
+        <div class="section-container ywdt" style="display: flex;">
+            <div class="section-item section-item-title  section-item-row"><span
+                    class="iconfont icon-taizhang"></span>查询信息</div>
+            <div class="section-item section-item-row">
+                <div class="section-item-content align-right section-item-content-title">请选择时间段: </div>
+                <div class="section-item-content">
+                    <input class="easyui-datebox" id="timeStart" />
+                    <span class="wz">至</span>
+                    <input class="easyui-datebox" id="timeEnd" value="new Date()" />
+                </div>
+                <div class="section-item-content"><input type="button" id="searchBtn" value="点击查询" /></div>
+
+            </div>
+            <div class="section-item section-item-title  section-item-row echart" style="display:none">
+                <div style="width:100%;height:auto;">
+                    <div  id="datagrid" style="width:100%;display: flex;justify-content: start;flex-wrap: wrap;"></div>
+            </div>
+            <div class="section-item section-item-title  section-item-row echart" style="display:none">
+                <div id="zzid" style="width:100%;height:300px;"></div>
+            </div>
+
+        </div>
+    </form>
+    <!--页面主体布局-->
+    <script src="/apps/jls/static/lib/require.js" data-main="/apps/jls/static/js/require.config" id="current-page" current-page="pages\gyltj\index"></script>
+
+<script src="/apps/jls/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

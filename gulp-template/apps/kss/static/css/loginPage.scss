@@ -1,0 +1,435 @@
+@import "base.scss";
+html, body {
+  width: 100%;
+  height: 100%;
+}
+$width: 1920;
+$height: 1080;
+$w:1867;
+$h:982;
+@font-face {
+  font-family: "Acens";
+  src: url("./../fonts/Acens.ttf");
+}
+@font-face {
+  font-family: "Akzidenz";
+  src: url("./../fonts/Akzidenz.otf");
+}
+.content{
+  background-image: url("./../images/loginPage.png");
+  .box{
+    width:cptSize($w,$width);
+    height: cptSize($h,$height);
+    .box-xian{
+      width: 36%;
+      height: 3px;
+      position: absolute;
+      top: 7.6%;
+      overflow: hidden;
+      .xian{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        animation: move 7s infinite linear;
+        background: linear-gradient(90deg,transparent,#03e9f4);
+      }
+    }
+    .box-xian1{
+      width: 3px;
+      height: 98.5%;
+      top: 1.5%;
+      position: absolute;
+      overflow: hidden;
+      .xian{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -100%;
+        animation: move1 7s infinite linear;
+        animation-delay: 1.5s;
+        background: linear-gradient(180deg,transparent,#04e1fb);
+      }
+    }
+    .box-xian2{
+      width: 36%;
+      height: 3px;
+      bottom: 2.9%;
+      position: absolute;
+      overflow: hidden;
+      .xian{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: -100%;
+        animation: move2 7s infinite linear;
+        animation-delay: 3s;
+        background: linear-gradient(270deg,transparent,#03e9f4);
+      }
+    }
+    .box-xian3{
+      width: 3px;
+      height: 98.5%;
+      top: 1.5%;
+      position: absolute;
+      overflow: hidden;
+      .xian{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: -100%;
+        animation: move3 7s infinite linear;
+        animation-delay: 4.5s;
+        background: linear-gradient(360deg,transparent,#03e9f4);
+      }
+    }
+    .cent{
+      width:cptSize(771,$w);
+      height: cptSize(536,$h);
+      top: 55%;
+      .txt{
+        height: cptSize(51,536);
+        top: cptSize(68,536);
+        span{
+          color: #f3faff;
+          font-family: "微软雅黑";
+          text-shadow:#0fc4e0 2px 3px 2px
+        }
+      }
+      .username{
+        height: cptSize(54,536);
+        top: cptSize(166,536);
+        .username-box{
+          width:cptSize(464,771);
+          background-image: url("./../images/kuang.png");
+          .tu1{
+            width:cptSize(21,464);
+            height: cptSize(26,54);
+            left: 3%;
+            background-image: url("./../images/username.png");
+          }
+          .xiann{
+            width: 1px;
+            height: 70%;
+            left: 12%;
+            background: white;
+          }
+          input:-webkit-autofill {
+            -webkit-text-fill-color: #fff !important;
+            transition: background-color 5000s ease-in-out 0s;
+          }
+          input::-webkit-input-placeholder {
+            font-size:16px;
+            font-weight: bold;
+            color: #e3ebf9;
+          }
+          input::-webkit-input-placeholder {
+            font-size:16px;
+            font-weight: bold;
+            color: #e3ebf9;
+          }
+          input:-moz-placeholder {
+            font-size:16px;
+            font-weight: bold;
+            color: #e3ebf9;
+          }
+          input::-moz-placeholder {
+            font-size:16px;
+            font-weight: bold;
+            color: #e3ebf9;
+          }
+          input:-ms-input-placeholder {
+            font-size:16px;
+            font-weight: bold;
+            color: #e3ebf9;
+          }
+          input:focus{outline:none;}
+          .input1{
+            color: #e3ebf9;
+            border: none;
+            background: none;
+            width:cptSize(395,464);
+          }
+          .box-xian{
+            width: 100%;
+            height: 2px;
+            top: 0;
+            overflow: hidden;
+            .xian{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: -100%;
+              animation: move 6s infinite linear;
+              background: linear-gradient(90deg,transparent,#03e9f4);
+            }
+          }
+          .box-xian1{
+            width: 2px;
+            height: 100%;
+            overflow: hidden;
+            .xian{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: -100%;
+              animation: move1 6s infinite linear;
+              animation-delay: 1.5s;
+              background: linear-gradient(180deg,transparent,#04e1fb);
+            }
+          }
+          .box-xian2{
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            overflow: hidden;
+            .xian{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              right: -100%;
+              animation: move2 6s infinite linear;
+              animation-delay: 3s;
+              background: linear-gradient(270deg,transparent,#03e9f4);
+            }
+          }
+          .box-xian3{
+            width: 2px;
+            height: 100%;
+            overflow: hidden;
+            .xian{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              bottom: -100%;
+              animation: move3 6s infinite linear;
+              animation-delay: 4.5s;
+              background: linear-gradient(360deg,transparent,#03e9f4);
+            }
+          }
+        }
+      }
+      .passworld{
+        height: cptSize(54,536);
+        top: cptSize(264,536);
+        .passworld-box{
+          width:cptSize(464,771);
+          background-image: url("./../images/kuang.png");
+          .tu2{
+            width:cptSize(21,464);
+            height: cptSize(26,54);
+            left: 3%;
+            background-image: url("./../images/passworld.png");
+          }
+          .xiann{
+            width: 1px;
+            height: 70%;
+            left: 12%;
+            background: white;
+          }
+          input:-webkit-autofill {
+            -webkit-text-fill-color: #fff !important;
+            transition: background-color 5000s ease-in-out 0s;
+          }
+          input::-webkit-input-placeholder {
+            font-size:16px;
+            font-weight: bold;
+            color: #e3ebf9;
+          }
+          input::-webkit-input-placeholder {
+            font-size:16px;
+            font-weight: bold;
+            color: #e3ebf9;
+          }
+          input:-moz-placeholder {
+            font-size:16px;
+            font-weight: bold;
+            color: #e3ebf9;
+          }
+          input::-moz-placeholder {
+            font-size:16px;
+            font-weight: bold;
+            color: #e3ebf9;
+          }
+          input:-ms-input-placeholder {
+            font-size:16px;
+            font-weight: bold;
+            color: #e3ebf9;
+          }
+          input:focus{outline:none;}
+          .input2{
+            color: #e3ebf9;
+            border: none;
+            background: none;
+            width:cptSize(395,464);
+          }
+          .box-xian{
+            width: 100%;
+            height: 2px;
+            top: 0;
+            overflow: hidden;
+            .xian{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: -100%;
+              animation: move 6s infinite linear;
+              background: linear-gradient(90deg,transparent,#03e9f4);
+            }
+          }
+          .box-xian1{
+            width: 2px;
+            height: 100%;
+            overflow: hidden;
+            .xian{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: -100%;
+              animation: move1 6s infinite linear;
+              animation-delay: 1.5s;
+              background: linear-gradient(180deg,transparent,#04e1fb);
+            }
+          }
+          .box-xian2{
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            overflow: hidden;
+            .xian{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              right: -100%;
+              animation: move2 6s infinite linear;
+              animation-delay: 3s;
+              background: linear-gradient(270deg,transparent,#03e9f4);
+            }
+          }
+          .box-xian3{
+            width: 2px;
+            height: 100%;
+            bottom: 0;
+            overflow: hidden;
+            .xian{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              bottom: -100%;
+              animation: move3 6s infinite linear;
+              animation-delay: 4.5s;
+              background: linear-gradient(360deg,transparent,#03e9f4);
+            }
+          }
+        }
+      }
+      .login{
+        height: cptSize(56,536);
+        top: cptSize(360,536);
+        .login-box{
+          width:cptSize(464,771);
+          .button1{
+            width:cptSize(190,464);
+            vertical-align:middle;
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #83d7fc;
+            border: none;
+            color: #FFFFFF;
+            transition: all 0.5s;
+            cursor: pointer;
+            span {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+            }
+            span:after {
+              content: '»';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+            }
+            &:hover{
+              background-color: #44ccf6;
+            }
+            &:hover span {
+              padding-right: 25px;
+            }
+            &:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
+          }
+          .button2{
+            width:cptSize(190,464);
+            vertical-align:middle;
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #83d7fc;
+            border: none;
+            color: #FFFFFF;
+            transition: all 0.5s;
+            cursor: pointer;
+            span {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+            }
+            span:after {
+              content: '»';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+            }
+            &:hover{
+              background-color: #44ccf6;
+            }
+            &:hover span {
+              padding-right: 25px;
+            }
+            &:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes move {
+  0%{
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+@keyframes move1 {
+  0%{
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+@keyframes move2 {
+  0%{
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+@keyframes move3 {
+  0%{
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}

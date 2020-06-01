@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/apps/platform/static/css/_form.css">
+<form class="layui-form" action="" id="fm">
+	<h2>登记律师</h2>
+	<input type="text"  name="id"  value="{{id}}" hidden="hidden">
+	<div class="layui-form-item">
+		<label class="layui-form-label">律师证号：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<input type="text" name="lszh" value="{{lszh}}" lay-verify="required" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">姓&emsp;&emsp;名：<font color="red">*</font></label>
+		<div class="layui-input-block">
+			<input type="text" name="xm" value="{{xm}}" lay-verify="required" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">单&emsp;&emsp;位：&nbsp;</label>
+		<div class="layui-input-block">
+			<input type="text" name="dw" value="{{dw}}" lay-verify="" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+</form>

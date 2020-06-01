@@ -1,0 +1,89 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>基本信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">人员编号：</td>
+                                    <td ><input class="easyui-textbox" name="rybh" value="{{rybh}}" readonly  style="min-width:280px;"> </td>
+                                    <td class="formtd">姓&ensp;&ensp;&ensp;&ensp;名：</td>
+                                    <td ><input class="easyui-textbox" name="xm" value="{{xm}}" readonly style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">监&ensp;室&ensp;号：</td>
+                                    <td ><input class="easyui-textbox" name="jsh" value="{{jsh}}" readonly style="min-width:280px;"> </td>
+                                    <td class="formtd">办理日期：</td>
+                                    <td ><input class="easyui-datebox" name="blrq" value="{{blrq}}" required  style="min-width:280px;"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                           <span class="iconfont icon-jibenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">原&ensp;刑&ensp;满&ensp;日&ensp;期：<font class="redicon">*</font></td>
+                                    <td ><input id="yxmrqfm" class="easyui-datebox" name="yxmrq" value="{{gyqx}}" required style="min-width:280px;"> </td>
+                                    <td class="formtd">加刑&ensp;或&ensp;减刑：<font class="redicon">*</font></td>
+                                    <td ><input type="radio" name="flag" value="01" checked class="radiocss"><font>加刑</font> <input type="radio" name="flag" value="02" class="radiocss"><font>减刑</font> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">加&ensp;&ensp;减&ensp;&ensp;刑&ensp;&ensp;期：<font class="redicon">*</font></td>
+                                    <td >
+                                        <div style="float: left;">
+                                            <input id="year" class="easyui-textbox" min="0" value="0" max="99" style="width: 75px !important;">年
+                                            <input id="month" class="easyui-textbox" min="0" value="0" max="12" style="width: 75px !important;">月
+                                            <input id="day" class="easyui-textbox" min="0" value="0" max="31" style="width: 75px !important;">日 
+                                        </div>
+                                    </td>
+                                    <td class="formtd">刑满释放日期：<font class="redicon">*</font></td>
+                                    <td ><input id="xmsfrqfm" class="easyui-datebox" readonly name="xmsfrq" value="{{xmsfrq}}" required style="min-width:280px;" ></td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">加减刑期年月日：<font class="redicon">*</font></td>
+                                    <td ><input id="jjxqfm" class="easyui-datebox" readonly name="jjxq" required style="min-width:280px;"> </td>
+                                    <td class="formtd">办&ensp;&ensp;&ensp;理&ensp;&ensp;&ensp;人：<font class="redicon">*</font></td>
+                                    <td ><input class="easyui-textbox" id="blr" name="blr" value="{{blr}}" required style="min-width:280px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">申&ensp;&ensp;请&ensp;&ensp;原&ensp;&ensp;因：<font class="redicon">*</font></td>
+                                    <td colspan="3"><input class="easyui-textbox" name="bz" required data-options="multiline:true" style="width: 100%;min-height: 80px;"> </td>
+                                </tr>
+                                <tr style="display: none;">
+                                    <td colspan="3">
+                                        <input name="id" value="{{id}}" class="">
+
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

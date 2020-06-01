@@ -1,0 +1,104 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">检&emsp;查时&emsp;间：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input name="sj" value="{{sj}}" class="easyui-datetimebox"
+                                                            required style="min-width:280px;"> </td>
+                                                    <td class="formtd">看守所参加人数：</td>
+                                                    <td><input class="easyui-numberbox" value="{{ksscjrs}}"
+                                                            name="ksscjrs" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">武警参加人数：</td>
+                                                    <td><input class="easyui-numberbox" value="{{wjcjrs}}" name="wjcjrs"
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">监所科参加人数：</td>
+                                                    <td><input class="easyui-numberbox" value="{{jskcjrs}}"
+                                                            name="jskcjrs" style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">负&emsp;&nbsp;&nbsp;责&nbsp;&emsp;人：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td><input id="fzr" class="easyui-textbox" value="{{fzr}}" required
+                                                            style="min-width:280px;"> </td>
+                                                    <td class="formtd">驻 所 检 查 人员：</td>
+                                                    <td><input class="easyui-textbox" value="{{zsjcry}}" name="zsjcry"
+                                                            style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">检&emsp;查形&emsp;式：</td>
+                                                    <td colspan="3"><input class="easyui-textbox" value="{{jcxs}}"
+                                                            name="jcxs" style="width:100%;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">检&emsp;查内&emsp;容：<font class="redicon">*</font>
+                                                    </td>
+                                                    <td colspan="3"><input class="easyui-textbox"
+                                                            style="width:100%;height:80px;" value="{{nr}}" name="nr"
+                                                            required data-options="multiline:true"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">备&emsp;&emsp;&emsp;&emsp;注：</td>
+                                                    <td colspan="3"><input class="easyui-textbox"
+                                                            style="width:100%;height:80px;" value="{{bz}}"
+                                                            data-options="multiline:true" name="bz"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">不选择为安全：</td>
+                                                    <td colspan="3">
+                                                        <input name="ysh" type="checkbox" id="aqjcCheckbox"
+                                                            value="on" /><label for="aqjcCheckbox">不安全</label>
+                                                    </td>
+                                                </tr>
+                                                <tr class="elements-hidden table-row-hidden">
+                                                    <td class="formtd">检&emsp;查结&emsp;果：
+                                                        <font class="redicon">*</font>
+                                                    </td>
+                                                    <td colspan="3">
+                                                        <input class="easyui-textbox" value="{{jcjg}}" name="jcjg"
+                                                            required style="width: 100%; ">
+                                                    </td>
+                                                </tr>
+                                                <tr class="elements-hidden table-row-hidden">
+                                                    <td class="formtd ">处&emsp;理结&emsp;果：
+                                                        <font class="redicon ">*</font>
+                                                    </td>
+                                                    <td colspan="3 "><input class="easyui-textbox " value="{{cljg}}"
+                                                            name="cljg" required style="width: 100%; ">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="id" value="{{id}}" class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

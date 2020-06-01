@@ -1,0 +1,64 @@
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+        <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+            <div class="section-content">
+                <div class="section-item section-item-one section-item-padding">
+                    <div class="standard-content font-20">
+                        <div class="htmleaf-container">
+                            <div class="container">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <span class="iconfont icon-jibenxinxi"></span>
+                                        </div>
+                                        <div class="timeline-content right">
+                                            <h2>业务信息</h2>
+                                            <table class="container-formtable">
+                                                <tr>
+                                                    <td class="formtd">民警姓名：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-textbox" name="mjxm" value="{{mjxm}}"
+                                                            required style="min-width:280px;"> </td>
+                                                    <td class="formtd">分析日期：<font class="redicon">*</font></td>
+                                                    <td><input class="easyui-datetimebox" name="rq"
+                                                            value="{{rq}}" required style="min-width:280px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">分析情况：<font class="redicon">*</font></td>
+                                                    <td colspan="3"><input class="easyui-textbox" name="fxqk"
+                                                            value="{{fxqk}}" required style="min-width:670px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="formtd">分析时期：<font class="redicon">*
+                                                        </font></td>
+                                                    <td><input name="fxsqMonth" value="{{fxsqMonth}}" id="fxsqMonth"
+                                                            class="easyui-datebox" required style="min-width:280px;">
+                                                    </td>
+                                                    <td style="width:0px !important;padding:0px !important;">
+                                                    </td>
+                                                    <td><input name="fxsqDay" value="{{fxsqDay}}"
+                                                            style="min-width:280px;" required
+                                                            class="easyui-combobox awdCombox" 
+                                                            id="fxsqDay">
+                                                    </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                    <td colspan="3"><input name="id" value="{{id}}"
+                                                            class="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>

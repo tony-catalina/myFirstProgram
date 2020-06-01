@@ -1,0 +1,83 @@
+
+<body class="easyui-layout" data-option="fit:true">
+    <div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+    <form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+    <div class="section-content">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="standard-content font-20">
+             <div class="htmleaf-container">
+             <div class="container">
+                <div id="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-gerenxinxi"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>个人信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">姓名：</td>
+                                    <td ><input   class="easyui-textbox" style="min-width:180px;" value="{{xm}}" readonly> </td>
+                                    <td class="formtd">性别：</td>
+                                    <td ><input id="xb" class="awdCombox"  style="min-width:180px;" value="{{xb}}" text="{{xbString}}" readonly> </td>
+                                    <td class="formtd">民族：</td>
+                                    <td ><input id="mz" class="awdCombox" style="min-width:180px;" value="{{mz}}" text="{{mzString}}" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">出生日期：</td>
+                                    <td ><input id="csrq" class="easyui-datebox"   style="min-width:180px;" value="{{csrq}}" readonly> </td>
+                                    <td class="formtd">婚姻状况：</td>
+                                    <td ><input id="hyzk" class="awdCombox"  style="width:100%;" value="{{hyzk}}" text="{{hyzkString}}" readonly> </td>
+                                    <td class="formtd">文化程度：</td>
+                                    <td ><input id="whcd" class="awdCombox" value="{{whcd}}"  text="{{whcdString}}" style="width:100%;" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">职业：</td>
+                                    <td ><input id="zy" class="awdCombox" value="{{zy}}" text="{{zyString}}" style="min-width:180px;" readonly> </td>
+                                    <td class="formtd">身份：</td>
+                                    <td ><input id="sf" class="awdCombox" value="{{sf}}" text="{{sfString}}" style="width:100%;" readonly> </td>
+                                    <td class="formtd">入所日期：</td>
+                                    <td ><input id="rsrq" class="easyui-datetimebox" value="{{rsrq}}"  style="width:100%;" readonly> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                             <span class="iconfont icon-yewubaobiao"></span>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2>业务信息</h2>
+                            <table class="container-formtable">
+                                <tr>
+                                    <td class="formtd">办理人：<font class="redicon">*</font></td>
+                                    <td ><input id="blr" name="blr" class="easyui-textbox" style="min-width:280px;" name="blr" required> </td>
+                                    <td class="formtd">办理人证件号：<font class="redicon">*</font></td>
+                                    <td ><input id="blrzjh" name="blrzjh" class="easyui-textbox"  name="blrzjh" style="min-width:280px;" data-options="validType:'idcard'" required> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">法律文书号：<font class="redicon">*</font></td>
+                                    <td ><input id="pzws" name="pzws" class="easyui-textbox"  name="pzws" style="min-width:280px;" required> </td>
+                                    <td class="formtd">办理时间：<font class="redicon">*</font></td>
+                                    <td ><input id="blsj" name="blsj" class="easyui-datetimebox" name="blsj" style="min-width:280px;" required> </td>
+                                </tr>
+                                <tr>
+                                    <td class="formtd">联系电话：</td>
+                                    <td colspan="3"><input id="blrlxdh" name="blrlxdh" class="easyui-textbox" name="blrlxdh" data-options="multiline:true" style="width:100%;"> </td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+   </div>
+</form>
+</body>

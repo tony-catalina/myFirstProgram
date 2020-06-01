@@ -1,0 +1,123 @@
+<body class="easyui-layout" data-option="fit:true">
+	<div class="easyui-layout" data-option="fit:true" style="width:100%;height:100%;">
+		<form id="fm" name="aqjcfm" method="post" style="padding: 0 0 0 0;" class="awdform">
+			<div class="section-content pfwp-container">
+				<div class="section-item section-item-one section-item-padding">
+					<div class="standard-content font-20">
+						<div class="htmleaf-container">
+							<div class="container">
+								<div id="timeline">
+									<div class="timeline-item">
+										<div class="timeline-icon">
+											<span class="iconfont icon-yewubaobiao"></span>
+										</div>
+										<div class="timeline-content right">
+											<h2>派发物品</h2>
+											<table class="container-formtable">
+												<tr>
+													<td class="formtd">拘&emsp;室&emsp;号：</td>
+													<td><input class="easyui-textbox" value="{{jsh}}" readonly style="min-width:280px;"> </td>
+													<td class="formtd">姓&emsp;&emsp;名：</td>
+													<td><input class="easyui-textbox" value="{{xm}}" readonly style="min-width:280px;"> </td>
+												</tr>
+												<tr>
+													<td class="formtd">性&emsp;&emsp;&emsp;别：</td>
+													<td><input class="easyui-textbox" value="{{xb}}" readonly style="min-width:280px;"> </td>
+													<td class="formtd">入所时间：</td>
+													<td><input class="easyui-textbox" value="{{rsrq}}" readonly style="min-width:280px;"> </td>
+												</tr>
+												<tr>
+													<td class="formtd">档案&emsp;编号：</td>
+													<td><input class="easyui-textbox" value="{{dah}}" readonly style="min-width:280px;"> </td>
+													<td class="formtd">案&emsp;&emsp;别：</td>
+													<td><input class="easyui-textbox" value="{{ay}}" readonly style="min-width:280px;"> </td>
+												</tr>
+												<tr>
+													<td class="formtd">户籍所在地：</td>
+													<td colspan="3"><input class="easyui-textbox" value="{{hjd}}" readonly style="width:100%;">
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								
+										<div class="timeline-item">
+											<div class="timeline-icon">
+												<span class="iconfont icon-yewubaobiao"></span>
+											</div>
+											<div class="timeline-content right">
+												<h2>业务信息</h2>
+												<table class="container-formtable">
+													<tr>
+														<td class="formtd">送&ensp;物&ensp;人&ensp;姓&ensp;名：</td>
+														<td><input class="easyui-textbox" value="{{ldpsxx.wpjs_swrxm}}" readonly style="min-width:280px;"> </td>
+														<td class="formtd">送&ensp;物&ensp;人&ensp;性&ensp;别：</td>
+														<td><input class="awdCombox" value="{{ldpsxx.wpjs_swrxb}}"  text="{{ldpsxx.wpjs_swrxbString}}" readonly style="min-width:280px;">
+														</td>
+													</tr>
+													<tr>
+														<td class="formtd">与被&ensp;送人&ensp;关系：</td>
+														<td><input class="awdCombox" value="{{ldpsxx.wpjs_gx}}"  text="{{ldpsxx.wpjs_gxString}}" readonly style="min-width:280px;">
+														</td>
+														<td class="formtd">送物人证件号码：</td>
+														<td><input class="easyui-textbox" style="min-width:280px;">
+														</td>
+													</tr>
+													<tr>
+														<td class="formtd">执&emsp;勤&emsp;民&emsp;警：</td>
+														<td><input class="easyui-textbox" value="{{ldpsxx.wpjs_zqmj}}" readonly style="min-width:280px;"> </td>
+														<td class="formtd">送&emsp;物&emsp;时&emsp;间：</td>
+														<td><input class="easyui-textbox" value="{{ldpsxx.wpjs_swsj}}" readonly style="min-width:280px;"> </td>
+													</tr>
+													<tr>
+														<td class="formtd">送物人联系电话：</td>
+														<td><input class="easyui-textbox" value="{{ldpsxx.wpjs_swrlxdh}}" readonly style="min-width:280px;"> </td>
+														<td class="formtd">工&emsp;作&emsp;单&emsp;位：</td>
+														<td><input class="easyui-textbox" value="{{ldpsxx.wpjs_gzdw}}" readonly style="min-width:280px;"> </td>
+													</tr>
+													<tr>
+														<td class="formtd">地&emsp;&emsp;&emsp;&emsp;&emsp;址：</td>
+														<td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.wpjs_dz}}" readonly style="width:100%;">
+														</td>
+													</tr>
+													<tr>
+														<td class="formtd">送&emsp;钱&emsp;金&emsp;额：</td>
+														<td colspan="3"><input class="easyui-textbox" value="{{ldpsxx.wpjs_sqje}}" readonly style="width:100%;">
+														</td>
+													</tr>
+													<tr>
+														<td class="formtd">代&emsp;&emsp;收&emsp;&emsp;人：</td>
+														<td><input class="easyui-textbox" value="{{ldpsxx.wpjs_jzr}}" readonly style="min-width:280px;"> </td>
+														<td class="formtd">代&emsp;收&emsp;日&emsp;期：</td>
+														<td><input class="easyui-textbox" value="{{ldpsxx.wpjs_jzrq}}" readonly style="min-width:280px;"> </td>
+													</tr>
+													<tr>
+														<td class="formtd">派&emsp;&emsp;发&emsp;&emsp;人：<font class="redicon">*</font></td>
+														<td><input class="easyui-textbox" name="pfr" value="{{tbr}}" id="pfr" required style="min-width:280px;">
+														</td>
+														<td class="formtd">派&emsp;发&emsp;时&emsp;间：<font class="redicon">*</font></td>
+														<td><input class="easyui-datetimebox" name="pfsj" value="{{dateTime}}" id="pfsj" required style="min-width:280px;">
+														</td>
+													</tr>
+												</table>
+												<table class="container-formtable" id="swpfwpTable" style="margin-top: 10px;width: 100%; border-collapse: collapse;margin: 0 auto;">
+													<input type="hidden" name="tbr" value="{{tbr}}">
+													<input type="hidden" name="tbrq" value="{{tbrq}}">
+													<input type="hidden" name="rybh" value="{{rybh}}">
+													<input type="hidden" name="taskid" value="{{taskid}}">
+													<input type="hidden" name="ywlcid" value="{{ywlcid}}">
+													<input type="hidden" name="id" value="{{ldpsxx.wpjs_id}}">
+													<input type="hidden" name="lqr" value="{{xm}}">
+												</table>
+											</div>
+										</div>
+							
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</form>
+</body>

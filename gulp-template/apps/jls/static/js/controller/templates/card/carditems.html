@@ -1,0 +1,84 @@
+{{each groups as group i}}
+<div class="swiper-slide">
+    {{each group as item j}}
+    {{if j==0}}
+    <div class="pop-item mgr mgl">
+        <img src="../static/images/homePage/tab_imgg.png" alt="">
+        <div class="item_show show10" modename="{{item.module}}" title="{{item.modulename}}"  modelid="{{item.id}}">
+            <div class="title">
+                <span>{{item.modulename}}</span>
+            </div>
+            <div class="echarts">
+                <img src="../static/images/homePage/card/{{item.module}}.png" alt="">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{if j==1}}
+    <div class="pop-item mgr">
+        <img src="../static/images/homePage/tab_imgg.png" alt="">
+        <div class="item_show show11" modename="{{item.module}}" title="{{item.modulename}}" modelid="{{item.id}}">
+            <div class="title">
+                <span>{{item.modulename}}</span>
+            </div>
+            <div class="echarts">
+                <img src="../static/images/homePage/card/{{item.module}}.png" alt="">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{if j==2}}
+    <div class="pop-item">
+        <img src="../static/images/homePage/tab_imgg.png" alt="">
+        <div class="item_show show12"  modename="{{item.module}}" title="{{item.modulename}}" modelid="{{item.id}}">
+            <div class="title">
+                <span>{{item.modulename}}</span>
+            </div>
+            <div class="echarts">
+                <img src="../static/images/homePage/card/{{item.module}}.png" alt="">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{if j==3}}
+    <div class="pop-item mgr mgl">
+        <img src="../static/images/homePage/tab_imgg.png" alt="">
+        <div class="item_show show13" modename="{{item.module}}" title="{{item.modulename}}" modelid="{{item.id}}">
+            <div class="title">
+                <span>{{item.modulename}}</span>
+            </div>
+            <div class="echarts">
+                <img src="../static/images/homePage/card/{{item.module}}.png" alt="">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{if j==4}}
+    <div class="pop-item mgr">
+        <img src="../static/images/homePage/tab_imgg.png" alt="">
+        <div class="item_show show14" modename="{{item.module}}" title="{{item.modulename}}" modelid="{{item.id}}">
+            <div class="title">
+                <span>{{item.modulename}}</span>
+            </div>
+            <div class="echarts">
+                <img src="../static/images/homePage/card/{{item.module}}.png" alt="">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{if j==5}}
+    <div class="pop-item">
+        <img src="../static/images/homePage/tab_imgg.png" alt="">
+        <div class="item_show show15" modename="{{item.module}}" title="{{item.modulename}}" modelid="{{item.id}}">
+            <div class="title">
+                <span>{{item.modulename}}</span>
+            </div>
+            <div class="echarts">
+                <img src="../static/images/homePage/card/{{item.module}}.png" alt="">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{/each}}
+</div>
+{{/each}}

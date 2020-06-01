@@ -1,0 +1,116 @@
+<!--
+模块名称： 公安部台账
+开始时间： 2020-2-25
+-->
+<!--HTML head-->
+<!-- partial:../../partials/_head_start.html -->
+<!-- partial -->
+
+<!-- partial:../../partials/_head_end.html -->
+<!-- partial -->
+<body class="easyui-layout" data-options="fit:true">
+<!--页面主体布局-->
+    <div class="section-container gabtz-container">
+        <div class="section-item section-item-one section-item-padding">
+            <div class="section-header">
+                <div class="section-title">简项查询</div>
+            </div>
+            <div class="section-item-content border-top">
+                <!-- <form id="search" class="search-form"></form> -->
+                <form id="fm" name="aqjcfm" method="post" style="padding: 0 18px 0 18px;;display:flex;" class="awdform">
+                    <table class="container-formtable gabtz-search">
+                        <tr>
+                            <td>起始年月<font style="color:red;">*</font>：</td>
+                            <td style="margin-right:50px;"><input class="easyui-datebox" id="qsny" missingMessage="该输入项为必填项" style="min-width:168px" required> </td>
+                            <td>终止年月<font style="color:red;">*</font>：</td>
+                            <td><input class="easyui-datebox" id="zzny" missingMessage="该输入项为必填项" style="min-width:168px" required> </td>
+                            <td>
+                                <button type="button" id="print"><span class="iconfont icon-jiahao"></span>打印</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <form id="gabtz_form">
+                    <div class="fitem">
+                      <input type="radio" id="tz01" name="sbbb" value="kss_sydj">
+                      <label for="tz01" name="title">公安部台账之一:收押登记</label>
+                    </div>
+                    <div class="fitem" >
+                      <input type="radio" id="tz02" name="sbbb" value="kss_zyafdjb">
+                      <label for="tz02" name="title">公安部台账之二:重要案犯登记</label>
+                    </div>
+                    <div class="fitem" >
+                      <input type="radio" id="tz03" name="sbbb" value="kss_txtstjdj">
+                      <label for="tz03" name="title">公安部台账之三:提讯、提审、提解登记</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz04" name="sbbb" value="kss_lshj">
+                      <label for="tz04" name="title">公安部台账之四:律师会见登记</label>
+                    </div>
+                    <div class="fitem" >
+                      <input type="radio" id="tz05" name="sbbb" value="kss_zyryqshjdj">
+                      <label for="tz05" name="title">公安部台账之五:在押人员亲属会见登记</label>
+                    </div>
+                    <div class="fitem" >
+                      <input type="radio" id="tz06" name="sbbb" value="swfzxsdj_sj">
+                      <label for="tz06" name="title">公安部台账之六:深挖犯罪线索登记</label>
+                    </div>
+                    <div class="fitem" >
+                      <input type="radio" id="tz07" name="sbbb" value="kss_emwjcxdj">
+                      <label for="tz07" name="title">公安部台账之七:耳目物建、撤销登记</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz08" name="sbbb" value="kss_zyrysnjydj">
+                      <label for="tz08" name="title">公安部台账之八:在押人员所内就医登记</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz09" name="sbbb" value="kss_zyrycsjydj">
+                      <label for="tz09" name="title">公安部台账之九:在押人员出所就医登记</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz10" name="sbbb" value="kss_lsfx">
+                      <label for="tz10" name="title">公安部台账之十:拘留所服刑罪犯登记</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz11" name="sbbb" value="kss_zdzy">
+                      <label for="tz11" name="title">公安部台账之十一:重点监管对象登记</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz12" name="sbbb" value="kss_swhy">
+                      <label for="tz12" name="title">公安部台账之十二:所务会议记录</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz13" name="sbbb" value="kss_lxhy">
+                      <label for="tz13" name="title">公安部台账之十三:联席会议记录</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz14" name="sbbb" value="kss_zydtfxhy">
+                      <label for="tz14" name="title">公安部台账之十四:在押人员动态分析会议记录</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz15" name="sbbb" value="kss_yjyayl">
+                      <label for="tz15" name="title">公安部台账之十五:应急预案演练记录</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz16" name="sbbb" value="kss_aqjc">
+                      <label for="tz16" id="aqjc" name="title">公安部台账之十六:安全大检查记录</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz17" name="sbbb" value="kss_scqk">
+                      <label for="tz17" name="title">公安部台账之十七:工作视察、检查记录</label>
+                    </div>
+                    <div class="fitem">
+                      <input type="radio" id="tz18" name="sbbb" value="kss_szjdjl">
+                      <label for="tz18" name="title">公安部台账之十八:所长接待记录</label>
+                    </div>
+                 </form>
+            </div>
+        </div>
+    </div> 
+<!--页面主体布局-->
+<script src="/apps/kss/static/lib/require.js" data-main="/apps/kss/static/js/require.config" id="current-page" current-page="pages/gabtz/index"></script>
+
+<script src="/apps/kss/static/lib/loading.js"></script>
+</body>
+<!-- partial:../../partials/_foot.html -->
+<!-- partial -->

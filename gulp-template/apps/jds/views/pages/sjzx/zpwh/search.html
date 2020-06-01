@@ -1,0 +1,25 @@
+<form action="" class="search-form" >
+    <div class="search-group" >
+        {{each primary}}
+         <div class="search-item">
+         <input class="easyui-{{$value.type}}" label="{{$value.title}}"  data-options='{{$value.optionsString}}' />
+        </div>
+        {{/each}}
+        
+        <div class="search-item button-group font-18">
+            <button type="button" class="search-btn"><span class="iconfont icon-icon-chaxun"></span>查询</button>
+            <button type="button" class="more-btn"><span class="iconfont icon-more-arrow"></span>更多</button>
+        </div>
+    </div>
+   <div class="search-more">
+       {{each more}}
+            <div class="search-group">
+                {{each $value}}
+                <div class="search-item">
+                    <input class="easyui-{{$value.type}}" data-options='{{$value.optionsString}}' label="{{$value.title}}" />
+                </div>
+                {{/each}}
+            </div>
+       {{/each}}
+   </div>
+</form>
