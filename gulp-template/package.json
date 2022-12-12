@@ -83,7 +83,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^4.0.2",
     "gulp-debug": "^4.0.0",
